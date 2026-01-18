@@ -112,7 +112,6 @@
       type: "app"
       command: "system-config-printer"
 
-
 - title: "Discover some features"
   subtitle: "Our platform is collaborative, join this evolution."
   icon: "applications-system-symbolic"
@@ -138,7 +137,7 @@
       command: "big-microphone-noise-reduction"
 
     - label: "Configure voice"
-      icon: "/usr/share/bigbashview/bcc/apps/tts/icon-grid-texto-fala-tts.svg"
+      icon: "tts-biglinux"
       type: "app"
       command: "tts-config"
 
@@ -167,6 +166,6 @@
       command: "https://www.youtube.com/@BigLinuxx"
 
     - label: "Telegram"
-      icon: "telegram"
+      icon: "webapp-telegram-webapp"
       type: "url"
       command: "https://t.me/biglinux"
