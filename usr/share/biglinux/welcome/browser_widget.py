@@ -1,18 +1,22 @@
 import gi
-gi.require_version('Gtk', '4.0')
-from gi.repository import Gtk, GdkPixbuf, GLib
+
+gi.require_version("Gtk", "4.0")
 import os
+
+from gi.repository import GdkPixbuf, GLib, Gtk
+
 
 class BrowserWidget(Gtk.Box):
     """
     A custom widget to display a browser, indicating its installation
     and default status, and handling clicks to install/set as default.
     """
+
     def __init__(self, browser_data, app_path, **kwargs):
         super().__init__(orientation=Gtk.Orientation.VERTICAL, spacing=6, **kwargs)
         self.browser_data = browser_data
         self.app_path = app_path
-        self.set_tooltip_text(browser_data['label'])
+        self.set_tooltip_text(browser_data["label"])
 
         self.button = Gtk.Button()
         self.button.set_has_frame(False)
@@ -27,10 +31,15 @@ class BrowserWidget(Gtk.Box):
         icon_container.set_size_request(64, 64)
 
         # Render the SVG to a Pixbuf at the exact target size to ensure sharpness.
-        icon_path = os.path.join(self.app_path, "image", "browsers", f"{browser_data['package']}.svg")
+        icon_path = os.path.join(
+            self.app_path, "image", "browsers", f"{browser_data['package']}.svg"
+        )
+
+        # Render the SVG to a Pixbuf at the exact target size to ensure sharpness.
         try:
             pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(icon_path, 64, 64)
             icon_widget = Gtk.Image.new_from_pixbuf(pixbuf)
+            icon_widget.set_pixel_size(64)
         except GLib.Error as e:
             print(f"Error loading icon {icon_path}: {e}. Using fallback.")
             icon_widget = Gtk.Image.new_from_icon_name("image-missing-symbolic")
@@ -55,7 +64,7 @@ class BrowserWidget(Gtk.Box):
         content_box.append(self.overlay)
 
         # Label
-        label_widget = Gtk.Label(label=browser_data['label'])
+        label_widget = Gtk.Label(label=browser_data["label"])
         label_widget.set_wrap(True)
         label_widget.set_justify(Gtk.Justification.CENTER)
         # Force the label to reserve space for 2 lines to ensure all widgets have the same height
