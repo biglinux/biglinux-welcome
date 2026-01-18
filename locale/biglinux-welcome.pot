@@ -27,16 +27,6 @@ msgid   "An error occurred while install browser."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 147
-msgid   "Could Not Load Welcome Pages"
-msgstr  ""
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 148
-msgid   "Check if 'pages.yaml' exists and is correctly formatted."
-msgstr  ""
-
-#
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 msgid   "AppStore"
 msgstr  ""
@@ -239,4 +229,14 @@ msgstr  ""
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 52
 msgid   "Your donation is very important for the project and follow us on "
         "social media."
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 147
+msgid   "Could Not Load Welcome Pages"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 148
+msgid   "Check if 'pages.yaml' exists and is correctly formatted."
 msgstr  ""
