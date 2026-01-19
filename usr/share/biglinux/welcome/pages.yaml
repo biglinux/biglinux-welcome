@@ -2,6 +2,11 @@
   subtitle: "We provide comprehensive settings for you to select in an extremely simple way."
   icon: "preferences-system-symbolic"
   actions:
+    - label: "BigLinux Settings"
+      icon: "biglinux-settings"
+      type: "app"
+      command: "sh -c 'cd /usr/share/biglinux/biglinux-settings/ && exec -a biglinux-settings python main.py'"
+
     - label: "Display Settings"
       icon: "video-display-symbolic"
       type: "app"

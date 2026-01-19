@@ -40,7 +40,7 @@ class ActionWidget(Gtk.Box):
         # Icon/Image
         image_path = os.path.join(APP_PATH, "image", icon_name)
         image = Gtk.Image.new_from_file(image_path)
-        image.set_pixel_size(160)
+        image.set_pixel_size(200)
         image.set_halign(Gtk.Align.CENTER)
         self.append(image)
 
@@ -61,8 +61,30 @@ class ActionWidget(Gtk.Box):
         button.set_child(content_box)
 
         # Use Gtk.Image, which is simpler for theme icons
-        icon = Gtk.Image.new_from_icon_name(icon_name)
-        icon.set_pixel_size(64)
+        if icon_name.startswith("image/") or "/" in icon_name or icon_name.endswith(".svg") or icon_name.endswith(".png"):
+            # Try to load as file relative to APP_PATH
+            
+            potential_path = os.path.join(APP_PATH, icon_name)
+            if not os.path.exists(potential_path) and icon_name.startswith("image/"):
+                pass
+            
+            if os.path.exists(potential_path):
+                 icon = Gtk.Image.new_from_file(potential_path)
+            else:
+                 # Fallback: try inside image/ folder directly if not found
+                 icon_path_in_image_folder = os.path.join(APP_PATH, "image", os.path.basename(icon_name))
+                 if os.path.exists(icon_path_in_image_folder):
+                     icon = Gtk.Image.new_from_file(icon_path_in_image_folder)
+                 else:
+                     # Fallback to icon name if file not found
+                     icon = Gtk.Image.new_from_icon_name(icon_name)
+            
+            # Use larger size for file images (like QR codes)
+            icon.set_pixel_size(200)
+        else:
+            icon = Gtk.Image.new_from_icon_name(icon_name)
+            icon.set_pixel_size(64)
+            
         content_box.append(icon)
 
         # Label
