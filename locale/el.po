@@ -26,6 +26,10 @@ msgid "AppStore"
 msgstr "Κατάστημα Εφαρμογών"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+msgid "Audio Converter"
+msgstr "Μετατροπέας Ήχου"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
 msgid "Big Store"
 msgstr "Μεγάλο Κατάστημα"
 # 
@@ -170,6 +174,10 @@ msgstr "Τηλέγραμμα"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
 msgid "Themes and Tweaks"
 msgstr "Θέματα και Ρυθμίσεις"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
+msgid "Video Converter"
+msgstr "Μετατροπέας Βίντεο"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
 msgid "Vivaldi"

@@ -26,6 +26,10 @@ msgid "AppStore"
 msgstr "App Store"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+msgid "Audio Converter"
+msgstr "Äänimuunnin"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
 msgid "Big Store"
 msgstr "Iso Kauppa"
 # 
@@ -171,6 +175,10 @@ msgstr "Telegram"
 msgid "Themes and Tweaks"
 msgstr "Teemat ja säädöt"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
+msgid "Video Converter"
+msgstr "Videomuunnin"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
 msgid "Vivaldi"
 msgstr "Vivaldi"
@@ -195,6 +203,10 @@ msgstr "Lahjoituksesi on erittäin tärkeä projektille ja seuraa meitä sosiaal
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
 msgid "BigLinux Welcome"
 msgstr "BigLinux Tervetuloa"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
 # 

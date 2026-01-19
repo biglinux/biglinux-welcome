@@ -11,6 +11,7 @@ _ = gettext.gettext
 
 # --- Strings from data file ---
 _('AppStore')
+_('Audio Converter')
 _('Big Store')
 _('BigLinux Info')
 _('BigLinux Settings')
@@ -46,6 +47,7 @@ _('Printers')
 _('Set your default browser.')
 _('Telegram')
 _('Themes and Tweaks')
+_('Video Converter')
 _('Vivaldi')
 _('We provide comprehensive settings for you to select in an extremely simple way.')
 _('WebApps')

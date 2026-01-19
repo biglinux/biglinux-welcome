@@ -26,6 +26,10 @@ msgid "AppStore"
 msgstr "AppStore"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+msgid "Audio Converter"
+msgstr "Аудио конвертор"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
 msgid "Big Store"
 msgstr "Голям магазин"
 # 
@@ -169,6 +173,10 @@ msgstr "Телеграм"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
 msgid "Themes and Tweaks"
 msgstr "Темите и настройките"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
+msgid "Video Converter"
+msgstr "Видео конвертор"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
 msgid "Vivaldi"
