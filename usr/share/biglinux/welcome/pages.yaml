@@ -134,7 +134,7 @@
 
 - title: "Discover some features"
   subtitle: "Our platform is collaborative, join this evolution."
-  icon: "applications-system-symbolic"
+  icon: "applications-other-symbolic"
   actions:
     - label: "Control Center"
       icon: "bigcontrolcenter"
@@ -178,7 +178,7 @@
 
 - title: "Donation and Social Networks"
   subtitle: "Your donation is very important for the project and follow us on social media."
-  icon: "help-donate-ars-symbolic"
+  icon: "help-donate"
   actions:
     - label: "Donate"
       icon: "donate"
