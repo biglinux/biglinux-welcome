@@ -8,26 +8,31 @@
       command: "sh -c 'cd /usr/share/biglinux/biglinux-settings/ && exec -a biglinux-settings python main.py'"
 
     - label: "Display Settings"
-      icon: "video-display-symbolic"
+      icon: "desktop"
       type: "app"
       command: "systemsettings kcm_kscreen"
 
-    - label: "Themes and Tweaks"
-      icon: "preferences-desktop-theme-symbolic"
+    - label: "Session and Themes"
+      icon: "big-theme-gui"
       type: "app"
       command: "big-theme-gui"
 
     - label: "Choose Your Avatar"
-      icon: "avatar-default-symbolic"
+      icon: "avatar-default"
       type: "app"
       command: "kcmshell6 kcm_users"
 
     - label: "Language Packs"
-      icon: "preferences-desktop-locale-symbolic"
+      icon: "config-language"
       type: "app"
       # type: "script"
       command: "kcmshell6 kcm_regionandlang"
       # command: "scripts/example.sh"
+
+    - label: "Accessibility"
+      icon: "preferences-desktop-accessibility"
+      type: "app"
+      command: "kcmshell6 kcm_access"
 
 - title: "Choose your default browser"
   subtitle: "Set your default browser."
@@ -85,8 +90,8 @@
   actions:
     - label: "PlayStore"
       icon: "kde-connect-playstore-qrcode.svg"
-      type: "image"
-      command: ""
+      type: "url"
+      command: "https://play.google.com/store/apps/details?id=org.kde.kdeconnect_tp&pcampaignid=web_share"
 
     - label: "KDE Connect"
       icon: "kdeconnect"
@@ -95,8 +100,8 @@
 
     - label: "AppStore"
       icon: "kde-connect-appstore-qrcode.svg"
-      type: "image"
-      command: ""
+      type: "url"
+      command: "https://apps.apple.com/br/app/kde-connect/id1580245991"
 
 - title: "Driver Installation and Hardware Information"
   subtitle: "Install or Remove Drivers and Firmwares easily."
@@ -111,6 +116,16 @@
       icon: "big-hardware-info"
       type: "app"
       command: "big-hardware-info"
+
+    - label: "Network Info"
+      icon: "big-network-info"
+      type: "app"
+      command: "big-network-info"
+
+    - label: "Kernel Manager"
+      icon: "big-kernel-manager"
+      type: "app"
+      command: "big-kernel-manager"
 
     - label: "Printers"
       icon: "printer"
