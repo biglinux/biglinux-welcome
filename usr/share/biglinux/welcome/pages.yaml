@@ -151,6 +151,16 @@
       type: "app"
       command: "bigocrpdf"
 
+    - label: "Video Converter"
+      icon: "big-video-converter"
+      type: "app"
+      command: "big-video-converter"
+
+    - label: "Audio Converter"
+      icon: "big-audio-converter"
+      type: "app"
+      command: "big-audio-converter"
+
 - title: "Donation and Social Networks"
   subtitle: "Your donation is very important for the project and follow us on social media."
   icon: "help-donate-ars-symbolic"
