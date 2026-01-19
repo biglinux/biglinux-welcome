@@ -1,6 +1,6 @@
 - title: "Initial Settings"
   subtitle: "We provide comprehensive settings for you to select in an extremely simple way."
-  icon: "preferences-system-symbolic"
+  icon: "display-symbolic"
   actions:
     - label: "BigLinux Settings"
       icon: "biglinux-settings"
@@ -134,7 +134,7 @@
 
 - title: "Discover some features"
   subtitle: "Our platform is collaborative, join this evolution."
-  icon: "applications-other-symbolic"
+  icon: "pack-less"
   actions:
     - label: "Control Center"
       icon: "bigcontrolcenter"
@@ -178,7 +178,7 @@
 
 - title: "Donation and Social Networks"
   subtitle: "Your donation is very important for the project and follow us on social media."
-  icon: "help-donate"
+  icon: "donate-symbolic"
   actions:
     - label: "Donate"
       icon: "donate"

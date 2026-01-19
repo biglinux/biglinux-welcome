@@ -214,7 +214,7 @@ class WelcomeWindow(Adw.ApplicationWindow):
             welcome_logo_page,
             "welcome",
             _("Welcome"),
-            "start-here-symbolic" 
+            "dialog-information-symbolic" 
         )
         
         # 2. Pages from YAML
@@ -286,6 +286,11 @@ class BigLinuxWelcome(Adw.Application):
              /* Dim label style */
              .dim-label {
                  opacity: 0.7;
+             }
+
+             /* Increase header icon size */
+             viewswitcher button image {
+                 -gtk-icon-size: 32px;
              }
             """
         )
