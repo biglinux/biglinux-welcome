@@ -21,14 +21,6 @@ msgstr "Browser instalat cu succes!"
 msgid "An error occurred while install browser."
 msgstr "A apărut o eroare în timpul instalării browser-ului."
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 140
-msgid "Could Not Load Welcome Pages"
-msgstr "Nu s-au putut încărca paginile de bun venit."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 141
-msgid "Check if 'pages.yaml' exists and is correctly formatted."
-msgstr "Verifică dacă 'pages.yaml' există și este formatat corect."
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 msgid "AppStore"
 msgstr "App Store"
@@ -40,6 +32,10 @@ msgstr "Magazin Mare"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
 msgid "BigLinux Info"
 msgstr "Informații BigLinux"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+msgid "BigLinux Settings"
+msgstr "Setări BigLinux"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
 msgid "Brave"
@@ -194,3 +190,66 @@ msgstr "YouTube"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
 msgid "Your donation is very important for the project and follow us on social media."
 msgstr "Donația ta este foarte importantă pentru proiect și urmărește-ne pe rețelele sociale."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
+msgid "BigLinux Welcome"
+msgstr "BigLinux Bun venit"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+msgid "Finish"
+msgstr "Finalizați"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+msgid "Show on startup"
+msgstr "Afișează la pornire"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 162
+msgid "Welcome"
+msgstr "Bine ai venit"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 226
+msgid "Back"
+msgstr "Înapoi"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 232
+msgid "Next"
+msgstr "Următorul"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 242
+msgid "Cancel"
+msgstr "Anulează"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 141
+msgid "Check if 'pages.yaml' exists and is correctly formatted."
+msgstr "Verifică dacă 'pages.yaml' există și este formatat corect."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 326
+msgid "Error"
+msgstr "Eroare"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
+msgid "Unknown"
+msgstr "Necunoscut"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+msgid "Kernel"
+msgstr "Nucleu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
+msgid "Graphics"
+msgstr "Grafică"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+msgid "Desktop"
+msgstr "Desktop"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
+msgid "Architecture"
+msgstr "Arhitectură"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
+msgid "Packages"
+msgstr "Pachete"

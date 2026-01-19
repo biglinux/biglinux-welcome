@@ -21,14 +21,6 @@ msgstr "Prohlížeč byl úspěšně nainstalován!"
 msgid "An error occurred while install browser."
 msgstr "Při instalaci prohlížeče došlo k chybě."
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 140
-msgid "Could Not Load Welcome Pages"
-msgstr "Nelze načíst uvítací stránky"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 141
-msgid "Check if 'pages.yaml' exists and is correctly formatted."
-msgstr "Zkontrolujte, zda 'pages.yaml' existuje a je správně naformátován."
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 msgid "AppStore"
 msgstr "AppStore"
@@ -40,6 +32,10 @@ msgstr "Velký obchod"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
 msgid "BigLinux Info"
 msgstr "BigLinux Info"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+msgid "BigLinux Settings"
+msgstr "Nastavení BigLinux"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
 msgid "Brave"
@@ -193,3 +189,66 @@ msgstr "YouTube"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
 msgid "Your donation is very important for the project and follow us on social media."
 msgstr "Vaše darování je pro projekt velmi důležité a sledujte nás na sociálních médiích."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
+msgid "BigLinux Welcome"
+msgstr "BigLinux Vítejte"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+msgid "Finish"
+msgstr "Dokončeno"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+msgid "Show on startup"
+msgstr "Zobrazit při spuštění"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 162
+msgid "Welcome"
+msgstr "Vítejte"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 226
+msgid "Back"
+msgstr "Zpět"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 232
+msgid "Next"
+msgstr "Další"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 242
+msgid "Cancel"
+msgstr "Zrušit"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 141
+msgid "Check if 'pages.yaml' exists and is correctly formatted."
+msgstr "Zkontrolujte, zda 'pages.yaml' existuje a je správně naformátován."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 326
+msgid "Error"
+msgstr "Chyba"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
+msgid "Unknown"
+msgstr "Neznámý"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+msgid "Kernel"
+msgstr "Jádro"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
+msgid "Graphics"
+msgstr "Grafika"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+msgid "Desktop"
+msgstr "Desktop"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
+msgid "Architecture"
+msgstr "Architektura"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
+msgid "Packages"
+msgstr "Balíčky"

@@ -21,14 +21,6 @@ msgstr "Przeglądarka została pomyślnie zainstalowana!"
 msgid "An error occurred while install browser."
 msgstr "Wystąpił błąd podczas instalacji przeglądarki."
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 140
-msgid "Could Not Load Welcome Pages"
-msgstr "Nie można załadować stron powitalnych."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 141
-msgid "Check if 'pages.yaml' exists and is correctly formatted."
-msgstr "Sprawdź, czy 'pages.yaml' istnieje i jest poprawnie sformatowany."
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 msgid "AppStore"
 msgstr "Sklep z aplikacjami"
@@ -40,6 +32,10 @@ msgstr "Duży Sklep"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
 msgid "BigLinux Info"
 msgstr "Informacje o BigLinux"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+msgid "BigLinux Settings"
+msgstr "Ustawienia BigLinux"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
 msgid "Brave"
@@ -194,3 +190,66 @@ msgstr "YouTube"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
 msgid "Your donation is very important for the project and follow us on social media."
 msgstr "Twoja darowizna jest bardzo ważna dla projektu i śledź nas w mediach społecznościowych."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
+msgid "BigLinux Welcome"
+msgstr "Witamy w BigLinux"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+msgid "Show on startup"
+msgstr "Pokaż przy uruchamianiu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 162
+msgid "Welcome"
+msgstr "Witamy"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 226
+msgid "Back"
+msgstr "Wstecz"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 232
+msgid "Next"
+msgstr "Następny"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 242
+msgid "Cancel"
+msgstr "Anuluj"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 141
+msgid "Check if 'pages.yaml' exists and is correctly formatted."
+msgstr "Sprawdź, czy 'pages.yaml' istnieje i jest poprawnie sformatowany."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 326
+msgid "Error"
+msgstr "Błąd"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
+msgid "Unknown"
+msgstr "Nieznany"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+msgid "Kernel"
+msgstr "Jądro"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
+msgid "Graphics"
+msgstr "Grafika"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+msgid "Desktop"
+msgstr "Pulpit"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
+msgid "Architecture"
+msgstr "Architektura"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
+msgid "Packages"
+msgstr "Pakiety"

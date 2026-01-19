@@ -21,14 +21,6 @@ msgstr "Preglednik je uspješno instaliran!"
 msgid "An error occurred while install browser."
 msgstr "Došlo je do pogreške prilikom instalacije preglednika."
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 140
-msgid "Could Not Load Welcome Pages"
-msgstr "Nije moguće učitati stranice dobrodošlice"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 141
-msgid "Check if 'pages.yaml' exists and is correctly formatted."
-msgstr "Provjerite postoji li 'pages.yaml' i je li ispravno formatiran."
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 msgid "AppStore"
 msgstr "AppStore"
@@ -40,6 +32,10 @@ msgstr "Velika trgovina"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
 msgid "BigLinux Info"
 msgstr "BigLinux Informacije"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+msgid "BigLinux Settings"
+msgstr "BigLinux Postavke"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
 msgid "Brave"
@@ -193,3 +189,66 @@ msgstr "YouTube"
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
 msgid "Your donation is very important for the project and follow us on social media."
 msgstr "Vaša donacija je vrlo važna za projekt i pratite nas na društvenim mrežama."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
+msgid "BigLinux Welcome"
+msgstr "BigLinux Dobrodošli"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+msgid "Finish"
+msgstr "Završeno"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+msgid "Show on startup"
+msgstr "Prikaži pri pokretanju"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 162
+msgid "Welcome"
+msgstr "Dobrodošli"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 226
+msgid "Back"
+msgstr "Natrag"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 232
+msgid "Next"
+msgstr "Sljedeće"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 242
+msgid "Cancel"
+msgstr "Otkaži"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 141
+msgid "Check if 'pages.yaml' exists and is correctly formatted."
+msgstr "Provjerite postoji li 'pages.yaml' i je li ispravno formatiran."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 326
+msgid "Error"
+msgstr "Greška"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
+msgid "Unknown"
+msgstr "Nepoznato"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+msgid "Kernel"
+msgstr "Jezgra"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
+msgid "Graphics"
+msgstr "Grafika"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+msgid "Desktop"
+msgstr "Radna površina"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
+msgid "Architecture"
+msgstr "Arhitektura"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
+msgid "Packages"
+msgstr "Paketi"

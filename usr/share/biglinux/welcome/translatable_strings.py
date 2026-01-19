@@ -13,6 +13,7 @@ _ = gettext.gettext
 _('AppStore')
 _('Big Store')
 _('BigLinux Info')
+_('BigLinux Settings')
 _('Brave')
 _('Choose Your Avatar')
 _('Choose your default browser')
