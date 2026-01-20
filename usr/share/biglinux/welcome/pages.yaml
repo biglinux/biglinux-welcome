@@ -169,12 +169,12 @@
     - label: "Video Converter"
       icon: "big-video-converter"
       type: "app"
-      command: "big-video-converter"
+      command: "big-video-converter-gui"
 
     - label: "Audio Converter"
       icon: "big-audio-converter"
       type: "app"
-      command: "big-audio-converter"
+      command: "big-audio-converter-gui"
 
 - title: "Donation and Social Networks"
   subtitle: "Your donation is very important for the project and follow us on social media."
