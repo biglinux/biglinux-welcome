@@ -83,7 +83,7 @@ class BrowserPage(Adw.Bin):
 
     def _get_default_browser(self):
         """Get the .desktop file of the current default browser via the script."""
-        return self._run_script(["getBrowser")
+        return self._run_script(["getBrowser"])
 
     def refresh_browser_states(self):
         """Update all browser widgets to reflect the current system state."""
