@@ -56,3 +56,4 @@ _('We provide comprehensive settings for you to select in an extremely simple wa
 _('WebApps')
 _('YouTube')
 _('Your donation is very important for the project and follow us on social media.')
+_('Zen Browser')

@@ -262,6 +262,11 @@ msgid   "Your donation is very important for the project and follow us on "
 msgstr  ""
 
 #
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
+msgid   "Zen Browser"
+msgstr  ""
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 38
 msgid   "BigLinux Welcome"
 msgstr  ""

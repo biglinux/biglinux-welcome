@@ -211,6 +211,10 @@ msgstr "YouTube"
 msgid "Your donation is very important for the project and follow us on social media."
 msgstr "Lahjoituksesi on erittäin tärkeä projektille ja seuraa meitä sosiaalisessa mediassa."
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
+msgid "Zen Browser"
+msgstr "Zen-selain"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
 msgid "BigLinux Welcome"
