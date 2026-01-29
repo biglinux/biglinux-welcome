@@ -280,3 +280,15 @@ msgstr "Arkitektur"
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
 msgid "Packages"
 msgstr "Pakker"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid "Display"
+msgstr "Visning"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+msgid "Welcome to your new system"
+msgstr "Velkommen til dit nye system"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+msgid "Get Started"
+msgstr "Kom i gang"

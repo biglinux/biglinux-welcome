@@ -272,7 +272,10 @@ msgid   "BigLinux Welcome"
 msgstr  ""
 
 #
+# #-#-#-#-#  biglinux-welcome.pot (biglinux-welcome)  #-#-#-#-#
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 80
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 906
 msgid   "Show on startup"
 msgstr  ""
 
@@ -298,14 +301,20 @@ msgid   "Welcome"
 msgstr  ""
 
 #
+# #-#-#-#-#  biglinux-welcome.pot (biglinux-welcome)  #-#-#-#-#
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 467
 msgid   "Unknown"
 msgstr  ""
 
 #
+# #-#-#-#-#  biglinux-welcome.pot (biglinux-welcome)  #-#-#-#-#
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 437
 msgid   "Kernel"
 msgstr  ""
 
@@ -315,7 +324,10 @@ msgid   "Graphics"
 msgstr  ""
 
 #
+# #-#-#-#-#  biglinux-welcome.pot (biglinux-welcome)  #-#-#-#-#
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 438
 msgid   "Desktop"
 msgstr  ""
 
@@ -327,4 +339,19 @@ msgstr  ""
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
 msgid   "Packages"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid   "Display"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+msgid   "Welcome to your new system"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+msgid   "Get Started"
 msgstr  ""

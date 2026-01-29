@@ -278,3 +278,15 @@ msgstr "架构"
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
 msgid "Packages"
 msgstr "软件包"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid "Display"
+msgstr "显示"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+msgid "Welcome to your new system"
+msgstr "欢迎使用您的新系统"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+msgid "Get Started"
+msgstr "开始使用"

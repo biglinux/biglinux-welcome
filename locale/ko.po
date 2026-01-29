@@ -264,3 +264,15 @@ msgstr "아키텍처"
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
 msgid "Packages"
 msgstr "패키지"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid "Display"
+msgstr "디스플레이"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+msgid "Welcome to your new system"
+msgstr "새 시스템에 오신 것을 환영합니다."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+msgid "Get Started"
+msgstr "시작하기"

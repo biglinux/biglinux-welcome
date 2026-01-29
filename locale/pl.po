@@ -281,3 +281,15 @@ msgstr "Architektura"
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
 msgid "Packages"
 msgstr "Pakiety"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid "Display"
+msgstr "Wyświetlacz"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+msgid "Welcome to your new system"
+msgstr "Witamy w nowym systemie"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+msgid "Get Started"
+msgstr "Zacznij teraz"
