@@ -17,6 +17,7 @@ import os
 import platform
 import shlex
 import subprocess
+import threading
 
 import gi
 
@@ -586,6 +587,13 @@ class BrowserCard(Gtk.Button):
         self.check_badge.append(check_icon)
         overlay.add_overlay(self.check_badge)
 
+        # Spinner for installation feedback
+        self.spinner = Gtk.Spinner(spinning=False)
+        self.spinner.set_halign(Gtk.Align.CENTER)
+        self.spinner.set_valign(Gtk.Align.CENTER)
+        self.spinner.set_visible(False)
+        overlay.add_overlay(self.spinner)
+
         # Label
         label = Gtk.Label(label=browser.get("label", ""))
         label.add_css_class("browser-label")
@@ -601,6 +609,14 @@ class BrowserCard(Gtk.Button):
                 return True
         return False
 
+    def set_installed(self, installed: bool) -> None:
+        """Set installation state."""
+        self.installed = installed
+        if installed:
+            self.remove_css_class("dimmed")
+        else:
+            self.add_css_class("dimmed")
+
     def set_selected(self, selected: bool) -> None:
         """Set selection state."""
         self.selected = selected
@@ -611,10 +627,20 @@ class BrowserCard(Gtk.Button):
             self.remove_css_class("selected")
             self.check_badge.set_visible(False)
 
+    def set_loading(self, loading: bool) -> None:
+        """Set loading state."""
+        self.spinner.set_visible(loading)
+        if loading:
+            self.spinner.start()
+            self.add_css_class("dimmed")
+        else:
+            self.spinner.stop()
+            if self.installed:
+                self.remove_css_class("dimmed")
+
     def _on_click(self, _btn: Gtk.Button) -> None:
         """Handle click."""
-        if self.installed:
-            self.on_select(self)
+        self.on_select(self)
 
 
 class ProgressDots(Gtk.Box):
@@ -885,16 +911,80 @@ class WelcomeWindow(Adw.ApplicationWindow):
                 self.browser_cards.append(card)
                 row.append(card)
 
+        # Initial state check
+        GLib.idle_add(self.refresh_browser_states)
+
         return scroll
+
+    def _run_browser_script(self, args: list[str]) -> str:
+        """Helper to run the browser script and return its output."""
+        script_path = os.path.join(APP_PATH, "scripts", "browser.sh")
+        try:
+            cmd = [script_path] + args
+            result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+            return result.stdout.strip()
+        except (subprocess.CalledProcessError, FileNotFoundError, OSError) as e:
+            print(f"Error running browser script {args}: {e}")
+            return ""
+
+    def refresh_browser_states(self) -> bool:
+        """Update all browser cards to reflect current system state."""
+        current_browser_default = self._run_browser_script(["getBrowser"])
+
+        for card in self.browser_cards:
+            is_installed = False
+            installed_desktop = None
+
+            # Check each variant
+            for variant in card.browser.get("variants", []):
+                check_path = variant.get("check", "")
+                if check_path and os.path.exists(check_path):
+                    is_installed = True
+                    installed_desktop = variant.get("desktop", "")
+                    break
+
+            card.set_installed(is_installed)
+            card.detected_desktop = installed_desktop
+            card.set_selected(is_installed and installed_desktop == current_browser_default)
+
+        return GLib.SOURCE_REMOVE
 
     def _on_browser_select(self, selected_card: BrowserCard) -> None:
         """Handle browser selection."""
-        for card in self.browser_cards:
-            card.set_selected(card == selected_card)
+        # Start the action in a background thread to keep UI responsive
+        thread = threading.Thread(target=self._perform_browser_action, args=(selected_card,))
+        thread.daemon = True
+        thread.start()
 
-        # Set as default browser (would need actual implementation)
+    def _perform_browser_action(self, selected_card: BrowserCard) -> None:
+        """Perform browser installation and set as default."""
         browser = selected_card.browser
-        print(f"Selected browser: {browser.get('label')}")
+        GLib.idle_add(selected_card.set_loading, True)
+
+        try:
+            # Check if it's already installed
+            is_installed = any(os.path.exists(v.get("check", "")) for v in browser.get("variants", []))
+
+            if not is_installed:
+                # Run the install script (via pkexec in browser.sh)
+                self._run_browser_script(["install", browser.get("package", "")])
+
+            # After (potential) installation, find the desktop file again
+            desktop_to_set = None
+            for variant in browser.get("variants", []):
+                check_path = variant.get("check", "")
+                if check_path and os.path.exists(check_path):
+                    desktop_to_set = variant.get("desktop", "")
+                    break
+
+            # Set as default browser if we have a desktop file
+            if desktop_to_set:
+                self._run_browser_script(["setBrowser", desktop_to_set])
+                print(f"Set default browser to: {browser.get('label')} ({desktop_to_set})")
+
+        finally:
+            GLib.idle_add(selected_card.set_loading, False)
+            GLib.idle_add(self.refresh_browser_states)
 
     def _build_nav(self, parent: Gtk.Box) -> None:
         """Build navigation bar."""
