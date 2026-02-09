@@ -29,6 +29,10 @@ msgstr "Προσβασιμότητα"
 msgid "AppStore"
 msgstr "Κατάστημα Εφαρμογών"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+msgid "Ashy Terminal"
+msgstr "Αχνή Τερματική"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
 msgid "Audio Converter"
 msgstr "Μετατροπέας Ήχου"
@@ -187,6 +191,10 @@ msgstr "Ορίστε τον προεπιλεγμένο σας περιηγητή
 msgid "Telegram"
 msgstr "Τηλέγραμμα"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
+msgid "Time Shift"
+msgstr "Χρονική Μετατόπιση"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 msgid "Video Converter"
 msgstr "Μετατροπέας Βίντεο"
@@ -215,30 +223,17 @@ msgstr "Η δωρεά σας είναι πολύ σημαντική για το 
 msgid "Zen Browser"
 msgstr "Ζεν Περιηγητής"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
-msgid "BigLinux Welcome"
-msgstr "Καλωσόρισμα στο BigLinux"
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+msgid "Kernel"
+msgstr "Πυρήνας"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-msgid "Show on startup"
-msgstr "Εμφάνιση κατά την εκκίνηση"
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+msgid "Desktop"
+msgstr "Επιφάνεια εργασίας"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 226
-msgid "Back"
-msgstr "Πίσω"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 232
-msgid "Next"
-msgstr "Επόμενο"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 186
-msgid "Close"
-msgstr "Κλείσιμο"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 162
-msgid "Welcome"
-msgstr "Καλώς ήρθατε"
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid "Display"
+msgstr "Εμφάνιση"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
@@ -246,33 +241,13 @@ msgstr "Καλώς ήρθατε"
 msgid "Unknown"
 msgstr "Άγνωστο"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-msgid "Kernel"
-msgstr "Πυρήνας"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
-msgid "Graphics"
-msgstr "Γραφικά"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-msgid "Desktop"
-msgstr "Επιφάνεια εργασίας"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
-msgid "Architecture"
-msgstr "Αρχιτεκτονική"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
-msgid "Packages"
-msgstr "Πακέτα"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-msgid "Display"
-msgstr "Εμφάνιση"
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
 msgid "Welcome to your new system"
 msgstr "Καλώς ήρθατε στο νέο σας σύστημα"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+msgid "Show on startup"
+msgstr "Εμφάνιση κατά την εκκίνηση"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 msgid "Get Started"

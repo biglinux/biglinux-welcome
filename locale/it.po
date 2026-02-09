@@ -29,6 +29,10 @@ msgstr "Accessibilità"
 msgid "AppStore"
 msgstr "App Store"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+msgid "Ashy Terminal"
+msgstr "Terminal Ashy"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
 msgid "Audio Converter"
 msgstr "Convertitore Audio"
@@ -186,6 +190,10 @@ msgstr "Imposta il tuo browser predefinito."
 msgid "Telegram"
 msgstr "Telegram"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
+msgid "Time Shift"
+msgstr "Fuso Orario"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 msgid "Video Converter"
 msgstr "Convertitore Video"
@@ -214,10 +222,27 @@ msgstr "La tua donazione è molto importante per il progetto e seguici sui socia
 msgid "Zen Browser"
 msgstr "Zen Browser"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
-msgid "BigLinux Welcome"
-msgstr "Benvenuto in BigLinux"
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+msgid "Kernel"
+msgstr "Nucleo"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+msgid "Desktop"
+msgstr "Desktop"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid "Display"
+msgstr "Visualizza"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
+msgid "Unknown"
+msgstr "Sconosciuto"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+msgid "Welcome to your new system"
+msgstr "Benvenuto nel tuo nuovo sistema"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
 # 
@@ -238,56 +263,6 @@ msgstr "Benvenuto in BigLinux"
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
 msgid "Show on startup"
 msgstr "Mostra all'avvio"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 226
-msgid "Back"
-msgstr "Indietro"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 232
-msgid "Next"
-msgstr "Prossimo"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 186
-msgid "Close"
-msgstr "Chiudi"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 162
-msgid "Welcome"
-msgstr "Benvenuto"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
-msgid "Unknown"
-msgstr "Sconosciuto"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-msgid "Kernel"
-msgstr "Nucleo"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
-msgid "Graphics"
-msgstr "Grafica"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-msgid "Desktop"
-msgstr "Desktop"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
-msgid "Architecture"
-msgstr "Architettura"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
-msgid "Packages"
-msgstr "Pacchetti"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-msgid "Display"
-msgstr "Visualizza"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-msgid "Welcome to your new system"
-msgstr "Benvenuto nel tuo nuovo sistema"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 msgid "Get Started"

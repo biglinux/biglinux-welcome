@@ -29,6 +29,10 @@ msgstr "アクセシビリティ"
 msgid "AppStore"
 msgstr "アプリストア"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+msgid "Ashy Terminal"
+msgstr "アシーターミナル"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
 msgid "Audio Converter"
 msgstr "オーディオコンバータ"
@@ -186,6 +190,10 @@ msgstr "デフォルトのブラウザーを設定します。"
 msgid "Telegram"
 msgstr "テレグラム"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
+msgid "Time Shift"
+msgstr "タイムシフト"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 msgid "Video Converter"
 msgstr "ビデオコンバーター"
@@ -214,32 +222,17 @@ msgstr "あなたの寄付はプロジェクトにとって非常に重要です
 msgid "Zen Browser"
 msgstr "ゼンブラウザ"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
-msgid "BigLinux Welcome"
-msgstr "BigLinux ようこそ"
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+msgid "Kernel"
+msgstr "カーネル"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+msgid "Desktop"
+msgstr "デスクトップ"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-msgid "Show on startup"
-msgstr "起動時に表示"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 226
-msgid "Back"
-msgstr "戻る"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 232
-msgid "Next"
-msgstr "次"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 186
-msgid "Close"
-msgstr "閉じる"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 162
-msgid "Welcome"
-msgstr "ようこそ"
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid "Display"
+msgstr "表示"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
@@ -247,33 +240,15 @@ msgstr "ようこそ"
 msgid "Unknown"
 msgstr "不明"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-msgid "Kernel"
-msgstr "カーネル"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
-msgid "Graphics"
-msgstr "グラフィックス"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-msgid "Desktop"
-msgstr "デスクトップ"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
-msgid "Architecture"
-msgstr "アーキテクチャ"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
-msgid "Packages"
-msgstr "パッケージ"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-msgid "Display"
-msgstr "表示"
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
 msgid "Welcome to your new system"
 msgstr "新しいシステムへようこそ"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+msgid "Show on startup"
+msgstr "起動時に表示"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 msgid "Get Started"

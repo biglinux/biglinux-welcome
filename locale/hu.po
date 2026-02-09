@@ -29,6 +29,10 @@ msgstr "Hozzáférhetőség"
 msgid "AppStore"
 msgstr "Alkalmazásbolt"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+msgid "Ashy Terminal"
+msgstr "Hamvas Terminál"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
 msgid "Audio Converter"
 msgstr "Hangátalakító"
@@ -187,6 +191,10 @@ msgstr "Állítsa be az alapértelmezett böngészőt."
 msgid "Telegram"
 msgstr "Telegram"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
+msgid "Time Shift"
+msgstr "Időeltolás"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 msgid "Video Converter"
 msgstr "Videókonverteráló"
@@ -215,30 +223,17 @@ msgstr "A támogatása nagyon fontos a projekt számára, és kövessen minket a
 msgid "Zen Browser"
 msgstr "Zen Böngésző"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
-msgid "BigLinux Welcome"
-msgstr "BigLinux Üdvözlet"
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+msgid "Kernel"
+msgstr "Kernel"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-msgid "Show on startup"
-msgstr "Indításkor megjelenítés"
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+msgid "Desktop"
+msgstr "Asztal"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 226
-msgid "Back"
-msgstr "Vissza"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 232
-msgid "Next"
-msgstr "Következő"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 186
-msgid "Close"
-msgstr "Bezárás"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 162
-msgid "Welcome"
-msgstr "Üdvözöljük"
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid "Display"
+msgstr "Kijelző"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
@@ -246,33 +241,13 @@ msgstr "Üdvözöljük"
 msgid "Unknown"
 msgstr "Ismeretlen"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-msgid "Kernel"
-msgstr "Kernel"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
-msgid "Graphics"
-msgstr "Grafika"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-msgid "Desktop"
-msgstr "Asztal"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
-msgid "Architecture"
-msgstr "Architektúra"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
-msgid "Packages"
-msgstr "Csomagok"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-msgid "Display"
-msgstr "Kijelző"
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
 msgid "Welcome to your new system"
 msgstr "Üdvözöljük az új rendszerében"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+msgid "Show on startup"
+msgstr "Indításkor megjelenítés"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 msgid "Get Started"

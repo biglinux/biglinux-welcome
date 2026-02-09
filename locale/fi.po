@@ -29,6 +29,10 @@ msgstr "Saavutettavuus"
 msgid "AppStore"
 msgstr "App Store"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+msgid "Ashy Terminal"
+msgstr "Harmaa Pääte"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
 msgid "Audio Converter"
 msgstr "Äänimuunnin"
@@ -187,6 +191,10 @@ msgstr "Aseta oletusselaimesi."
 msgid "Telegram"
 msgstr "Telegram"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
+msgid "Time Shift"
+msgstr "Aikasiirto"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 msgid "Video Converter"
 msgstr "Videomuunnin"
@@ -215,10 +223,27 @@ msgstr "Lahjoituksesi on erittäin tärkeä projektille ja seuraa meitä sosiaal
 msgid "Zen Browser"
 msgstr "Zen-selain"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 39
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 265
-msgid "BigLinux Welcome"
-msgstr "BigLinux Tervetuloa"
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+msgid "Kernel"
+msgstr "Ydin"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+msgid "Desktop"
+msgstr "Työpöytä"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+msgid "Display"
+msgstr "Näyttö"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
+msgid "Unknown"
+msgstr "Tuntematon"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+msgid "Welcome to your new system"
+msgstr "Tervetuloa uuteen järjestelmääsi"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
 # 
@@ -239,56 +264,6 @@ msgstr "BigLinux Tervetuloa"
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
 msgid "Show on startup"
 msgstr "Näytä käynnistyksessä"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 226
-msgid "Back"
-msgstr "Takaisin"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 232
-msgid "Next"
-msgstr "Seuraava"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 186
-msgid "Close"
-msgstr "Sulje"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 162
-msgid "Welcome"
-msgstr "Tervetuloa"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
-msgid "Unknown"
-msgstr "Tuntematon"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-msgid "Kernel"
-msgstr "Ydin"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
-msgid "Graphics"
-msgstr "Grafiikka"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-msgid "Desktop"
-msgstr "Työpöytä"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
-msgid "Architecture"
-msgstr "Arkkitehtuuri"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
-msgid "Packages"
-msgstr "Pakettit"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-msgid "Display"
-msgstr "Näyttö"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-msgid "Welcome to your new system"
-msgstr "Tervetuloa uuteen järjestelmääsi"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 msgid "Get Started"

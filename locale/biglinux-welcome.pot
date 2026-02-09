@@ -38,126 +38,131 @@ msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
-msgid   "Audio Converter"
+msgid   "Ashy Terminal"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
-msgid   "Big Store"
+msgid   "Audio Converter"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 17
-msgid   "BigLinux Info"
+msgid   "Big Store"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 18
-msgid   "BigLinux Settings"
+msgid   "BigLinux Info"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
-msgid   "Brave"
+msgid   "BigLinux Settings"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
-msgid   "Choose Your Avatar"
+msgid   "Brave"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 21
-msgid   "Choose your default browser"
+msgid   "Choose Your Avatar"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 22
-msgid   "Chrome"
+msgid   "Choose your default browser"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 23
-msgid   "Chromium"
+msgid   "Chrome"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 24
-msgid   "Configure voice"
+msgid   "Chromium"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 25
-msgid   "Control Center"
+msgid   "Configure voice"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
-msgid   "Discover some features"
+msgid   "Control Center"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 27
-msgid   "Display Settings"
+msgid   "Discover some features"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 28
-msgid   "Donate"
+msgid   "Display Settings"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
-msgid   "Donation and Social Networks"
+msgid   "Donate"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
-msgid   "Driver Installation and Hardware Information"
+msgid   "Donation and Social Networks"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 31
-msgid   "Driver Manager"
+msgid   "Driver Installation and Hardware Information"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 32
-msgid   "Edge"
+msgid   "Driver Manager"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 33
-msgid   "Falkon"
+msgid   "Edge"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 34
-msgid   "Firefox"
+msgid   "Falkon"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid   "Forum"
+msgid   "Firefox"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
-msgid   "Initial Settings"
+msgid   "Forum"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
-msgid   "Install or Remove Drivers and Firmwares easily."
+msgid   "Initial Settings"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
-msgid   "KDE Connect"
+msgid   "Install or Remove Drivers and Firmwares easily."
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 39
+msgid   "KDE Connect"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 msgid   "KDE Connect is an application that facilitates wireless "
         "communication and data transfer between devices on local networks. "
         "Available on the Google Play Store for Android and the Apple Store "
@@ -165,193 +170,143 @@ msgid   "KDE Connect is an application that facilitates wireless "
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
 msgid   "Kernel Manager"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
 msgid   "Language Packs"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
 msgid   "Librewolf"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
 msgid   "Network Info"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
 msgid   "Noise Reduction"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 46
 msgid   "OCR to PDF"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 46
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 47
 msgid   "Opera"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 47
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
 msgid   "Our platform is collaborative, join this evolution."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 49
 msgid   "PlayStore"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 49
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 msgid   "Printers"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 51
 msgid   "Session and Themes"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 51
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 52
 msgid   "Set your default browser."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 52
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
 msgid   "Telegram"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
-msgid   "Video Converter"
-msgstr  ""
-
-#
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-msgid   "Vivaldi"
+msgid   "Time Shift"
 msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 55
+msgid   "Video Converter"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 56
+msgid   "Vivaldi"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 57
 msgid   "We provide comprehensive settings for you to select in an extremely "
         "simple way."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 56
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 58
 msgid   "WebApps"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 57
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
 msgid   "YouTube"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 58
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 60
 msgid   "Your donation is very important for the project and follow us on "
         "social media."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 61
 msgid   "Zen Browser"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 40
-msgid   "BigLinux Welcome"
-msgstr  ""
-
-#
-# #-#-#-#-#  biglinux-welcome.pot (biglinux-welcome)  #-#-#-#-#
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 82
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 996
-msgid   "Show on startup"
-msgstr  ""
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 96
-msgid   "Back"
-msgstr  ""
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 103
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 195
-msgid   "Next"
-msgstr  ""
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 190
-msgid   "Close"
-msgstr  ""
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 220
-msgid   "Welcome"
-msgstr  ""
-
-#
-# #-#-#-#-#  biglinux-welcome.pot (biglinux-welcome)  #-#-#-#-#
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 468
-msgid   "Unknown"
-msgstr  ""
-
-#
-# #-#-#-#-#  biglinux-welcome.pot (biglinux-welcome)  #-#-#-#-#
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 438
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 439
 msgid   "Kernel"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 253
-msgid   "Graphics"
-msgstr  ""
-
-#
-# #-#-#-#-#  biglinux-welcome.pot (biglinux-welcome)  #-#-#-#-#
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 440
 msgid   "Desktop"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 263
-msgid   "Architecture"
-msgstr  ""
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 268
-msgid   "Packages"
-msgstr  ""
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 440
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 441
 msgid   "Display"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 789
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 469
+msgid   "Unknown"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 790
 msgid   "Welcome to your new system"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 1041
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 997
+msgid   "Show on startup"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 1042
 msgid   "Get Started"
 msgstr  ""
