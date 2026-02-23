@@ -2,11 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the biglinux-welcome package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 18:55-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -14,240 +15,364 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "Browser Install"
-msgstr "Instalace prohlížeče"
-msgid "Browser installed successfully!"
-msgstr "Prohlížeč byl úspěšně nainstalován!"
-msgid "An error occurred while install browser."
-msgstr "Při instalaci prohlížeče došlo k chybě."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
-msgid "Accessibility"
-msgstr "Přístupnost"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
-msgid "AppStore"
-msgstr "AppStore"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
-msgid "Ashy Terminal"
-msgstr "Popelavý terminál"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
-msgid "Audio Converter"
-msgstr "Audio převodník"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
-msgid "Big Store"
-msgstr "Velký obchod"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
-msgid "BigLinux Info"
-msgstr "BigLinux Info"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
-msgid "BigLinux Settings"
-msgstr "Nastavení BigLinux"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
-msgid "Brave"
-msgstr "Odvážný"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
-msgid "Choose Your Avatar"
-msgstr "Vyberte si svou avatara"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 17
-msgid "Choose your default browser"
-msgstr "Vyberte si svůj výchozí prohlížeč"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
-msgid "Chrome"
-msgstr "Chrome"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
-msgid "Chromium"
-msgstr "Chromium"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 18
-msgid "Configure voice"
-msgstr "Nastavit hlas"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
-msgid "Control Center"
-msgstr "Ovládací centrum"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
-msgid "Discover some features"
-msgstr "Objevte některé funkce"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 21
-msgid "Display Settings"
-msgstr "Nastavení zobrazení"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 22
-msgid "Donate"
-msgstr "Darovat"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 23
-msgid "Donation and Social Networks"
-msgstr "Darování a sociální sítě"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 24
-msgid "Driver Installation and Hardware Information"
-msgstr "Instalace ovladače a informace o hardwaru"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 25
-msgid "Driver Manager"
-msgstr "Správce ovladačů"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
-msgid "Edge"
-msgstr "Okrajový"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
-msgid "Falkon"
-msgstr "Falkon"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
-msgid "Firefox"
-msgstr "Firefox"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 27
-msgid "Forum"
-msgstr "Fórum"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
-msgid "Initial Settings"
-msgstr "Počáteční nastavení"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
-msgid "Install or Remove Drivers and Firmwares easily."
-msgstr "Snadno nainstalujte nebo odinstalujte ovladače a firmwary."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 31
-msgid "KDE Connect"
-msgstr "KDE Connect"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 32
-msgid ""
-"KDE Connect is an application that facilitates wireless communication and data transfer between "
-"devices on local networks. Available on the Google Play Store for Android and the Apple Store for "
-"iPhone."
-msgstr ""
-"KDE Connect je aplikace, která usnadňuje bezdrátovou komunikaci a přenos dat mezi zařízeními v "
-"místních sítích. K dispozici na Google Play Store pro Android a Apple Store pro iPhone."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-msgid "Kernel Manager"
-msgstr "Správce jádra"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 33
-msgid "Language Packs"
-msgstr "Jazykové balíčky"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
-msgid "Librewolf"
-msgstr "Librewolf"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-msgid "Network Info"
-msgstr "Informace o síti"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 34
-msgid "Noise Reduction"
-msgstr "Odstranění šumu"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid "OCR to PDF"
-msgstr "OCR do PDF"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
-msgid "Opera"
-msgstr "Opera"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
-msgid "Our platform is collaborative, join this evolution."
-msgstr "Naše platforma je spolupracující, připojte se k této evoluci."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
-msgid "PlayStore"
-msgstr "Obchod Play"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
-msgid "Printers"
-msgstr "Tiskárny"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-msgid "Session and Themes"
-msgstr "Relace a Témata"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-msgid "Set your default browser."
-msgstr "Nastavte svůj výchozí prohlížeč."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-msgid "Telegram"
-msgstr "Telegram"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-msgid "Time Shift"
-msgstr "Časový posun"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-msgid "Video Converter"
-msgstr "Video převodník"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
-msgid "Vivaldi"
-msgstr "Vivaldi"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
-msgid "We provide comprehensive settings for you to select in an extremely simple way."
-msgstr "Nabízíme komplexní nastavení, která si můžete vybrat velmi jednoduchým způsobem."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-msgid "WebApps"
-msgstr "Webové aplikace"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
-msgid "YouTube"
-msgstr "YouTube"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
-msgid "Your donation is very important for the project and follow us on social media."
-msgstr "Vaše darování je pro projekt velmi důležité a sledujte nás na sociálních médiích."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
-msgid "Zen Browser"
-msgstr "Zen Prohlížeč"
-# 
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+#: usr/share/biglinux/welcome/main.py:435
 msgid "Kernel"
-msgstr "Jádro"
-# 
+msgstr "Kernel"
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+#: usr/share/biglinux/welcome/main.py:436
 msgid "Desktop"
 msgstr "Desktop"
-# 
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+#: usr/share/biglinux/welcome/main.py:437
 msgid "Display"
-msgstr "Zobrazit"
-# 
+msgstr "Displej"
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
+#: usr/share/biglinux/welcome/main.py:465
 msgid "Unknown"
 msgstr "Neznámý"
-# 
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+#: usr/share/biglinux/welcome/main.py:785
 msgid "Welcome to your new system"
 msgstr "Vítejte ve svém novém systému"
-# 
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+#: usr/share/biglinux/welcome/main.py:997
 msgid "Show on startup"
 msgstr "Zobrazit při spuštění"
-# 
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+#: usr/share/biglinux/welcome/main.py:1042
 msgid "Get Started"
 msgstr "Začít"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+#: usr/share/biglinux/welcome/translatable_strings.py:13
+msgid "Accessibility"
+msgstr "Přístupnost"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+#: usr/share/biglinux/welcome/translatable_strings.py:14
+msgid "AppStore"
+msgstr "App Store"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+#: usr/share/biglinux/welcome/translatable_strings.py:15
+msgid "Ashy Terminal"
+msgstr "Ashy Terminal"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+#: usr/share/biglinux/welcome/translatable_strings.py:16
+msgid "Audio Converter"
+msgstr "Audio převodník"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+#: usr/share/biglinux/welcome/translatable_strings.py:17
+msgid "Big Store"
+msgstr "Big Store"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+#: usr/share/biglinux/welcome/translatable_strings.py:18
+msgid "BigLinux Info"
+msgstr "BigLinux Info"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+#: usr/share/biglinux/welcome/translatable_strings.py:19
+msgid "BigLinux Settings"
+msgstr "Nastavení BigLinux"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+#: usr/share/biglinux/welcome/translatable_strings.py:20
+msgid "Brave"
+msgstr "Brave"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+#: usr/share/biglinux/welcome/translatable_strings.py:21
+msgid "Choose Your Avatar"
+msgstr "Vyberte si svou avatara"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 17
+#: usr/share/biglinux/welcome/translatable_strings.py:22
+msgid "Choose your default browser"
+msgstr "Vyberte si svůj výchozí prohlížeč"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+#: usr/share/biglinux/welcome/translatable_strings.py:23
+msgid "Chrome"
+msgstr "Chrome"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+#: usr/share/biglinux/welcome/translatable_strings.py:24
+msgid "Chromium"
+msgstr "Chromium"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 18
+#: usr/share/biglinux/welcome/translatable_strings.py:25
+msgid "Configure voice"
+msgstr "Nastavit hlas"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+#: usr/share/biglinux/welcome/translatable_strings.py:26
+msgid "Control Center"
+msgstr "Ovládací centrum"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+#: usr/share/biglinux/welcome/translatable_strings.py:27
+msgid "Discover some features"
+msgstr "Objevte některé funkce"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 21
+#: usr/share/biglinux/welcome/translatable_strings.py:28
+msgid "Display Settings"
+msgstr "Nastavení zobrazení"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 22
+#: usr/share/biglinux/welcome/translatable_strings.py:29
+msgid "Donate"
+msgstr "Darovat"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 23
+#: usr/share/biglinux/welcome/translatable_strings.py:30
+msgid "Donation and Social Networks"
+msgstr "Darování a sociální sítě"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 24
+#: usr/share/biglinux/welcome/translatable_strings.py:31
+msgid "Driver Installation and Hardware Information"
+msgstr "Instalace ovladače a informace o hardwaru"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 25
+#: usr/share/biglinux/welcome/translatable_strings.py:32
+msgid "Driver Manager"
+msgstr "Správce ovladačů"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
+#: usr/share/biglinux/welcome/translatable_strings.py:33
+msgid "Edge"
+msgstr "Edge"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
+#: usr/share/biglinux/welcome/translatable_strings.py:34
+msgid "Falkon"
+msgstr "Falkon"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
+#: usr/share/biglinux/welcome/translatable_strings.py:35
+msgid "Firefox"
+msgstr "Firefox"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 27
+#: usr/share/biglinux/welcome/translatable_strings.py:36
+msgid "Forum"
+msgstr "Fórum"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
+#: usr/share/biglinux/welcome/translatable_strings.py:37
+msgid "Initial Settings"
+msgstr "Počáteční nastavení"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
+#: usr/share/biglinux/welcome/translatable_strings.py:38
+msgid "Install or Remove Drivers and Firmwares easily."
+msgstr "Snadno nainstalujte nebo odinstalujte ovladače a firmwary."
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 31
+#: usr/share/biglinux/welcome/translatable_strings.py:39
+msgid "KDE Connect"
+msgstr "KDE Connect"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 32
+#: usr/share/biglinux/welcome/translatable_strings.py:40
+msgid ""
+"KDE Connect is an application that facilitates wireless communication and "
+"data transfer between devices on local networks. Available on the Google "
+"Play Store for Android and the Apple Store for iPhone."
+msgstr ""
+"KDE Connect je aplikace, která usnadňuje bezdrátovou komunikaci a přenos dat "
+"mezi zařízeními v místních sítích. K dispozici na Google Play Store pro "
+"Android a Apple Store pro iPhone."
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:41
+msgid "Kernel Manager"
+msgstr "Správce jádra"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 33
+#: usr/share/biglinux/welcome/translatable_strings.py:42
+msgid "Language Packs"
+msgstr "Jazykové balíčky"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:43
+msgid "Librewolf"
+msgstr "Librewolf"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
+#: usr/share/biglinux/welcome/translatable_strings.py:44
+msgid "Network Info"
+msgstr "Informace o síti"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 34
+#: usr/share/biglinux/welcome/translatable_strings.py:45
+msgid "Noise Reduction"
+msgstr "Odstranění šumu"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
+#: usr/share/biglinux/welcome/translatable_strings.py:46
+msgid "OCR to PDF"
+msgstr "OCR do PDF"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
+#: usr/share/biglinux/welcome/translatable_strings.py:47
+msgid "Opera"
+msgstr "Opera"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
+#: usr/share/biglinux/welcome/translatable_strings.py:48
+msgid "Our platform is collaborative, join this evolution."
+msgstr "Naše platforma je spolupracující, připojte se k této evoluci."
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
+#: usr/share/biglinux/welcome/translatable_strings.py:49
+msgid "PlayStore"
+msgstr "Play Store"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:50
+msgid "Printers"
+msgstr "Tiskárny"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:51
+msgid "Session and Themes"
+msgstr "Relace a Témata"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:52
+msgid "Set your default browser."
+msgstr "Nastavte svůj výchozí prohlížeč."
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:53
+msgid "Telegram"
+msgstr "Telegram"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
+#: usr/share/biglinux/welcome/translatable_strings.py:54
+msgid "Time Shift"
+msgstr "Timeshift"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:55
+msgid "Video Converter"
+msgstr "Video převodník"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+#: usr/share/biglinux/welcome/translatable_strings.py:56
+msgid "Vivaldi"
+msgstr "Vivaldi"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
+#: usr/share/biglinux/welcome/translatable_strings.py:57
+msgid ""
+"We provide comprehensive settings for you to select in an extremely simple "
+"way."
+msgstr ""
+"Nabízíme komplexní nastavení, která si můžete vybrat velmi jednoduchým "
+"způsobem."
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
+#: usr/share/biglinux/welcome/translatable_strings.py:58
+msgid "WebApps"
+msgstr "Webové aplikace"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
+#: usr/share/biglinux/welcome/translatable_strings.py:59
+msgid "YouTube"
+msgstr "YouTube"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
+#: usr/share/biglinux/welcome/translatable_strings.py:60
+msgid ""
+"Your donation is very important for the project and follow us on social "
+"media."
+msgstr ""
+"Vaše darování je pro projekt velmi důležité a sledujte nás na sociálních "
+"médiích."
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
+#: usr/share/biglinux/welcome/translatable_strings.py:61
+msgid "Zen Browser"
+msgstr "Zen Browser"
+
+#~ msgid "Browser Install"
+#~ msgstr "Instalace prohlížeče"
+
+#~ msgid "Browser installed successfully!"
+#~ msgstr "Prohlížeč byl úspěšně nainstalován!"
+
+#~ msgid "An error occurred while install browser."
+#~ msgstr "Při instalaci prohlížeče došlo k chybě."
