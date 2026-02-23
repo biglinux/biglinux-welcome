@@ -1,0 +1,14 @@
+# Post-install: globally enable the welcome service for all users
+post_install() {
+    systemctl --global enable biglinux-welcome.service 2>/dev/null || true
+}
+
+# Post-upgrade: ensure the service is still globally enabled
+post_upgrade() {
+    systemctl --global enable biglinux-welcome.service 2>/dev/null || true
+}
+
+# Pre-remove: globally disable the welcome service before uninstalling
+pre_remove() {
+    systemctl --global disable biglinux-welcome.service 2>/dev/null || true
+}

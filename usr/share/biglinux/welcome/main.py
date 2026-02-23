@@ -16,7 +16,7 @@ import math
 import os
 import platform
 import shlex
-import shutil
+
 import subprocess
 import threading
 
@@ -293,11 +293,6 @@ headerbar.flat {
 .bottom-bar { padding: 14px 28px 22px 28px; }
 .startup-check { font-size: 13px; opacity: 0.5; font-weight: 500; }
 
-/* Placeholder classes for animations */
-.animate-1 { }
-.animate-2 { }
-.animate-3 { }
-.animate-4 { }
 """
 
 
@@ -357,13 +352,15 @@ class AnimatedLogo(Gtk.DrawingArea):
         # Create 8 particles orbiting
         for i in range(8):
             angle = (i / 8) * 2 * math.pi
-            self.particles.append({
-                "angle": angle,
-                "speed": 0.3 + (i % 3) * 0.1,  # Varied speeds
-                "radius": 75 + (i % 2) * 12,  # Varied orbit radii
-                "size": 3 + (i % 3),
-                "alpha": 0.3 + (i % 3) * 0.15,
-            })
+            self.particles.append(
+                {
+                    "angle": angle,
+                    "speed": 0.3 + (i % 3) * 0.1,  # Varied speeds
+                    "radius": 75 + (i % 2) * 12,  # Varied orbit radii
+                    "size": 3 + (i % 3),
+                    "alpha": 0.3 + (i % 3) * 0.15,
+                }
+            )
 
         self.set_size_request(185, 185)
         self.set_draw_func(self._draw)
@@ -389,13 +386,12 @@ class AnimatedLogo(Gtk.DrawingArea):
         """Draw particles with Cairo."""
         cx, cy = width / 2, height / 2
 
-        # Get accent color from Adwaita
-        style = self.get_style_context()
-        color = style.lookup_color("accent_bg_color")
-        if color[0]:
-            r, g, b = color[1].red, color[1].green, color[1].blue
-        else:
-            r, g, b = 0.33, 0.56, 0.85  # Blue fallback
+        # Get accent color from Adwaita style manager
+        r, g, b = 0.33, 0.56, 0.85  # Blue fallback
+        accent = Adw.StyleManager.get_default().get_accent_color()
+        if accent is not None:
+            rgba = accent.to_rgba()
+            r, g, b = rgba.red, rgba.green, rgba.blue
 
         # Draw subtle glow ring (breathing effect)
         glow_alpha = 0.08 + 0.04 * math.sin(self.time * 1.5)
@@ -783,13 +779,11 @@ class WelcomeWindow(Adw.ApplicationWindow):
         distro = os_info.get("PRETTY_NAME", "BigLinux")
         title = Gtk.Label(label=distro)
         title.add_css_class("hero-title")
-        title.add_css_class("animate-2")
         main.append(title)
 
         # Subtitle
         subtitle = Gtk.Label(label=_("Welcome to your new system"))
         subtitle.add_css_class("hero-subtitle")
-        subtitle.add_css_class("animate-2")
         main.append(subtitle)
 
         # Version badge
@@ -797,7 +791,6 @@ class WelcomeWindow(Adw.ApplicationWindow):
         if version:
             badge = Gtk.Label(label=f"v{version}")
             badge.add_css_class("hero-version")
-            badge.add_css_class("animate-3")
             main.append(badge)
 
         # Spacer
@@ -807,7 +800,6 @@ class WelcomeWindow(Adw.ApplicationWindow):
 
         # Info card
         info = InfoCard()
-        info.add_css_class("animate-4")
         main.append(info)
 
         return scroll
@@ -924,7 +916,7 @@ class WelcomeWindow(Adw.ApplicationWindow):
             cmd = [script_path] + args
             result = subprocess.run(cmd, capture_output=True, text=True, check=True)
             return result.stdout.strip()
-        except (subprocess.CalledProcessError, FileNotFoundError, OSError) as e:
+        except (subprocess.CalledProcessError, OSError) as e:
             print(f"Error running browser script {args}: {e}")
             return ""
 
@@ -946,14 +938,18 @@ class WelcomeWindow(Adw.ApplicationWindow):
 
             card.set_installed(is_installed)
             card.detected_desktop = installed_desktop
-            card.set_selected(is_installed and installed_desktop == current_browser_default)
+            card.set_selected(
+                is_installed and installed_desktop == current_browser_default
+            )
 
         return GLib.SOURCE_REMOVE
 
     def _on_browser_select(self, selected_card: BrowserCard) -> None:
         """Handle browser selection."""
         # Start the action in a background thread to keep UI responsive
-        thread = threading.Thread(target=self._perform_browser_action, args=(selected_card,))
+        thread = threading.Thread(
+            target=self._perform_browser_action, args=(selected_card,)
+        )
         thread.daemon = True
         thread.start()
 
@@ -964,7 +960,9 @@ class WelcomeWindow(Adw.ApplicationWindow):
 
         try:
             # Check if it's already installed
-            is_installed = any(os.path.exists(v.get("check", "")) for v in browser.get("variants", []))
+            is_installed = any(
+                os.path.exists(v.get("check", "")) for v in browser.get("variants", [])
+            )
 
             if not is_installed:
                 # Run the install script (via pkexec in browser.sh)
@@ -981,7 +979,9 @@ class WelcomeWindow(Adw.ApplicationWindow):
             # Set as default browser if we have a desktop file
             if desktop_to_set:
                 self._run_browser_script(["setBrowser", desktop_to_set])
-                print(f"Set default browser to: {browser.get('label')} ({desktop_to_set})")
+                print(
+                    f"Set default browser to: {browser.get('label')} ({desktop_to_set})"
+                )
 
         finally:
             GLib.idle_add(selected_card.set_loading, False)
@@ -1075,72 +1075,25 @@ class WelcomeWindow(Adw.ApplicationWindow):
         self._update_nav()
 
     def _is_startup_enabled(self) -> bool:
-        """Check if autostart is enabled."""
-        autostart_file = os.path.expanduser("~/.config/autostart/org.biglinux.welcome.desktop")
-        if not os.path.exists(autostart_file):
-            return True
-
+        """Check if autostart is enabled via systemd user service."""
         try:
-            with open(autostart_file, "r", encoding="utf-8") as f:
-                content = f.read()
-                return "Hidden=true" not in content
+            result = subprocess.run(
+                ["systemctl", "--user", "is-enabled", "biglinux-welcome.service"],
+                capture_output=True,
+                text=True,
+            )
+            return result.stdout.strip() == "enabled"
         except OSError:
-            return True
+            return False
 
     def _on_startup_toggled(self, btn: Gtk.CheckButton) -> None:
-        """Toggle autostart."""
-        active = btn.get_active()
-        autostart_dir = os.path.expanduser("~/.config/autostart")
-        autostart_file = os.path.join(autostart_dir, "org.biglinux.welcome.desktop")
-        system_file = "/etc/xdg/autostart/org.biglinux.welcome.desktop"
-        if not os.path.exists(system_file):
-            # Fallback for development/non-standard install
-            system_file = os.path.abspath(os.path.join(APP_PATH, "../../../applications/org.biglinux.welcome.desktop"))
-
+        """Toggle autostart via systemd user service."""
+        action = "enable" if btn.get_active() else "disable"
         try:
-            if not os.path.exists(autostart_dir):
-                os.makedirs(autostart_dir, exist_ok=True)
-
-            if active:
-                if os.path.exists(autostart_file):
-                    # Remove Hidden=true if it exists
-                    with open(autostart_file, "r", encoding="utf-8") as f:
-                        lines = f.readlines()
-                    with open(autostart_file, "w", encoding="utf-8") as f:
-                        for line in lines:
-                            if not line.startswith("Hidden="):
-                                f.write(line)
-                # If file doesn't exist, we don't need to do anything because the default
-                # behavior should be to run the system-wide desktop file if no local one exists
-                # BUT, since we want to be sure it's in the autostart dir for KDE to pick it up
-                # if it's not already there by some other means.
-                # Actually, standard autostart looks in /etc/xdg/autostart too.
-                # If we want to GUARANTEE it shows up in the "Autostart" settings of KDE,
-                # having it in ~/.config/autostart is best.
-                else:
-                    if os.path.exists(system_file):
-                        shutil.copy2(system_file, autostart_file)
-            else:
-                # Disable startup
-                if not os.path.exists(autostart_file):
-                    if os.path.exists(system_file):
-                        shutil.copy2(system_file, autostart_file)
-
-                # Ensure Hidden=true is present
-                if os.path.exists(autostart_file):
-                    with open(autostart_file, "r", encoding="utf-8") as f:
-                        lines = f.readlines()
-
-                    hidden_exists = False
-                    with open(autostart_file, "w", encoding="utf-8") as f:
-                        for line in lines:
-                            if line.startswith("Hidden="):
-                                f.write("Hidden=true\n")
-                                hidden_exists = True
-                            else:
-                                f.write(line)
-                        if not hidden_exists:
-                            f.write("Hidden=true\n")
+            subprocess.run(
+                ["systemctl", "--user", action, "biglinux-welcome.service"],
+                capture_output=True,
+            )
         except OSError as e:
             print(f"Error toggling autostart: {e}")
 

@@ -1,9 +1,2 @@
 #!/bin/bash
-
-EXEC_PATH="/usr/share/biglinux/welcome/main.py"
-
-if which python3 >/dev/null 2>&1; then
-  exec -a org.biglinux.welcome python3 "$EXEC_PATH"
-else
-  exec -a org.biglinux.welcome python "$EXEC_PATH"
-fi
+exec -a biglinux-welcome python3 /usr/share/biglinux/welcome/main.py "$@"

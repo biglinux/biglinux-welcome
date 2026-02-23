@@ -1,0 +1,14 @@
+[Unit]
+Description=BigLinux Welcome Screen
+After=graphical-session.target
+PartOf=graphical-session.target
+# Do not start in live session
+ConditionPathIsDirectory=!/run/miso/sfs/livefs
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/biglinux-welcome
+Restart=no
+
+[Install]
+WantedBy=graphical-session.target
