@@ -286,27 +286,27 @@ msgid "Zen Browser"
 msgstr "Zen Browser"
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 439
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 435
 msgid "Kernel"
 msgstr "Kernel"
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 440
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 436
 msgid "Desktop"
 msgstr "Desktop"
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 441
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 437
 msgid "Display"
 msgstr "Display"
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 469
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 465
 msgid "Unknown"
 msgstr "Unknown"
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 790
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 785
 msgid "Welcome to your new system"
 msgstr "Welcome to your new system"
 
