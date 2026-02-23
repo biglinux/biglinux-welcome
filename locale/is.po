@@ -2,12 +2,11 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the biglinux-welcome package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 18:55-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -15,380 +14,314 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
-#
+msgid "Browser Install"
+msgstr "Vafra Uppsetning"
+msgid "Installing Browser, Please wait..."
+msgstr "Installing Browser, Vinsamlegast bíða..."
+msgid "Browser installed successfully!"
+msgstr "Vafri er settur upp með árangri!"
+msgid "An error occurred while install browser."
+msgstr "Villa kom upp við að setja vafra."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+#: usr/share/biglinux/welcome/translatable_strings.py:13
+msgid "Accessibility"
+msgstr "Aðgengi"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+#: usr/share/biglinux/welcome/translatable_strings.py:14
+msgid "AppStore"
+msgstr "App Store"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+#: usr/share/biglinux/welcome/translatable_strings.py:15
+msgid "Ashy Terminal"
+msgstr "Ashy Terminal"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+#: usr/share/biglinux/welcome/translatable_strings.py:16
+msgid "Audio Converter"
+msgstr "Hljóðbreytir"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+#: usr/share/biglinux/welcome/translatable_strings.py:17
+msgid "Big Store"
+msgstr "Big Store"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+#: usr/share/biglinux/welcome/translatable_strings.py:18
+msgid "BigLinux Info"
+msgstr "BigLinux upplýsingar"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+#: usr/share/biglinux/welcome/translatable_strings.py:19
+msgid "BigLinux Settings"
+msgstr "BigLinux Stillingar"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+#: usr/share/biglinux/welcome/translatable_strings.py:20
+msgid "Brave"
+msgstr "Brave"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+#: usr/share/biglinux/welcome/translatable_strings.py:21
+msgid "Choose Your Avatar"
+msgstr "Veldu þinn persónu."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 17
+#: usr/share/biglinux/welcome/translatable_strings.py:22
+msgid "Choose your default browser"
+msgstr "Veldu vafra þinn sem sjálfgefinn."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+#: usr/share/biglinux/welcome/translatable_strings.py:23
+msgid "Chrome"
+msgstr "Chrome"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+#: usr/share/biglinux/welcome/translatable_strings.py:24
+msgid "Chromium"
+msgstr "Chromium"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 18
+#: usr/share/biglinux/welcome/translatable_strings.py:25
+msgid "Configure voice"
+msgstr "Stilltu radd."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+#: usr/share/biglinux/welcome/translatable_strings.py:26
+msgid "Control Center"
+msgstr "Stýri miðstöð"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+#: usr/share/biglinux/welcome/translatable_strings.py:27
+msgid "Discover some features"
+msgstr "Uppgötvaðu nokkrar eiginleika"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 21
+#: usr/share/biglinux/welcome/translatable_strings.py:28
+msgid "Display Settings"
+msgstr "Sýningarstillingar"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 22
+#: usr/share/biglinux/welcome/translatable_strings.py:29
+msgid "Donate"
+msgstr "Donera"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 23
+#: usr/share/biglinux/welcome/translatable_strings.py:30
+msgid "Donation and Social Networks"
+msgstr "Donations og félagsnet."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 24
+#: usr/share/biglinux/welcome/translatable_strings.py:31
+msgid "Driver Installation and Hardware Information"
+msgstr "Þjónustuforritsuppsetning og vélbúnaðarupplýsingar"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 25
+#: usr/share/biglinux/welcome/translatable_strings.py:32
+msgid "Driver Manager"
+msgstr "Ökuskýfirlit"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
+#: usr/share/biglinux/welcome/translatable_strings.py:33
+msgid "Edge"
+msgstr "Edge"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
+#: usr/share/biglinux/welcome/translatable_strings.py:34
+msgid "Falkon"
+msgstr "Falkon"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
+#: usr/share/biglinux/welcome/translatable_strings.py:35
+msgid "Firefox"
+msgstr "Firefox"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 27
+#: usr/share/biglinux/welcome/translatable_strings.py:36
+msgid "Forum"
+msgstr "Vefgáttur"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
+#: usr/share/biglinux/welcome/translatable_strings.py:37
+msgid "Initial Settings"
+msgstr "Upphafsstillingar"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
+#: usr/share/biglinux/welcome/translatable_strings.py:38
+msgid "Install or Remove Drivers and Firmwares easily."
+msgstr "Settu eða fjarlægðu drif og fastbúnað auðveldlega."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 31
+#: usr/share/biglinux/welcome/translatable_strings.py:39
+msgid "KDE Connect"
+msgstr "KDE Connect"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 32
+#: usr/share/biglinux/welcome/translatable_strings.py:40
+msgid ""
+"KDE Connect is an application that facilitates wireless communication and data transfer between "
+"devices on local networks. Available on the Google Play Store for Android and the Apple Store for "
+"iPhone."
+msgstr ""
+"KDE Connect er forrit sem auðveldar þráðlausa samskipti og gagnaflutning milli tækja á staðnetum. "
+"Fáanlegt á Google Play Store fyrir Android og Apple Store fyrir iPhone."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:41
+msgid "Kernel Manager"
+msgstr "Kjarna Stjóri"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 33
+#: usr/share/biglinux/welcome/translatable_strings.py:42
+msgid "Language Packs"
+msgstr "Málapakkar"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:43
+msgid "Librewolf"
+msgstr "Librewolf"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
+#: usr/share/biglinux/welcome/translatable_strings.py:44
+msgid "Network Info"
+msgstr "Netvangs upplýsingar"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 34
+#: usr/share/biglinux/welcome/translatable_strings.py:45
+msgid "Noise Reduction"
+msgstr "Hljóðdrægni"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
+#: usr/share/biglinux/welcome/translatable_strings.py:46
+msgid "OCR to PDF"
+msgstr "OCR í PDF"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
+#: usr/share/biglinux/welcome/translatable_strings.py:47
+msgid "Opera"
+msgstr "Opera"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
+#: usr/share/biglinux/welcome/translatable_strings.py:48
+msgid "Our platform is collaborative, join this evolution."
+msgstr "Vettvangurinn okkar er samvinnuþróun, taktu þátt í þessari þróun."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
+#: usr/share/biglinux/welcome/translatable_strings.py:49
+msgid "PlayStore"
+msgstr "Play Store"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:50
+msgid "Printers"
+msgstr "Prentarar"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:51
+msgid "Session and Themes"
+msgstr "Session og Þemu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:52
+msgid "Set your default browser."
+msgstr "Stilltuðu vafra sem sjálfgefinn."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:53
+msgid "Telegram"
+msgstr "Telegram"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
+#: usr/share/biglinux/welcome/translatable_strings.py:54
+msgid "Time Shift"
+msgstr "Timeshift"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:55
+msgid "Video Converter"
+msgstr "Vefniverandi"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+#: usr/share/biglinux/welcome/translatable_strings.py:56
+msgid "Vivaldi"
+msgstr "Vivaldi"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
+#: usr/share/biglinux/welcome/translatable_strings.py:57
+msgid "We provide comprehensive settings for you to select in an extremely simple way."
+msgstr "Við bjóðum upp á heildstæðar stillingar sem þú getur valið á mjög einfaldan hátt."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
+#: usr/share/biglinux/welcome/translatable_strings.py:58
+msgid "WebApps"
+msgstr "Vefforrit"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
+#: usr/share/biglinux/welcome/translatable_strings.py:59
+msgid "YouTube"
+msgstr "YouTube"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
+#: usr/share/biglinux/welcome/translatable_strings.py:60
+msgid "Your donation is very important for the project and follow us on social media."
+msgstr "Þín framlög eru mjög mikilvæg fyrir verkefnið og fylgdu okkur á samfélagsmiðlum."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
+#: usr/share/biglinux/welcome/translatable_strings.py:61
+msgid "Zen Browser"
+msgstr "Zen Browser"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
 #: usr/share/biglinux/welcome/main.py:435
 msgid "Kernel"
 msgstr "Kernel"
-
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
 #: usr/share/biglinux/welcome/main.py:436
 msgid "Desktop"
 msgstr "Skráborð"
-
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
 #: usr/share/biglinux/welcome/main.py:437
 msgid "Display"
 msgstr "Skjár"
-
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
 #: usr/share/biglinux/welcome/main.py:465
 msgid "Unknown"
 msgstr "Óþekkt"
-
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
 #: usr/share/biglinux/welcome/main.py:785
 msgid "Welcome to your new system"
 msgstr "Velkomin í nýja kerfið þitt"
-
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
 #: usr/share/biglinux/welcome/main.py:997
 msgid "Show on startup"
 msgstr "Sýna við upphaf"
-
-#
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 #: usr/share/biglinux/welcome/main.py:1042
 msgid "Get Started"
 msgstr "Byrjaðu"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
-#: usr/share/biglinux/welcome/translatable_strings.py:13
-msgid "Accessibility"
-msgstr "Aðgengi"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
-#: usr/share/biglinux/welcome/translatable_strings.py:14
-msgid "AppStore"
-msgstr "App Store"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
-#: usr/share/biglinux/welcome/translatable_strings.py:15
-msgid "Ashy Terminal"
-msgstr "Ashy Terminal"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
-#: usr/share/biglinux/welcome/translatable_strings.py:16
-msgid "Audio Converter"
-msgstr "Hljóðbreytir"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
-#: usr/share/biglinux/welcome/translatable_strings.py:17
-msgid "Big Store"
-msgstr "Big Store"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
-#: usr/share/biglinux/welcome/translatable_strings.py:18
-msgid "BigLinux Info"
-msgstr "BigLinux upplýsingar"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:19
-msgid "BigLinux Settings"
-msgstr "BigLinux Stillingar"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:20
-msgid "Brave"
-msgstr "Brave"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:21
-msgid "Choose Your Avatar"
-msgstr "Veldu þinn persónu."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 17
-#: usr/share/biglinux/welcome/translatable_strings.py:22
-msgid "Choose your default browser"
-msgstr "Veldu vafra þinn sem sjálfgefinn."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
-#: usr/share/biglinux/welcome/translatable_strings.py:23
-msgid "Chrome"
-msgstr "Chrome"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
-#: usr/share/biglinux/welcome/translatable_strings.py:24
-msgid "Chromium"
-msgstr "Chromium"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 18
-#: usr/share/biglinux/welcome/translatable_strings.py:25
-msgid "Configure voice"
-msgstr "Stilltu radd."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
-#: usr/share/biglinux/welcome/translatable_strings.py:26
-msgid "Control Center"
-msgstr "Stýri miðstöð"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
-#: usr/share/biglinux/welcome/translatable_strings.py:27
-msgid "Discover some features"
-msgstr "Uppgötvaðu nokkrar eiginleika"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 21
-#: usr/share/biglinux/welcome/translatable_strings.py:28
-msgid "Display Settings"
-msgstr "Sýningarstillingar"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 22
-#: usr/share/biglinux/welcome/translatable_strings.py:29
-msgid "Donate"
-msgstr "Donera"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 23
-#: usr/share/biglinux/welcome/translatable_strings.py:30
-msgid "Donation and Social Networks"
-msgstr "Donations og félagsnet."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 24
-#: usr/share/biglinux/welcome/translatable_strings.py:31
-msgid "Driver Installation and Hardware Information"
-msgstr "Þjónustuforritsuppsetning og vélbúnaðarupplýsingar"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 25
-#: usr/share/biglinux/welcome/translatable_strings.py:32
-msgid "Driver Manager"
-msgstr "Ökuskýfirlit"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:33
-msgid "Edge"
-msgstr "Edge"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
-#: usr/share/biglinux/welcome/translatable_strings.py:34
-msgid "Falkon"
-msgstr "Falkon"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
-#: usr/share/biglinux/welcome/translatable_strings.py:35
-msgid "Firefox"
-msgstr "Firefox"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 27
-#: usr/share/biglinux/welcome/translatable_strings.py:36
-msgid "Forum"
-msgstr "Vefgáttur"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:37
-msgid "Initial Settings"
-msgstr "Upphafsstillingar"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
-#: usr/share/biglinux/welcome/translatable_strings.py:38
-msgid "Install or Remove Drivers and Firmwares easily."
-msgstr "Settu eða fjarlægðu drif og fastbúnað auðveldlega."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 31
-#: usr/share/biglinux/welcome/translatable_strings.py:39
-msgid "KDE Connect"
-msgstr "KDE Connect"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 32
-#: usr/share/biglinux/welcome/translatable_strings.py:40
-msgid ""
-"KDE Connect is an application that facilitates wireless communication and "
-"data transfer between devices on local networks. Available on the Google "
-"Play Store for Android and the Apple Store for iPhone."
-msgstr ""
-"KDE Connect er forrit sem auðveldar þráðlausa samskipti og gagnaflutning "
-"milli tækja á staðnetum. Fáanlegt á Google Play Store fyrir Android og Apple "
-"Store fyrir iPhone."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:41
-msgid "Kernel Manager"
-msgstr "Kjarna Stjóri"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 33
-#: usr/share/biglinux/welcome/translatable_strings.py:42
-msgid "Language Packs"
-msgstr "Málapakkar"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:43
-msgid "Librewolf"
-msgstr "Librewolf"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:44
-msgid "Network Info"
-msgstr "Netvangs upplýsingar"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 34
-#: usr/share/biglinux/welcome/translatable_strings.py:45
-msgid "Noise Reduction"
-msgstr "Hljóðdrægni"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-#: usr/share/biglinux/welcome/translatable_strings.py:46
-msgid "OCR to PDF"
-msgstr "OCR í PDF"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
-#: usr/share/biglinux/welcome/translatable_strings.py:47
-msgid "Opera"
-msgstr "Opera"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
-#: usr/share/biglinux/welcome/translatable_strings.py:48
-msgid "Our platform is collaborative, join this evolution."
-msgstr "Vettvangurinn okkar er samvinnuþróun, taktu þátt í þessari þróun."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
-#: usr/share/biglinux/welcome/translatable_strings.py:49
-msgid "PlayStore"
-msgstr "Play Store"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:50
-msgid "Printers"
-msgstr "Prentarar"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:51
-msgid "Session and Themes"
-msgstr "Session og Þemu"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:52
-msgid "Set your default browser."
-msgstr "Stilltuðu vafra sem sjálfgefinn."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:53
-msgid "Telegram"
-msgstr "Telegram"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-#: usr/share/biglinux/welcome/translatable_strings.py:54
-msgid "Time Shift"
-msgstr "Timeshift"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:55
-msgid "Video Converter"
-msgstr "Vefniverandi"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
-#: usr/share/biglinux/welcome/translatable_strings.py:56
-msgid "Vivaldi"
-msgstr "Vivaldi"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
-#: usr/share/biglinux/welcome/translatable_strings.py:57
-msgid ""
-"We provide comprehensive settings for you to select in an extremely simple "
-"way."
-msgstr ""
-"Við bjóðum upp á heildstæðar stillingar sem þú getur valið á mjög einfaldan "
-"hátt."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:58
-msgid "WebApps"
-msgstr "Vefforrit"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
-#: usr/share/biglinux/welcome/translatable_strings.py:59
-msgid "YouTube"
-msgstr "YouTube"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
-#: usr/share/biglinux/welcome/translatable_strings.py:60
-msgid ""
-"Your donation is very important for the project and follow us on social "
-"media."
-msgstr ""
-"Þín framlög eru mjög mikilvæg fyrir verkefnið og fylgdu okkur á "
-"samfélagsmiðlum."
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
-#: usr/share/biglinux/welcome/translatable_strings.py:61
-msgid "Zen Browser"
-msgstr "Zen Browser"
-
-#~ msgid "Browser Install"
-#~ msgstr "Vafriðara Uppsetning"
-
-#~ msgid "Browser installed successfully!"
-#~ msgstr "Vafri er vel sett upp!"
-
-#~ msgid "An error occurred while install browser."
-#~ msgstr "Villa kom upp við að setja vafra."
