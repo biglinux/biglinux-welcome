@@ -14,14 +14,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "Browser Install"
-msgstr "Instalacija preglednika"
-msgid "Installing Browser, Please wait..."
-msgstr "Instaliranje preglednika, molimo pričekajte..."
-msgid "Browser installed successfully!"
-msgstr "Preglednik je uspješno instaliran!"
-msgid "An error occurred while install browser."
-msgstr "Došlo je do pogreške prilikom instalacije preglednika."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
@@ -288,22 +280,177 @@ msgstr "Radna površina"
 msgid "Display"
 msgstr "Zaslon"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
-#: usr/share/biglinux/welcome/main.py:465
-msgid "Unknown"
-msgstr "Nepoznato"
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#, python-format
+msgid "Could not open %s. It may not be installed."
+msgstr "Nije moguće otvoriti %s. Možda nije instaliran."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+msgid "Could not open application"
+msgstr "Nije moguće otvoriti aplikaciju."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+msgid "OK"
+msgstr "U redu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+msgid "installed"
+msgstr "instalirano"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+msgid "not installed"
+msgstr "nije instalirano"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+msgid "default browser"
+msgstr "zadani preglednik"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#, python-format
+msgid "Installing %s…"
+msgstr "Instaliranje %s…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+msgid "Preparing download…"
+msgstr "Priprema preuzimanja…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "View details"
+msgstr "Pogledaj pojedinosti"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+msgid "Show installation details"
+msgstr "Prikaži detalje instalacije"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+msgid "Installation log output"
+msgstr "Izlaz instalacijskog dnevnika"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+msgid "Cancel"
+msgstr "Otkaži"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+msgid "Cancel installation"
+msgstr "Otkaži instalaciju"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+msgid "Done"
+msgstr "Završeno"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+msgid "Close installation panel"
+msgstr "Zatvori panel za instalaciju"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#, python-format
+msgid "Installing %s"
+msgstr "Instaliranje %s"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+msgid "It has been set as your default browser."
+msgstr "Postavljeno je kao vaš zadani preglednik."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#, python-format
+msgid "%s installed successfully!"
+msgstr "%s je uspješno instaliran!"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#, python-format
+msgid "%s installed successfully"
+msgstr "%s je uspješno instaliran"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#, python-format
+msgid "Failed to install %s"
+msgstr "Nije moguće instalirati %s"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+msgid "Check the details below for more information."
+msgstr "Provjerite detalje u nastavku za više informacija."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#, python-format
+msgid "Installation of %s failed"
+msgstr "Instalacija %s nije uspjela"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+msgid "Cannot cancel during installation"
+msgstr "Ne možete otkazati tijekom instalacije."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#, python-brace-format
+msgid "Downloading {name}…"
+msgstr "Preuzimanje {name}…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#, python-brace-format
+msgid "Downloading… {pct}% ({speed})"
+msgstr "Preuzimanje… {pct}% ({speed})"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "Hide details"
+msgstr "Sakrij detalje"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+msgid "Hide installation details"
+msgstr "Sakrij detalje instalacije"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+msgid "Cancelling…"
+msgstr "Otkaži…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+msgid "Cancelling installation…"
+msgstr "Otkaži instalaciju…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid "In search of the perfect system!"
+msgstr "U potrazi za savršenim sustavom!"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
 #: usr/share/biglinux/welcome/main.py:785
 msgid "Welcome to your new system"
 msgstr "Dobrodošli u vaš novi sustav"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid "Changing default browser"
+msgstr "Mijenjanje zadane preglednika"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid "Setting %s as default…"
+msgstr "Postavljanje %s kao zadano…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid "%s set as default"
+msgstr "%s postavljen kao zadani"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid "Still working…"
+msgstr "Još uvijek radi…"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
 #: usr/share/biglinux/welcome/main.py:997
 msgid "Show on startup"
 msgstr "Prikaži pri pokretanju"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid "Welcome"
+msgstr "Dobrodošli"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid "Previous page"
+msgstr "Prethodna stranica"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid "Next page"
+msgstr "Sljedeća stranica"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 #: usr/share/biglinux/welcome/main.py:1042

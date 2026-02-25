@@ -14,14 +14,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "Browser Install"
-msgstr "Böngésző telepítése"
-msgid "Installing Browser, Please wait..."
-msgstr "Böngésző telepítése, Kérem várjon..."
-msgid "Browser installed successfully!"
-msgstr "Böngésző sikeresen telepítve!"
-msgid "An error occurred while install browser."
-msgstr "Hiba történt a böngésző telepítése során."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
@@ -289,22 +281,177 @@ msgstr "Asztal"
 msgid "Display"
 msgstr "Kijelző"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
-#: usr/share/biglinux/welcome/main.py:465
-msgid "Unknown"
-msgstr "Ismeretlen"
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#, python-format
+msgid "Could not open %s. It may not be installed."
+msgstr "Nem sikerült megnyitni a %s-t. Lehet, hogy nincs telepítve."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+msgid "Could not open application"
+msgstr "Nem sikerült megnyitni az alkalmazást."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+msgid "OK"
+msgstr "Rendben"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+msgid "installed"
+msgstr "telepítve"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+msgid "not installed"
+msgstr "nincs telepítve"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+msgid "default browser"
+msgstr "alapértelmezett böngésző"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#, python-format
+msgid "Installing %s…"
+msgstr "%s telepítése…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+msgid "Preparing download…"
+msgstr "Letöltés előkészítése…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "View details"
+msgstr "Részletek megtekintése"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+msgid "Show installation details"
+msgstr "Telepítési részletek megjelenítése"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+msgid "Installation log output"
+msgstr "Telepítési napló kimenet"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+msgid "Cancel"
+msgstr "Mégse"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+msgid "Cancel installation"
+msgstr "Telepítés megszakítása"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+msgid "Done"
+msgstr "Készen van"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+msgid "Close installation panel"
+msgstr "Telepítési panel bezárása"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#, python-format
+msgid "Installing %s"
+msgstr "%s telepítése"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+msgid "It has been set as your default browser."
+msgstr "Alapértelmezett böngészőként lett beállítva."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#, python-format
+msgid "%s installed successfully!"
+msgstr "%s sikeresen telepítve!"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#, python-format
+msgid "%s installed successfully"
+msgstr "%s sikeresen telepítve."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#, python-format
+msgid "Failed to install %s"
+msgstr "A %s telepítése nem sikerült."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+msgid "Check the details below for more information."
+msgstr "Ellenőrizze az alábbi részleteket a további információkért."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#, python-format
+msgid "Installation of %s failed"
+msgstr "A %s telepítése meghiúsult."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+msgid "Cannot cancel during installation"
+msgstr "Telepítés közben nem lehet megszakítani."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#, python-brace-format
+msgid "Downloading {name}…"
+msgstr "{név} letöltése…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#, python-brace-format
+msgid "Downloading… {pct}% ({speed})"
+msgstr "Letöltés… {pct}% ({speed})"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "Hide details"
+msgstr "Részletek elrejtése"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+msgid "Hide installation details"
+msgstr "Telepítési részletek elrejtése"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+msgid "Cancelling…"
+msgstr "Mégse…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+msgid "Cancelling installation…"
+msgstr "Telepítés megszakítása…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid "In search of the perfect system!"
+msgstr "A tökéletes rendszer keresésében!"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
 #: usr/share/biglinux/welcome/main.py:785
 msgid "Welcome to your new system"
 msgstr "Üdvözöljük az új rendszerében"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid "Changing default browser"
+msgstr "Alapértelmezett böngésző megváltoztatása"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid "Setting %s as default…"
+msgstr "%s alapértelmezettként beállítása…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid "%s set as default"
+msgstr "%s alapértelmezettként beállítva"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid "Still working…"
+msgstr "Még dolgozik…"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
 #: usr/share/biglinux/welcome/main.py:997
 msgid "Show on startup"
 msgstr "Indításkor megjelenítés"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid "Welcome"
+msgstr "Üdvözöljük"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid "Previous page"
+msgstr "Előző oldal"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid "Next page"
+msgstr "Következő oldal"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 #: usr/share/biglinux/welcome/main.py:1042

@@ -14,14 +14,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "Browser Install"
-msgstr "Browserinstallation"
-msgid "Installing Browser, Please wait..."
-msgstr "Installerer browser, vent venligst..."
-msgid "Browser installed successfully!"
-msgstr "Browser installeret med succes!"
-msgid "An error occurred while install browser."
-msgstr "Der opstod en fejl under installationen af browseren."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
@@ -288,17 +280,159 @@ msgstr "Skrivebord"
 msgid "Display"
 msgstr "Skærm"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
-#: usr/share/biglinux/welcome/main.py:465
-msgid "Unknown"
-msgstr "Ukendt"
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#, python-format
+msgid "Could not open %s. It may not be installed."
+msgstr "Kunne ikke åbne %s. Det er muligvis ikke installeret."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+msgid "Could not open application"
+msgstr "Kunne ikke åbne applikationen"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+msgid "installed"
+msgstr "installeret"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+msgid "not installed"
+msgstr "ikke installeret"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+msgid "default browser"
+msgstr "standardbrowser"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#, python-format
+msgid "Installing %s…"
+msgstr "Installerer %s…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+msgid "Preparing download…"
+msgstr "Forbereder download…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "View details"
+msgstr "Se detaljer"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+msgid "Show installation details"
+msgstr "Vis installationsdetaljer"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+msgid "Installation log output"
+msgstr "Installationslogudgang"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+msgid "Cancel"
+msgstr "Annuller"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+msgid "Cancel installation"
+msgstr "Annuller installation"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+msgid "Close installation panel"
+msgstr "Luk installationspanelet"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#, python-format
+msgid "Installing %s"
+msgstr "Installerer %s"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+msgid "It has been set as your default browser."
+msgstr "Det er blevet indstillet som din standardbrowser."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#, python-format
+msgid "%s installed successfully!"
+msgstr "%s installeret med succes!"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#, python-format
+msgid "%s installed successfully"
+msgstr "%s installeret med succes"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#, python-format
+msgid "Failed to install %s"
+msgstr "Mislykkedes med at installere %s"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+msgid "Check the details below for more information."
+msgstr "Tjek detaljerne nedenfor for mere information."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#, python-format
+msgid "Installation of %s failed"
+msgstr "Installation af %s mislykkedes"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+msgid "Cannot cancel during installation"
+msgstr "Kan ikke annullere under installationen"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#, python-brace-format
+msgid "Downloading {name}…"
+msgstr "Downloader {name}…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#, python-brace-format
+msgid "Downloading… {pct}% ({speed})"
+msgstr "Downloader… {pct}% ({speed})"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "Hide details"
+msgstr "Skjul detaljer"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+msgid "Hide installation details"
+msgstr "Skjul installationsdetaljer"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+msgid "Cancelling…"
+msgstr "Afbryder…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+msgid "Cancelling installation…"
+msgstr "Annullerer installation…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid "In search of the perfect system!"
+msgstr "På jagt efter det perfekte system!"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
 #: usr/share/biglinux/welcome/main.py:785
 msgid "Welcome to your new system"
 msgstr "Velkommen til dit nye system"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid "Changing default browser"
+msgstr "Ændring af standardbrowser"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid "Setting %s as default…"
+msgstr "Indstiller %s som standard…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid "%s set as default"
+msgstr "%s sat som standard"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid "Still working…"
+msgstr "Arbejder stadig…"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
 # 
@@ -320,6 +454,19 @@ msgstr "Velkommen til dit nye system"
 #: usr/share/biglinux/welcome/main.py:997
 msgid "Show on startup"
 msgstr "Vis ved opstart"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid "Welcome"
+msgstr "Velkommen"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid "Previous page"
+msgstr "Forrige side"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid "Next page"
+msgstr "Næste side"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 #: usr/share/biglinux/welcome/main.py:1042
