@@ -14,14 +14,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-msgid "Browser Install"
-msgstr "Selaimen asennus"
-msgid "Installing Browser, Please wait..."
-msgstr "Asennetaan selain, ole hyvä ja odota..."
-msgid "Browser installed successfully!"
-msgstr "Selaimen asennus onnistui!"
-msgid "An error occurred while install browser."
-msgstr "Asennuksessa tapahtui virhe selain."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
@@ -289,17 +281,159 @@ msgstr "Työpöytä"
 msgid "Display"
 msgstr "Näyttö"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 81
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 132
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 177
-#: usr/share/biglinux/welcome/main.py:465
-msgid "Unknown"
-msgstr "Tuntematon"
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#, python-format
+msgid "Could not open %s. It may not be installed."
+msgstr "%S ei voitu avata. Sitä ei ehkä ole asennettu."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+msgid "Could not open application"
+msgstr "Sovellusta ei voitu avata."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+msgid "installed"
+msgstr "asennettu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+msgid "not installed"
+msgstr "ei asennettu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+msgid "default browser"
+msgstr "oletusselain"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#, python-format
+msgid "Installing %s…"
+msgstr "Asennetaan %s…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+msgid "Preparing download…"
+msgstr "Valmistellaan latausta…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "View details"
+msgstr "Näytä tiedot"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+msgid "Show installation details"
+msgstr "Näytä asennustiedot"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+msgid "Installation log output"
+msgstr "Asennuslokin tuloste"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+msgid "Cancel"
+msgstr "Peruuta"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+msgid "Cancel installation"
+msgstr "Peru asennus"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+msgid "Close installation panel"
+msgstr "Sulje asennuspaneeli"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#, python-format
+msgid "Installing %s"
+msgstr "Asennetaan %s"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+msgid "It has been set as your default browser."
+msgstr "Se on asetettu oletusselaimeksesi."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#, python-format
+msgid "%s installed successfully!"
+msgstr "%s asennettu onnistuneesti!"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#, python-format
+msgid "%s installed successfully"
+msgstr "%s asennettu onnistuneesti"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#, python-format
+msgid "Failed to install %s"
+msgstr "Asennus epäonnistui %s"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+msgid "Check the details below for more information."
+msgstr "Tarkista alla olevat tiedot saadaksesi lisätietoja."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#, python-format
+msgid "Installation of %s failed"
+msgstr "%s asennus epäonnistui"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+msgid "Cannot cancel during installation"
+msgstr "Asennuksen aikana ei voi peruuttaa."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#, python-brace-format
+msgid "Downloading {name}…"
+msgstr "Ladataan {name}…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#, python-brace-format
+msgid "Downloading… {pct}% ({speed})"
+msgstr "Ladataan… {pct}% ({speed})"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "Hide details"
+msgstr "Piilota tiedot"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+msgid "Hide installation details"
+msgstr "Piilota asennustiedot"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+msgid "Cancelling…"
+msgstr "Peruutetaan…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+msgid "Cancelling installation…"
+msgstr "Asennuksen peruutus…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid "In search of the perfect system!"
+msgstr "Etsimässä täydellistä järjestelmää!"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
 #: usr/share/biglinux/welcome/main.py:785
 msgid "Welcome to your new system"
 msgstr "Tervetuloa uuteen järjestelmääsi"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid "Changing default browser"
+msgstr "Olet vaihtamassa oletusselainta."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid "Setting %s as default…"
+msgstr "Asetetaan %s oletukseksi…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid "%s set as default"
+msgstr "%s asetettu oletukseksi"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid "Still working…"
+msgstr "Vielä työskentelee…"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
 # 
@@ -321,6 +455,19 @@ msgstr "Tervetuloa uuteen järjestelmääsi"
 #: usr/share/biglinux/welcome/main.py:997
 msgid "Show on startup"
 msgstr "Näytä käynnistyksessä"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid "Welcome"
+msgstr "Tervetuloa"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid "Previous page"
+msgstr "Edellinen sivu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid "Next page"
+msgstr "Seuraava sivu"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
 #: usr/share/biglinux/welcome/main.py:1042
