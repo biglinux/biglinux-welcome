@@ -1,0 +1,395 @@
+/* BigLinux Welcome — Application Stylesheet */
+
+/* Base window with subtle gradient feel */
+window.background {
+    background: @window_bg_color;
+}
+
+headerbar.flat {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.logo-container {
+    padding: 20px;
+    min-width: 180px;
+    min-height: 180px;
+}
+
+.logo-image {
+    min-width: 130px;
+    min-height: 130px;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -1.2px;
+}
+
+.hero-subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.55;
+    letter-spacing: 0.2px;
+}
+
+.hero-version {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 100px;
+    background: alpha(@accent_bg_color, 0.12);
+    color: @accent_color;
+}
+
+/* System Info Card - Refined glassmorphism with subtle shine */
+.info-card {
+    background: alpha(@card_bg_color, 0.55);
+    border-radius: 16px;
+    padding: 14px 28px;
+    border: 1px solid alpha(@borders, 0.06);
+    border-top: 1px solid alpha(white, 0.1);
+    box-shadow: 0 4px 20px alpha(black, 0.03),
+                0 1px 3px alpha(black, 0.02);
+}
+
+.info-row { padding: 5px 0; }
+.info-key { font-size: 10px; font-weight: 700; opacity: 0.4; letter-spacing: 1px; text-transform: uppercase; }
+.info-value { font-size: 13px; font-weight: 500; }
+
+/* Page Headers - Strong typography */
+.page-title {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -0.8px;
+}
+
+.page-subtitle {
+    font-size: 15px;
+    opacity: 0.5;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+}
+
+/* Action Cards - Modern elevated style with subtle shine */
+.action-card {
+    background: alpha(@card_bg_color, 0.5);
+    border-radius: 18px;
+    border: 1px solid alpha(@borders, 0.06);
+    border-top: 1px solid alpha(white, 0.08);
+    padding: 18px 14px;
+    min-width: 125px;
+    min-height: 120px;
+    box-shadow: 0 2px 12px alpha(black, 0.02),
+                0 1px 3px alpha(black, 0.03);
+    transition: all 150ms ease;
+}
+
+.action-card:hover {
+    background: alpha(@card_bg_color, 0.85);
+    border: 1px solid alpha(@accent_bg_color, 0.15);
+    border-top: 1px solid alpha(white, 0.15);
+    box-shadow: 0 8px 32px alpha(black, 0.06),
+                0 2px 8px alpha(black, 0.04);
+}
+
+.action-card:active {
+    background: alpha(@card_bg_color, 1.0);
+    box-shadow: 0 1px 4px alpha(black, 0.03);
+    transform: scale(0.97);
+}
+
+.action-icon {
+    min-width: 52px;
+    min-height: 52px;
+}
+
+.action-icon-box {
+    background: transparent;
+    border-radius: 14px;
+    padding: 8px;
+}
+
+.action-label {
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.85;
+    letter-spacing: 0.1px;
+}
+
+/* QR Code special styling */
+.qrcode-card {
+    min-width: 240px;
+    min-height: 280px;
+    background: alpha(@card_bg_color, 0.7);
+    border-radius: 24px;
+}
+
+.qrcode-card .action-icon-box {
+    background: white;
+    border-radius: 16px;
+    padding: 12px;
+}
+
+/* Browser Cards - Premium selection UI with subtle shine */
+.browser-card {
+    background: alpha(@card_bg_color, 0.5);
+    border-radius: 20px;
+    border: 2px solid transparent;
+    border-top: 1px solid alpha(white, 0.08);
+    padding: 18px 16px;
+    min-width: 130px;
+    min-height: 135px;
+    box-shadow: 0 2px 12px alpha(black, 0.02),
+                0 1px 3px alpha(black, 0.03);
+    transition: all 150ms ease;
+}
+
+.browser-card:hover {
+    background: alpha(@card_bg_color, 0.85);
+    border: 2px solid alpha(@accent_bg_color, 0.15);
+    border-top: 1px solid alpha(white, 0.15);
+    box-shadow: 0 8px 32px alpha(black, 0.06),
+                0 2px 8px alpha(black, 0.04);
+}
+
+.browser-card:active {
+    background: alpha(@card_bg_color, 1.0);
+    box-shadow: 0 1px 4px alpha(black, 0.03);
+    transform: scale(0.97);
+}
+
+.browser-card.selected {
+    background: alpha(@accent_bg_color, 0.1);
+    border: 2px solid @accent_bg_color;
+    box-shadow: 0 4px 24px alpha(@accent_bg_color, 0.2),
+                0 0 0 1px alpha(@accent_bg_color, 0.1);
+}
+
+.browser-card.dimmed { opacity: 0.45; }
+.browser-card.dimmed:hover { opacity: 0.65; }
+
+.browser-icon {
+    min-width: 60px;
+    min-height: 60px;
+}
+
+.browser-icon-bg {
+    background: transparent;
+    border-radius: 16px;
+    padding: 6px;
+}
+
+.browser-label {
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.85;
+}
+
+.check-badge {
+    background: @success_bg_color;
+    border-radius: 50%;
+    padding: 4px;
+    box-shadow: 0 2px 8px alpha(@success_bg_color, 0.3);
+}
+
+/* Progress Indicator - iOS-inspired pills */
+.progress-container { padding: 6px 0; }
+
+.progress-dot {
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    background: alpha(@theme_fg_color, 0.12);
+}
+
+.progress-dot.active {
+    min-width: 32px;
+    border-radius: 100px;
+    background: @accent_bg_color;
+    box-shadow: 0 2px 8px alpha(@accent_bg_color, 0.3);
+}
+
+.progress-dot.completed {
+    background: alpha(@accent_bg_color, 0.4);
+}
+
+/* Navigation Buttons - Minimal and elegant */
+.nav-button {
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 50%;
+    transition: all 150ms ease;
+}
+
+.nav-button.back {
+    background: alpha(@theme_fg_color, 0.05);
+    color: alpha(@theme_fg_color, 0.6);
+}
+
+.nav-button.back:hover {
+    background: alpha(@theme_fg_color, 0.1);
+    color: alpha(@theme_fg_color, 0.8);
+}
+
+.nav-button.back:active {
+    background: alpha(@theme_fg_color, 0.15);
+    transform: scale(0.93);
+}
+
+.nav-button.next {
+    background: @accent_bg_color;
+    color: white;
+    box-shadow: 0 4px 16px alpha(@accent_bg_color, 0.3);
+}
+
+.nav-button.next:hover {
+    box-shadow: 0 6px 20px alpha(@accent_bg_color, 0.4);
+}
+
+.nav-button.next:active {
+    box-shadow: 0 2px 8px alpha(@accent_bg_color, 0.2);
+    transform: scale(0.93);
+}
+
+.finish-button {
+    padding: 12px 32px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    background: @accent_bg_color;
+    color: white;
+    box-shadow: 0 4px 16px alpha(@accent_bg_color, 0.3);
+    transition: all 150ms ease;
+}
+
+.finish-button:hover {
+    box-shadow: 0 6px 24px alpha(@accent_bg_color, 0.4);
+}
+
+.finish-button:active {
+    box-shadow: 0 2px 8px alpha(@accent_bg_color, 0.2);
+    transform: scale(0.97);
+}
+
+/* Bottom Bar */
+.bottom-bar { padding: 14px 28px 22px 28px; }
+.startup-check { font-size: 13px; opacity: 0.5; font-weight: 500; }
+
+/* Browser Install Panel — Integrated inline view */
+.install-panel {
+    background: alpha(@card_bg_color, 0.6);
+    border-radius: 24px;
+    border: 1px solid alpha(@borders, 0.08);
+    border-top: 1px solid alpha(white, 0.1);
+    padding: 28px 36px;
+    box-shadow: 0 4px 24px alpha(black, 0.04),
+                0 1px 4px alpha(black, 0.02);
+}
+
+.install-title {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+}
+
+.install-subtitle {
+    font-size: 13px;
+    opacity: 0.55;
+    letter-spacing: 0.1px;
+}
+
+.install-progress {
+    min-height: 6px;
+    border-radius: 100px;
+}
+
+.install-progress progress {
+    border-radius: 100px;
+    background: @accent_bg_color;
+}
+
+.install-progress trough {
+    border-radius: 100px;
+    background: alpha(@theme_fg_color, 0.08);
+    min-height: 6px;
+}
+
+.install-log-frame {
+    background: alpha(@card_bg_color, 0.4);
+    border-radius: 14px;
+    border: 1px solid alpha(@borders, 0.05);
+    padding: 4px;
+}
+
+.install-log {
+    font-family: monospace;
+    font-size: 11px;
+    padding: 8px 12px;
+    background: transparent;
+    color: alpha(@theme_fg_color, 0.7);
+}
+
+.install-detail-toggle {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.install-status-success {
+    color: @success_color;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.install-status-error {
+    color: @error_color;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.install-done-button {
+    padding: 10px 28px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 13px;
+    background: @accent_bg_color;
+    color: white;
+    box-shadow: 0 4px 16px alpha(@accent_bg_color, 0.3);
+    transition: all 150ms ease;
+}
+
+.install-done-button:hover {
+    box-shadow: 0 6px 24px alpha(@accent_bg_color, 0.4);
+}
+
+.install-done-button:active {
+    box-shadow: 0 2px 8px alpha(@accent_bg_color, 0.2);
+    transform: scale(0.97);
+}
+
+/* Keyboard focus indicators (WCAG 2.1 AA) */
+.browser-card:focus-visible,
+.action-card:focus-visible {
+    outline: 2px solid @accent_bg_color;
+    outline-offset: 2px;
+}
+
+.nav-button:focus-visible,
+.finish-button:focus-visible,
+.install-done-button:focus-visible {
+    outline: 2px solid @accent_bg_color;
+    outline-offset: 2px;
+}
+
+/* Browser loading overlay — covers whole page when changing default */
+.browser-loading-overlay {
+    background: alpha(@window_bg_color, 0.75);
+    border-radius: 0;
+    padding: 40px;
+}

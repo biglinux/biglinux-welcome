@@ -6,17 +6,16 @@ getDefaultBrowser() {
 }
 
 setDefaultBrowser() {
-  xdg-mime default $1 x-scheme-handler/http
-  xdg-mime default $1 x-scheme-handler/https
-  xdg-settings set default-web-browser $1
+  xdg-mime default "$1" x-scheme-handler/http
+  xdg-mime default "$1" x-scheme-handler/https
+  xdg-settings set default-web-browser "$1"
 }
 
 # change the state
 installBrowser() {
-  # Get the directory where the script is located
   local script_dir
   script_dir="$(dirname "$(readlink -f "$0")")"
-  pkexec "$script_dir/browserInstall.sh" "$1" "$USER" "$DISPLAY" "$XAUTHORITY" "$DBUS_SESSION_BUS_ADDRESS" "$LANG" "$LANGUAGE"
+  pkexec "$script_dir/browserInstall.sh" "$1"
   exitCode=$?
   exit $exitCode
 }

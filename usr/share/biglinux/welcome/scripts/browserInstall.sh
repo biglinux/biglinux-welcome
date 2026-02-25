@@ -1,74 +1,54 @@
 #!/bin/bash
 
-#Translation
-export TEXTDOMAINDIR="/usr/share/locale"
-export TEXTDOMAIN=biglinux-welcome
+# Browser installation script (runs as root via pkexec).
+# All output goes to stdout/stderr for the calling application to display.
+# No Zenity or GUI — the welcome app handles the UI.
 
-# Assign the received arguments to variables with clear names
 browser="$1"
-originalUser="$2"
-userDisplay="$3"
-userXauthority="$4"
-userDbusAddress="$5"
-userLang="$6"
-userLanguage="$7"
+log="/var/log/biglinux-welcome.log"
 
-# Helper browser to run a command as the original user
-runAsUser() {
-	# Single quotes around variables are a good security practice
-	su "$originalUser" -c "export DISPLAY='$userDisplay'; export XAUTHORITY='$userXauthority'; export DBUS_SESSION_BUS_ADDRESS='$userDbusAddress'; export LANG='$userLang'; export LC_ALL='$userLang'; export LANGUAGE='$userLanguage'; $1"
-}
+# Force English output so progress parsing works regardless of system locale
+export LANGUAGE=C
+export LC_ALL=C
 
-# 1. Creates a named pipe (FIFO) for communication with Zenity
-pipePath="/tmp/browser_install_pipe_$$"
-mkfifo "$pipePath"
+echo "" >> "$log"
+date >> "$log"
 
-# 2. Starts Zenity IN THE BACKGROUND, as the user, with the full environment
-zenityTitle=$"Browser Install"
-zenityText=$"Installing Browser, Please wait..."
-runAsUser "zenity --progress --title=\"$zenityTitle\" --text=\"$zenityText\" --pulsate --auto-close --no-cancel < '$pipePath'" &
+echo "STATUS:started"
+echo "Preparing $browser..."
 
-# 3. Executes the root tasks.
-installBrowser() {
-	log="/var/log/biglinux-welcome.log"
-	echo "" >>$log
-	date >>$log
-	if [[ "$browser" == "brave" ]]; then
-		pacman -Syu --noconfirm brave >>$log 2>&1
-	elif [[ "$browser" == "chromium" ]]; then
-		pacman -Syu --noconfirm chromium >>$log 2>&1
-	elif [[ "$browser" == "google-chrome" ]]; then
-		yay -Syu --noconfirm google-chrome >>$log 2>&1
-	elif [[ "$browser" == "falkon" ]]; then
-		pacman -Syu --noconfirm falkon >>$log 2>&1
-	elif [[ "$browser" == "firefox" ]]; then
-		pacman -Syu --noconfirm firefox >>$log 2>&1
-	elif [[ "$browser" == "librewolf" ]]; then
-		yay -Syu --noconfirm librewolf-bin >>$log 2>&1
-	elif [[ "$browser" == "opera" ]]; then
-		yay -Syu --noconfirm opera 2>&1 >>$log 2>&1
-	elif [[ "$browser" == "vivaldi" ]]; then
-		pacman -Syu --noconfirm vivaldi 2>&1 >>$log 2>&1
-	elif [[ "$browser" == "edge" ]]; then
-		yay -Syu --noconfirm microsoft-edge-stable-bin >>$log 2>&1
-	elif [[ "$browser" == "zen-browser" ]]; then
-		yay -Syu --noconfirm zen-browser-bin 2>&1 >>$log 2>&1
-	fi
-	exitCode=$?
-}
-installBrowser >"$pipePath"
+case "$browser" in
+	brave)
+		stdbuf -o0 pacman -Sy --noconfirm brave 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	chromium)
+		stdbuf -o0 pacman -Sy --noconfirm chromium 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	google-chrome)
+		stdbuf -o0 yay -Sy --noconfirm google-chrome 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	falkon)
+		stdbuf -o0 pacman -Sy --noconfirm falkon 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	firefox)
+		stdbuf -o0 pacman -Sy --noconfirm firefox 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	librewolf)
+		stdbuf -o0 yay -Sy --noconfirm librewolf-bin 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	opera)
+		stdbuf -o0 yay -Sy --noconfirm opera 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	vivaldi)
+		stdbuf -o0 pacman -Sy --noconfirm vivaldi 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	edge)
+		stdbuf -o0 yay -Sy --noconfirm microsoft-edge-stable-bin 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	zen-browser)
+		stdbuf -o0 yay -Sy --noconfirm zen-browser-bin 2>&1 | stdbuf -o0 tee -a "$log" ;;
+	*)
+		echo "Unknown browser: $browser" | tee -a "$log"
+		exit 1 ;;
+esac
 
-# 4. Cleans up the pipe
-rm "$pipePath"
+exitCode=${PIPESTATUS[0]}
 
-# 5. Shows the final result to the user, also with the correct theme.
 if [[ "$exitCode" -eq 0 ]]; then
-	zenityText=$"Browser installed successfully!"
-	runAsUser "zenity --info --text=\"$zenityText\""
+	echo "STATUS:success"
 else
-	zenityText=$"An error occurred while install browser."
-	runAsUser "zenity --error --text=\"$zenityText\""
+	echo "STATUS:error"
 fi
 
-# 6. Exits the script with the correct exit code
 exit $exitCode

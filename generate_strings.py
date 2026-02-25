@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import sys
 import yaml
 import argparse
 from pathlib import Path
@@ -22,6 +23,7 @@ _ = gettext.gettext
 # --- Strings from data file ---
 """
 
+
 def extract_strings_from_data(data):
     """
     Recursively finds all strings from the data structure
@@ -39,6 +41,7 @@ def extract_strings_from_data(data):
             strings.update(extract_strings_from_data(item))
     return strings
 
+
 def main():
     """Main function to generate the translatable strings file."""
     parser = argparse.ArgumentParser(
@@ -53,7 +56,7 @@ def main():
 
     if not input_file.is_file():
         print(f"Error: Input file not found at {input_file}")
-        exit(1)
+        sys.exit(1)
 
     print(f"Reading strings from: {input_file}")
     with open(input_file, "r", encoding="utf-8") as f:
@@ -61,7 +64,7 @@ def main():
             data = yaml.safe_load(f)
         except yaml.YAMLError as e:
             print(f"Error parsing YAML file: {e}")
-            exit(1)
+            sys.exit(1)
 
     translatable_strings = extract_strings_from_data(data)
 
@@ -83,6 +86,7 @@ def main():
             f.write(f"_({repr(s)})\n")
 
     print("Done.")
+
 
 if __name__ == "__main__":
     main()
