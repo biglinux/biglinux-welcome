@@ -1,8 +1,5 @@
 <h1 align="center">BigLinux Welcome</h1>
-
-<p align="center">
-  <em>In search of the perfect system!</em>
-</p>
+<img width="1050" height="830" alt="image" src="https://github.com/user-attachments/assets/d8c7452c-f876-4a03-9544-58e5e8af78f0" />
 
 <p align="center">
   <a href="#features">Features</a> •
