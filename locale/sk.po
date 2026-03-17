@@ -309,6 +309,10 @@ msgstr "Nepodarilo sa otvoriť aplikáciu."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
 msgid "installed"
 msgstr "nainštalované"
@@ -351,6 +355,10 @@ msgstr "Zrušiť"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Zrušiť inštaláciu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 

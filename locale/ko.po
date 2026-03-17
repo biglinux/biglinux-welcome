@@ -309,6 +309,10 @@ msgstr "응용 프로그램을 열 수 없습니다."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
 msgid "installed"
 msgstr "설치됨"

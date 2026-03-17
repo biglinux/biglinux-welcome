@@ -310,6 +310,10 @@ msgstr "Δεν ήταν δυνατή η ανοίγμα της εφαρμογής
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
 msgid "installed"
 msgstr "εγκατεστημένο"
@@ -352,6 +356,10 @@ msgstr "Ακύρωση"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Ακύρωση εγκατάστασης"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 
