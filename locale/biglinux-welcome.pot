@@ -11,24 +11,8 @@ msgstr  "Project-Id-Version: biglinux-welcome\n"
         "Language-Team: LANGUAGE <LL@li.org>\n"
         "Language: \n"
         "MIME-Version: 1.0\n"
-        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
         "Content-Transfer-Encoding: 8bit\n"
-
-#
-msgid   "Browser Install"
-msgstr  ""
-
-#
-msgid   "Installing Browser, Please wait..."
-msgstr  ""
-
-#
-msgid   "Browser installed successfully!"
-msgstr  ""
-
-#
-msgid   "An error occurred while install browser."
-msgstr  ""
 
 #
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
@@ -141,36 +125,37 @@ msgid   "Falkon"
 msgstr  ""
 
 #
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
 msgid   "Family Profile"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
 msgid   "Firefox"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
 msgid   "Forum"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
 msgid   "Initial Settings"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 39
 msgid   "Install or Remove Drivers and Firmwares easily."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 39
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 msgid   "KDE Connect"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
 msgid   "KDE Connect is an application that facilitates wireless "
         "communication and data transfer between devices on local networks. "
         "Available on the Google Play Store for Android and the Apple Store "
@@ -178,155 +163,353 @@ msgid   "KDE Connect is an application that facilitates wireless "
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
 msgid   "Kernel Manager"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
 msgid   "Language Packs"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
 msgid   "Librewolf"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
 msgid   "Network Info"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 46
 msgid   "Noise Reduction"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 46
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 47
 msgid   "OCR to PDF"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 47
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
 msgid   "Opera"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 49
 msgid   "Our platform is collaborative, join this evolution."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 49
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 msgid   "PlayStore"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 51
 msgid   "Printers"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 51
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 52
 msgid   "Session and Themes"
 msgstr  ""
 
 #
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
 msgid   "Set Up Parental Controls"
 msgstr  ""
 
 #
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
 msgid   "Set up parental controls to protect your family."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 52
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 55
 msgid   "Set your default browser."
 msgstr  ""
 
 #
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 56
 msgid   "Skip for Now"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 57
 msgid   "Telegram"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 58
 msgid   "Time Shift"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 55
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
 msgid   "Video Converter"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 56
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 60
 msgid   "Vivaldi"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 57
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 61
 msgid   "We provide comprehensive settings for you to select in an extremely "
         "simple way."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 58
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 62
 msgid   "WebApps"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 63
 msgid   "YouTube"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 60
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 64
 msgid   "Your donation is very important for the project and follow us on "
         "social media."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 61
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 65
 msgid   "Zen Browser"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 435
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 120
 msgid   "Kernel"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 436
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 121
 msgid   "Desktop"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 437
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 123
 msgid   "Display"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 465
-msgid   "Unknown"
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#, python-format
+msgid   "Could not open %s. It may not be installed."
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 785
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+msgid   "Could not open application"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+msgid   "OK"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+msgid   "installed"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+msgid   "not installed"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+msgid   "default browser"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#, python-format
+msgid   "Installing %s…"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+msgid   "Preparing download…"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid   "View details"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+msgid   "Show installation details"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+msgid   "Installation log output"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+msgid   "Cancel"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+msgid   "Cancel installation"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+msgid   "Done"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+msgid   "Close installation panel"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#, python-format
+msgid   "Installing %s"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+msgid   "It has been set as your default browser."
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#, python-format
+msgid   "%s installed successfully!"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#, python-format
+msgid   "%s installed successfully"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#, python-format
+msgid   "Failed to install %s"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+msgid   "Check the details below for more information."
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#, python-format
+msgid   "Installation of %s failed"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+msgid   "Cannot cancel during installation"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#, python-brace-format
+msgid   "Downloading {name}…"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#, python-brace-format
+msgid   "Downloading… {pct}% ({speed})"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid   "Hide details"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+msgid   "Hide installation details"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+msgid   "Cancelling…"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+msgid   "Cancelling installation…"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid   "In search of the perfect system!"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 160
 msgid   "Welcome to your new system"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 997
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid   "Changing default browser"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid   "Setting %s as default…"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid   "%s set as default"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid   "Still working…"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 567
 msgid   "Show on startup"
 msgstr  ""
 
 #
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 1042
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid   "Welcome"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid   "Previous page"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid   "Next page"
+msgstr  ""
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 621
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 623
 msgid   "Get Started"
 msgstr  ""
