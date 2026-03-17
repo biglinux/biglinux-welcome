@@ -201,6 +201,19 @@
       type: "app"
       command: "timeshift-launcher"
 
+- title: "Family Profile"
+  subtitle: "Set up parental controls to protect your family."
+  icon: "system-users-symbolic"
+  actions:
+    - label: "Set Up Parental Controls"
+      icon: "system-users-symbolic"
+      type: "app"
+      command: "big-parental-controls"
+
+    - label: "Skip for Now"
+      icon: "go-next-symbolic"
+      type: "next"
+
 - title: "Donation and Social Networks"
   subtitle: "Your donation is very important for the project and follow us on social media."
   icon: "emblem-favorite-symbolic"

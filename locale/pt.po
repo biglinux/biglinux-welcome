@@ -133,6 +133,9 @@ msgstr "Edge"
 msgid "Falkon"
 msgstr "Falkon"
 # 
+msgid "Family Profile"
+msgstr "Perfil Familiar"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
 #: usr/share/biglinux/welcome/translatable_strings.py:35
 msgid "Firefox"
@@ -224,10 +227,19 @@ msgstr "Impressoras"
 msgid "Session and Themes"
 msgstr "Sessão e Temas"
 # 
+msgid "Set Up Parental Controls"
+msgstr "Configurar Controle Parental"
+# 
+msgid "Set up parental controls to protect your family."
+msgstr "Configure o controle parental para proteger sua família."
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:52
 msgid "Set your default browser."
 msgstr "Defina seu navegador padrão."
+# 
+msgid "Skip for Now"
+msgstr "Pular por Agora"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:53

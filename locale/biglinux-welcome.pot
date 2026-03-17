@@ -141,6 +141,10 @@ msgid   "Falkon"
 msgstr  ""
 
 #
+msgid   "Family Profile"
+msgstr  ""
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
 msgid   "Firefox"
 msgstr  ""
@@ -229,8 +233,20 @@ msgid   "Session and Themes"
 msgstr  ""
 
 #
+msgid   "Set Up Parental Controls"
+msgstr  ""
+
+#
+msgid   "Set up parental controls to protect your family."
+msgstr  ""
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 52
 msgid   "Set your default browser."
+msgstr  ""
+
+#
+msgid   "Skip for Now"
 msgstr  ""
 
 #
