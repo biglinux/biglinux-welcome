@@ -305,6 +305,10 @@ msgstr "Uygulama açılamadı."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -351,6 +355,10 @@ msgstr "İptal et"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Kurulumu iptal et"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 

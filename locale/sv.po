@@ -302,6 +302,10 @@ msgid "Could not open application"
 msgstr "Kunde inte öppna applikationen"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+msgid "OK"
+msgstr "Okej"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
@@ -351,6 +355,10 @@ msgstr "Avbryt"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Avbryt installation"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 

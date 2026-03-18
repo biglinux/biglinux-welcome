@@ -305,6 +305,10 @@ msgstr "Gat ekki opnað forrit."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -351,6 +355,10 @@ msgstr "Hætta við"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Hætta við uppsetningu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 

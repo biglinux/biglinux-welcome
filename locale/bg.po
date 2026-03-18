@@ -305,6 +305,10 @@ msgstr "Не можа да се отвори приложението."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -351,6 +355,10 @@ msgstr "Отмяна"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Отмяна на инсталацията"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 

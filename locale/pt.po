@@ -306,6 +306,10 @@ msgstr "Não foi possível abrir o aplicativo."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -352,6 +356,10 @@ msgstr "Cancelar"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Cancelar instalação"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
