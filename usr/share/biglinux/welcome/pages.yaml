@@ -152,13 +152,9 @@
   icon: "system-users-symbolic"
   actions:
     - label: "Open Parental Controls"
-      icon: "system-users-symbolic"
+      icon: "parental/big-parental-controls.svg"
       type: "app"
       command: "big-parental-controls"
-
-    - label: "Skip for Now"
-      icon: "go-next-symbolic"
-      type: "next"
 
 - title: "Discover some features"
   subtitle: "Our platform is collaborative, join this evolution."
