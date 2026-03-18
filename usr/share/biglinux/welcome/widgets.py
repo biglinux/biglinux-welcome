@@ -222,6 +222,10 @@ class ActionCard(Gtk.Button):
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL,
                 )
+            elif action_type == "next":
+                win = self.get_root()
+                if hasattr(win, "_on_next"):
+                    win._on_next(None)
         except OSError:
             label_text = _(self.action.get("label", ""))
             self._show_error(
