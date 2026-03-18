@@ -126,8 +126,8 @@ msgid "Falkon"
 msgstr "Falkon"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid "Family Profile"
-msgstr "Προφίλ Οικογένειας"
+msgid "Family Safety"
+msgstr "Οικογενειακή Ασφάλεια"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
 #: usr/share/biglinux/welcome/translatable_strings.py:35
@@ -195,6 +195,10 @@ msgstr "Μείωση Θορύβου"
 msgid "OCR to PDF"
 msgstr "OCR σε PDF"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+msgid "Open Parental Controls"
+msgstr "Άνοιγμα Γονικών Ελέγχων"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
 #: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "Opera"
@@ -215,27 +219,21 @@ msgstr "Play Store"
 msgid "Printers"
 msgstr "Εκτυπωτές"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
+msgid "Protect your children online. Set up supervised accounts, screen time, and content filters."
+msgstr ""
+"Προστατέψτε τα παιδιά σας στο διαδίκτυο. Ρυθμίστε εποπτευόμενους λογαριασμούς, χρόνο οθόνης και "
+"φίλτρα περιεχομένου."
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 #: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "Session and Themes"
 msgstr "Σύνοδος και Θέματα"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
-msgid "Set Up Parental Controls"
-msgstr "Ρυθμίστε τους Γονικούς Ελέγχους"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-msgid "Set up parental controls to protect your family."
-msgstr "Ρυθμίστε τους γονικούς ελέγχους για να προστατεύσετε την οικογένειά σας."
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:52
 msgid "Set your default browser."
 msgstr "Ορίστε τον προεπιλεγμένο σας περιηγητή."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 56
-msgid "Skip for Now"
-msgstr "Παράλειψη προς το παρόν"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:53
@@ -306,6 +304,10 @@ msgstr "Δεν ήταν δυνατή η ανοίγμα του %s. Ίσως να 
 msgid "Could not open application"
 msgstr "Δεν ήταν δυνατή η ανοίγμα της εφαρμογής."
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -352,6 +354,10 @@ msgstr "Ακύρωση"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Ακύρωση εγκατάστασης"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 

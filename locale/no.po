@@ -126,8 +126,8 @@ msgid "Falkon"
 msgstr "Falkon"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid "Family Profile"
-msgstr "Familieprofil"
+msgid "Family Safety"
+msgstr "Familie Sikkerhet"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
 #: usr/share/biglinux/welcome/translatable_strings.py:35
@@ -194,6 +194,10 @@ msgstr "Støyreduksjon"
 msgid "OCR to PDF"
 msgstr "OCR til PDF"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+msgid "Open Parental Controls"
+msgstr "Åpne foreldrekontroller"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
 #: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "Opera"
@@ -214,27 +218,19 @@ msgstr "Play Store"
 msgid "Printers"
 msgstr "Skrivere"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
+msgid "Protect your children online. Set up supervised accounts, screen time, and content filters."
+msgstr "Beskytt barna dine på nettet. Sett opp overvåkede kontoer, skjermtid og innholdsfiltre."
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 #: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "Session and Themes"
 msgstr "Økt og Temaer"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
-msgid "Set Up Parental Controls"
-msgstr "Sett opp foreldrekontroller"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-msgid "Set up parental controls to protect your family."
-msgstr "Sett opp foreldrekontroller for å beskytte familien din."
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:52
 msgid "Set your default browser."
 msgstr "Angi standardnettleseren din."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 56
-msgid "Skip for Now"
-msgstr "Hopp over for nå"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:53
@@ -305,6 +301,10 @@ msgstr "Kunne ikke åpne %s. Det kan hende det ikke er installert."
 msgid "Could not open application"
 msgstr "Kunne ikke åpne applikasjonen"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -351,6 +351,10 @@ msgstr "Avbryt"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Avbryt installasjon"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 

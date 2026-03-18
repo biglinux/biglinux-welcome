@@ -126,8 +126,8 @@ msgid "Falkon"
 msgstr "Falkon"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid "Family Profile"
-msgstr "Pereviku profiil"
+msgid "Family Safety"
+msgstr "Perevõimekuse kaitse"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
 #: usr/share/biglinux/welcome/translatable_strings.py:35
@@ -194,6 +194,10 @@ msgstr "Müraha vähendamine"
 msgid "OCR to PDF"
 msgstr "OCR PDF-ks"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+msgid "Open Parental Controls"
+msgstr "Ava vanemlikud kontrollid"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
 #: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "Opera"
@@ -214,27 +218,19 @@ msgstr "Play Store"
 msgid "Printers"
 msgstr "Printerid"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
+msgid "Protect your children online. Set up supervised accounts, screen time, and content filters."
+msgstr "Kaitske oma lapsi veebis. Seadistage järelevalve all olevad kontod, ekraaniaeg ja sisu filtrid."
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 #: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "Session and Themes"
 msgstr "Seansid ja teemad"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
-msgid "Set Up Parental Controls"
-msgstr "Seadke vanemlikud kontrollid"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-msgid "Set up parental controls to protect your family."
-msgstr "Seadke vanemlikud kontrollid, et kaitsta oma peret."
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:52
 msgid "Set your default browser."
 msgstr "Seadke oma vaikebrauser."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 56
-msgid "Skip for Now"
-msgstr "Jäta praegu vahele"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:53
@@ -305,6 +301,10 @@ msgstr "%s ei saanud avada. See ei pruugi olla installitud."
 msgid "Could not open application"
 msgstr "Rakendust ei saanud avada."
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -351,6 +351,10 @@ msgstr "Tühista"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Tühista installatsioon"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 

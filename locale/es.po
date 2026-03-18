@@ -126,8 +126,8 @@ msgid "Falkon"
 msgstr "Falkon"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid "Family Profile"
-msgstr "Perfil Familiar"
+msgid "Family Safety"
+msgstr "Seguridad Familiar"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
 #: usr/share/biglinux/welcome/translatable_strings.py:35
@@ -195,6 +195,10 @@ msgstr "Reducción de Ruido"
 msgid "OCR to PDF"
 msgstr "OCR a PDF"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+msgid "Open Parental Controls"
+msgstr "Abrir Controles Parentales"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
 #: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "Opera"
@@ -215,27 +219,21 @@ msgstr "Play Store"
 msgid "Printers"
 msgstr "Impresoras"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
+msgid "Protect your children online. Set up supervised accounts, screen time, and content filters."
+msgstr ""
+"Protege a tus hijos en línea. Configura cuentas supervisadas, tiempo de pantalla y filtros de "
+"contenido."
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 #: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "Session and Themes"
 msgstr "Sesión y Temas"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
-msgid "Set Up Parental Controls"
-msgstr "Configurar Controles Parentales"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-msgid "Set up parental controls to protect your family."
-msgstr "Configura controles parentales para proteger a tu familia."
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:52
 msgid "Set your default browser."
 msgstr "Establece tu navegador predeterminado."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 56
-msgid "Skip for Now"
-msgstr "Saltar por ahora"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:53
@@ -306,6 +304,10 @@ msgstr "No se pudo abrir %s. Puede que no esté instalado."
 msgid "Could not open application"
 msgstr "No se pudo abrir la aplicación."
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -352,6 +354,10 @@ msgstr "Cancelar"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Cancelar instalación"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 

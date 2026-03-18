@@ -126,8 +126,8 @@ msgid "Falkon"
 msgstr "Falkon"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid "Family Profile"
-msgstr "가족 프로필"
+msgid "Family Safety"
+msgstr "가족 안전"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
 #: usr/share/biglinux/welcome/translatable_strings.py:35
@@ -194,6 +194,10 @@ msgstr "소음 감소"
 msgid "OCR to PDF"
 msgstr "OCR에서 PDF로"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+msgid "Open Parental Controls"
+msgstr "부모 통제 열기"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
 #: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "Opera"
@@ -214,27 +218,19 @@ msgstr "Play Store"
 msgid "Printers"
 msgstr "프린터"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
+msgid "Protect your children online. Set up supervised accounts, screen time, and content filters."
+msgstr "온라인에서 자녀를 보호하세요. 감독 계정을 설정하고, 화면 시간 및 콘텐츠 필터를 설정하세요."
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
 #: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "Session and Themes"
 msgstr "세션 및 테마"
 # 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
-msgid "Set Up Parental Controls"
-msgstr "부모 통제 설정"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-msgid "Set up parental controls to protect your family."
-msgstr "가족을 보호하기 위해 자녀 보호 기능을 설정하세요."
-# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:52
 msgid "Set your default browser."
 msgstr "기본 브라우저를 설정하세요."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 56
-msgid "Skip for Now"
-msgstr "지금 건너뛰기"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:53
@@ -304,6 +300,12 @@ msgstr "%s를 열 수 없습니다. 설치되지 않았을 수 있습니다."
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
 msgid "Could not open application"
 msgstr "응용 프로그램을 열 수 없습니다."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+msgid "OK"
+msgstr "알겠습니다."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
