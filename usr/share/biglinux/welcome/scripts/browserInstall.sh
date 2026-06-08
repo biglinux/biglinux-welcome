@@ -18,7 +18,7 @@ echo "STATUS:started"
 echo "Preparing $browser..."
 
 case "$browser" in
-	brave)
+	brave-browser)
 		stdbuf -o0 pacman -Sy --noconfirm brave-browser 2>&1 | stdbuf -o0 tee -a "$log" ;;
 	chromium)
 		stdbuf -o0 pacman -Sy --noconfirm chromium 2>&1 | stdbuf -o0 tee -a "$log" ;;
