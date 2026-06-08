@@ -40,7 +40,7 @@
   page_type: "browsers"
   actions:
     - label: "Brave"
-      package: "brave"
+      package: "brave-browser"
       variants:
         - { check: "/usr/bin/brave", desktop: "brave-browser.desktop" }
         - { check: "/var/lib/flatpak/app/com.brave.Browser", desktop: "com.brave.Browser.desktop" }
