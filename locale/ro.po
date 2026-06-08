@@ -15,6 +15,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid "In search of the perfect system!"
+msgstr "În căutarea sistemului perfect!"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+#: usr/share/biglinux/welcome/main.py:785
+msgid "Welcome to your new system"
+msgstr "Bine ai venit în noul tău sistem"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid "Changing default browser"
+msgstr "Schimbarea browser-ului implicit"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid "Setting %s as default…"
+msgstr "Setarea %s ca implicit…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid "%s set as default"
+msgstr "%s setat ca implicit"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid "Still working…"
+msgstr "Încă lucrează…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+#: usr/share/biglinux/welcome/main.py:997
+msgid "Show on startup"
+msgstr "Afișează la pornire"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid "Welcome"
+msgstr "Bine ai venit"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid "Previous page"
+msgstr "Pagina anterioară"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid "Next page"
+msgstr "Pagina următoare"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+#: usr/share/biglinux/welcome/main.py:1042
+msgid "Get Started"
+msgstr "Începeți"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
 msgid "Accessibility"
@@ -308,6 +358,10 @@ msgstr "Nu s-a putut deschide aplicația."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -354,6 +408,10 @@ msgstr "Anulează"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Anulează instalarea"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
@@ -429,53 +487,3 @@ msgstr "Anulând…"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
 msgid "Cancelling installation…"
 msgstr "Anularea instalării…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
-msgid "In search of the perfect system!"
-msgstr "În căutarea sistemului perfect!"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-#: usr/share/biglinux/welcome/main.py:785
-msgid "Welcome to your new system"
-msgstr "Bine ai venit în noul tău sistem"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
-msgid "Changing default browser"
-msgstr "Schimbarea browser-ului implicit"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
-#, python-format
-msgid "Setting %s as default…"
-msgstr "Setarea %s ca implicit…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
-#, python-format
-msgid "%s set as default"
-msgstr "%s setat ca implicit"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
-msgid "Still working…"
-msgstr "Încă lucrează…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-#: usr/share/biglinux/welcome/main.py:997
-msgid "Show on startup"
-msgstr "Afișează la pornire"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
-msgid "Welcome"
-msgstr "Bine ai venit"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
-msgid "Previous page"
-msgstr "Pagina anterioară"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
-msgid "Next page"
-msgstr "Pagina următoare"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
-#: usr/share/biglinux/welcome/main.py:1042
-msgid "Get Started"
-msgstr "Începeți"

@@ -15,6 +15,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid "In search of the perfect system!"
+msgstr "V hľadaní dokonalého systému!"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+#: usr/share/biglinux/welcome/main.py:785
+msgid "Welcome to your new system"
+msgstr "Vitajte vo vašom novom systéme"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid "Changing default browser"
+msgstr "Zmena predvoleného prehliadača"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid "Setting %s as default…"
+msgstr "Nastavujem %s ako predvolené…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid "%s set as default"
+msgstr "%s nastavené ako predvolené"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid "Still working…"
+msgstr "Ešte sa pracuje…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+#: usr/share/biglinux/welcome/main.py:997
+msgid "Show on startup"
+msgstr "Zobraziť pri spustení"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid "Welcome"
+msgstr "Vitajte"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid "Previous page"
+msgstr "Predchádzajúca stránka"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid "Next page"
+msgstr "Ďalšia stránka"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+#: usr/share/biglinux/welcome/main.py:1042
+msgid "Get Started"
+msgstr "Začať"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
 msgid "Accessibility"
@@ -305,6 +355,10 @@ msgstr "Nepodarilo sa otvoriť aplikáciu."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -351,6 +405,10 @@ msgstr "Zrušiť"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Zrušiť inštaláciu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
@@ -426,53 +484,3 @@ msgstr "Zrušenie…"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
 msgid "Cancelling installation…"
 msgstr "Zrušenie inštalácie…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
-msgid "In search of the perfect system!"
-msgstr "V hľadaní dokonalého systému!"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-#: usr/share/biglinux/welcome/main.py:785
-msgid "Welcome to your new system"
-msgstr "Vitajte vo vašom novom systéme"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
-msgid "Changing default browser"
-msgstr "Zmena predvoleného prehliadača"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
-#, python-format
-msgid "Setting %s as default…"
-msgstr "Nastavujem %s ako predvolené…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
-#, python-format
-msgid "%s set as default"
-msgstr "%s nastavené ako predvolené"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
-msgid "Still working…"
-msgstr "Ešte sa pracuje…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-#: usr/share/biglinux/welcome/main.py:997
-msgid "Show on startup"
-msgstr "Zobraziť pri spustení"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
-msgid "Welcome"
-msgstr "Vitajte"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
-msgid "Previous page"
-msgstr "Predchádzajúca stránka"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
-msgid "Next page"
-msgstr "Ďalšia stránka"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
-#: usr/share/biglinux/welcome/main.py:1042
-msgid "Get Started"
-msgstr "Začať"

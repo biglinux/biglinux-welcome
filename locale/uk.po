@@ -15,6 +15,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid "In search of the perfect system!"
+msgstr "В пошуках ідеальної системи!"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+#: usr/share/biglinux/welcome/main.py:785
+msgid "Welcome to your new system"
+msgstr "Ласкаво просимо до вашої нової системи"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid "Changing default browser"
+msgstr "Зміна браузера за замовчуванням"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid "Setting %s as default…"
+msgstr "Встановлення %s за замовчуванням…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid "%s set as default"
+msgstr "%s встановлено за замовчуванням"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid "Still working…"
+msgstr "Все ще працює…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+#: usr/share/biglinux/welcome/main.py:997
+msgid "Show on startup"
+msgstr "Показувати при запуску"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid "Welcome"
+msgstr "Ласкаво просимо"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid "Previous page"
+msgstr "Попередня сторінка"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid "Next page"
+msgstr "Наступна сторінка"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+#: usr/share/biglinux/welcome/main.py:1042
+msgid "Get Started"
+msgstr "Розпочати"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
 msgid "Accessibility"
@@ -307,6 +373,10 @@ msgstr "Не вдалося відкрити програму"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -353,6 +423,10 @@ msgstr "Скасувати"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Скасувати встановлення"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
@@ -428,69 +502,3 @@ msgstr "Скасування…"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
 msgid "Cancelling installation…"
 msgstr "Скасування встановлення…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
-msgid "In search of the perfect system!"
-msgstr "В пошуках ідеальної системи!"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-#: usr/share/biglinux/welcome/main.py:785
-msgid "Welcome to your new system"
-msgstr "Ласкаво просимо до вашої нової системи"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
-msgid "Changing default browser"
-msgstr "Зміна браузера за замовчуванням"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
-#, python-format
-msgid "Setting %s as default…"
-msgstr "Встановлення %s за замовчуванням…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
-#, python-format
-msgid "%s set as default"
-msgstr "%s встановлено за замовчуванням"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
-msgid "Still working…"
-msgstr "Все ще працює…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-#: usr/share/biglinux/welcome/main.py:997
-msgid "Show on startup"
-msgstr "Показувати при запуску"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
-msgid "Welcome"
-msgstr "Ласкаво просимо"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
-msgid "Previous page"
-msgstr "Попередня сторінка"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
-msgid "Next page"
-msgstr "Наступна сторінка"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
-#: usr/share/biglinux/welcome/main.py:1042
-msgid "Get Started"
-msgstr "Розпочати"

@@ -15,6 +15,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid "In search of the perfect system!"
+msgstr "Otsin täiuslikku süsteemi!"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
+#: usr/share/biglinux/welcome/main.py:785
+msgid "Welcome to your new system"
+msgstr "Tere tulemast oma uude süsteemi"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid "Changing default browser"
+msgstr "Vaikimisi brauseri muutmine"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid "Setting %s as default…"
+msgstr "Seadist %s vaikimisi…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid "%s set as default"
+msgstr "%s seatud vaikimisi"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid "Still working…"
+msgstr "Endiselt töötamas…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
+#: usr/share/biglinux/welcome/main.py:997
+msgid "Show on startup"
+msgstr "Näita käivitamisel"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid "Welcome"
+msgstr "Tere tulemast"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid "Previous page"
+msgstr "Eelmine leht"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid "Next page"
+msgstr "Järgmine leht"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
+#: usr/share/biglinux/welcome/main.py:1042
+msgid "Get Started"
+msgstr "Alusta"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
 msgid "Accessibility"
@@ -305,6 +371,10 @@ msgstr "Rakendust ei saanud avada."
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
@@ -351,6 +421,10 @@ msgstr "Tühista"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 msgid "Cancel installation"
 msgstr "Tühista installatsioon"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
@@ -426,69 +500,3 @@ msgstr "Tühistamine…"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
 msgid "Cancelling installation…"
 msgstr "Installeerimise tühistamine…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
-msgid "In search of the perfect system!"
-msgstr "Otsin täiuslikku süsteemi!"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-#: usr/share/biglinux/welcome/main.py:785
-msgid "Welcome to your new system"
-msgstr "Tere tulemast oma uude süsteemi"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
-msgid "Changing default browser"
-msgstr "Vaikimisi brauseri muutmine"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
-#, python-format
-msgid "Setting %s as default…"
-msgstr "Seadist %s vaikimisi…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
-#, python-format
-msgid "%s set as default"
-msgstr "%s seatud vaikimisi"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
-msgid "Still working…"
-msgstr "Endiselt töötamas…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-#: usr/share/biglinux/welcome/main.py:997
-msgid "Show on startup"
-msgstr "Näita käivitamisel"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
-msgid "Welcome"
-msgstr "Tere tulemast"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
-msgid "Previous page"
-msgstr "Eelmine leht"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
-msgid "Next page"
-msgstr "Järgmine leht"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
-#: usr/share/biglinux/welcome/main.py:1042
-msgid "Get Started"
-msgstr "Alusta"

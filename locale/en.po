@@ -15,6 +15,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+msgid "In search of the perfect system!"
+msgstr "In search of the perfect system!"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 160
+msgid "Welcome to your new system"
+msgstr "Welcome to your new system"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+msgid "Changing default browser"
+msgstr "Changing default browser"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#, python-format
+msgid "Setting %s as default…"
+msgstr "Setting %s as default…"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#, python-format
+msgid "%s set as default"
+msgstr "%s set as default"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+msgid "Still working…"
+msgstr "Still working…"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 567
+msgid "Show on startup"
+msgstr "Show on startup"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+msgid "Welcome"
+msgstr "Welcome"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+msgid "Previous page"
+msgstr "Previous page"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+msgid "Next page"
+msgstr "Next page"
+
+#
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 621
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 623
+msgid "Get Started"
+msgstr "Get Started"
+
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
 msgid "Accessibility"
 msgstr "Accessibility"
@@ -462,62 +521,3 @@ msgstr "Cancelling…"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 803
 msgid "Cancelling installation…"
 msgstr "Cancelling installation…"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
-msgid "In search of the perfect system!"
-msgstr "In search of the perfect system!"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 160
-msgid "Welcome to your new system"
-msgstr "Welcome to your new system"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
-msgid "Changing default browser"
-msgstr "Changing default browser"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
-#, python-format
-msgid "Setting %s as default…"
-msgstr "Setting %s as default…"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
-#, python-format
-msgid "%s set as default"
-msgstr "%s set as default"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
-msgid "Still working…"
-msgstr "Still working…"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 567
-msgid "Show on startup"
-msgstr "Show on startup"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
-msgid "Welcome"
-msgstr "Welcome"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
-msgid "Previous page"
-msgstr "Previous page"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
-msgid "Next page"
-msgstr "Next page"
-
-#
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 621
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 623
-msgid "Get Started"
-msgstr "Get Started"
