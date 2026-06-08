@@ -420,6 +420,10 @@ msgstr "ביטול התקנה"
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
