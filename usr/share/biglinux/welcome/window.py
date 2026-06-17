@@ -13,11 +13,11 @@ import gi
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 
-import yaml  # noqa: E402
-from gi.repository import Adw, GdkPixbuf, GLib, Gtk  # noqa: E402
+import yaml
+from gi.repository import Adw, GdkPixbuf, GLib, Gtk
 
-from utils import APP_PATH, get_logo_path, parse_os_release  # noqa: E402
-from widgets import (  # noqa: E402
+from utils import APP_PATH, get_logo_path, parse_os_release
+from widgets import (
     ActionCard,
     AnimatedLogo,
     BrowserCard,
@@ -55,17 +55,22 @@ def _flush_line_buffer(buf: bytes, panel: InstallPanel) -> bytes:
 class WelcomeWindow(Adw.ApplicationWindow):
     """Main welcome window."""
 
-    def __init__(self, app: Adw.Application) -> None:
+    def __init__(self, app: Adw.Application, start_page: int = 0) -> None:
         super().__init__(application=app)
         self.set_default_size(1000, 780)
         self.set_title("BigLinux Welcome")
 
         self.pages_data = self._load_pages()
-        self.current_page = 0
+        
+        # Determine the actual starting page index to avoid out-of-bounds errors
+        total_pages = 1 + (len(self.pages_data) if self.pages_data else 0)
+        self.current_page = max(0, min(start_page, total_pages - 1))
+        
         self.page_widgets: list[Gtk.Widget] = []
         self.browser_cards: list[BrowserCard] = []
 
         self._build_ui()
+        self._navigate()
 
     def _load_pages(self) -> list | None:
         try:

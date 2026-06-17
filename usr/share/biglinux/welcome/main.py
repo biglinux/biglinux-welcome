@@ -15,12 +15,24 @@ locale.bindtextdomain(DOMAIN, LOCALE_DIR)
 gettext.bindtextdomain(DOMAIN, LOCALE_DIR)
 gettext.textdomain(DOMAIN)
 
-from app import BigLinuxWelcomeApp  # noqa: E402
+from app import BigLinuxWelcomeApp
 
 
 def main() -> None:
     """Entry point."""
-    app = BigLinuxWelcomeApp()
+    start_page = 0
+    if "--start-page" in sys.argv:
+        try:
+            idx = sys.argv.index("--start-page") + 1
+            start_page = int(sys.argv[idx])
+            # Remove the flag from argv so it doesn't confuse Gtk.Application.run
+            sys_arg_to_remove = sys.argv[idx]
+            sys.argv.pop(idx)
+            sys.argv.pop(idx - 1)
+        except (ValueError, IndexError):
+            pass
+
+    app = BigLinuxWelcomeApp(start_page=start_page)
     app.run(sys.argv)
 
 

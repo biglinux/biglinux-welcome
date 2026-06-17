@@ -16,10 +16,10 @@ gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 gi.require_version("GdkPixbuf", "2.0")
 
-import cairo  # noqa: E402
-from gi.repository import Adw, Gdk, GdkPixbuf, GLib, Gtk  # noqa: E402
+import cairo
+from gi.repository import Adw, Gdk, GdkPixbuf, GLib, Gtk
 
-from utils import APP_PATH, load_browser_icon, load_icon  # noqa: E402
+from utils import APP_PATH, load_browser_icon, load_icon
 
 _ = gettext.gettext
 

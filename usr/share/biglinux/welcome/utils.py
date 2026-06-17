@@ -10,7 +10,7 @@ import gi
 gi.require_version("Gtk", "4.0")
 gi.require_version("GdkPixbuf", "2.0")
 
-from gi.repository import GdkPixbuf, GLib, Gtk  # noqa: E402
+from gi.repository import GdkPixbuf, GLib, Gtk
 
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
