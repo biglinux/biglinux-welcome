@@ -15,6 +15,188 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+#: usr/share/biglinux/welcome/main.py:435
+msgid "Kernel"
+msgstr "Kernel"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+#: usr/share/biglinux/welcome/main.py:436
+msgid "Desktop"
+msgstr "デスクトップ"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+#: usr/share/biglinux/welcome/main.py:437
+msgid "Display"
+msgstr "ディスプレイ"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#, python-format
+msgid "Could not open %s. It may not be installed."
+msgstr "%sを開くことができませんでした。インストールされていない可能性があります。"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+msgid "Could not open application"
+msgstr "アプリケーションを開くことができませんでした。"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+msgid "installed"
+msgstr "インストール済み"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+msgid "not installed"
+msgstr "未インストール"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+msgid "default browser"
+msgstr "デフォルトブラウザ"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#, python-format
+msgid "Installing %s…"
+msgstr "%sをインストール中…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+msgid "Preparing download…"
+msgstr "ダウンロードを準備中…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "View details"
+msgstr "詳細を表示"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+msgid "Show installation details"
+msgstr "インストールの詳細を表示"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+msgid "Installation log output"
+msgstr "インストールログ出力"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+msgid "Cancel"
+msgstr "キャンセル"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+msgid "Cancel installation"
+msgstr "インストールをキャンセルする"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+msgid "Close installation panel"
+msgstr "インストールパネルを閉じる"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#, python-format
+msgid "Installing %s"
+msgstr "%sをインストール中"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+msgid "It has been set as your default browser."
+msgstr "既定のブラウザーとして設定されています。"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#, python-format
+msgid "%s installed successfully!"
+msgstr "%sが正常にインストールされました！"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#, python-format
+msgid "%s installed successfully"
+msgstr "%sが正常にインストールされました"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#, python-format
+msgid "Failed to install %s"
+msgstr "%sのインストールに失敗しました。"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+msgid "Check the details below for more information."
+msgstr "以下の詳細を確認して、詳細情報をご覧ください。"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#, python-format
+msgid "Installation of %s failed"
+msgstr "%sのインストールに失敗しました"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+msgid "Cannot cancel during installation"
+msgstr "インストール中はキャンセルできません。"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#, python-brace-format
+msgid "Downloading {name}…"
+msgstr "{name}をダウンロード中…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#, python-brace-format
+msgid "Downloading… {pct}% ({speed})"
+msgstr "ダウンロード中… {pct}% ({speed})"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "Hide details"
+msgstr "詳細を非表示にする"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+msgid "Hide installation details"
+msgstr "インストールの詳細を非表示にする"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+msgid "Cancelling…"
+msgstr "キャンセル中…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+msgid "Cancelling installation…"
+msgstr "インストールをキャンセルしています…"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
 msgid "In search of the perfect system!"
 msgstr "完璧なシステムを探しています！"
@@ -328,177 +510,3 @@ msgstr "あなたの寄付はプロジェクトにとって非常に重要です
 #: usr/share/biglinux/welcome/translatable_strings.py:61
 msgid "Zen Browser"
 msgstr "Zen Browser"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-#: usr/share/biglinux/welcome/main.py:435
-msgid "Kernel"
-msgstr "Kernel"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-#: usr/share/biglinux/welcome/main.py:436
-msgid "Desktop"
-msgstr "デスクトップ"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-#: usr/share/biglinux/welcome/main.py:437
-msgid "Display"
-msgstr "ディスプレイ"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
-#, python-format
-msgid "Could not open %s. It may not be installed."
-msgstr "%sを開くことができませんでした。インストールされていない可能性があります。"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
-msgid "Could not open application"
-msgstr "アプリケーションを開くことができませんでした。"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
-msgid "installed"
-msgstr "インストール済み"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
-msgid "not installed"
-msgstr "未インストール"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
-msgid "default browser"
-msgstr "デフォルトブラウザ"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
-#, python-format
-msgid "Installing %s…"
-msgstr "%sをインストール中…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
-msgid "Preparing download…"
-msgstr "ダウンロードを準備中…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
-msgid "View details"
-msgstr "詳細を表示"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
-msgid "Show installation details"
-msgstr "インストールの詳細を表示"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
-msgid "Installation log output"
-msgstr "インストールログ出力"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
-msgid "Cancel"
-msgstr "キャンセル"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
-msgid "Cancel installation"
-msgstr "インストールをキャンセルする"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
-msgid "Close installation panel"
-msgstr "インストールパネルを閉じる"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
-#, python-format
-msgid "Installing %s"
-msgstr "%sをインストール中"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
-msgid "It has been set as your default browser."
-msgstr "既定のブラウザーとして設定されています。"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
-#, python-format
-msgid "%s installed successfully!"
-msgstr "%sが正常にインストールされました！"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
-#, python-format
-msgid "%s installed successfully"
-msgstr "%sが正常にインストールされました"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
-#, python-format
-msgid "Failed to install %s"
-msgstr "%sのインストールに失敗しました。"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
-msgid "Check the details below for more information."
-msgstr "以下の詳細を確認して、詳細情報をご覧ください。"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
-#, python-format
-msgid "Installation of %s failed"
-msgstr "%sのインストールに失敗しました"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
-msgid "Cannot cancel during installation"
-msgstr "インストール中はキャンセルできません。"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
-#, python-brace-format
-msgid "Downloading {name}…"
-msgstr "{name}をダウンロード中…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
-#, python-brace-format
-msgid "Downloading… {pct}% ({speed})"
-msgstr "ダウンロード中… {pct}% ({speed})"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
-msgid "Hide details"
-msgstr "詳細を非表示にする"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
-msgid "Hide installation details"
-msgstr "インストールの詳細を非表示にする"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
-msgid "Cancelling…"
-msgstr "キャンセル中…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
-msgid "Cancelling installation…"
-msgstr "インストールをキャンセルしています…"

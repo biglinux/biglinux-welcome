@@ -15,6 +15,182 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
+#: usr/share/biglinux/welcome/main.py:435
+msgid "Kernel"
+msgstr "Kernel"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
+#: usr/share/biglinux/welcome/main.py:436
+msgid "Desktop"
+msgstr "Desktop"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
+#: usr/share/biglinux/welcome/main.py:437
+msgid "Display"
+msgstr "Displej"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#, python-format
+msgid "Could not open %s. It may not be installed."
+msgstr "Nepodarilo sa otvoriť %s. Možno nie je nainštalovaný."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+msgid "Could not open application"
+msgstr "Nepodarilo sa otvoriť aplikáciu."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+msgid "installed"
+msgstr "nainštalované"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+msgid "not installed"
+msgstr "nenainštalované"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+msgid "default browser"
+msgstr "predvolený prehliadač"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#, python-format
+msgid "Installing %s…"
+msgstr "Inštalujem %s…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+msgid "Preparing download…"
+msgstr "Pripravujem sťahovanie…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "View details"
+msgstr "Zobraziť podrobnosti"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+msgid "Show installation details"
+msgstr "Zobraziť podrobnosti o inštalácii"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+msgid "Installation log output"
+msgstr "Výstup inštalačného protokolu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+msgid "Cancel"
+msgstr "Zrušiť"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+msgid "Cancel installation"
+msgstr "Zrušiť inštaláciu"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+msgid "Done"
+msgstr "Hotovo"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+msgid "Close installation panel"
+msgstr "Zavrieť inštalačný panel"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#, python-format
+msgid "Installing %s"
+msgstr "Inštalácia %s"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+msgid "It has been set as your default browser."
+msgstr "Bol nastavený ako váš predvolený prehliadač."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#, python-format
+msgid "%s installed successfully!"
+msgstr "%s bol úspešne nainštalovaný!"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#, python-format
+msgid "%s installed successfully"
+msgstr "%s bol úspešne nainštalovaný"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#, python-format
+msgid "Failed to install %s"
+msgstr "Inštalácia %s zlyhala"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+msgid "Check the details below for more information."
+msgstr "Skontrolujte podrobnosti nižšie pre viac informácií."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#, python-format
+msgid "Installation of %s failed"
+msgstr "Inštalácia %s zlyhala"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+msgid "Cannot cancel during installation"
+msgstr "Nie je možné zrušiť počas inštalácie."
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#, python-brace-format
+msgid "Downloading {name}…"
+msgstr "Sťahovanie {name}…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#, python-brace-format
+msgid "Downloading… {pct}% ({speed})"
+msgstr "Sťahovanie… {pct}% ({speed})"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+msgid "Hide details"
+msgstr "Skryť podrobnosti"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+msgid "Hide installation details"
+msgstr "Skryť podrobnosti inštalácie"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+msgid "Cancelling…"
+msgstr "Zrušenie…"
+# 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+msgid "Cancelling installation…"
+msgstr "Zrušenie inštalácie…"
+# 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
 msgid "In search of the perfect system!"
 msgstr "V hľadaní dokonalého systému!"
@@ -326,175 +502,3 @@ msgstr "Vaša darcovská činnosť je pre projekt veľmi dôležitá a sledujte 
 #: usr/share/biglinux/welcome/translatable_strings.py:61
 msgid "Zen Browser"
 msgstr "Zen Browser"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-#: usr/share/biglinux/welcome/main.py:435
-msgid "Kernel"
-msgstr "Kernel"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-#: usr/share/biglinux/welcome/main.py:436
-msgid "Desktop"
-msgstr "Desktop"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-#: usr/share/biglinux/welcome/main.py:437
-msgid "Display"
-msgstr "Displej"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
-#, python-format
-msgid "Could not open %s. It may not be installed."
-msgstr "Nepodarilo sa otvoriť %s. Možno nie je nainštalovaný."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
-msgid "Could not open application"
-msgstr "Nepodarilo sa otvoriť aplikáciu."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
-msgid "installed"
-msgstr "nainštalované"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
-msgid "not installed"
-msgstr "nenainštalované"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
-msgid "default browser"
-msgstr "predvolený prehliadač"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
-#, python-format
-msgid "Installing %s…"
-msgstr "Inštalujem %s…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
-msgid "Preparing download…"
-msgstr "Pripravujem sťahovanie…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
-msgid "View details"
-msgstr "Zobraziť podrobnosti"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
-msgid "Show installation details"
-msgstr "Zobraziť podrobnosti o inštalácii"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
-msgid "Installation log output"
-msgstr "Výstup inštalačného protokolu"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
-msgid "Cancel"
-msgstr "Zrušiť"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
-msgid "Cancel installation"
-msgstr "Zrušiť inštaláciu"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-msgid "Done"
-msgstr "Hotovo"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
-msgid "Close installation panel"
-msgstr "Zavrieť inštalačný panel"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
-#, python-format
-msgid "Installing %s"
-msgstr "Inštalácia %s"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
-msgid "It has been set as your default browser."
-msgstr "Bol nastavený ako váš predvolený prehliadač."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
-#, python-format
-msgid "%s installed successfully!"
-msgstr "%s bol úspešne nainštalovaný!"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
-#, python-format
-msgid "%s installed successfully"
-msgstr "%s bol úspešne nainštalovaný"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
-#, python-format
-msgid "Failed to install %s"
-msgstr "Inštalácia %s zlyhala"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
-msgid "Check the details below for more information."
-msgstr "Skontrolujte podrobnosti nižšie pre viac informácií."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
-#, python-format
-msgid "Installation of %s failed"
-msgstr "Inštalácia %s zlyhala"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
-msgid "Cannot cancel during installation"
-msgstr "Nie je možné zrušiť počas inštalácie."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
-#, python-brace-format
-msgid "Downloading {name}…"
-msgstr "Sťahovanie {name}…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
-#, python-brace-format
-msgid "Downloading… {pct}% ({speed})"
-msgstr "Sťahovanie… {pct}% ({speed})"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
-msgid "Hide details"
-msgstr "Skryť podrobnosti"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
-msgid "Hide installation details"
-msgstr "Skryť podrobnosti inštalácie"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
-msgid "Cancelling…"
-msgstr "Zrušenie…"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
-msgid "Cancelling installation…"
-msgstr "Zrušenie inštalácie…"
