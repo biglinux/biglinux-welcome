@@ -1,44 +1,51 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Translations for biglinux-welcome.
 # This file is distributed under the same license as the biglinux-welcome package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2026-10-03 09:00-0300\n"
+"PO-Revision-Date: 2026-10-03 09:00-0300\n"
+"Last-Translator: \n"
+"Language-Team: el\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-#: usr/share/biglinux/welcome/main.py:435
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
+# line: 248
+#: usr/share/biglinux/welcome/widgets.py:120
 msgid "Kernel"
-msgstr "Kernel"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-#: usr/share/biglinux/welcome/main.py:436
+msgstr "Πυρήνας"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
+# line: 258
+#: usr/share/biglinux/welcome/widgets.py:121
 msgid "Desktop"
 msgstr "Επιφάνεια εργασίας"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-#: usr/share/biglinux/welcome/main.py:437
+#: usr/share/biglinux/welcome/widgets.py:123
 msgid "Display"
 msgstr "Οθόνη"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#: usr/share/biglinux/welcome/widgets.py:232
 #, python-format
 msgid "Could not open %s. It may not be installed."
-msgstr "Δεν ήταν δυνατή η ανοίγμα του %s. Ίσως να μην είναι εγκατεστημένο."
-# 
+msgstr "Δεν ήταν δυνατό το άνοιγμα του %s. Ίσως να μην είναι εγκατεστημένο."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+#: usr/share/biglinux/welcome/widgets.py:241
 msgid "Could not open application"
-msgstr "Δεν ήταν δυνατή η ανοίγμα της εφαρμογής."
-# 
+msgstr "Δεν ήταν δυνατό το άνοιγμα της εφαρμογής"
+
+#: usr/share/biglinux/welcome/widgets.py:244
+msgid "OK"
+msgstr "OK"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
@@ -64,48 +71,64 @@ msgstr "Δεν ήταν δυνατή η ανοίγμα της εφαρμογής
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+#: usr/share/biglinux/welcome/widgets.py:328
 msgid "installed"
 msgstr "εγκατεστημένο"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+#: usr/share/biglinux/welcome/widgets.py:330
 msgid "not installed"
 msgstr "δεν έχει εγκατασταθεί"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+#: usr/share/biglinux/welcome/widgets.py:332
 msgid "default browser"
 msgstr "προεπιλεγμένος περιηγητής"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#: usr/share/biglinux/welcome/widgets.py:489
 #, python-format
 msgid "Installing %s…"
 msgstr "Εγκατάσταση %s…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+#: usr/share/biglinux/welcome/widgets.py:495
 msgid "Preparing download…"
 msgstr "Προετοιμασία λήψης…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+#: usr/share/biglinux/welcome/widgets.py:522
+#: usr/share/biglinux/welcome/widgets.py:789
 msgid "View details"
-msgstr "Δείτε λεπτομέρειες"
-# 
+msgstr "Προβολή λεπτομερειών"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+#: usr/share/biglinux/welcome/widgets.py:529
+#: usr/share/biglinux/welcome/widgets.py:795
 msgid "Show installation details"
 msgstr "Εμφάνιση λεπτομερειών εγκατάστασης"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+#: usr/share/biglinux/welcome/widgets.py:557
 msgid "Installation log output"
 msgstr "Έξοδος αρχείου καταγραφής εγκατάστασης"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+#: usr/share/biglinux/welcome/widgets.py:576
 msgid "Cancel"
 msgstr "Ακύρωση"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+#: usr/share/biglinux/welcome/widgets.py:580
 msgid "Cancel installation"
 msgstr "Ακύρωση εγκατάστασης"
-# 
+
+#: usr/share/biglinux/welcome/widgets.py:585
+msgid "Done"
+msgstr "Τέλος"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
@@ -131,383 +154,471 @@ msgstr "Ακύρωση εγκατάστασης"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+#: usr/share/biglinux/welcome/widgets.py:590
 msgid "Close installation panel"
 msgstr "Κλείσιμο πίνακα εγκατάστασης"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#: usr/share/biglinux/welcome/widgets.py:598
 #, python-format
 msgid "Installing %s"
 msgstr "Εγκατάσταση %s"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+#: usr/share/biglinux/welcome/widgets.py:667
 msgid "It has been set as your default browser."
 msgstr "Έχει οριστεί ως προεπιλεγμένος περιηγητής σας."
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#: usr/share/biglinux/welcome/widgets.py:668
 #, python-format
 msgid "%s installed successfully!"
 msgstr "%s εγκαταστάθηκε με επιτυχία!"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#: usr/share/biglinux/welcome/widgets.py:676
 #, python-format
 msgid "%s installed successfully"
 msgstr "%s εγκαταστάθηκε με επιτυχία"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#: usr/share/biglinux/welcome/widgets.py:684
 #, python-format
 msgid "Failed to install %s"
 msgstr "Αποτυχία εγκατάστασης %s"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+#: usr/share/biglinux/welcome/widgets.py:687
 msgid "Check the details below for more information."
 msgstr "Ελέγξτε τις λεπτομέρειες παρακάτω για περισσότερες πληροφορίες."
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#: usr/share/biglinux/welcome/widgets.py:694
 #, python-format
 msgid "Installation of %s failed"
 msgstr "Η εγκατάσταση του %s απέτυχε"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+#: usr/share/biglinux/welcome/widgets.py:756
 msgid "Cannot cancel during installation"
 msgstr "Δεν μπορείτε να ακυρώσετε κατά τη διάρκεια της εγκατάστασης."
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#: usr/share/biglinux/welcome/widgets.py:767
 #, python-brace-format
 msgid "Downloading {name}…"
-msgstr "Κατεβάζω {name}…"
-# 
+msgstr "Λήψη {name}…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#: usr/share/biglinux/welcome/widgets.py:779
 #, python-brace-format
 msgid "Downloading… {pct}% ({speed})"
-msgstr "Κατεβάζω… {pct}% ({speed})"
-# 
+msgstr "Λήψη… {pct}% ({speed})"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+#: usr/share/biglinux/welcome/widgets.py:789
 msgid "Hide details"
 msgstr "Απόκρυψη λεπτομερειών"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+#: usr/share/biglinux/welcome/widgets.py:793
 msgid "Hide installation details"
 msgstr "Απόκρυψη λεπτομερειών εγκατάστασης"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+#: usr/share/biglinux/welcome/widgets.py:802
 msgid "Cancelling…"
 msgstr "Ακύρωση…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+#: usr/share/biglinux/welcome/widgets.py:803
 msgid "Cancelling installation…"
 msgstr "Ακύρωση εγκατάστασης…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+#: usr/share/biglinux/welcome/window.py:160
 msgid "In search of the perfect system!"
 msgstr "Σε αναζήτηση του τέλειου συστήματος!"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-#: usr/share/biglinux/welcome/main.py:785
+#: usr/share/biglinux/welcome/window.py:165
 msgid "Welcome to your new system"
 msgstr "Καλώς ήρθατε στο νέο σας σύστημα"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+#: usr/share/biglinux/welcome/window.py:321
 msgid "Changing default browser"
 msgstr "Αλλαγή προεπιλεγμένου προγράμματος περιήγησης"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#: usr/share/biglinux/welcome/window.py:404
 #, python-format
 msgid "Setting %s as default…"
 msgstr "Ορισμός του %s ως προεπιλογή…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#: usr/share/biglinux/welcome/window.py:417
 #, python-format
 msgid "%s set as default"
 msgstr "%s ορίστηκε ως προεπιλογή"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+#: usr/share/biglinux/welcome/window.py:527
 msgid "Still working…"
-msgstr "Ακόμα εργάζεται…"
-# 
+msgstr "Η εργασία συνεχίζεται…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-#: usr/share/biglinux/welcome/main.py:997
+#: usr/share/biglinux/welcome/window.py:572
 msgid "Show on startup"
 msgstr "Εμφάνιση κατά την εκκίνηση"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+#: usr/share/biglinux/welcome/window.py:579
 msgid "Welcome"
 msgstr "Καλώς ήρθατε"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+#: usr/share/biglinux/welcome/window.py:600
 msgid "Previous page"
 msgstr "Προηγούμενη σελίδα"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+#: usr/share/biglinux/welcome/window.py:612
+#: usr/share/biglinux/welcome/window.py:638
 msgid "Next page"
 msgstr "Επόμενη σελίδα"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
-#: usr/share/biglinux/welcome/main.py:1042
+#: usr/share/biglinux/welcome/window.py:626
+#: usr/share/biglinux/welcome/window.py:628
 msgid "Get Started"
 msgstr "Ξεκινήστε"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
 msgid "Accessibility"
 msgstr "Προσβασιμότητα"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:14
 msgid "AppStore"
 msgstr "App Store"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 15
 #: usr/share/biglinux/welcome/translatable_strings.py:15
 msgid "Ashy Terminal"
 msgstr "Ashy Terminal"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 14
 #: usr/share/biglinux/welcome/translatable_strings.py:16
 msgid "Audio Converter"
-msgstr "Μετατροπέας Ήχου"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+msgstr "Μετατροπέας ήχου"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 14
 #: usr/share/biglinux/welcome/translatable_strings.py:17
 msgid "Big Store"
 msgstr "Big Store"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 15
 #: usr/share/biglinux/welcome/translatable_strings.py:18
 msgid "BigLinux Info"
-msgstr "BigLinux Πληροφορίες"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+msgstr "Πληροφορίες για το BigLinux"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 16
 #: usr/share/biglinux/welcome/translatable_strings.py:19
 msgid "BigLinux Settings"
 msgstr "Ρυθμίσεις BigLinux"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 16
 #: usr/share/biglinux/welcome/translatable_strings.py:20
 msgid "Brave"
 msgstr "Brave"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 16
 #: usr/share/biglinux/welcome/translatable_strings.py:21
 msgid "Choose Your Avatar"
-msgstr "Επιλέξτε τον Άβατάρ σας"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 17
+msgstr "Επιλέξτε το άβατάρ σας"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 17
 #: usr/share/biglinux/welcome/translatable_strings.py:22
 msgid "Choose your default browser"
 msgstr "Επιλέξτε τον προεπιλεγμένο σας περιηγητή"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 19
 #: usr/share/biglinux/welcome/translatable_strings.py:23
 msgid "Chrome"
 msgstr "Chrome"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 20
 #: usr/share/biglinux/welcome/translatable_strings.py:24
 msgid "Chromium"
 msgstr "Chromium"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 18
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 18
 #: usr/share/biglinux/welcome/translatable_strings.py:25
 msgid "Configure voice"
 msgstr "Ρυθμίστε τη φωνή"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 19
 #: usr/share/biglinux/welcome/translatable_strings.py:26
 msgid "Control Center"
-msgstr "Κέντρο Ελέγχου"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+msgstr "Κέντρο ελέγχου"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 20
 #: usr/share/biglinux/welcome/translatable_strings.py:27
 msgid "Discover some features"
 msgstr "Ανακαλύψτε μερικά χαρακτηριστικά"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 21
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 21
 #: usr/share/biglinux/welcome/translatable_strings.py:28
 msgid "Display Settings"
-msgstr "Ρυθμίσεις Οθόνης"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 22
+msgstr "Ρυθμίσεις οθόνης"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 22
 #: usr/share/biglinux/welcome/translatable_strings.py:29
 msgid "Donate"
 msgstr "Δωρεά"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 23
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 23
 #: usr/share/biglinux/welcome/translatable_strings.py:30
 msgid "Donation and Social Networks"
-msgstr "Δωρεά και Κοινωνικά Δίκτυα"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 24
+msgstr "Δωρεές και κοινωνικά δίκτυα"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 24
 #: usr/share/biglinux/welcome/translatable_strings.py:31
 msgid "Driver Installation and Hardware Information"
 msgstr "Εγκατάσταση οδηγών και πληροφορίες υλικού"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 25
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 25
 #: usr/share/biglinux/welcome/translatable_strings.py:32
 msgid "Driver Manager"
-msgstr "Διαχειριστής Οδηγών"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
+msgstr "Διαχειριστής οδηγών"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 29
 #: usr/share/biglinux/welcome/translatable_strings.py:33
 msgid "Edge"
 msgstr "Edge"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 30
 #: usr/share/biglinux/welcome/translatable_strings.py:34
 msgid "Falkon"
 msgstr "Falkon"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid "Family Safety"
-msgstr "Οικογενειακή Ασφάλεια"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 35
 #: usr/share/biglinux/welcome/translatable_strings.py:35
+msgid "Family Safety"
+msgstr "Οικογενειακή ασφάλεια"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 26
+#: usr/share/biglinux/welcome/translatable_strings.py:36
 msgid "Firefox"
 msgstr "Firefox"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 27
-#: usr/share/biglinux/welcome/translatable_strings.py:36
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 27
+#: usr/share/biglinux/welcome/translatable_strings.py:37
 msgid "Forum"
 msgstr "Φόρουμ"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:37
-msgid "Initial Settings"
-msgstr "Αρχικές Ρυθμίσεις"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 29
 #: usr/share/biglinux/welcome/translatable_strings.py:38
-msgid "Install or Remove Drivers and Firmwares easily."
-msgstr "Εγκαταστήστε ή αφαιρέστε εύκολα τους οδηγούς και τα υλικολογισμικά."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 31
+msgid "Initial Settings"
+msgstr "Αρχικές ρυθμίσεις"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 30
 #: usr/share/biglinux/welcome/translatable_strings.py:39
+msgid "Install or Remove Drivers and Firmwares easily."
+msgstr "Εγκαταστήστε ή αφαιρέστε εύκολα οδηγούς και υλικολογισμικό."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 31
+#: usr/share/biglinux/welcome/translatable_strings.py:40
 msgid "KDE Connect"
 msgstr "KDE Connect"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 32
-#: usr/share/biglinux/welcome/translatable_strings.py:40
-msgid ""
-"KDE Connect is an application that facilitates wireless communication and data transfer between "
-"devices on local networks. Available on the Google Play Store for Android and the Apple Store for "
-"iPhone."
-msgstr ""
-"Το KDE Connect είναι μια εφαρμογή που διευκολύνει την ασύρματη επικοινωνία και τη μεταφορά "
-"δεδομένων μεταξύ συσκευών σε τοπικά δίκτυα. Διαθέσιμο στο Google Play Store για Android και στο "
-"Apple Store για iPhone."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 32
 #: usr/share/biglinux/welcome/translatable_strings.py:41
-msgid "Kernel Manager"
-msgstr "Διαχειριστής Πυρήνα"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 33
+msgid ""
+"KDE Connect is an application that facilitates wireless communication and "
+"data transfer between devices on local networks. Available on the Google "
+"Play Store for Android and the Apple Store for iPhone."
+msgstr ""
+"Το KDE Connect είναι μια εφαρμογή που διευκολύνει την ασύρματη επικοινωνία "
+"και τη μεταφορά δεδομένων μεταξύ συσκευών σε τοπικά δίκτυα. Διαθέσιμο στο "
+"Google Play Store για Android και στο App Store για iPhone."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:42
-msgid "Language Packs"
-msgstr "Γλωσσικά Πακέτα"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
+msgid "Kernel Manager"
+msgstr "Διαχειριστής πυρήνα"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 33
 #: usr/share/biglinux/welcome/translatable_strings.py:43
+msgid "Language Packs"
+msgstr "Γλωσσικά πακέτα"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:44
 msgid "Librewolf"
 msgstr "Librewolf"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:44
-msgid "Network Info"
-msgstr "Πληροφορίες Δικτύου"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 34
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 43
 #: usr/share/biglinux/welcome/translatable_strings.py:45
-msgid "Noise Reduction"
-msgstr "Μείωση Θορύβου"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
+msgid "Network Info"
+msgstr "Πληροφορίες δικτύου"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 34
 #: usr/share/biglinux/welcome/translatable_strings.py:46
+msgid "Noise Reduction"
+msgstr "Μείωση θορύβου"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 35
+#: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "OCR to PDF"
 msgstr "OCR σε PDF"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 48
+#: usr/share/biglinux/welcome/translatable_strings.py:48
 msgid "Open Parental Controls"
-msgstr "Άνοιγμα Γονικών Ελέγχων"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
-#: usr/share/biglinux/welcome/translatable_strings.py:47
+msgstr "Άνοιγμα γονικού ελέγχου"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 41
+#: usr/share/biglinux/welcome/translatable_strings.py:49
 msgid "Opera"
 msgstr "Opera"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
-#: usr/share/biglinux/welcome/translatable_strings.py:48
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 36
+#: usr/share/biglinux/welcome/translatable_strings.py:50
 msgid "Our platform is collaborative, join this evolution."
-msgstr "Η πλατφόρμα μας είναι συνεργατική, συμμετάσχετε σε αυτήν την εξέλιξη."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
-#: usr/share/biglinux/welcome/translatable_strings.py:49
+msgstr "Η πλατφόρμα μας βασίζεται στη συνεργασία. Συμβάλετε στην εξέλιξή της."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 37
+#: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "PlayStore"
 msgstr "Play Store"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:50
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:52
 msgid "Printers"
 msgstr "Εκτυπωτές"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
-msgid "Protect your children online. Set up supervised accounts, screen time, and content filters."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 53
+#: usr/share/biglinux/welcome/translatable_strings.py:53
+msgid ""
+"Protect your children online. Set up supervised accounts, screen time, and "
+"content filters."
 msgstr ""
-"Προστατέψτε τα παιδιά σας στο διαδίκτυο. Ρυθμίστε εποπτευόμενους λογαριασμούς, χρόνο οθόνης και "
-"φίλτρα περιεχομένου."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:51
+"Προστατέψτε τα παιδιά σας στο διαδίκτυο. Ρυθμίστε εποπτευόμενους "
+"λογαριασμούς, χρόνο οθόνης και φίλτρα περιεχομένου."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:54
 msgid "Session and Themes"
-msgstr "Σύνοδος και Θέματα"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:52
+msgstr "Συνεδρία και θέματα"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:55
 msgid "Set your default browser."
 msgstr "Ορίστε τον προεπιλεγμένο σας περιηγητή."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:53
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:56
 msgid "Telegram"
 msgstr "Telegram"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-#: usr/share/biglinux/welcome/translatable_strings.py:54
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 54
+#: usr/share/biglinux/welcome/translatable_strings.py:57
 msgid "Time Shift"
 msgstr "Timeshift"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:55
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:58
 msgid "Video Converter"
-msgstr "Μετατροπέας Βίντεο"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
-#: usr/share/biglinux/welcome/translatable_strings.py:56
+msgstr "Μετατροπέας βίντεο"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 48
+#: usr/share/biglinux/welcome/translatable_strings.py:59
 msgid "Vivaldi"
 msgstr "Vivaldi"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
-#: usr/share/biglinux/welcome/translatable_strings.py:57
-msgid "We provide comprehensive settings for you to select in an extremely simple way."
-msgstr "Παρέχουμε ολοκληρωμένες ρυθμίσεις για να επιλέξετε με εξαιρετικά απλό τρόπο."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:58
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 42
+#: usr/share/biglinux/welcome/translatable_strings.py:60
+msgid ""
+"We provide comprehensive settings for you to select in an extremely simple "
+"way."
+msgstr "Προσφέρουμε ολοκληρωμένες ρυθμίσεις που μπορείτε να επιλέξετε εύκολα."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 43
+#: usr/share/biglinux/welcome/translatable_strings.py:61
 msgid "WebApps"
-msgstr "Ιστοσελίδες εφαρμογών"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
-#: usr/share/biglinux/welcome/translatable_strings.py:59
+msgstr "Εφαρμογές ιστού"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 44
+#: usr/share/biglinux/welcome/translatable_strings.py:62
 msgid "YouTube"
 msgstr "YouTube"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
-#: usr/share/biglinux/welcome/translatable_strings.py:60
-msgid "Your donation is very important for the project and follow us on social media."
-msgstr "Η δωρεά σας είναι πολύ σημαντική για το έργο και ακολουθήστε μας στα μέσα κοινωνικής δικτύωσης."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
-#: usr/share/biglinux/welcome/translatable_strings.py:61
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 45
+#: usr/share/biglinux/welcome/translatable_strings.py:63
+msgid ""
+"Your donation is very important for the project and follow us on social "
+"media."
+msgstr ""
+"Η δωρεά σας είναι πολύ σημαντική για το έργο. Ακολουθήστε μας και στα μέσα "
+"κοινωνικής δικτύωσης."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 59
+#: usr/share/biglinux/welcome/translatable_strings.py:64
 msgid "Zen Browser"
 msgstr "Zen Browser"

@@ -1,44 +1,51 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Translations for biglinux-welcome.
 # This file is distributed under the same license as the biglinux-welcome package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2026-10-03 09:00-0300\n"
+"PO-Revision-Date: 2026-10-03 09:00-0300\n"
+"Last-Translator: \n"
+"Language-Team: ro\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-#: usr/share/biglinux/welcome/main.py:435
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
+# line: 248
+#: usr/share/biglinux/welcome/widgets.py:120
 msgid "Kernel"
-msgstr "Kernel"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-#: usr/share/biglinux/welcome/main.py:436
+msgstr "Nucleu"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
+# line: 258
+#: usr/share/biglinux/welcome/widgets.py:121
 msgid "Desktop"
-msgstr "Desktop"
-# 
+msgstr "Spațiu de lucru"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-#: usr/share/biglinux/welcome/main.py:437
+#: usr/share/biglinux/welcome/widgets.py:123
 msgid "Display"
 msgstr "Ecran"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#: usr/share/biglinux/welcome/widgets.py:232
 #, python-format
 msgid "Could not open %s. It may not be installed."
 msgstr "Nu s-a putut deschide %s. Este posibil să nu fie instalat."
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+#: usr/share/biglinux/welcome/widgets.py:241
 msgid "Could not open application"
 msgstr "Nu s-a putut deschide aplicația."
-# 
+
+#: usr/share/biglinux/welcome/widgets.py:244
+msgid "OK"
+msgstr "OK"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
@@ -64,48 +71,64 @@ msgstr "Nu s-a putut deschide aplicația."
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+#: usr/share/biglinux/welcome/widgets.py:328
 msgid "installed"
 msgstr "instalat"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+#: usr/share/biglinux/welcome/widgets.py:330
 msgid "not installed"
 msgstr "neinstalat"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+#: usr/share/biglinux/welcome/widgets.py:332
 msgid "default browser"
 msgstr "browser implicit"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#: usr/share/biglinux/welcome/widgets.py:489
 #, python-format
 msgid "Installing %s…"
 msgstr "Instalare %s…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+#: usr/share/biglinux/welcome/widgets.py:495
 msgid "Preparing download…"
 msgstr "Se pregătește descărcarea…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+#: usr/share/biglinux/welcome/widgets.py:522
+#: usr/share/biglinux/welcome/widgets.py:789
 msgid "View details"
-msgstr "Vizualizați detalii"
-# 
+msgstr "Vezi detaliile"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+#: usr/share/biglinux/welcome/widgets.py:529
+#: usr/share/biglinux/welcome/widgets.py:795
 msgid "Show installation details"
-msgstr "Afișați detaliile instalării"
-# 
+msgstr "Afișează detaliile instalării"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+#: usr/share/biglinux/welcome/widgets.py:557
 msgid "Installation log output"
-msgstr "Ieșire jurnal de instalare"
-# 
+msgstr "Ieșirea jurnalului de instalare"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+#: usr/share/biglinux/welcome/widgets.py:576
 msgid "Cancel"
 msgstr "Anulează"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+#: usr/share/biglinux/welcome/widgets.py:580
 msgid "Cancel installation"
 msgstr "Anulează instalarea"
-# 
+
+#: usr/share/biglinux/welcome/widgets.py:585
+msgid "Done"
+msgstr "Gata"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
@@ -131,383 +154,471 @@ msgstr "Anulează instalarea"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+#: usr/share/biglinux/welcome/widgets.py:590
 msgid "Close installation panel"
 msgstr "Închide panoul de instalare"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#: usr/share/biglinux/welcome/widgets.py:598
 #, python-format
 msgid "Installing %s"
 msgstr "Instalare %s"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+#: usr/share/biglinux/welcome/widgets.py:667
 msgid "It has been set as your default browser."
-msgstr "A fost setat ca browserul tău implicit."
-# 
+msgstr "A fost setat ca browser implicit."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#: usr/share/biglinux/welcome/widgets.py:668
 #, python-format
 msgid "%s installed successfully!"
 msgstr "%s instalat cu succes!"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#: usr/share/biglinux/welcome/widgets.py:676
 #, python-format
 msgid "%s installed successfully"
 msgstr "%s instalat cu succes"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#: usr/share/biglinux/welcome/widgets.py:684
 #, python-format
 msgid "Failed to install %s"
 msgstr "Instalarea %s a eșuat."
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+#: usr/share/biglinux/welcome/widgets.py:687
 msgid "Check the details below for more information."
-msgstr "Verificați detaliile de mai jos pentru mai multe informații."
-# 
+msgstr "Consultă detaliile de mai jos pentru mai multe informații."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#: usr/share/biglinux/welcome/widgets.py:694
 #, python-format
 msgid "Installation of %s failed"
 msgstr "Instalarea %s a eșuat"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+#: usr/share/biglinux/welcome/widgets.py:756
 msgid "Cannot cancel during installation"
 msgstr "Nu se poate anula în timpul instalării."
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#: usr/share/biglinux/welcome/widgets.py:767
 #, python-brace-format
 msgid "Downloading {name}…"
 msgstr "Se descarcă {name}…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#: usr/share/biglinux/welcome/widgets.py:779
 #, python-brace-format
 msgid "Downloading… {pct}% ({speed})"
 msgstr "Se descarcă… {pct}% ({speed})"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+#: usr/share/biglinux/welcome/widgets.py:789
 msgid "Hide details"
 msgstr "Ascunde detalii"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+#: usr/share/biglinux/welcome/widgets.py:793
 msgid "Hide installation details"
 msgstr "Ascunde detaliile instalării"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+#: usr/share/biglinux/welcome/widgets.py:802
 msgid "Cancelling…"
-msgstr "Anulând…"
-# 
+msgstr "Se anulează…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+#: usr/share/biglinux/welcome/widgets.py:803
 msgid "Cancelling installation…"
-msgstr "Anularea instalării…"
-# 
+msgstr "Se anulează instalarea…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+#: usr/share/biglinux/welcome/window.py:160
 msgid "In search of the perfect system!"
 msgstr "În căutarea sistemului perfect!"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-#: usr/share/biglinux/welcome/main.py:785
+#: usr/share/biglinux/welcome/window.py:165
 msgid "Welcome to your new system"
 msgstr "Bine ai venit în noul tău sistem"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+#: usr/share/biglinux/welcome/window.py:321
 msgid "Changing default browser"
-msgstr "Schimbarea browser-ului implicit"
-# 
+msgstr "Se schimbă browserul implicit"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#: usr/share/biglinux/welcome/window.py:404
 #, python-format
 msgid "Setting %s as default…"
-msgstr "Setarea %s ca implicit…"
-# 
+msgstr "Se setează %s ca browser implicit…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#: usr/share/biglinux/welcome/window.py:417
 #, python-format
 msgid "%s set as default"
-msgstr "%s setat ca implicit"
-# 
+msgstr "%s a fost setat ca browser implicit"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+#: usr/share/biglinux/welcome/window.py:527
 msgid "Still working…"
 msgstr "Încă lucrează…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-#: usr/share/biglinux/welcome/main.py:997
+#: usr/share/biglinux/welcome/window.py:572
 msgid "Show on startup"
 msgstr "Afișează la pornire"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+#: usr/share/biglinux/welcome/window.py:579
 msgid "Welcome"
 msgstr "Bine ai venit"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+#: usr/share/biglinux/welcome/window.py:600
 msgid "Previous page"
 msgstr "Pagina anterioară"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+#: usr/share/biglinux/welcome/window.py:612
+#: usr/share/biglinux/welcome/window.py:638
 msgid "Next page"
 msgstr "Pagina următoare"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
-#: usr/share/biglinux/welcome/main.py:1042
+#: usr/share/biglinux/welcome/window.py:626
+#: usr/share/biglinux/welcome/window.py:628
 msgid "Get Started"
-msgstr "Începeți"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+msgstr "Începe"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
 msgid "Accessibility"
 msgstr "Accesibilitate"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:14
 msgid "AppStore"
 msgstr "App Store"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 15
 #: usr/share/biglinux/welcome/translatable_strings.py:15
 msgid "Ashy Terminal"
 msgstr "Ashy Terminal"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 14
 #: usr/share/biglinux/welcome/translatable_strings.py:16
 msgid "Audio Converter"
-msgstr "Converter audio"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+msgstr "Convertor audio"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 14
 #: usr/share/biglinux/welcome/translatable_strings.py:17
 msgid "Big Store"
 msgstr "Big Store"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 15
 #: usr/share/biglinux/welcome/translatable_strings.py:18
 msgid "BigLinux Info"
 msgstr "Informații despre BigLinux"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 16
 #: usr/share/biglinux/welcome/translatable_strings.py:19
 msgid "BigLinux Settings"
 msgstr "Setări BigLinux"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 16
 #: usr/share/biglinux/welcome/translatable_strings.py:20
 msgid "Brave"
 msgstr "Brave"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 16
 #: usr/share/biglinux/welcome/translatable_strings.py:21
 msgid "Choose Your Avatar"
-msgstr "Alege-ți Avatarul"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 17
+msgstr "Alege-ți avatarul"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 17
 #: usr/share/biglinux/welcome/translatable_strings.py:22
 msgid "Choose your default browser"
-msgstr "Alegeți browserul implicit."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+msgstr "Alege browserul implicit"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 19
 #: usr/share/biglinux/welcome/translatable_strings.py:23
 msgid "Chrome"
 msgstr "Chrome"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 20
 #: usr/share/biglinux/welcome/translatable_strings.py:24
 msgid "Chromium"
 msgstr "Chromium"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 18
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 18
 #: usr/share/biglinux/welcome/translatable_strings.py:25
 msgid "Configure voice"
 msgstr "Configurează vocea"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 19
 #: usr/share/biglinux/welcome/translatable_strings.py:26
 msgid "Control Center"
 msgstr "Centrul de control"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 20
 #: usr/share/biglinux/welcome/translatable_strings.py:27
 msgid "Discover some features"
-msgstr "Descoperiți câteva caracteristici"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 21
+msgstr "Descoperă câteva funcții"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 21
 #: usr/share/biglinux/welcome/translatable_strings.py:28
 msgid "Display Settings"
 msgstr "Setări de afișare"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 22
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 22
 #: usr/share/biglinux/welcome/translatable_strings.py:29
 msgid "Donate"
 msgstr "Donează"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 23
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 23
 #: usr/share/biglinux/welcome/translatable_strings.py:30
 msgid "Donation and Social Networks"
-msgstr "Donatii si Rețele Sociale"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 24
+msgstr "Donații și rețele sociale"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 24
 #: usr/share/biglinux/welcome/translatable_strings.py:31
 msgid "Driver Installation and Hardware Information"
-msgstr "Instalarea driverului și informații despre hardware"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 25
+msgstr "Instalarea driverelor și informații despre hardware"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 25
 #: usr/share/biglinux/welcome/translatable_strings.py:32
 msgid "Driver Manager"
 msgstr "Manager de drivere"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 29
 #: usr/share/biglinux/welcome/translatable_strings.py:33
 msgid "Edge"
 msgstr "Edge"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 30
 #: usr/share/biglinux/welcome/translatable_strings.py:34
 msgid "Falkon"
 msgstr "Falkon"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid "Family Safety"
-msgstr "Siguranța Familiei"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 35
 #: usr/share/biglinux/welcome/translatable_strings.py:35
+msgid "Family Safety"
+msgstr "Siguranța familiei"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 26
+#: usr/share/biglinux/welcome/translatable_strings.py:36
 msgid "Firefox"
 msgstr "Firefox"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 27
-#: usr/share/biglinux/welcome/translatable_strings.py:36
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 27
+#: usr/share/biglinux/welcome/translatable_strings.py:37
 msgid "Forum"
 msgstr "Forum"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:37
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 29
+#: usr/share/biglinux/welcome/translatable_strings.py:38
 msgid "Initial Settings"
 msgstr "Setări inițiale"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
-#: usr/share/biglinux/welcome/translatable_strings.py:38
-msgid "Install or Remove Drivers and Firmwares easily."
-msgstr "Instalați sau eliminați driverele și firmware-urile cu ușurință."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 31
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 30
 #: usr/share/biglinux/welcome/translatable_strings.py:39
+msgid "Install or Remove Drivers and Firmwares easily."
+msgstr "Instalează sau elimină cu ușurință drivere și firmware."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 31
+#: usr/share/biglinux/welcome/translatable_strings.py:40
 msgid "KDE Connect"
 msgstr "KDE Connect"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 32
-#: usr/share/biglinux/welcome/translatable_strings.py:40
-msgid ""
-"KDE Connect is an application that facilitates wireless communication and data transfer between "
-"devices on local networks. Available on the Google Play Store for Android and the Apple Store for "
-"iPhone."
-msgstr ""
-"KDE Connect este o aplicație care facilitează comunicarea wireless și transferul de date între "
-"dispozitivele din rețelele locale. Disponibilă pe Google Play Store pentru Android și pe Apple "
-"Store pentru iPhone."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 32
 #: usr/share/biglinux/welcome/translatable_strings.py:41
-msgid "Kernel Manager"
-msgstr "Manager de Kernel"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 33
+msgid ""
+"KDE Connect is an application that facilitates wireless communication and "
+"data transfer between devices on local networks. Available on the Google "
+"Play Store for Android and the Apple Store for iPhone."
+msgstr ""
+"KDE Connect este o aplicație care facilitează comunicarea wireless și "
+"transferul de date între dispozitivele din rețelele locale. Disponibilă pe "
+"Google Play Store pentru Android și pe App Store pentru iPhone."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:42
+msgid "Kernel Manager"
+msgstr "Manager de nuclee"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 33
+#: usr/share/biglinux/welcome/translatable_strings.py:43
 msgid "Language Packs"
 msgstr "Pachete de limbă"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:43
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:44
 msgid "Librewolf"
 msgstr "Librewolf"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:44
-msgid "Network Info"
-msgstr "Informații rețea"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 34
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 43
 #: usr/share/biglinux/welcome/translatable_strings.py:45
+msgid "Network Info"
+msgstr "Informații despre rețea"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 34
+#: usr/share/biglinux/welcome/translatable_strings.py:46
 msgid "Noise Reduction"
 msgstr "Reducerea zgomotului"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-#: usr/share/biglinux/welcome/translatable_strings.py:46
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 35
+#: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "OCR to PDF"
 msgstr "OCR în PDF"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 48
+#: usr/share/biglinux/welcome/translatable_strings.py:48
 msgid "Open Parental Controls"
-msgstr "Deschide Controlul Parental"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
-#: usr/share/biglinux/welcome/translatable_strings.py:47
+msgstr "Deschide controlul parental"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 41
+#: usr/share/biglinux/welcome/translatable_strings.py:49
 msgid "Opera"
 msgstr "Opera"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
-#: usr/share/biglinux/welcome/translatable_strings.py:48
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 36
+#: usr/share/biglinux/welcome/translatable_strings.py:50
 msgid "Our platform is collaborative, join this evolution."
 msgstr "Platforma noastră este colaborativă, alătură-te acestei evoluții."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
-#: usr/share/biglinux/welcome/translatable_strings.py:49
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 37
+#: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "PlayStore"
 msgstr "Play Store"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:50
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:52
 msgid "Printers"
 msgstr "Imprimante"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
-msgid "Protect your children online. Set up supervised accounts, screen time, and content filters."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 53
+#: usr/share/biglinux/welcome/translatable_strings.py:53
+msgid ""
+"Protect your children online. Set up supervised accounts, screen time, and "
+"content filters."
 msgstr ""
-"Protejați-vă copiii online. Configurați conturi supravegheate, timp de utilizare și filtre de "
-"conținut."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:51
+"Protejează-ți copiii online. Configurează conturi supravegheate, timp "
+"petrecut în fața ecranului și filtre de conținut."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:54
 msgid "Session and Themes"
-msgstr "Sesiune și Tematici"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:52
+msgstr "Sesiune și teme"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:55
 msgid "Set your default browser."
 msgstr "Setează browserul tău implicit."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:53
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:56
 msgid "Telegram"
 msgstr "Telegram"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-#: usr/share/biglinux/welcome/translatable_strings.py:54
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 54
+#: usr/share/biglinux/welcome/translatable_strings.py:57
 msgid "Time Shift"
 msgstr "Timeshift"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:55
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:58
 msgid "Video Converter"
-msgstr "Converter video"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
-#: usr/share/biglinux/welcome/translatable_strings.py:56
+msgstr "Convertor video"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 48
+#: usr/share/biglinux/welcome/translatable_strings.py:59
 msgid "Vivaldi"
 msgstr "Vivaldi"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
-#: usr/share/biglinux/welcome/translatable_strings.py:57
-msgid "We provide comprehensive settings for you to select in an extremely simple way."
-msgstr "Oferim setări cuprinzătoare pe care le poți selecta într-un mod extrem de simplu."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:58
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 42
+#: usr/share/biglinux/welcome/translatable_strings.py:60
+msgid ""
+"We provide comprehensive settings for you to select in an extremely simple "
+"way."
+msgstr "Oferim o gamă largă de setări din care poți alege cu ușurință."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 43
+#: usr/share/biglinux/welcome/translatable_strings.py:61
 msgid "WebApps"
 msgstr "Aplicații web"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
-#: usr/share/biglinux/welcome/translatable_strings.py:59
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 44
+#: usr/share/biglinux/welcome/translatable_strings.py:62
 msgid "YouTube"
 msgstr "YouTube"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
-#: usr/share/biglinux/welcome/translatable_strings.py:60
-msgid "Your donation is very important for the project and follow us on social media."
-msgstr "Donația ta este foarte importantă pentru proiect și urmărește-ne pe rețelele sociale."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
-#: usr/share/biglinux/welcome/translatable_strings.py:61
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 45
+#: usr/share/biglinux/welcome/translatable_strings.py:63
+msgid ""
+"Your donation is very important for the project and follow us on social "
+"media."
+msgstr ""
+"Donația ta este foarte importantă pentru proiect. Urmărește-ne și pe "
+"rețelele sociale."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 59
+#: usr/share/biglinux/welcome/translatable_strings.py:64
 msgid "Zen Browser"
 msgstr "Zen Browser"

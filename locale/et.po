@@ -1,44 +1,51 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Translations for biglinux-welcome.
 # This file is distributed under the same license as the biglinux-welcome package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2026-10-03 09:00-0300\n"
+"PO-Revision-Date: 2026-10-03 09:00-0300\n"
+"Last-Translator: \n"
+"Language-Team: et\n"
+"Language: et\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 248
-#: usr/share/biglinux/welcome/main.py:435
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
+# line: 248
+#: usr/share/biglinux/welcome/widgets.py:120
 msgid "Kernel"
-msgstr "Kernel"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py, line: 258
-#: usr/share/biglinux/welcome/main.py:436
+msgstr "Tuum"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
+# line: 258
+#: usr/share/biglinux/welcome/widgets.py:121
 msgid "Desktop"
 msgstr "Töölaud"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-#: usr/share/biglinux/welcome/main.py:437
+#: usr/share/biglinux/welcome/widgets.py:123
 msgid "Display"
 msgstr "Ekraan"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
+#: usr/share/biglinux/welcome/widgets.py:232
 #, python-format
 msgid "Could not open %s. It may not be installed."
-msgstr "%s ei saanud avada. See ei pruugi olla installitud."
-# 
+msgstr "%s avamine ebaõnnestus. See ei pruugi olla paigaldatud."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+#: usr/share/biglinux/welcome/widgets.py:241
 msgid "Could not open application"
-msgstr "Rakendust ei saanud avada."
-# 
+msgstr "Rakenduse avamine ebaõnnestus"
+
+#: usr/share/biglinux/welcome/widgets.py:244
+msgid "OK"
+msgstr "OK"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
@@ -64,48 +71,64 @@ msgstr "Rakendust ei saanud avada."
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
+#: usr/share/biglinux/welcome/widgets.py:328
 msgid "installed"
 msgstr "paigaldatud"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
+#: usr/share/biglinux/welcome/widgets.py:330
 msgid "not installed"
-msgstr "ei ole installitud"
-# 
+msgstr "paigaldamata"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
+#: usr/share/biglinux/welcome/widgets.py:332
 msgid "default browser"
-msgstr "vaikimisi brauser"
-# 
+msgstr "vaikebrauser"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
+#: usr/share/biglinux/welcome/widgets.py:489
 #, python-format
 msgid "Installing %s…"
-msgstr "Installeer %s…"
-# 
+msgstr "%s paigaldamine…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
+#: usr/share/biglinux/welcome/widgets.py:495
 msgid "Preparing download…"
-msgstr "Laadimise ettevalmistamine…"
-# 
+msgstr "Allalaadimise ettevalmistamine…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+#: usr/share/biglinux/welcome/widgets.py:522
+#: usr/share/biglinux/welcome/widgets.py:789
 msgid "View details"
 msgstr "Vaata üksikasju"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
+#: usr/share/biglinux/welcome/widgets.py:529
+#: usr/share/biglinux/welcome/widgets.py:795
 msgid "Show installation details"
-msgstr "Kuva installatsiooni üksikasjad"
-# 
+msgstr "Näita paigaldamise üksikasju"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
+#: usr/share/biglinux/welcome/widgets.py:557
 msgid "Installation log output"
-msgstr "Installeerimise logi väljund"
-# 
+msgstr "Paigalduslogi väljund"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
+#: usr/share/biglinux/welcome/widgets.py:576
 msgid "Cancel"
 msgstr "Tühista"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
+#: usr/share/biglinux/welcome/widgets.py:580
 msgid "Cancel installation"
-msgstr "Tühista installatsioon"
-# 
+msgstr "Tühista paigaldamine"
+
+#: usr/share/biglinux/welcome/widgets.py:585
+msgid "Done"
+msgstr "Valmis"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
@@ -131,99 +154,119 @@ msgstr "Tühista installatsioon"
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
+#: usr/share/biglinux/welcome/widgets.py:590
 msgid "Close installation panel"
-msgstr "Sulge installatsioonipaneel"
-# 
+msgstr "Sulge paigalduspaneel"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
+#: usr/share/biglinux/welcome/widgets.py:598
 #, python-format
 msgid "Installing %s"
-msgstr "Installeerimine %s"
-# 
+msgstr "%s paigaldamine"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+#: usr/share/biglinux/welcome/widgets.py:667
 msgid "It has been set as your default browser."
-msgstr "See on määratud teie vaikimisi brauseriks."
-# 
+msgstr "See on määratud sinu vaikebrauseriks."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
+#: usr/share/biglinux/welcome/widgets.py:668
 #, python-format
 msgid "%s installed successfully!"
-msgstr "%s installiti edukalt!"
-# 
+msgstr "%s on edukalt paigaldatud!"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
+#: usr/share/biglinux/welcome/widgets.py:676
 #, python-format
 msgid "%s installed successfully"
-msgstr "%s installiti edukalt"
-# 
+msgstr "%s on edukalt paigaldatud"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
+#: usr/share/biglinux/welcome/widgets.py:684
 #, python-format
 msgid "Failed to install %s"
-msgstr "%si installimine ebaõnnestus"
-# 
+msgstr "%s paigaldamine ebaõnnestus"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
+#: usr/share/biglinux/welcome/widgets.py:687
 msgid "Check the details below for more information."
-msgstr "Kontrollige allpool olevaid üksikasju, et saada rohkem teavet."
-# 
+msgstr "Lisateabe saamiseks vaata allolevaid üksikasju."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
+#: usr/share/biglinux/welcome/widgets.py:694
 #, python-format
 msgid "Installation of %s failed"
-msgstr "%s installimine ebaõnnestus"
-# 
+msgstr "%s paigaldamine ebaõnnestus"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+#: usr/share/biglinux/welcome/widgets.py:756
 msgid "Cannot cancel during installation"
-msgstr "Installimise ajal ei saa tühistada."
-# 
+msgstr "Paigaldamise ajal ei saa tühistada"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#: usr/share/biglinux/welcome/widgets.py:767
 #, python-brace-format
 msgid "Downloading {name}…"
-msgstr "Laadimine {name}…"
-# 
+msgstr "{name} allalaadimine…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#: usr/share/biglinux/welcome/widgets.py:779
 #, python-brace-format
 msgid "Downloading… {pct}% ({speed})"
-msgstr "Laadimine… {pct}% ({speed})"
-# 
+msgstr "Allalaadimine… {pct}% ({speed})"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
+#: usr/share/biglinux/welcome/widgets.py:789
 msgid "Hide details"
 msgstr "Peida üksikasjad"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
+#: usr/share/biglinux/welcome/widgets.py:793
 msgid "Hide installation details"
-msgstr "Peida installatsiooni üksikasjad"
-# 
+msgstr "Peida paigaldamise üksikasjad"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
+#: usr/share/biglinux/welcome/widgets.py:802
 msgid "Cancelling…"
 msgstr "Tühistamine…"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
+#: usr/share/biglinux/welcome/widgets.py:803
 msgid "Cancelling installation…"
-msgstr "Installeerimise tühistamine…"
-# 
+msgstr "Paigaldamise tühistamine…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
+#: usr/share/biglinux/welcome/window.py:160
 msgid "In search of the perfect system!"
-msgstr "Otsin täiuslikku süsteemi!"
-# 
+msgstr "Täiusliku süsteemi otsinguil!"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-#: usr/share/biglinux/welcome/main.py:785
+#: usr/share/biglinux/welcome/window.py:165
 msgid "Welcome to your new system"
 msgstr "Tere tulemast oma uude süsteemi"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
+#: usr/share/biglinux/welcome/window.py:321
 msgid "Changing default browser"
-msgstr "Vaikimisi brauseri muutmine"
-# 
+msgstr "Vaikebrauseri muutmine"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
+#: usr/share/biglinux/welcome/window.py:404
 #, python-format
 msgid "Setting %s as default…"
-msgstr "Seadist %s vaikimisi…"
-# 
+msgstr "%s määramine vaikebrauseriks…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
+#: usr/share/biglinux/welcome/window.py:417
 #, python-format
 msgid "%s set as default"
-msgstr "%s seatud vaikimisi"
-# 
+msgstr "%s on määratud vaikebrauseriks"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+#: usr/share/biglinux/welcome/window.py:527
 msgid "Still working…"
-msgstr "Endiselt töötamas…"
-# 
+msgstr "Toiming on veel pooleli…"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
@@ -241,286 +284,356 @@ msgstr "Endiselt töötamas…"
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
 # 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-#: usr/share/biglinux/welcome/main.py:997
+#: usr/share/biglinux/welcome/window.py:572
 msgid "Show on startup"
 msgstr "Näita käivitamisel"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
+#: usr/share/biglinux/welcome/window.py:579
 msgid "Welcome"
 msgstr "Tere tulemast"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
+#: usr/share/biglinux/welcome/window.py:600
 msgid "Previous page"
 msgstr "Eelmine leht"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
+#: usr/share/biglinux/welcome/window.py:612
+#: usr/share/biglinux/welcome/window.py:638
 msgid "Next page"
 msgstr "Järgmine leht"
-# 
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
-#: usr/share/biglinux/welcome/main.py:1042
+#: usr/share/biglinux/welcome/window.py:626
+#: usr/share/biglinux/welcome/window.py:628
 msgid "Get Started"
 msgstr "Alusta"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:13
 msgid "Accessibility"
 msgstr "Ligipääsetavus"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 13
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 13
 #: usr/share/biglinux/welcome/translatable_strings.py:14
 msgid "AppStore"
 msgstr "App Store"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 15
 #: usr/share/biglinux/welcome/translatable_strings.py:15
 msgid "Ashy Terminal"
 msgstr "Ashy Terminal"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 14
 #: usr/share/biglinux/welcome/translatable_strings.py:16
 msgid "Audio Converter"
-msgstr "Heli Converter"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 14
+msgstr "Heliteisendaja"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 14
 #: usr/share/biglinux/welcome/translatable_strings.py:17
 msgid "Big Store"
 msgstr "Big Store"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 15
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 15
 #: usr/share/biglinux/welcome/translatable_strings.py:18
 msgid "BigLinux Info"
 msgstr "BigLinuxi teave"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 16
 #: usr/share/biglinux/welcome/translatable_strings.py:19
 msgid "BigLinux Settings"
 msgstr "BigLinuxi seaded"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 16
 #: usr/share/biglinux/welcome/translatable_strings.py:20
 msgid "Brave"
 msgstr "Brave"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 16
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 16
 #: usr/share/biglinux/welcome/translatable_strings.py:21
 msgid "Choose Your Avatar"
 msgstr "Vali oma avatar"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 17
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 17
 #: usr/share/biglinux/welcome/translatable_strings.py:22
 msgid "Choose your default browser"
-msgstr "Vali oma vaikimisi brauser."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+msgstr "Vali oma vaikebrauser"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 19
 #: usr/share/biglinux/welcome/translatable_strings.py:23
 msgid "Chrome"
 msgstr "Chrome"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 20
 #: usr/share/biglinux/welcome/translatable_strings.py:24
 msgid "Chromium"
 msgstr "Chromium"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 18
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 18
 #: usr/share/biglinux/welcome/translatable_strings.py:25
 msgid "Configure voice"
-msgstr "Konfigureeri hääl"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 19
+msgstr "Seadista hääl"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 19
 #: usr/share/biglinux/welcome/translatable_strings.py:26
 msgid "Control Center"
 msgstr "Juhtimiskeskus"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 20
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 20
 #: usr/share/biglinux/welcome/translatable_strings.py:27
 msgid "Discover some features"
 msgstr "Avasta mõned funktsioonid"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 21
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 21
 #: usr/share/biglinux/welcome/translatable_strings.py:28
 msgid "Display Settings"
-msgstr "Kuva seaded"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 22
+msgstr "Ekraani seaded"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 22
 #: usr/share/biglinux/welcome/translatable_strings.py:29
 msgid "Donate"
-msgstr "Annetama"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 23
+msgstr "Anneta"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 23
 #: usr/share/biglinux/welcome/translatable_strings.py:30
 msgid "Donation and Social Networks"
-msgstr "Donatsioon ja sotsiaalvõrgustikud"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 24
+msgstr "Annetused ja sotsiaalvõrgustikud"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 24
 #: usr/share/biglinux/welcome/translatable_strings.py:31
 msgid "Driver Installation and Hardware Information"
-msgstr "Juhi paigaldamine ja riistvara teave"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 25
+msgstr "Draiverite paigaldamine ja riistvara teave"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 25
 #: usr/share/biglinux/welcome/translatable_strings.py:32
 msgid "Driver Manager"
-msgstr "Juhtmehaldur"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
+msgstr "Draiverihaldur"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 29
 #: usr/share/biglinux/welcome/translatable_strings.py:33
 msgid "Edge"
 msgstr "Edge"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 30
 #: usr/share/biglinux/welcome/translatable_strings.py:34
 msgid "Falkon"
 msgstr "Falkon"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
-msgid "Family Safety"
-msgstr "Perevõimekuse kaitse"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 26
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 35
 #: usr/share/biglinux/welcome/translatable_strings.py:35
+msgid "Family Safety"
+msgstr "Pere turvalisus"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 26
+#: usr/share/biglinux/welcome/translatable_strings.py:36
 msgid "Firefox"
 msgstr "Firefox"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 27
-#: usr/share/biglinux/welcome/translatable_strings.py:36
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 27
+#: usr/share/biglinux/welcome/translatable_strings.py:37
 msgid "Forum"
 msgstr "Foorum"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:37
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 29
+#: usr/share/biglinux/welcome/translatable_strings.py:38
 msgid "Initial Settings"
 msgstr "Esialgsed seaded"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 30
-#: usr/share/biglinux/welcome/translatable_strings.py:38
-msgid "Install or Remove Drivers and Firmwares easily."
-msgstr "Installige või eemaldage draivereid ja püsivara lihtsalt."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 31
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 30
 #: usr/share/biglinux/welcome/translatable_strings.py:39
+msgid "Install or Remove Drivers and Firmwares easily."
+msgstr "Paigalda või eemalda draivereid ja püsivara hõlpsalt."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 31
+#: usr/share/biglinux/welcome/translatable_strings.py:40
 msgid "KDE Connect"
 msgstr "KDE Connect"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 32
-#: usr/share/biglinux/welcome/translatable_strings.py:40
-msgid ""
-"KDE Connect is an application that facilitates wireless communication and data transfer between "
-"devices on local networks. Available on the Google Play Store for Android and the Apple Store for "
-"iPhone."
-msgstr ""
-"KDE Connect on rakendus, mis hõlbustab traadita suhtlemist ja andmete edastamist seadmete vahel "
-"kohalikes võrkudes. Saadaval Google Play poes Androidile ja Apple Store'is iPhone'ile."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 32
 #: usr/share/biglinux/welcome/translatable_strings.py:41
-msgid "Kernel Manager"
-msgstr "Kernelihaldur"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 33
+msgid ""
+"KDE Connect is an application that facilitates wireless communication and "
+"data transfer between devices on local networks. Available on the Google "
+"Play Store for Android and the Apple Store for iPhone."
+msgstr ""
+"KDE Connect on rakendus, mis hõlbustab traadita suhtlemist ja andmete "
+"edastamist seadmete vahel kohalikes võrkudes. Saadaval Google Play poes "
+"Androidile ja App Store'is iPhone'ile."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 40
 #: usr/share/biglinux/welcome/translatable_strings.py:42
-msgid "Language Packs"
-msgstr "Keelepakkide komplektid"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
+msgid "Kernel Manager"
+msgstr "Tuumahaldur"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 33
 #: usr/share/biglinux/welcome/translatable_strings.py:43
+msgid "Language Packs"
+msgstr "Keelepaketid"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:44
 msgid "Librewolf"
 msgstr "Librewolf"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:44
-msgid "Network Info"
-msgstr "Võrgu teave"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 34
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 43
 #: usr/share/biglinux/welcome/translatable_strings.py:45
-msgid "Noise Reduction"
-msgstr "Müraha vähendamine"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 35
+msgid "Network Info"
+msgstr "Võrguteave"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 34
 #: usr/share/biglinux/welcome/translatable_strings.py:46
+msgid "Noise Reduction"
+msgstr "Müravähendus"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 35
+#: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "OCR to PDF"
 msgstr "OCR PDF-ks"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 48
+#: usr/share/biglinux/welcome/translatable_strings.py:48
 msgid "Open Parental Controls"
-msgstr "Ava vanemlikud kontrollid"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 41
-#: usr/share/biglinux/welcome/translatable_strings.py:47
+msgstr "Ava vanemlik järelevalve"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 41
+#: usr/share/biglinux/welcome/translatable_strings.py:49
 msgid "Opera"
 msgstr "Opera"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 36
-#: usr/share/biglinux/welcome/translatable_strings.py:48
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 36
+#: usr/share/biglinux/welcome/translatable_strings.py:50
 msgid "Our platform is collaborative, join this evolution."
-msgstr "Meie platvorm on koostööl põhinev, liitu selle arenguga."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 37
-#: usr/share/biglinux/welcome/translatable_strings.py:49
+msgstr "Meie platvorm põhineb koostööl. Aita kaasa selle arengule."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 37
+#: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "PlayStore"
 msgstr "Play Store"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:50
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 38
+#: usr/share/biglinux/welcome/translatable_strings.py:52
 msgid "Printers"
 msgstr "Printerid"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 53
-msgid "Protect your children online. Set up supervised accounts, screen time, and content filters."
-msgstr "Kaitske oma lapsi veebis. Seadistage järelevalve all olevad kontod, ekraaniaeg ja sisu filtrid."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:51
-msgid "Session and Themes"
-msgstr "Seansid ja teemad"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:52
-msgid "Set your default browser."
-msgstr "Seadke oma vaikebrauser."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 40
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 53
 #: usr/share/biglinux/welcome/translatable_strings.py:53
+msgid ""
+"Protect your children online. Set up supervised accounts, screen time, and "
+"content filters."
+msgstr ""
+"Kaitse oma lapsi veebis. Seadista järelevalvega kontod, ekraaniaeg ja "
+"sisufiltrid."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:54
+msgid "Session and Themes"
+msgstr "Seanss ja teemad"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:55
+msgid "Set your default browser."
+msgstr "Määra oma vaikebrauser."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 40
+#: usr/share/biglinux/welcome/translatable_strings.py:56
 msgid "Telegram"
 msgstr "Telegram"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 54
-#: usr/share/biglinux/welcome/translatable_strings.py:54
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 54
+#: usr/share/biglinux/welcome/translatable_strings.py:57
 msgid "Time Shift"
 msgstr "Timeshift"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:55
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 50
+#: usr/share/biglinux/welcome/translatable_strings.py:58
 msgid "Video Converter"
-msgstr "Videote converter"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 48
-#: usr/share/biglinux/welcome/translatable_strings.py:56
+msgstr "Videoteisendaja"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 48
+#: usr/share/biglinux/welcome/translatable_strings.py:59
 msgid "Vivaldi"
 msgstr "Vivaldi"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 42
-#: usr/share/biglinux/welcome/translatable_strings.py:57
-msgid "We provide comprehensive settings for you to select in an extremely simple way."
-msgstr "Pakume ulatuslikke seadeid, mida saate valida äärmiselt lihtsal viisil."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:58
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 42
+#: usr/share/biglinux/welcome/translatable_strings.py:60
+msgid ""
+"We provide comprehensive settings for you to select in an extremely simple "
+"way."
+msgstr "Pakume põhjalikke seadeid, mille hulgast saad hõlpsalt valida."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 43
+#: usr/share/biglinux/welcome/translatable_strings.py:61
 msgid "WebApps"
 msgstr "Veebirakendused"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 44
-#: usr/share/biglinux/welcome/translatable_strings.py:59
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 44
+#: usr/share/biglinux/welcome/translatable_strings.py:62
 msgid "YouTube"
 msgstr "YouTube"
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 45
-#: usr/share/biglinux/welcome/translatable_strings.py:60
-msgid "Your donation is very important for the project and follow us on social media."
-msgstr "Teie annetus on projektile väga oluline ja jälgige meid sotsiaalmeedias."
-# 
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py, line: 59
-#: usr/share/biglinux/welcome/translatable_strings.py:61
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 45
+#: usr/share/biglinux/welcome/translatable_strings.py:63
+msgid ""
+"Your donation is very important for the project and follow us on social "
+"media."
+msgstr ""
+"Sinu annetus on projektile väga oluline. Jälgi meid ka sotsiaalmeedias."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
+# line: 59
+#: usr/share/biglinux/welcome/translatable_strings.py:64
 msgid "Zen Browser"
 msgstr "Zen Browser"
