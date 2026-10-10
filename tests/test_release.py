@@ -23,8 +23,8 @@ def pkgbuild_var(name):
 
 
 class TestVersion(unittest.TestCase):
-    def test_version_is_3_0_0(self):
-        self.assertEqual(APP_VERSION, "3.0.0")
+    def test_version_is_3_0_1(self):
+        self.assertEqual(APP_VERSION, "3.0.1")
 
     def test_pkgbuild_matches_app(self):
         self.assertEqual(pkgbuild_var("pkgver"), APP_VERSION)

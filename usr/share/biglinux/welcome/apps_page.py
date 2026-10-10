@@ -35,9 +35,9 @@ from install_backend import (
     format_size,
     install_target,
     installed_packages,
+    installed_plasmoid_version,
     is_plasma_session,
     is_plasmoid_in_panel,
-    is_plasmoid_installed,
     repo_packages,
 )
 from install_flow import InstallRequest, present_details, request_install
@@ -93,6 +93,7 @@ class AppStatus(enum.Enum):
     INSTALLING = "installing"
     INSTALLED = "installed"
     FAILED = "failed"
+    UPDATE = "update"
     UNAVAILABLE = "unavailable"
     UNSUPPORTED = "unsupported"
 
@@ -117,14 +118,19 @@ def check_apps(entries: list[AppEntry]) -> dict[str, AppInfo]:
     result: dict[str, AppInfo] = {}
     for entry in entries:
         if entry.is_plasmoid:
-            if not is_plasma_session() or entry.plasmoid not in PLASMOID_SOURCES:
+            source = PLASMOID_SOURCES.get(entry.plasmoid)
+            installed_version = installed_plasmoid_version(entry.plasmoid)
+            if not is_plasma_session() or source is None:
                 status = AppStatus.UNSUPPORTED
-            elif is_plasmoid_installed(entry.plasmoid):
-                status = AppStatus.INSTALLED
-            else:
+            elif installed_version is None:
                 status = AppStatus.NOT_INSTALLED
+            elif source.version and installed_version != source.version:
+                status = AppStatus.UPDATE
+            else:
+                status = AppStatus.INSTALLED
             result[entry.label] = AppInfo(
                 status=status,
+                version=installed_version or "",
                 repository="GitHub",
                 in_panel=status is AppStatus.INSTALLED
                 and is_plasmoid_in_panel(entry.plasmoid),
@@ -156,13 +162,22 @@ _STATUS_LABELS = {
     AppStatus.INSTALLING: N_("Installing"),
     AppStatus.INSTALLED: N_("Installed"),
     AppStatus.FAILED: N_("Installation failed"),
+    AppStatus.UPDATE: N_("Update available"),
     AppStatus.UNAVAILABLE: N_("Unavailable"),
     AppStatus.UNSUPPORTED: N_("Requires KDE Plasma"),
 }
 
 
 class AppCard(Gtk.Box):
-    """Card with icon, name, description, live status and one main action."""
+    """Card with icon, name, description, live status and one main action.
+
+    The card keeps the same size in every state: the title is one line, the
+    description at most DESCRIPTION_LINES, and the footer is a homogeneous
+    stack (idle / progress / failure pages share one height). Long texts are
+    ellipsized; their full text is in the tooltip and in "Details"."""
+
+    DESCRIPTION_LINES = 4
+    TEXT_CHARS = 40
 
     WIDTH = 420
 
@@ -215,14 +230,15 @@ class AppCard(Gtk.Box):
         top = Gtk.Box(spacing=10)
         column.append(top)
 
-        name = Gtk.Label(label=self.label, xalign=0)
-        name.add_css_class("app-card-title")
+        name = self._one_line_label(self.label, "app-card-title")
         name.set_hexpand(True)
-        name.set_wrap(True)
+        name.set_tooltip_text(self.label)
         top.append(name)
 
-        self._status_label = Gtk.Label()
-        self._status_label.add_css_class("app-status")
+        # Status texts are short and fixed: never ellipsized (the title,
+        # which has a tooltip, gives way instead)
+        self._status_label = self._one_line_label("", "app-status")
+        self._status_label.set_ellipsize(Pango.EllipsizeMode.NONE)
         self._status_label.set_valign(Gtk.Align.CENTER)
         self._status_label.set_halign(Gtk.Align.END)
         top.append(self._status_label)
@@ -230,42 +246,29 @@ class AppCard(Gtk.Box):
         description = Gtk.Label(label=_(entry.description), xalign=0)
         description.add_css_class("app-card-description")
         description.set_wrap(True)
-        description.set_lines(4)
-        description.set_max_width_chars(42)
+        description.set_wrap_mode(Pango.WrapMode.WORD_CHAR)
+        description.set_lines(self.DESCRIPTION_LINES)
+        description.set_max_width_chars(self.TEXT_CHARS)
         description.set_ellipsize(Pango.EllipsizeMode.END)
+        description.set_tooltip_text(_(entry.description))
         description.set_valign(Gtk.Align.START)
         description.set_vexpand(True)
         column.append(description)
 
-        self._error_label = Gtk.Label(xalign=0)
-        self._error_label.add_css_class("app-card-error")
-        self._error_label.set_wrap(True)
-        self._error_label.set_max_width_chars(42)
-        self._error_label.set_visible(False)
-        column.append(self._error_label)
-
-        # -- Footer: idle (meta + action) ↔ progress --
+        # -- Footer: idle ↔ progress ↔ failure, all the same height --
         self._footer = Gtk.Stack()
         self._footer.set_transition_type(Gtk.StackTransitionType.CROSSFADE)
         self._footer.set_transition_duration(200)
-        self._footer.set_vhomogeneous(False)
-        self._footer.set_interpolate_size(True)
+        self._footer.set_hhomogeneous(True)
+        self._footer.set_vhomogeneous(True)
+        self._footer.set_interpolate_size(False)
         column.append(self._footer)
 
         idle = Gtk.Box(spacing=8)
         idle.set_valign(Gtk.Align.END)
-        self._meta_label = Gtk.Label(xalign=0)
-        self._meta_label.add_css_class("app-card-meta")
+        self._meta_label = self._one_line_label("", "app-card-meta")
         self._meta_label.set_hexpand(True)
-        self._meta_label.set_ellipsize(Pango.EllipsizeMode.END)
         idle.append(self._meta_label)
-
-        self._details_btn = Gtk.Button(label=_("Details"))
-        self._details_btn.add_css_class("flat")
-        self._details_btn.add_css_class("app-card-link")
-        self._details_btn.set_visible(False)
-        self._details_btn.connect("clicked", self._on_details)
-        idle.append(self._details_btn)
 
         self._action_btn = Gtk.Button()
         self._action_btn.add_css_class("pill")
@@ -279,12 +282,11 @@ class AppCard(Gtk.Box):
         idle.append(self._spinner)
         self._footer.add_named(idle, "idle")
 
-        progress = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        progress = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
+        progress.set_valign(Gtk.Align.END)
         phase_row = Gtk.Box(spacing=8)
-        self._phase_label = Gtk.Label(xalign=0)
-        self._phase_label.add_css_class("app-card-meta")
+        self._phase_label = self._one_line_label("", "app-card-meta")
         self._phase_label.set_hexpand(True)
-        self._phase_label.set_ellipsize(Pango.EllipsizeMode.END)
         phase_row.append(self._phase_label)
         self._percent_label = Gtk.Label(label="0%")
         self._percent_label.add_css_class("app-card-meta")
@@ -294,22 +296,19 @@ class AppCard(Gtk.Box):
 
         self._progress = Gtk.ProgressBar()
         self._progress.add_css_class("install-progress")
+        self._progress.set_valign(Gtk.Align.CENTER)
+        self._progress.set_hexpand(True)
         self._progress.update_property(
             [Gtk.AccessibleProperty.LABEL], [_("Installing %s") % self.label]
         )
-        progress.append(self._progress)
 
-        buttons = Gtk.Box(spacing=6)
-        buttons.set_halign(Gtk.Align.END)
-        details = Gtk.Button(label=_("Details"))
-        details.add_css_class("flat")
-        details.add_css_class("app-card-link")
-        details.update_property(
-            [Gtk.AccessibleProperty.LABEL],
-            [_("Show installation details for %s") % self.label],
-        )
-        details.connect("clicked", self._on_details)
-        buttons.append(details)
+        bar_row = Gtk.Box(spacing=4)
+        bar_row.append(self._progress)
+        buttons = Gtk.Box(spacing=2)
+        bar_row.append(buttons)
+        progress.append(bar_row)
+
+        buttons.append(self._details_button())
         self._cancel_btn = Gtk.Button(label=_("Cancel"))
         self._cancel_btn.add_css_class("flat")
         self._cancel_btn.add_css_class("app-card-link")
@@ -319,12 +318,63 @@ class AppCard(Gtk.Box):
         )
         self._cancel_btn.connect("clicked", self._on_cancel)
         buttons.append(self._cancel_btn)
-        progress.append(buttons)
         self._footer.add_named(progress, "progress")
+
+        failed = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
+        failed.set_valign(Gtk.Align.END)
+        self._error_label = Gtk.Label(xalign=0)
+        self._error_label.add_css_class("app-card-error")
+        self._error_label.set_wrap(True)
+        self._error_label.set_wrap_mode(Pango.WrapMode.WORD_CHAR)
+        self._error_label.set_lines(2)
+        self._error_label.set_ellipsize(Pango.EllipsizeMode.END)
+        # Small natural width: it wraps at the card's width instead of
+        # widening it. Both lines are reserved up front, so an error never
+        # makes the card taller either.
+        self._error_label.set_max_width_chars(6)
+        self._error_label.set_label("X\nX")
+        self._error_label.set_size_request(
+            -1, self._error_label.measure(Gtk.Orientation.VERTICAL, -1)[1]
+        )
+        self._error_label.set_label("")
+        failed.append(self._error_label)
+        retry_row = Gtk.Box(spacing=6)
+        retry_row.set_halign(Gtk.Align.END)
+        retry_row.append(self._details_button())
+        self._retry_btn = Gtk.Button()
+        self._retry_btn.add_css_class("pill")
+        self._retry_btn.add_css_class("app-action")
+        self._retry_btn.add_css_class("suggested-action")
+        self._retry_btn.connect("clicked", self._on_action)
+        retry_row.append(self._retry_btn)
+        failed.append(retry_row)
+        self._footer.add_named(failed, "failed")
 
         manager = InstallManager.get_default()
         self._busy_handler = manager.connect("busy-changed", self._on_busy_changed)
         self.set_status(AppStatus.CHECKING)
+
+    @staticmethod
+    def _one_line_label(text: str, css: str, max_chars: int = 6) -> Gtk.Label:
+        """Single line, ellipsized. Its natural width is kept small so long
+        texts never widen the card; it fills the free space via hexpand."""
+        label = Gtk.Label(label=text, xalign=0)
+        label.add_css_class(css)
+        label.set_ellipsize(Pango.EllipsizeMode.END)
+        label.set_single_line_mode(True)
+        label.set_max_width_chars(max_chars)
+        return label
+
+    def _details_button(self) -> Gtk.Button:
+        button = Gtk.Button(label=_("Details"))
+        button.add_css_class("flat")
+        button.add_css_class("app-card-link")
+        button.update_property(
+            [Gtk.AccessibleProperty.LABEL],
+            [_("Show installation details for %s") % self.label],
+        )
+        button.connect("clicked", self._on_details)
+        return button
 
     # -- State --
 
@@ -346,13 +396,11 @@ class AppCard(Gtk.Box):
         self._status_label.add_css_class(status.value)
         self._status_label.set_label(_(_STATUS_LABELS[status]))
         self._badge.set_visible(status is AppStatus.INSTALLED)
-        self._error_label.set_visible(status is AppStatus.FAILED)
-        self._details_btn.set_visible(
-            status is AppStatus.FAILED and self.job is not None
-        )
         self._spinner.set_visible(False)
         self._footer.set_visible_child_name(
-            "progress" if status is AppStatus.INSTALLING else "idle"
+            {AppStatus.INSTALLING: "progress", AppStatus.FAILED: "failed"}.get(
+                status, "idle"
+            )
         )
         if status is AppStatus.INSTALLING:
             self.add_css_class("installing")
@@ -373,17 +421,27 @@ class AppCard(Gtk.Box):
         visible = True
         status = self.status
 
+        if self._last_failure is Failure.OUTDATED_DATABASE:
+            self._retry_btn.set_label(_("Update and Install"))
+        else:
+            self._retry_btn.set_label(_("Try Again"))
+        self._retry_btn.update_property(
+            [Gtk.AccessibleProperty.LABEL], [_("Try again to install %s") % self.label]
+        )
+        busy = InstallManager.get_default().busy
+        self._retry_btn.set_sensitive(not busy)
+        self._retry_btn.set_tooltip_text(
+            _("Another installation is in progress") if busy else None
+        )
+
         if status is AppStatus.NOT_INSTALLED:
             btn.set_label(_("Install"))
             btn.add_css_class("suggested-action")
             accessible = _("Install %s") % self.label
-        elif status is AppStatus.FAILED:
-            if self._last_failure is Failure.OUTDATED_DATABASE:
-                btn.set_label(_("Update and Install"))
-            else:
-                btn.set_label(_("Try Again"))
+        elif status is AppStatus.UPDATE:
+            btn.set_label(_("Update"))
             btn.add_css_class("suggested-action")
-            accessible = _("Try again to install %s") % self.label
+            accessible = _("Update %s") % self.label
         elif status is AppStatus.INSTALLED and self.entry.is_plasmoid:
             if self.info.in_panel:
                 btn.set_label(_("Added to Panel"))
@@ -399,9 +457,9 @@ class AppCard(Gtk.Box):
             visible = False
             accessible = ""
 
-        installing_elsewhere = InstallManager.get_default().busy and status in (
+        installing_elsewhere = busy and status in (
             AppStatus.NOT_INSTALLED,
-            AppStatus.FAILED,
+            AppStatus.UPDATE,
         )
         if installing_elsewhere:
             btn.set_sensitive(False)
@@ -429,7 +487,7 @@ class AppCard(Gtk.Box):
         else:
             text = info.repository
         self._meta_label.set_label(text)
-        self._meta_label.set_visible(bool(text))
+        self._meta_label.set_tooltip_text(text or None)
 
     def _on_busy_changed(self, _manager: InstallManager, _busy: bool) -> None:
         self._update_action()
@@ -438,7 +496,7 @@ class AppCard(Gtk.Box):
 
     def _on_action(self, _btn: Gtk.Button) -> None:
         status = self.status
-        if status in (AppStatus.NOT_INSTALLED, AppStatus.FAILED):
+        if status in (AppStatus.NOT_INSTALLED, AppStatus.FAILED, AppStatus.UPDATE):
             self._install(upgrade=self._last_failure is Failure.OUTDATED_DATABASE)
         elif status is AppStatus.INSTALLED:
             self._open()
@@ -469,7 +527,6 @@ class AppCard(Gtk.Box):
         self._unbind_job()
         self.job = job
         self._last_failure = Failure.NONE
-        self._error_label.set_visible(False)
         self._progress.set_fraction(job.fraction)
         self._percent_label.set_label(f"{int(job.fraction * 100)}%")
         self._phase_label.set_label(job.phase or _("Waiting for authentication…"))
@@ -510,13 +567,16 @@ class AppCard(Gtk.Box):
                 AppStatus.INSTALLED,
                 version=self.info.version,
                 repository=self.info.repository,
+                in_panel=getattr(job, "in_panel", False),
             )
             self.set_status(AppStatus.INSTALLED)
             self._action_btn.grab_focus()
         elif job.state is JobState.FAILED:
             self._last_failure = job.failure
             self._error_label.set_label(job.failure_text())
+            self._error_label.set_tooltip_text(job.failure_text())
             self.set_status(AppStatus.FAILED)
+            self._retry_btn.grab_focus()
         else:
             self.set_status(AppStatus.NOT_INSTALLED)
 

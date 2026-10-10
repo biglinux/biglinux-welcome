@@ -20,7 +20,7 @@ APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
 APP_ID = "org.biglinux.welcome"
 APP_NAME = "BigLinux Welcome"
-APP_VERSION = "3.0.0"
+APP_VERSION = "3.0.1"
 APP_WEBSITE = "https://www.biglinux.com.br"
 APP_REPOSITORY = "https://github.com/ruscher/biglinux-welcome"
 APP_DEVELOPERS = ["Rafael Ruscher", "Bruno Gonçalves", "Barnabé Di Kartola"]

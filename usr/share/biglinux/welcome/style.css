@@ -459,7 +459,8 @@ headerbar.flat {
     color: @success_color;
 }
 
-.app-status.installing {
+.app-status.installing,
+.app-status.update {
     background: alpha(@accent_bg_color, 0.15);
     color: @accent_color;
 }

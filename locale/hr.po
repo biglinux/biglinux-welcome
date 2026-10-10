@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 04:46-0300\n"
+"POT-Creation-Date: 2026-10-10 05:22-0300\n"
 "PO-Revision-Date: 2026-10-03 09:00-0300\n"
 "Last-Translator: \n"
 "Language-Team: hr\n"
@@ -49,13 +49,13 @@ msgstr "QR kôd: %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
 #: usr/share/biglinux/welcome/widgets.py:391
-#: usr/share/biglinux/welcome/apps_page.py:541
+#: usr/share/biglinux/welcome/apps_page.py:601
 msgid "Could not open application"
 msgstr "Nije moguće otvoriti aplikaciju."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
 #: usr/share/biglinux/welcome/widgets.py:392
-#: usr/share/biglinux/welcome/apps_page.py:542
+#: usr/share/biglinux/welcome/apps_page.py:602
 #, python-format
 msgid "Could not open %s. It may not be installed."
 msgstr "Nije moguće otvoriti %s. Možda nije instaliran."
@@ -85,7 +85,7 @@ msgid "%s is not available in the configured repositories"
 msgstr "Aplikacija %s nije dostupna u konfiguriranim repozitorijima"
 
 #: usr/share/biglinux/welcome/widgets.py:514
-#: usr/share/biglinux/welcome/apps_page.py:379
+#: usr/share/biglinux/welcome/apps_page.py:440
 #, python-format
 msgid "Install %s"
 msgstr "Instaliraj %s"
@@ -126,7 +126,7 @@ msgstr "Izlaz instalacijskog dnevnika"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
 #: usr/share/biglinux/welcome/widgets.py:739
-#: usr/share/biglinux/welcome/apps_page.py:313
+#: usr/share/biglinux/welcome/apps_page.py:312
 #: usr/share/biglinux/welcome/install_flow.py:237
 #: usr/share/biglinux/welcome/install_flow.py:284
 #: usr/share/biglinux/welcome/install_flow.py:321
@@ -139,12 +139,12 @@ msgid "Cancel installation"
 msgstr "Otkaži instalaciju"
 
 #: usr/share/biglinux/welcome/widgets.py:749
-#: usr/share/biglinux/welcome/apps_page.py:395
+#: usr/share/biglinux/welcome/apps_page.py:453
 msgid "Open"
 msgstr "Otvori"
 
 #: usr/share/biglinux/welcome/widgets.py:753
-#: usr/share/biglinux/welcome/apps_page.py:397
+#: usr/share/biglinux/welcome/apps_page.py:455
 #, python-format
 msgid "Open %s"
 msgstr "Otvori %s"
@@ -163,14 +163,14 @@ msgstr "Zatvori instalacijsku ploču"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
 #: usr/share/biglinux/welcome/widgets.py:771
-#: usr/share/biglinux/welcome/apps_page.py:298
+#: usr/share/biglinux/welcome/apps_page.py:302
 #, python-format
 msgid "Installing %s"
 msgstr "Instaliranje %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
 #: usr/share/biglinux/welcome/widgets.py:815
-#: usr/share/biglinux/welcome/apps_page.py:499
+#: usr/share/biglinux/welcome/apps_page.py:556
 msgid "Cannot cancel during installation"
 msgstr "Ne možete otkazati tijekom instalacije."
 
@@ -239,7 +239,7 @@ msgstr "Otkazivanje…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
 #: usr/share/biglinux/welcome/widgets.py:972
-#: usr/share/biglinux/welcome/apps_page.py:504
+#: usr/share/biglinux/welcome/apps_page.py:561
 #: usr/share/biglinux/welcome/install_backend.py:726
 msgid "Cancelling installation…"
 msgstr "Otkazivanje instalacije…"
@@ -764,139 +764,144 @@ msgid "Initial setup and feature introduction for BigLinux"
 msgstr "Početno postavljanje i predstavljanje značajki BigLinuxa"
 
 #: usr/share/biglinux/welcome/app.py:84
-msgid ""
-"This program is free software distributed under the GNU General Public "
-"License."
-msgstr ""
-"Ovaj program je slobodan softver koji se distribuira pod licencom GNU "
-"General Public License."
-
-#: usr/share/biglinux/welcome/app.py:87
 msgid "Source code"
 msgstr "Izvorni kôd"
 
-#: usr/share/biglinux/welcome/apps_page.py:154
+#: usr/share/biglinux/welcome/apps_page.py:160
 msgid "Checking…"
 msgstr "Provjera…"
 
-#: usr/share/biglinux/welcome/apps_page.py:155
+#: usr/share/biglinux/welcome/apps_page.py:161
 msgid "Not installed"
 msgstr "Nije instalirano"
 
-#: usr/share/biglinux/welcome/apps_page.py:156
+#: usr/share/biglinux/welcome/apps_page.py:162
 msgid "Installing"
 msgstr "Instaliranje"
 
-#: usr/share/biglinux/welcome/apps_page.py:157
-#: usr/share/biglinux/welcome/install_backend.py:1059
+#: usr/share/biglinux/welcome/apps_page.py:163
+#: usr/share/biglinux/welcome/install_backend.py:1181
 msgid "Installed"
 msgstr "Instalirano"
 
-#: usr/share/biglinux/welcome/apps_page.py:158
+#: usr/share/biglinux/welcome/apps_page.py:164
 msgid "Installation failed"
 msgstr "Instalacija nije uspjela"
 
-#: usr/share/biglinux/welcome/apps_page.py:159
+#: usr/share/biglinux/welcome/apps_page.py:165
+msgid "Update available"
+msgstr "Dostupno ažuriranje"
+
+#: usr/share/biglinux/welcome/apps_page.py:166
 msgid "Unavailable"
 msgstr "Nedostupno"
 
-#: usr/share/biglinux/welcome/apps_page.py:160
+#: usr/share/biglinux/welcome/apps_page.py:167
 msgid "Requires KDE Plasma"
 msgstr "Zahtijeva KDE Plasmu"
 
-#: usr/share/biglinux/welcome/apps_page.py:263
-#: usr/share/biglinux/welcome/apps_page.py:304
-msgid "Details"
-msgstr "Pojedinosti"
-
-#: usr/share/biglinux/welcome/apps_page.py:309
-#, python-format
-msgid "Show installation details for %s"
-msgstr "Prikaži pojedinosti instalacije aplikacije %s"
-
-#: usr/share/biglinux/welcome/apps_page.py:318
+#: usr/share/biglinux/welcome/apps_page.py:317
 #, python-format
 msgid "Cancel installation of %s"
 msgstr "Otkaži instalaciju aplikacije %s"
 
-#: usr/share/biglinux/welcome/apps_page.py:377
+#: usr/share/biglinux/welcome/apps_page.py:369
+msgid "Details"
+msgstr "Pojedinosti"
+
+#: usr/share/biglinux/welcome/apps_page.py:374
+#, python-format
+msgid "Show installation details for %s"
+msgstr "Prikaži pojedinosti instalacije aplikacije %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:425
+#: usr/share/biglinux/welcome/install_flow.py:285
+msgid "Update and Install"
+msgstr "Ažuriraj i instaliraj"
+
+#: usr/share/biglinux/welcome/apps_page.py:427
+msgid "Try Again"
+msgstr "Pokušaj ponovno"
+
+#: usr/share/biglinux/welcome/apps_page.py:429
+#, python-format
+msgid "Try again to install %s"
+msgstr "Ponovno pokušaj instalirati %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:434
+#: usr/share/biglinux/welcome/apps_page.py:466
+#: usr/share/biglinux/welcome/install_flow.py:82
+#: usr/share/biglinux/welcome/install_flow.py:134
+msgid "Another installation is in progress"
+msgstr "Druga instalacija je u tijeku"
+
+#: usr/share/biglinux/welcome/apps_page.py:438
 #: usr/share/biglinux/welcome/install_flow.py:238
 #: usr/share/biglinux/welcome/install_flow.py:322
 #: usr/share/biglinux/welcome/install_flow.py:407
 msgid "Install"
 msgstr "Instaliraj"
 
-#: usr/share/biglinux/welcome/apps_page.py:382
-#: usr/share/biglinux/welcome/install_flow.py:285
-msgid "Update and Install"
-msgstr "Ažuriraj i instaliraj"
+#: usr/share/biglinux/welcome/apps_page.py:442
+msgid "Update"
+msgstr "Ažuriraj"
 
-#: usr/share/biglinux/welcome/apps_page.py:384
-msgid "Try Again"
-msgstr "Pokušaj ponovno"
-
-#: usr/share/biglinux/welcome/apps_page.py:386
+#: usr/share/biglinux/welcome/apps_page.py:444
 #, python-format
-msgid "Try again to install %s"
-msgstr "Ponovno pokušaj instalirati %s"
+msgid "Update %s"
+msgstr "Ažuriraj %s"
 
-#: usr/share/biglinux/welcome/apps_page.py:389
+#: usr/share/biglinux/welcome/apps_page.py:447
 msgid "Added to Panel"
 msgstr "Dodano na ploču"
 
-#: usr/share/biglinux/welcome/apps_page.py:392
+#: usr/share/biglinux/welcome/apps_page.py:450
 msgid "Add to Panel"
 msgstr "Dodaj na ploču"
 
-#: usr/share/biglinux/welcome/apps_page.py:393
+#: usr/share/biglinux/welcome/apps_page.py:451
 #, python-format
 msgid "Add %s to the panel"
 msgstr "Dodaj %s na ploču"
 
-#: usr/share/biglinux/welcome/apps_page.py:408
-#: usr/share/biglinux/welcome/install_flow.py:82
-#: usr/share/biglinux/welcome/install_flow.py:134
-msgid "Another installation is in progress"
-msgstr "Druga instalacija je u tijeku"
-
-#: usr/share/biglinux/welcome/apps_page.py:420
+#: usr/share/biglinux/welcome/apps_page.py:478
 msgid "Not available in the configured repositories"
 msgstr "Nije dostupno u konfiguriranim repozitorijima"
 
-#: usr/share/biglinux/welcome/apps_page.py:422
+#: usr/share/biglinux/welcome/apps_page.py:480
 msgid "Plasma widget for KDE Plasma 6"
 msgstr "Widget za KDE Plasmu 6"
 
-#: usr/share/biglinux/welcome/apps_page.py:424
+#: usr/share/biglinux/welcome/apps_page.py:482
 msgid "Plasma widget"
 msgstr "Widget za Plasmu"
 
-#: usr/share/biglinux/welcome/apps_page.py:475
+#: usr/share/biglinux/welcome/apps_page.py:532
 #: usr/share/biglinux/welcome/install_backend.py:740
 msgid "Waiting for authentication…"
 msgstr "Čekanje na autentifikaciju…"
 
-#: usr/share/biglinux/welcome/apps_page.py:547
+#: usr/share/biglinux/welcome/apps_page.py:607
 msgid "Opening…"
 msgstr "Otvaranje…"
 
-#: usr/share/biglinux/welcome/apps_page.py:560
+#: usr/share/biglinux/welcome/apps_page.py:620
 #, python-format
 msgid "Could not add %s to the panel"
 msgstr "Nije moguće dodati %s na ploču"
 
-#: usr/share/biglinux/welcome/apps_page.py:561
+#: usr/share/biglinux/welcome/apps_page.py:621
 #, python-format
 msgid "Right-click the panel, choose “Add Widgets…” and search for %s."
 msgstr ""
 "Desnom tipkom miša kliknite ploču, odaberite „Dodaj widgete…“ i potražite %s."
 
-#: usr/share/biglinux/welcome/apps_page.py:571
+#: usr/share/biglinux/welcome/apps_page.py:631
 #, python-format
 msgid "%s was added to the panel."
 msgstr "Widget %s dodan je na ploču."
 
-#: usr/share/biglinux/welcome/apps_page.py:584
+#: usr/share/biglinux/welcome/apps_page.py:644
 msgid "You are offline. Connect to the internet to install applications."
 msgstr ""
 "Niste povezani s internetom. Povežite se s internetom kako biste instalirali "
@@ -921,8 +926,8 @@ msgid "Checking for conflicts…"
 msgstr "Provjera sukoba…"
 
 #: usr/share/biglinux/welcome/install_backend.py:391
-#: usr/share/biglinux/welcome/install_backend.py:944
-#: usr/share/biglinux/welcome/install_backend.py:994
+#: usr/share/biglinux/welcome/install_backend.py:1032
+#: usr/share/biglinux/welcome/install_backend.py:1116
 msgid "Downloading packages…"
 msgstr "Preuzimanje paketa…"
 
@@ -931,7 +936,7 @@ msgid "Verifying signatures…"
 msgstr "Provjera potpisa…"
 
 #: usr/share/biglinux/welcome/install_backend.py:393
-#: usr/share/biglinux/welcome/install_backend.py:951
+#: usr/share/biglinux/welcome/install_backend.py:1039
 msgid "Verifying integrity…"
 msgstr "Provjera cjelovitosti…"
 
@@ -948,7 +953,7 @@ msgid "Applying changes…"
 msgstr "Primjena promjena…"
 
 #: usr/share/biglinux/welcome/install_backend.py:398
-#: usr/share/biglinux/welcome/install_backend.py:967
+#: usr/share/biglinux/welcome/install_backend.py:1055
 msgid "Installing…"
 msgstr "Instaliranje…"
 
@@ -1065,11 +1070,15 @@ msgstr "Još uvijek radi…"
 msgid "Preparing installation…"
 msgstr "Priprema instalacije…"
 
-#: usr/share/biglinux/welcome/install_backend.py:939
+#: usr/share/biglinux/welcome/install_backend.py:1027
 msgid "kpackagetool6 was not found."
 msgstr "Alat kpackagetool6 nije pronađen."
 
-#: usr/share/biglinux/welcome/install_backend.py:996
+#: usr/share/biglinux/welcome/install_backend.py:1082
+msgid "Adding to the panel…"
+msgstr "Dodavanje na ploču…"
+
+#: usr/share/biglinux/welcome/install_backend.py:1118
 #, python-brace-format
 msgid "Downloaded {size}"
 msgstr "Preuzeto: {size}"

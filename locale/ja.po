@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 04:46-0300\n"
+"POT-Creation-Date: 2026-10-10 05:22-0300\n"
 "PO-Revision-Date: 2026-10-03 09:00-0300\n"
 "Last-Translator: \n"
 "Language-Team: ja\n"
@@ -47,13 +47,13 @@ msgstr "QR コード: %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
 #: usr/share/biglinux/welcome/widgets.py:391
-#: usr/share/biglinux/welcome/apps_page.py:541
+#: usr/share/biglinux/welcome/apps_page.py:601
 msgid "Could not open application"
 msgstr "アプリケーションを開くことができませんでした。"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
 #: usr/share/biglinux/welcome/widgets.py:392
-#: usr/share/biglinux/welcome/apps_page.py:542
+#: usr/share/biglinux/welcome/apps_page.py:602
 #, python-format
 msgid "Could not open %s. It may not be installed."
 msgstr ""
@@ -108,7 +108,7 @@ msgid "%s is not available in the configured repositories"
 msgstr "%s は設定済みのリポジトリにありません"
 
 #: usr/share/biglinux/welcome/widgets.py:514
-#: usr/share/biglinux/welcome/apps_page.py:379
+#: usr/share/biglinux/welcome/apps_page.py:440
 #, python-format
 msgid "Install %s"
 msgstr "%s をインストール"
@@ -149,7 +149,7 @@ msgstr "インストールログ出力"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
 #: usr/share/biglinux/welcome/widgets.py:739
-#: usr/share/biglinux/welcome/apps_page.py:313
+#: usr/share/biglinux/welcome/apps_page.py:312
 #: usr/share/biglinux/welcome/install_flow.py:237
 #: usr/share/biglinux/welcome/install_flow.py:284
 #: usr/share/biglinux/welcome/install_flow.py:321
@@ -162,12 +162,12 @@ msgid "Cancel installation"
 msgstr "インストールをキャンセル"
 
 #: usr/share/biglinux/welcome/widgets.py:749
-#: usr/share/biglinux/welcome/apps_page.py:395
+#: usr/share/biglinux/welcome/apps_page.py:453
 msgid "Open"
 msgstr "開く"
 
 #: usr/share/biglinux/welcome/widgets.py:753
-#: usr/share/biglinux/welcome/apps_page.py:397
+#: usr/share/biglinux/welcome/apps_page.py:455
 #, python-format
 msgid "Open %s"
 msgstr "%s を開く"
@@ -207,14 +207,14 @@ msgstr "インストールパネルを閉じる"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
 #: usr/share/biglinux/welcome/widgets.py:771
-#: usr/share/biglinux/welcome/apps_page.py:298
+#: usr/share/biglinux/welcome/apps_page.py:302
 #, python-format
 msgid "Installing %s"
 msgstr "%sをインストール中"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
 #: usr/share/biglinux/welcome/widgets.py:815
-#: usr/share/biglinux/welcome/apps_page.py:499
+#: usr/share/biglinux/welcome/apps_page.py:556
 msgid "Cannot cancel during installation"
 msgstr "インストール中はキャンセルできません。"
 
@@ -283,7 +283,7 @@ msgstr "キャンセル中…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
 #: usr/share/biglinux/welcome/widgets.py:972
-#: usr/share/biglinux/welcome/apps_page.py:504
+#: usr/share/biglinux/welcome/apps_page.py:561
 #: usr/share/biglinux/welcome/install_backend.py:726
 msgid "Cancelling installation…"
 msgstr "インストールをキャンセルしています…"
@@ -811,139 +811,144 @@ msgid "Initial setup and feature introduction for BigLinux"
 msgstr "BigLinux の初期設定と機能紹介"
 
 #: usr/share/biglinux/welcome/app.py:84
-msgid ""
-"This program is free software distributed under the GNU General Public "
-"License."
-msgstr ""
-"このプログラムは GNU General Public License のもとで配布されているフリーソフ"
-"トウェアです。"
-
-#: usr/share/biglinux/welcome/app.py:87
 msgid "Source code"
 msgstr "ソースコード"
 
-#: usr/share/biglinux/welcome/apps_page.py:154
+#: usr/share/biglinux/welcome/apps_page.py:160
 msgid "Checking…"
 msgstr "確認しています…"
 
-#: usr/share/biglinux/welcome/apps_page.py:155
+#: usr/share/biglinux/welcome/apps_page.py:161
 msgid "Not installed"
 msgstr "未インストール"
 
-#: usr/share/biglinux/welcome/apps_page.py:156
+#: usr/share/biglinux/welcome/apps_page.py:162
 msgid "Installing"
 msgstr "インストール中"
 
-#: usr/share/biglinux/welcome/apps_page.py:157
-#: usr/share/biglinux/welcome/install_backend.py:1059
+#: usr/share/biglinux/welcome/apps_page.py:163
+#: usr/share/biglinux/welcome/install_backend.py:1181
 msgid "Installed"
 msgstr "インストール済み"
 
-#: usr/share/biglinux/welcome/apps_page.py:158
+#: usr/share/biglinux/welcome/apps_page.py:164
 msgid "Installation failed"
 msgstr "インストール失敗"
 
-#: usr/share/biglinux/welcome/apps_page.py:159
+#: usr/share/biglinux/welcome/apps_page.py:165
+msgid "Update available"
+msgstr "アップデートがあります"
+
+#: usr/share/biglinux/welcome/apps_page.py:166
 msgid "Unavailable"
 msgstr "利用不可"
 
-#: usr/share/biglinux/welcome/apps_page.py:160
+#: usr/share/biglinux/welcome/apps_page.py:167
 msgid "Requires KDE Plasma"
 msgstr "KDE Plasma が必要"
 
-#: usr/share/biglinux/welcome/apps_page.py:263
-#: usr/share/biglinux/welcome/apps_page.py:304
-msgid "Details"
-msgstr "詳細"
-
-#: usr/share/biglinux/welcome/apps_page.py:309
-#, python-format
-msgid "Show installation details for %s"
-msgstr "%s のインストールの詳細を表示"
-
-#: usr/share/biglinux/welcome/apps_page.py:318
+#: usr/share/biglinux/welcome/apps_page.py:317
 #, python-format
 msgid "Cancel installation of %s"
 msgstr "%s のインストールをキャンセル"
 
-#: usr/share/biglinux/welcome/apps_page.py:377
+#: usr/share/biglinux/welcome/apps_page.py:369
+msgid "Details"
+msgstr "詳細"
+
+#: usr/share/biglinux/welcome/apps_page.py:374
+#, python-format
+msgid "Show installation details for %s"
+msgstr "%s のインストールの詳細を表示"
+
+#: usr/share/biglinux/welcome/apps_page.py:425
+#: usr/share/biglinux/welcome/install_flow.py:285
+msgid "Update and Install"
+msgstr "更新してインストール"
+
+#: usr/share/biglinux/welcome/apps_page.py:427
+msgid "Try Again"
+msgstr "再試行"
+
+#: usr/share/biglinux/welcome/apps_page.py:429
+#, python-format
+msgid "Try again to install %s"
+msgstr "%s のインストールを再試行"
+
+#: usr/share/biglinux/welcome/apps_page.py:434
+#: usr/share/biglinux/welcome/apps_page.py:466
+#: usr/share/biglinux/welcome/install_flow.py:82
+#: usr/share/biglinux/welcome/install_flow.py:134
+msgid "Another installation is in progress"
+msgstr "別のインストールが進行中です"
+
+#: usr/share/biglinux/welcome/apps_page.py:438
 #: usr/share/biglinux/welcome/install_flow.py:238
 #: usr/share/biglinux/welcome/install_flow.py:322
 #: usr/share/biglinux/welcome/install_flow.py:407
 msgid "Install"
 msgstr "インストール"
 
-#: usr/share/biglinux/welcome/apps_page.py:382
-#: usr/share/biglinux/welcome/install_flow.py:285
-msgid "Update and Install"
-msgstr "更新してインストール"
+#: usr/share/biglinux/welcome/apps_page.py:442
+msgid "Update"
+msgstr "更新"
 
-#: usr/share/biglinux/welcome/apps_page.py:384
-msgid "Try Again"
-msgstr "再試行"
-
-#: usr/share/biglinux/welcome/apps_page.py:386
+#: usr/share/biglinux/welcome/apps_page.py:444
 #, python-format
-msgid "Try again to install %s"
-msgstr "%s のインストールを再試行"
+msgid "Update %s"
+msgstr "%s を更新"
 
-#: usr/share/biglinux/welcome/apps_page.py:389
+#: usr/share/biglinux/welcome/apps_page.py:447
 msgid "Added to Panel"
 msgstr "パネルに追加済み"
 
-#: usr/share/biglinux/welcome/apps_page.py:392
+#: usr/share/biglinux/welcome/apps_page.py:450
 msgid "Add to Panel"
 msgstr "パネルに追加"
 
-#: usr/share/biglinux/welcome/apps_page.py:393
+#: usr/share/biglinux/welcome/apps_page.py:451
 #, python-format
 msgid "Add %s to the panel"
 msgstr "%s をパネルに追加"
 
-#: usr/share/biglinux/welcome/apps_page.py:408
-#: usr/share/biglinux/welcome/install_flow.py:82
-#: usr/share/biglinux/welcome/install_flow.py:134
-msgid "Another installation is in progress"
-msgstr "別のインストールが進行中です"
-
-#: usr/share/biglinux/welcome/apps_page.py:420
+#: usr/share/biglinux/welcome/apps_page.py:478
 msgid "Not available in the configured repositories"
 msgstr "設定済みのリポジトリでは利用できません"
 
-#: usr/share/biglinux/welcome/apps_page.py:422
+#: usr/share/biglinux/welcome/apps_page.py:480
 msgid "Plasma widget for KDE Plasma 6"
 msgstr "KDE Plasma 6 用 Plasma ウィジェット"
 
-#: usr/share/biglinux/welcome/apps_page.py:424
+#: usr/share/biglinux/welcome/apps_page.py:482
 msgid "Plasma widget"
 msgstr "Plasma ウィジェット"
 
-#: usr/share/biglinux/welcome/apps_page.py:475
+#: usr/share/biglinux/welcome/apps_page.py:532
 #: usr/share/biglinux/welcome/install_backend.py:740
 msgid "Waiting for authentication…"
 msgstr "認証を待っています…"
 
-#: usr/share/biglinux/welcome/apps_page.py:547
+#: usr/share/biglinux/welcome/apps_page.py:607
 msgid "Opening…"
 msgstr "開いています…"
 
-#: usr/share/biglinux/welcome/apps_page.py:560
+#: usr/share/biglinux/welcome/apps_page.py:620
 #, python-format
 msgid "Could not add %s to the panel"
 msgstr "%s をパネルに追加できませんでした"
 
-#: usr/share/biglinux/welcome/apps_page.py:561
+#: usr/share/biglinux/welcome/apps_page.py:621
 #, python-format
 msgid "Right-click the panel, choose “Add Widgets…” and search for %s."
 msgstr ""
 "パネルを右クリックして「ウィジェットを追加…」を選び、%s を検索してください。"
 
-#: usr/share/biglinux/welcome/apps_page.py:571
+#: usr/share/biglinux/welcome/apps_page.py:631
 #, python-format
 msgid "%s was added to the panel."
 msgstr "%s をパネルに追加しました。"
 
-#: usr/share/biglinux/welcome/apps_page.py:584
+#: usr/share/biglinux/welcome/apps_page.py:644
 msgid "You are offline. Connect to the internet to install applications."
 msgstr ""
 "オフラインです。アプリケーションをインストールするにはインターネットに接続し"
@@ -968,8 +973,8 @@ msgid "Checking for conflicts…"
 msgstr "競合を確認しています…"
 
 #: usr/share/biglinux/welcome/install_backend.py:391
-#: usr/share/biglinux/welcome/install_backend.py:944
-#: usr/share/biglinux/welcome/install_backend.py:994
+#: usr/share/biglinux/welcome/install_backend.py:1032
+#: usr/share/biglinux/welcome/install_backend.py:1116
 msgid "Downloading packages…"
 msgstr "パッケージをダウンロードしています…"
 
@@ -978,7 +983,7 @@ msgid "Verifying signatures…"
 msgstr "署名を検証しています…"
 
 #: usr/share/biglinux/welcome/install_backend.py:393
-#: usr/share/biglinux/welcome/install_backend.py:951
+#: usr/share/biglinux/welcome/install_backend.py:1039
 msgid "Verifying integrity…"
 msgstr "整合性を検証しています…"
 
@@ -995,7 +1000,7 @@ msgid "Applying changes…"
 msgstr "変更を適用しています…"
 
 #: usr/share/biglinux/welcome/install_backend.py:398
-#: usr/share/biglinux/welcome/install_backend.py:967
+#: usr/share/biglinux/welcome/install_backend.py:1055
 msgid "Installing…"
 msgstr "インストールしています…"
 
@@ -1118,11 +1123,15 @@ msgstr "処理を続行中…"
 msgid "Preparing installation…"
 msgstr "インストールを準備しています…"
 
-#: usr/share/biglinux/welcome/install_backend.py:939
+#: usr/share/biglinux/welcome/install_backend.py:1027
 msgid "kpackagetool6 was not found."
 msgstr "kpackagetool6 が見つかりませんでした。"
 
-#: usr/share/biglinux/welcome/install_backend.py:996
+#: usr/share/biglinux/welcome/install_backend.py:1082
+msgid "Adding to the panel…"
+msgstr "パネルに追加しています…"
+
+#: usr/share/biglinux/welcome/install_backend.py:1118
 #, python-brace-format
 msgid "Downloaded {size}"
 msgstr "ダウンロード済み: {size}"
