@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 04:46-0300\n"
+"POT-Creation-Date: 2026-10-10 05:22-0300\n"
 "PO-Revision-Date: 2026-10-03 09:00-0300\n"
 "Last-Translator: \n"
 "Language-Team: ro\n"
@@ -48,13 +48,13 @@ msgstr "Cod QR: %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
 #: usr/share/biglinux/welcome/widgets.py:391
-#: usr/share/biglinux/welcome/apps_page.py:541
+#: usr/share/biglinux/welcome/apps_page.py:601
 msgid "Could not open application"
 msgstr "Nu s-a putut deschide aplicația."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
 #: usr/share/biglinux/welcome/widgets.py:392
-#: usr/share/biglinux/welcome/apps_page.py:542
+#: usr/share/biglinux/welcome/apps_page.py:602
 #, python-format
 msgid "Could not open %s. It may not be installed."
 msgstr "Nu s-a putut deschide %s. Este posibil să nu fie instalat."
@@ -108,7 +108,7 @@ msgid "%s is not available in the configured repositories"
 msgstr "%s nu este disponibil în depozitele configurate"
 
 #: usr/share/biglinux/welcome/widgets.py:514
-#: usr/share/biglinux/welcome/apps_page.py:379
+#: usr/share/biglinux/welcome/apps_page.py:440
 #, python-format
 msgid "Install %s"
 msgstr "Instalează %s"
@@ -149,7 +149,7 @@ msgstr "Ieșirea jurnalului de instalare"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
 #: usr/share/biglinux/welcome/widgets.py:739
-#: usr/share/biglinux/welcome/apps_page.py:313
+#: usr/share/biglinux/welcome/apps_page.py:312
 #: usr/share/biglinux/welcome/install_flow.py:237
 #: usr/share/biglinux/welcome/install_flow.py:284
 #: usr/share/biglinux/welcome/install_flow.py:321
@@ -162,12 +162,12 @@ msgid "Cancel installation"
 msgstr "Anulează instalarea"
 
 #: usr/share/biglinux/welcome/widgets.py:749
-#: usr/share/biglinux/welcome/apps_page.py:395
+#: usr/share/biglinux/welcome/apps_page.py:453
 msgid "Open"
 msgstr "Deschide"
 
 #: usr/share/biglinux/welcome/widgets.py:753
-#: usr/share/biglinux/welcome/apps_page.py:397
+#: usr/share/biglinux/welcome/apps_page.py:455
 #, python-format
 msgid "Open %s"
 msgstr "Deschide %s"
@@ -207,14 +207,14 @@ msgstr "Închide panoul de instalare"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
 #: usr/share/biglinux/welcome/widgets.py:771
-#: usr/share/biglinux/welcome/apps_page.py:298
+#: usr/share/biglinux/welcome/apps_page.py:302
 #, python-format
 msgid "Installing %s"
 msgstr "Instalare %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
 #: usr/share/biglinux/welcome/widgets.py:815
-#: usr/share/biglinux/welcome/apps_page.py:499
+#: usr/share/biglinux/welcome/apps_page.py:556
 msgid "Cannot cancel during installation"
 msgstr "Nu se poate anula în timpul instalării."
 
@@ -283,7 +283,7 @@ msgstr "Se anulează…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
 #: usr/share/biglinux/welcome/widgets.py:972
-#: usr/share/biglinux/welcome/apps_page.py:504
+#: usr/share/biglinux/welcome/apps_page.py:561
 #: usr/share/biglinux/welcome/install_backend.py:726
 msgid "Cancelling installation…"
 msgstr "Se anulează instalarea…"
@@ -811,139 +811,144 @@ msgid "Initial setup and feature introduction for BigLinux"
 msgstr "Configurare inițială și prezentarea caracteristicilor BigLinux"
 
 #: usr/share/biglinux/welcome/app.py:84
-msgid ""
-"This program is free software distributed under the GNU General Public "
-"License."
-msgstr ""
-"Acest program este software liber, distribuit sub licența GNU General Public "
-"License."
-
-#: usr/share/biglinux/welcome/app.py:87
 msgid "Source code"
 msgstr "Cod sursă"
 
-#: usr/share/biglinux/welcome/apps_page.py:154
+#: usr/share/biglinux/welcome/apps_page.py:160
 msgid "Checking…"
 msgstr "Se verifică…"
 
-#: usr/share/biglinux/welcome/apps_page.py:155
+#: usr/share/biglinux/welcome/apps_page.py:161
 msgid "Not installed"
 msgstr "Neinstalat"
 
-#: usr/share/biglinux/welcome/apps_page.py:156
+#: usr/share/biglinux/welcome/apps_page.py:162
 msgid "Installing"
 msgstr "Se instalează"
 
-#: usr/share/biglinux/welcome/apps_page.py:157
-#: usr/share/biglinux/welcome/install_backend.py:1059
+#: usr/share/biglinux/welcome/apps_page.py:163
+#: usr/share/biglinux/welcome/install_backend.py:1181
 msgid "Installed"
 msgstr "Instalat"
 
-#: usr/share/biglinux/welcome/apps_page.py:158
+#: usr/share/biglinux/welcome/apps_page.py:164
 msgid "Installation failed"
 msgstr "Instalare eșuată"
 
-#: usr/share/biglinux/welcome/apps_page.py:159
+#: usr/share/biglinux/welcome/apps_page.py:165
+msgid "Update available"
+msgstr "Actualizare disponibilă"
+
+#: usr/share/biglinux/welcome/apps_page.py:166
 msgid "Unavailable"
 msgstr "Indisponibil"
 
-#: usr/share/biglinux/welcome/apps_page.py:160
+#: usr/share/biglinux/welcome/apps_page.py:167
 msgid "Requires KDE Plasma"
 msgstr "Necesită KDE Plasma"
 
-#: usr/share/biglinux/welcome/apps_page.py:263
-#: usr/share/biglinux/welcome/apps_page.py:304
-msgid "Details"
-msgstr "Detalii"
-
-#: usr/share/biglinux/welcome/apps_page.py:309
-#, python-format
-msgid "Show installation details for %s"
-msgstr "Afișează detaliile instalării pentru %s"
-
-#: usr/share/biglinux/welcome/apps_page.py:318
+#: usr/share/biglinux/welcome/apps_page.py:317
 #, python-format
 msgid "Cancel installation of %s"
 msgstr "Anulează instalarea pentru %s"
 
-#: usr/share/biglinux/welcome/apps_page.py:377
+#: usr/share/biglinux/welcome/apps_page.py:369
+msgid "Details"
+msgstr "Detalii"
+
+#: usr/share/biglinux/welcome/apps_page.py:374
+#, python-format
+msgid "Show installation details for %s"
+msgstr "Afișează detaliile instalării pentru %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:425
+#: usr/share/biglinux/welcome/install_flow.py:285
+msgid "Update and Install"
+msgstr "Actualizează și instalează"
+
+#: usr/share/biglinux/welcome/apps_page.py:427
+msgid "Try Again"
+msgstr "Reîncearcă"
+
+#: usr/share/biglinux/welcome/apps_page.py:429
+#, python-format
+msgid "Try again to install %s"
+msgstr "Încearcă din nou să instalezi %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:434
+#: usr/share/biglinux/welcome/apps_page.py:466
+#: usr/share/biglinux/welcome/install_flow.py:82
+#: usr/share/biglinux/welcome/install_flow.py:134
+msgid "Another installation is in progress"
+msgstr "O altă instalare este în curs"
+
+#: usr/share/biglinux/welcome/apps_page.py:438
 #: usr/share/biglinux/welcome/install_flow.py:238
 #: usr/share/biglinux/welcome/install_flow.py:322
 #: usr/share/biglinux/welcome/install_flow.py:407
 msgid "Install"
 msgstr "Instalează"
 
-#: usr/share/biglinux/welcome/apps_page.py:382
-#: usr/share/biglinux/welcome/install_flow.py:285
-msgid "Update and Install"
-msgstr "Actualizează și instalează"
+#: usr/share/biglinux/welcome/apps_page.py:442
+msgid "Update"
+msgstr "Actualizează"
 
-#: usr/share/biglinux/welcome/apps_page.py:384
-msgid "Try Again"
-msgstr "Reîncearcă"
-
-#: usr/share/biglinux/welcome/apps_page.py:386
+#: usr/share/biglinux/welcome/apps_page.py:444
 #, python-format
-msgid "Try again to install %s"
-msgstr "Încearcă din nou să instalezi %s"
+msgid "Update %s"
+msgstr "Actualizează %s"
 
-#: usr/share/biglinux/welcome/apps_page.py:389
+#: usr/share/biglinux/welcome/apps_page.py:447
 msgid "Added to Panel"
 msgstr "Adăugat în panou"
 
-#: usr/share/biglinux/welcome/apps_page.py:392
+#: usr/share/biglinux/welcome/apps_page.py:450
 msgid "Add to Panel"
 msgstr "Adaugă în panou"
 
-#: usr/share/biglinux/welcome/apps_page.py:393
+#: usr/share/biglinux/welcome/apps_page.py:451
 #, python-format
 msgid "Add %s to the panel"
 msgstr "Adaugă %s în panou"
 
-#: usr/share/biglinux/welcome/apps_page.py:408
-#: usr/share/biglinux/welcome/install_flow.py:82
-#: usr/share/biglinux/welcome/install_flow.py:134
-msgid "Another installation is in progress"
-msgstr "O altă instalare este în curs"
-
-#: usr/share/biglinux/welcome/apps_page.py:420
+#: usr/share/biglinux/welcome/apps_page.py:478
 msgid "Not available in the configured repositories"
 msgstr "Indisponibil în depozitele configurate"
 
-#: usr/share/biglinux/welcome/apps_page.py:422
+#: usr/share/biglinux/welcome/apps_page.py:480
 msgid "Plasma widget for KDE Plasma 6"
 msgstr "Widget pentru KDE Plasma 6"
 
-#: usr/share/biglinux/welcome/apps_page.py:424
+#: usr/share/biglinux/welcome/apps_page.py:482
 msgid "Plasma widget"
 msgstr "Widget Plasma"
 
-#: usr/share/biglinux/welcome/apps_page.py:475
+#: usr/share/biglinux/welcome/apps_page.py:532
 #: usr/share/biglinux/welcome/install_backend.py:740
 msgid "Waiting for authentication…"
 msgstr "Se așteaptă autentificarea…"
 
-#: usr/share/biglinux/welcome/apps_page.py:547
+#: usr/share/biglinux/welcome/apps_page.py:607
 msgid "Opening…"
 msgstr "Se deschide…"
 
-#: usr/share/biglinux/welcome/apps_page.py:560
+#: usr/share/biglinux/welcome/apps_page.py:620
 #, python-format
 msgid "Could not add %s to the panel"
 msgstr "Nu s-a putut adăuga %s în panou"
 
-#: usr/share/biglinux/welcome/apps_page.py:561
+#: usr/share/biglinux/welcome/apps_page.py:621
 #, python-format
 msgid "Right-click the panel, choose “Add Widgets…” and search for %s."
 msgstr ""
 "Fă clic dreapta pe panou, alege „Adaugă controale grafice…” și caută %s."
 
-#: usr/share/biglinux/welcome/apps_page.py:571
+#: usr/share/biglinux/welcome/apps_page.py:631
 #, python-format
 msgid "%s was added to the panel."
 msgstr "%s a fost adăugat în panou."
 
-#: usr/share/biglinux/welcome/apps_page.py:584
+#: usr/share/biglinux/welcome/apps_page.py:644
 msgid "You are offline. Connect to the internet to install applications."
 msgstr ""
 "Nu ești conectat la internet. Conectează-te la internet pentru a instala "
@@ -968,8 +973,8 @@ msgid "Checking for conflicts…"
 msgstr "Se verifică conflictele…"
 
 #: usr/share/biglinux/welcome/install_backend.py:391
-#: usr/share/biglinux/welcome/install_backend.py:944
-#: usr/share/biglinux/welcome/install_backend.py:994
+#: usr/share/biglinux/welcome/install_backend.py:1032
+#: usr/share/biglinux/welcome/install_backend.py:1116
 msgid "Downloading packages…"
 msgstr "Se descarcă pachetele…"
 
@@ -978,7 +983,7 @@ msgid "Verifying signatures…"
 msgstr "Se verifică semnăturile…"
 
 #: usr/share/biglinux/welcome/install_backend.py:393
-#: usr/share/biglinux/welcome/install_backend.py:951
+#: usr/share/biglinux/welcome/install_backend.py:1039
 msgid "Verifying integrity…"
 msgstr "Se verifică integritatea…"
 
@@ -995,7 +1000,7 @@ msgid "Applying changes…"
 msgstr "Se aplică modificările…"
 
 #: usr/share/biglinux/welcome/install_backend.py:398
-#: usr/share/biglinux/welcome/install_backend.py:967
+#: usr/share/biglinux/welcome/install_backend.py:1055
 msgid "Installing…"
 msgstr "Se instalează…"
 
@@ -1116,11 +1121,15 @@ msgstr "Încă lucrează…"
 msgid "Preparing installation…"
 msgstr "Se pregătește instalarea…"
 
-#: usr/share/biglinux/welcome/install_backend.py:939
+#: usr/share/biglinux/welcome/install_backend.py:1027
 msgid "kpackagetool6 was not found."
 msgstr "kpackagetool6 nu a fost găsit."
 
-#: usr/share/biglinux/welcome/install_backend.py:996
+#: usr/share/biglinux/welcome/install_backend.py:1082
+msgid "Adding to the panel…"
+msgstr "Se adaugă pe panou…"
+
+#: usr/share/biglinux/welcome/install_backend.py:1118
 #, python-brace-format
 msgid "Downloaded {size}"
 msgstr "Descărcat: {size}"

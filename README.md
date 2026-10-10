@@ -9,13 +9,13 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-3.0.0-blue" alt="Version 3.0.0">
+  <img src="https://img.shields.io/badge/version-3.0.1-blue" alt="Version 3.0.1">
   <a href="https://github.com/ruscher/biglinux-welcome/actions/workflows/tests.yml"><img src="https://github.com/ruscher/biglinux-welcome/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
   <img src="https://img.shields.io/badge/GTK-4-4a86cf?logo=gnome&logoColor=white" alt="GTK 4">
   <img src="https://img.shields.io/badge/libadwaita-1.7%2B-7b42bc" alt="libadwaita 1.7+">
   <img src="https://img.shields.io/badge/Python-3.12%2B-f7c600?logo=python&logoColor=black" alt="Python 3.12+">
   <img src="https://img.shields.io/badge/translations-32_locales-orange" alt="32 locales">
-  <img src="https://img.shields.io/badge/license-GPL-green" alt="License GPL">
+  <img src="https://img.shields.io/badge/license-GPL--3.0--or--later-green" alt="License GPL-3.0-or-later">
 </p>
 
 <p align="center">
@@ -48,6 +48,12 @@
 - **Responsive and sharp** — card grids wrap on narrow windows; SVG icons are rendered at the monitor scale (100%–200%, fractional included).
 - **32 locales**, with English fallback.
 
+### What's new in 3.0.1
+
+- **ChatAI** now works like in BigLinux Settings: installing it also adds it to every panel; installed versions are detected and offered as an update. It now comes from the maintained [CommunityBigLinux/ChatAI-Plasmoid](https://github.com/CommunityBigLinux/ChatAI-Plasmoid) (version 1.0.1), synced into biglinux/ChatAI-Plasmoid.
+- **Application cards keep their size** in every state — installing, progress and error messages all fit inside the card.
+- Licensed as **GPL-3.0-or-later**, with a LICENSE file.
+
 ### What's new in 3.0.0
 
 - New **Applications to Install** page and a shared, secure installation backend (also used by the browser page and by launchers).
@@ -77,7 +83,7 @@
   <em>Narrow window, German</em>
 </p>
 
-All screenshots are real renders of version 3.0.0, made with GTK's headless Broadway backend on a BigLinux system.
+All screenshots are real renders of version 3.0, made with GTK's headless Broadway backend on a BigLinux system.
 
 ## Requirements
 
@@ -128,7 +134,7 @@ BIGLINUX_WELCOME_SRC="$(realpath ..)" makepkg -sif
 
 Run `makepkg` as a normal user, never as root. Only `usr/` is packaged; development caches are removed and `docs/` and `tests/` are not installed.
 
-The package version is `1:3.0.0-1`. The epoch makes it newer than the earlier date-based builds (for example `26.10.10-0348`), so existing installations upgrade normally.
+The package version is `1:3.0.1-1`. The epoch makes it newer than the earlier date-based builds (for example `26.10.10-0348`), so existing installations upgrade normally.
 
 ### Running
 
@@ -157,7 +163,7 @@ Security rules:
 - Package names and repositories are validated and allowlisted in **both** `install_backend.py` and the privileged helper (a test keeps the lists identical). No shell is involved in building commands.
 - One pacman transaction at a time; closing the window during an installation asks for confirmation, and pacman keeps running safely if the window is closed anyway.
 - No `curl | sh`, no repositories added, no AUR builds as root. Browsers that only exist in the AUR (Chrome, Opera, Edge) are shown as unavailable and the user is pointed to Big Store.
-- **ChatAI** is a Plasma widget without a package: it is downloaded over HTTPS from a pinned commit of [biglinux/ChatAI-Plasmoid](https://github.com/biglinux/ChatAI-Plasmoid), checked against a SHA-256 of all its files, validated and installed for the current user with `kpackagetool6` — no administrator password.
+- **ChatAI** is a Plasma widget without a package: it is downloaded over HTTPS from a pinned commit of [biglinux/ChatAI-Plasmoid](https://github.com/biglinux/ChatAI-Plasmoid) (kept in sync with [CommunityBigLinux/ChatAI-Plasmoid](https://github.com/CommunityBigLinux/ChatAI-Plasmoid)), checked against a SHA-256 of all its files, validated, installed for the current user with `kpackagetool6` — no administrator password — and added to the panels, as BigLinux Settings does.
 
 ### Applications offered
 
@@ -166,7 +172,7 @@ Security rules:
 | Big Game Mode | `bigame-mode` | `bigame-ui` |
 | Big Remote Play | `big-remote-play` | `big-remote-play` |
 | BigCam | `bigcam` | `bigcam` |
-| ChatAI | Plasma widget `ChatAI-Plasmoid` | *Add to Panel* |
+| ChatAI | Plasma widget `ChatAI-Plasmoid` (version 1.0.1) | Added to every panel when installed |
 | BigLinux Body Tracker | `biglinux-stable/biglinux-body-tracker` | `big-head-tracker` |
 | Big Advogados | `biglinux-stable/big-advogados` | `big-advogados` |
 
@@ -175,7 +181,7 @@ To offer another application: add the package to `ALLOWED_PACKAGES` in `install_
 ## KDE Plasma integration
 
 - Settings cards open Plasma modules (`systemsettings`, `kcmshell6`) and BigLinux tools.
-- **ChatAI** is installed per user with `kpackagetool6`; *Add to Panel* adds it to the first panel through Plasma's scripting D-Bus interface and reports an error if there is no panel.
+- **ChatAI** works like in BigLinux Settings: **Install** downloads and installs the widget and then adds it to every panel that does not have it yet (widgets are unlocked for the change and the previous lock state is restored). The card shows *Installed* once Plasma reports the widget on a panel, *Update available* when another version is installed (**Update** upgrades and re-applies it), and *Add to Panel* if it was removed from the panels.
 - Launched applications receive a startup-notification / Wayland activation token, so their windows open in front.
 - Single instance: launching the Welcome again (from the menu or the autostart service) brings the existing window forward.
 
@@ -194,7 +200,7 @@ biglinux-welcome/
 │       │   ├── window.py                    # window, navigation, browser page
 │       │   ├── apps_page.py                 # Applications to Install
 │       │   ├── install_flow.py              # checks → preview → confirmation → job
-│       │   ├── install_backend.py                 # package queries, install jobs, ChatAI widget
+│       │   ├── install_backend.py           # package queries, install jobs, ChatAI widget
 │       │   ├── widgets.py                   # shared widgets
 │       │   ├── utils.py                     # constants, icons, pages.yaml loading
 │       │   ├── style.css
@@ -210,6 +216,7 @@ biglinux-welcome/
 ├── pkgbuild/                                # PKGBUILD and install hooks
 ├── tests/                                   # test suite
 ├── docs/screenshots/
+├── LICENSE                                  # GPL-3.0-or-later
 ├── generate_strings.py                      # extracts strings from pages.yaml
 └── update-translations.sh                   # refreshes .pot/.po/.mo
 ```
@@ -238,7 +245,7 @@ python main.py
 ```bash
 python -m pytest tests/ -v            # GUI tests run when a display is available
 tests/run-headless.sh -v              # everything, on GTK's headless Broadway backend
-RUN_NETWORK_TESTS=1 python -m pytest tests/test_install_backend.py -k chatai   # pinned ChatAI download
+RUN_NETWORK_TESTS=1 python -m pytest tests/test_installer.py -k chatai   # pinned ChatAI download
 
 ruff check usr/share/biglinux/welcome tests generate_strings.py
 ruff format --check usr/share/biglinux/welcome tests generate_strings.py
@@ -268,7 +275,7 @@ ChatAI-Plasmoid is developed by its own authors and is downloaded from its repos
 
 ## License
 
-Distributed under the **GNU General Public License** (declared as `GPL-1.0-or-later` in the PKGBUILD, matching the unversioned “GPL” used by the project).
+BigLinux Welcome is free software, distributed under the **GNU General Public License, version 3 or (at your option) any later version** (`GPL-3.0-or-later`). See [LICENSE](LICENSE).
 
 ## Links
 

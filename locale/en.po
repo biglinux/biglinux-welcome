@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 04:46-0300\n"
+"POT-Creation-Date: 2026-10-10 05:22-0300\n"
 "PO-Revision-Date: 2026-10-03 09:00-0300\n"
 "Last-Translator: \n"
 "Language-Team: en\n"
@@ -46,13 +46,13 @@ msgstr "QR code: %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 241
 #: usr/share/biglinux/welcome/widgets.py:391
-#: usr/share/biglinux/welcome/apps_page.py:541
+#: usr/share/biglinux/welcome/apps_page.py:601
 msgid "Could not open application"
 msgstr "Could not open application"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 232
 #: usr/share/biglinux/welcome/widgets.py:392
-#: usr/share/biglinux/welcome/apps_page.py:542
+#: usr/share/biglinux/welcome/apps_page.py:602
 #, python-format
 msgid "Could not open %s. It may not be installed."
 msgstr "Could not open %s. It may not be installed."
@@ -82,7 +82,7 @@ msgid "%s is not available in the configured repositories"
 msgstr "%s is not available in the configured repositories"
 
 #: usr/share/biglinux/welcome/widgets.py:514
-#: usr/share/biglinux/welcome/apps_page.py:379
+#: usr/share/biglinux/welcome/apps_page.py:440
 #, python-format
 msgid "Install %s"
 msgstr "Install %s"
@@ -123,7 +123,7 @@ msgstr "Installation log output"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
 #: usr/share/biglinux/welcome/widgets.py:739
-#: usr/share/biglinux/welcome/apps_page.py:313
+#: usr/share/biglinux/welcome/apps_page.py:312
 #: usr/share/biglinux/welcome/install_flow.py:237
 #: usr/share/biglinux/welcome/install_flow.py:284
 #: usr/share/biglinux/welcome/install_flow.py:321
@@ -136,12 +136,12 @@ msgid "Cancel installation"
 msgstr "Cancel installation"
 
 #: usr/share/biglinux/welcome/widgets.py:749
-#: usr/share/biglinux/welcome/apps_page.py:395
+#: usr/share/biglinux/welcome/apps_page.py:453
 msgid "Open"
 msgstr "Open"
 
 #: usr/share/biglinux/welcome/widgets.py:753
-#: usr/share/biglinux/welcome/apps_page.py:397
+#: usr/share/biglinux/welcome/apps_page.py:455
 #, python-format
 msgid "Open %s"
 msgstr "Open %s"
@@ -158,14 +158,14 @@ msgstr "Close installation panel"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 598
 #: usr/share/biglinux/welcome/widgets.py:771
-#: usr/share/biglinux/welcome/apps_page.py:298
+#: usr/share/biglinux/welcome/apps_page.py:302
 #, python-format
 msgid "Installing %s"
 msgstr "Installing %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 756
 #: usr/share/biglinux/welcome/widgets.py:815
-#: usr/share/biglinux/welcome/apps_page.py:499
+#: usr/share/biglinux/welcome/apps_page.py:556
 msgid "Cannot cancel during installation"
 msgstr "Cannot cancel during installation"
 
@@ -234,7 +234,7 @@ msgstr "Cancelling…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 803
 #: usr/share/biglinux/welcome/widgets.py:972
-#: usr/share/biglinux/welcome/apps_page.py:504
+#: usr/share/biglinux/welcome/apps_page.py:561
 #: usr/share/biglinux/welcome/install_backend.py:726
 msgid "Cancelling installation…"
 msgstr "Cancelling installation…"
@@ -761,138 +761,143 @@ msgid "Initial setup and feature introduction for BigLinux"
 msgstr "Initial setup and feature introduction for BigLinux"
 
 #: usr/share/biglinux/welcome/app.py:84
-msgid ""
-"This program is free software distributed under the GNU General Public "
-"License."
-msgstr ""
-"This program is free software distributed under the GNU General Public "
-"License."
-
-#: usr/share/biglinux/welcome/app.py:87
 msgid "Source code"
 msgstr "Source code"
 
-#: usr/share/biglinux/welcome/apps_page.py:154
+#: usr/share/biglinux/welcome/apps_page.py:160
 msgid "Checking…"
 msgstr "Checking…"
 
-#: usr/share/biglinux/welcome/apps_page.py:155
+#: usr/share/biglinux/welcome/apps_page.py:161
 msgid "Not installed"
 msgstr "Not installed"
 
-#: usr/share/biglinux/welcome/apps_page.py:156
+#: usr/share/biglinux/welcome/apps_page.py:162
 msgid "Installing"
 msgstr "Installing"
 
-#: usr/share/biglinux/welcome/apps_page.py:157
-#: usr/share/biglinux/welcome/install_backend.py:1059
+#: usr/share/biglinux/welcome/apps_page.py:163
+#: usr/share/biglinux/welcome/install_backend.py:1181
 msgid "Installed"
 msgstr "Installed"
 
-#: usr/share/biglinux/welcome/apps_page.py:158
+#: usr/share/biglinux/welcome/apps_page.py:164
 msgid "Installation failed"
 msgstr "Installation failed"
 
-#: usr/share/biglinux/welcome/apps_page.py:159
+#: usr/share/biglinux/welcome/apps_page.py:165
+msgid "Update available"
+msgstr "Update available"
+
+#: usr/share/biglinux/welcome/apps_page.py:166
 msgid "Unavailable"
 msgstr "Unavailable"
 
-#: usr/share/biglinux/welcome/apps_page.py:160
+#: usr/share/biglinux/welcome/apps_page.py:167
 msgid "Requires KDE Plasma"
 msgstr "Requires KDE Plasma"
 
-#: usr/share/biglinux/welcome/apps_page.py:263
-#: usr/share/biglinux/welcome/apps_page.py:304
-msgid "Details"
-msgstr "Details"
-
-#: usr/share/biglinux/welcome/apps_page.py:309
-#, python-format
-msgid "Show installation details for %s"
-msgstr "Show installation details for %s"
-
-#: usr/share/biglinux/welcome/apps_page.py:318
+#: usr/share/biglinux/welcome/apps_page.py:317
 #, python-format
 msgid "Cancel installation of %s"
 msgstr "Cancel installation of %s"
 
-#: usr/share/biglinux/welcome/apps_page.py:377
+#: usr/share/biglinux/welcome/apps_page.py:369
+msgid "Details"
+msgstr "Details"
+
+#: usr/share/biglinux/welcome/apps_page.py:374
+#, python-format
+msgid "Show installation details for %s"
+msgstr "Show installation details for %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:425
+#: usr/share/biglinux/welcome/install_flow.py:285
+msgid "Update and Install"
+msgstr "Update and Install"
+
+#: usr/share/biglinux/welcome/apps_page.py:427
+msgid "Try Again"
+msgstr "Try Again"
+
+#: usr/share/biglinux/welcome/apps_page.py:429
+#, python-format
+msgid "Try again to install %s"
+msgstr "Try again to install %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:434
+#: usr/share/biglinux/welcome/apps_page.py:466
+#: usr/share/biglinux/welcome/install_flow.py:82
+#: usr/share/biglinux/welcome/install_flow.py:134
+msgid "Another installation is in progress"
+msgstr "Another installation is in progress"
+
+#: usr/share/biglinux/welcome/apps_page.py:438
 #: usr/share/biglinux/welcome/install_flow.py:238
 #: usr/share/biglinux/welcome/install_flow.py:322
 #: usr/share/biglinux/welcome/install_flow.py:407
 msgid "Install"
 msgstr "Install"
 
-#: usr/share/biglinux/welcome/apps_page.py:382
-#: usr/share/biglinux/welcome/install_flow.py:285
-msgid "Update and Install"
-msgstr "Update and Install"
+#: usr/share/biglinux/welcome/apps_page.py:442
+msgid "Update"
+msgstr "Update"
 
-#: usr/share/biglinux/welcome/apps_page.py:384
-msgid "Try Again"
-msgstr "Try Again"
-
-#: usr/share/biglinux/welcome/apps_page.py:386
+#: usr/share/biglinux/welcome/apps_page.py:444
 #, python-format
-msgid "Try again to install %s"
-msgstr "Try again to install %s"
+msgid "Update %s"
+msgstr "Update %s"
 
-#: usr/share/biglinux/welcome/apps_page.py:389
+#: usr/share/biglinux/welcome/apps_page.py:447
 msgid "Added to Panel"
 msgstr "Added to Panel"
 
-#: usr/share/biglinux/welcome/apps_page.py:392
+#: usr/share/biglinux/welcome/apps_page.py:450
 msgid "Add to Panel"
 msgstr "Add to Panel"
 
-#: usr/share/biglinux/welcome/apps_page.py:393
+#: usr/share/biglinux/welcome/apps_page.py:451
 #, python-format
 msgid "Add %s to the panel"
 msgstr "Add %s to the panel"
 
-#: usr/share/biglinux/welcome/apps_page.py:408
-#: usr/share/biglinux/welcome/install_flow.py:82
-#: usr/share/biglinux/welcome/install_flow.py:134
-msgid "Another installation is in progress"
-msgstr "Another installation is in progress"
-
-#: usr/share/biglinux/welcome/apps_page.py:420
+#: usr/share/biglinux/welcome/apps_page.py:478
 msgid "Not available in the configured repositories"
 msgstr "Not available in the configured repositories"
 
-#: usr/share/biglinux/welcome/apps_page.py:422
+#: usr/share/biglinux/welcome/apps_page.py:480
 msgid "Plasma widget for KDE Plasma 6"
 msgstr "Plasma widget for KDE Plasma 6"
 
-#: usr/share/biglinux/welcome/apps_page.py:424
+#: usr/share/biglinux/welcome/apps_page.py:482
 msgid "Plasma widget"
 msgstr "Plasma widget"
 
-#: usr/share/biglinux/welcome/apps_page.py:475
+#: usr/share/biglinux/welcome/apps_page.py:532
 #: usr/share/biglinux/welcome/install_backend.py:740
 msgid "Waiting for authentication…"
 msgstr "Waiting for authentication…"
 
-#: usr/share/biglinux/welcome/apps_page.py:547
+#: usr/share/biglinux/welcome/apps_page.py:607
 msgid "Opening…"
 msgstr "Opening…"
 
-#: usr/share/biglinux/welcome/apps_page.py:560
+#: usr/share/biglinux/welcome/apps_page.py:620
 #, python-format
 msgid "Could not add %s to the panel"
 msgstr "Could not add %s to the panel"
 
-#: usr/share/biglinux/welcome/apps_page.py:561
+#: usr/share/biglinux/welcome/apps_page.py:621
 #, python-format
 msgid "Right-click the panel, choose “Add Widgets…” and search for %s."
 msgstr "Right-click the panel, choose “Add Widgets…” and search for %s."
 
-#: usr/share/biglinux/welcome/apps_page.py:571
+#: usr/share/biglinux/welcome/apps_page.py:631
 #, python-format
 msgid "%s was added to the panel."
 msgstr "%s was added to the panel."
 
-#: usr/share/biglinux/welcome/apps_page.py:584
+#: usr/share/biglinux/welcome/apps_page.py:644
 msgid "You are offline. Connect to the internet to install applications."
 msgstr "You are offline. Connect to the internet to install applications."
 
@@ -915,8 +920,8 @@ msgid "Checking for conflicts…"
 msgstr "Checking for conflicts…"
 
 #: usr/share/biglinux/welcome/install_backend.py:391
-#: usr/share/biglinux/welcome/install_backend.py:944
-#: usr/share/biglinux/welcome/install_backend.py:994
+#: usr/share/biglinux/welcome/install_backend.py:1032
+#: usr/share/biglinux/welcome/install_backend.py:1116
 msgid "Downloading packages…"
 msgstr "Downloading packages…"
 
@@ -925,7 +930,7 @@ msgid "Verifying signatures…"
 msgstr "Verifying signatures…"
 
 #: usr/share/biglinux/welcome/install_backend.py:393
-#: usr/share/biglinux/welcome/install_backend.py:951
+#: usr/share/biglinux/welcome/install_backend.py:1039
 msgid "Verifying integrity…"
 msgstr "Verifying integrity…"
 
@@ -942,7 +947,7 @@ msgid "Applying changes…"
 msgstr "Applying changes…"
 
 #: usr/share/biglinux/welcome/install_backend.py:398
-#: usr/share/biglinux/welcome/install_backend.py:967
+#: usr/share/biglinux/welcome/install_backend.py:1055
 msgid "Installing…"
 msgstr "Installing…"
 
@@ -1061,11 +1066,15 @@ msgstr "Still working…"
 msgid "Preparing installation…"
 msgstr "Preparing installation…"
 
-#: usr/share/biglinux/welcome/install_backend.py:939
+#: usr/share/biglinux/welcome/install_backend.py:1027
 msgid "kpackagetool6 was not found."
 msgstr "kpackagetool6 was not found."
 
-#: usr/share/biglinux/welcome/install_backend.py:996
+#: usr/share/biglinux/welcome/install_backend.py:1082
+msgid "Adding to the panel…"
+msgstr "Adding to the panel…"
+
+#: usr/share/biglinux/welcome/install_backend.py:1118
 #, python-brace-format
 msgid "Downloaded {size}"
 msgstr "Downloaded {size}"

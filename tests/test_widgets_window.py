@@ -53,9 +53,9 @@ class TestGetLineTag(unittest.TestCase):
 
 
 # Milestones and phase labels are tested on install_backend.ProgressParser in
-# tests/test_install_backend.py::TestProgressParser.
+# tests/test_installer.py::TestProgressParser.
 # Line-buffer splitting moved to install_backend.split_output_lines — see
-# tests/test_install_backend.py::TestSplitOutputLines.
+# tests/test_installer.py::TestSplitOutputLines.
 
 
 if __name__ == "__main__":

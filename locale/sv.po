@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 04:46-0300\n"
+"POT-Creation-Date: 2026-10-10 05:22-0300\n"
 "PO-Revision-Date: 2026-10-03 09:00-0300\n"
 "Last-Translator: \n"
 "Language-Team: sv\n"
@@ -48,13 +48,13 @@ msgstr "QR-kod: %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
 #: usr/share/biglinux/welcome/widgets.py:391
-#: usr/share/biglinux/welcome/apps_page.py:541
+#: usr/share/biglinux/welcome/apps_page.py:601
 msgid "Could not open application"
 msgstr "Kunde inte öppna applikationen"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
 #: usr/share/biglinux/welcome/widgets.py:392
-#: usr/share/biglinux/welcome/apps_page.py:542
+#: usr/share/biglinux/welcome/apps_page.py:602
 #, python-format
 msgid "Could not open %s. It may not be installed."
 msgstr "Kunde inte öppna %s. Det kanske inte är installerat."
@@ -98,7 +98,7 @@ msgid "%s is not available in the configured repositories"
 msgstr "%s är inte tillgängligt i de konfigurerade förråden"
 
 #: usr/share/biglinux/welcome/widgets.py:514
-#: usr/share/biglinux/welcome/apps_page.py:379
+#: usr/share/biglinux/welcome/apps_page.py:440
 #, python-format
 msgid "Install %s"
 msgstr "Installera %s"
@@ -139,7 +139,7 @@ msgstr "Utdata från installationsloggen"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
 #: usr/share/biglinux/welcome/widgets.py:739
-#: usr/share/biglinux/welcome/apps_page.py:313
+#: usr/share/biglinux/welcome/apps_page.py:312
 #: usr/share/biglinux/welcome/install_flow.py:237
 #: usr/share/biglinux/welcome/install_flow.py:284
 #: usr/share/biglinux/welcome/install_flow.py:321
@@ -152,12 +152,12 @@ msgid "Cancel installation"
 msgstr "Avbryt installation"
 
 #: usr/share/biglinux/welcome/widgets.py:749
-#: usr/share/biglinux/welcome/apps_page.py:395
+#: usr/share/biglinux/welcome/apps_page.py:453
 msgid "Open"
 msgstr "Öppna"
 
 #: usr/share/biglinux/welcome/widgets.py:753
-#: usr/share/biglinux/welcome/apps_page.py:397
+#: usr/share/biglinux/welcome/apps_page.py:455
 #, python-format
 msgid "Open %s"
 msgstr "Öppna %s"
@@ -197,14 +197,14 @@ msgstr "Stäng installationspanel"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
 #: usr/share/biglinux/welcome/widgets.py:771
-#: usr/share/biglinux/welcome/apps_page.py:298
+#: usr/share/biglinux/welcome/apps_page.py:302
 #, python-format
 msgid "Installing %s"
 msgstr "Installerar %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
 #: usr/share/biglinux/welcome/widgets.py:815
-#: usr/share/biglinux/welcome/apps_page.py:499
+#: usr/share/biglinux/welcome/apps_page.py:556
 msgid "Cannot cancel during installation"
 msgstr "Kan inte avbryta under installationen"
 
@@ -273,7 +273,7 @@ msgstr "Avbryter…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
 #: usr/share/biglinux/welcome/widgets.py:972
-#: usr/share/biglinux/welcome/apps_page.py:504
+#: usr/share/biglinux/welcome/apps_page.py:561
 #: usr/share/biglinux/welcome/install_backend.py:726
 msgid "Cancelling installation…"
 msgstr "Avbryter installation…"
@@ -814,140 +814,145 @@ msgid "Initial setup and feature introduction for BigLinux"
 msgstr "Första inställningarna och presentation av funktionerna i BigLinux"
 
 #: usr/share/biglinux/welcome/app.py:84
-msgid ""
-"This program is free software distributed under the GNU General Public "
-"License."
-msgstr ""
-"Detta program är fri programvara som distribueras under GNU General Public "
-"License."
-
-#: usr/share/biglinux/welcome/app.py:87
 msgid "Source code"
 msgstr "Källkod"
 
-#: usr/share/biglinux/welcome/apps_page.py:154
+#: usr/share/biglinux/welcome/apps_page.py:160
 msgid "Checking…"
 msgstr "Kontrollerar…"
 
-#: usr/share/biglinux/welcome/apps_page.py:155
+#: usr/share/biglinux/welcome/apps_page.py:161
 msgid "Not installed"
 msgstr "Inte installerad"
 
-#: usr/share/biglinux/welcome/apps_page.py:156
+#: usr/share/biglinux/welcome/apps_page.py:162
 msgid "Installing"
 msgstr "Installerar"
 
-#: usr/share/biglinux/welcome/apps_page.py:157
-#: usr/share/biglinux/welcome/install_backend.py:1059
+#: usr/share/biglinux/welcome/apps_page.py:163
+#: usr/share/biglinux/welcome/install_backend.py:1181
 msgid "Installed"
 msgstr "Installerad"
 
-#: usr/share/biglinux/welcome/apps_page.py:158
+#: usr/share/biglinux/welcome/apps_page.py:164
 msgid "Installation failed"
 msgstr "Installationen misslyckades"
 
-#: usr/share/biglinux/welcome/apps_page.py:159
+#: usr/share/biglinux/welcome/apps_page.py:165
+msgid "Update available"
+msgstr "Uppdatering tillgänglig"
+
+#: usr/share/biglinux/welcome/apps_page.py:166
 msgid "Unavailable"
 msgstr "Inte tillgänglig"
 
-#: usr/share/biglinux/welcome/apps_page.py:160
+#: usr/share/biglinux/welcome/apps_page.py:167
 msgid "Requires KDE Plasma"
 msgstr "Kräver KDE Plasma"
 
-#: usr/share/biglinux/welcome/apps_page.py:263
-#: usr/share/biglinux/welcome/apps_page.py:304
-msgid "Details"
-msgstr "Detaljer"
-
-#: usr/share/biglinux/welcome/apps_page.py:309
-#, python-format
-msgid "Show installation details for %s"
-msgstr "Visa installationsdetaljer för %s"
-
-#: usr/share/biglinux/welcome/apps_page.py:318
+#: usr/share/biglinux/welcome/apps_page.py:317
 #, python-format
 msgid "Cancel installation of %s"
 msgstr "Avbryt installationen av %s"
 
-#: usr/share/biglinux/welcome/apps_page.py:377
+#: usr/share/biglinux/welcome/apps_page.py:369
+msgid "Details"
+msgstr "Detaljer"
+
+#: usr/share/biglinux/welcome/apps_page.py:374
+#, python-format
+msgid "Show installation details for %s"
+msgstr "Visa installationsdetaljer för %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:425
+#: usr/share/biglinux/welcome/install_flow.py:285
+msgid "Update and Install"
+msgstr "Uppdatera och installera"
+
+#: usr/share/biglinux/welcome/apps_page.py:427
+msgid "Try Again"
+msgstr "Försök igen"
+
+#: usr/share/biglinux/welcome/apps_page.py:429
+#, python-format
+msgid "Try again to install %s"
+msgstr "Försök installera %s igen"
+
+#: usr/share/biglinux/welcome/apps_page.py:434
+#: usr/share/biglinux/welcome/apps_page.py:466
+#: usr/share/biglinux/welcome/install_flow.py:82
+#: usr/share/biglinux/welcome/install_flow.py:134
+msgid "Another installation is in progress"
+msgstr "En annan installation pågår"
+
+#: usr/share/biglinux/welcome/apps_page.py:438
 #: usr/share/biglinux/welcome/install_flow.py:238
 #: usr/share/biglinux/welcome/install_flow.py:322
 #: usr/share/biglinux/welcome/install_flow.py:407
 msgid "Install"
 msgstr "Installera"
 
-#: usr/share/biglinux/welcome/apps_page.py:382
-#: usr/share/biglinux/welcome/install_flow.py:285
-msgid "Update and Install"
-msgstr "Uppdatera och installera"
+#: usr/share/biglinux/welcome/apps_page.py:442
+msgid "Update"
+msgstr "Uppdatera"
 
-#: usr/share/biglinux/welcome/apps_page.py:384
-msgid "Try Again"
-msgstr "Försök igen"
-
-#: usr/share/biglinux/welcome/apps_page.py:386
+#: usr/share/biglinux/welcome/apps_page.py:444
 #, python-format
-msgid "Try again to install %s"
-msgstr "Försök installera %s igen"
+msgid "Update %s"
+msgstr "Uppdatera %s"
 
-#: usr/share/biglinux/welcome/apps_page.py:389
+#: usr/share/biglinux/welcome/apps_page.py:447
 msgid "Added to Panel"
 msgstr "Tillagd i panelen"
 
-#: usr/share/biglinux/welcome/apps_page.py:392
+#: usr/share/biglinux/welcome/apps_page.py:450
 msgid "Add to Panel"
 msgstr "Lägg till i panelen"
 
-#: usr/share/biglinux/welcome/apps_page.py:393
+#: usr/share/biglinux/welcome/apps_page.py:451
 #, python-format
 msgid "Add %s to the panel"
 msgstr "Lägg till %s i panelen"
 
-#: usr/share/biglinux/welcome/apps_page.py:408
-#: usr/share/biglinux/welcome/install_flow.py:82
-#: usr/share/biglinux/welcome/install_flow.py:134
-msgid "Another installation is in progress"
-msgstr "En annan installation pågår"
-
-#: usr/share/biglinux/welcome/apps_page.py:420
+#: usr/share/biglinux/welcome/apps_page.py:478
 msgid "Not available in the configured repositories"
 msgstr "Inte tillgänglig i de konfigurerade förråden"
 
-#: usr/share/biglinux/welcome/apps_page.py:422
+#: usr/share/biglinux/welcome/apps_page.py:480
 msgid "Plasma widget for KDE Plasma 6"
 msgstr "Grafisk komponent för KDE Plasma 6"
 
-#: usr/share/biglinux/welcome/apps_page.py:424
+#: usr/share/biglinux/welcome/apps_page.py:482
 msgid "Plasma widget"
 msgstr "Grafisk komponent för Plasma"
 
-#: usr/share/biglinux/welcome/apps_page.py:475
+#: usr/share/biglinux/welcome/apps_page.py:532
 #: usr/share/biglinux/welcome/install_backend.py:740
 msgid "Waiting for authentication…"
 msgstr "Väntar på autentisering…"
 
-#: usr/share/biglinux/welcome/apps_page.py:547
+#: usr/share/biglinux/welcome/apps_page.py:607
 msgid "Opening…"
 msgstr "Öppnar…"
 
-#: usr/share/biglinux/welcome/apps_page.py:560
+#: usr/share/biglinux/welcome/apps_page.py:620
 #, python-format
 msgid "Could not add %s to the panel"
 msgstr "Kunde inte lägga till %s i panelen"
 
-#: usr/share/biglinux/welcome/apps_page.py:561
+#: usr/share/biglinux/welcome/apps_page.py:621
 #, python-format
 msgid "Right-click the panel, choose “Add Widgets…” and search for %s."
 msgstr ""
 "Högerklicka på panelen, välj ”Lägg till grafiska komponenter…” och sök efter "
 "%s."
 
-#: usr/share/biglinux/welcome/apps_page.py:571
+#: usr/share/biglinux/welcome/apps_page.py:631
 #, python-format
 msgid "%s was added to the panel."
 msgstr "%s har lagts till i panelen."
 
-#: usr/share/biglinux/welcome/apps_page.py:584
+#: usr/share/biglinux/welcome/apps_page.py:644
 msgid "You are offline. Connect to the internet to install applications."
 msgstr ""
 "Du är frånkopplad. Anslut till internet för att installera applikationer."
@@ -971,8 +976,8 @@ msgid "Checking for conflicts…"
 msgstr "Söker efter konflikter…"
 
 #: usr/share/biglinux/welcome/install_backend.py:391
-#: usr/share/biglinux/welcome/install_backend.py:944
-#: usr/share/biglinux/welcome/install_backend.py:994
+#: usr/share/biglinux/welcome/install_backend.py:1032
+#: usr/share/biglinux/welcome/install_backend.py:1116
 msgid "Downloading packages…"
 msgstr "Hämtar paket…"
 
@@ -981,7 +986,7 @@ msgid "Verifying signatures…"
 msgstr "Verifierar signaturer…"
 
 #: usr/share/biglinux/welcome/install_backend.py:393
-#: usr/share/biglinux/welcome/install_backend.py:951
+#: usr/share/biglinux/welcome/install_backend.py:1039
 msgid "Verifying integrity…"
 msgstr "Verifierar integritet…"
 
@@ -998,7 +1003,7 @@ msgid "Applying changes…"
 msgstr "Tillämpar ändringar…"
 
 #: usr/share/biglinux/welcome/install_backend.py:398
-#: usr/share/biglinux/welcome/install_backend.py:967
+#: usr/share/biglinux/welcome/install_backend.py:1055
 msgid "Installing…"
 msgstr "Installerar…"
 
@@ -1116,11 +1121,15 @@ msgstr "Arbetar fortfarande…"
 msgid "Preparing installation…"
 msgstr "Förbereder installation…"
 
-#: usr/share/biglinux/welcome/install_backend.py:939
+#: usr/share/biglinux/welcome/install_backend.py:1027
 msgid "kpackagetool6 was not found."
 msgstr "kpackagetool6 hittades inte."
 
-#: usr/share/biglinux/welcome/install_backend.py:996
+#: usr/share/biglinux/welcome/install_backend.py:1082
+msgid "Adding to the panel…"
+msgstr "Lägger till i panelen…"
+
+#: usr/share/biglinux/welcome/install_backend.py:1118
 #, python-brace-format
 msgid "Downloaded {size}"
 msgstr "Hämtat {size}"

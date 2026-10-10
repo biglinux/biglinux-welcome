@@ -651,6 +651,84 @@ class TestPlasmoid(unittest.TestCase):
         root = next((self.tmp / "src").iterdir())
         self.assertIn("Plasma 6", validate_plasmoid_dir(str(root), "ChatAI-Plasmoid"))
 
+    def test_installed_version(self):
+        data = self.tmp / "data"
+        widget = data / "plasma" / "plasmoids" / "ChatAI-Plasmoid"
+        widget.mkdir(parents=True)
+        with patch.dict(
+            os.environ, {"XDG_DATA_HOME": str(data), "XDG_DATA_DIRS": "/nonexistent"}
+        ):
+            self.assertIsNone(install_backend.installed_plasmoid_version("Other"))
+            (widget / "metadata.json").write_text(
+                json.dumps({"KPlugin": {"Id": "ChatAI-Plasmoid", "Version": "1.0.1"}})
+            )
+            self.assertEqual(
+                install_backend.installed_plasmoid_version("ChatAI-Plasmoid"), "1.0.1"
+            )
+            self.assertTrue(install_backend.is_plasmoid_installed("ChatAI-Plasmoid"))
+
+    def test_in_panel_asks_plasma_first(self):
+        check = install_backend.is_plasmoid_in_panel
+        with patch.object(install_backend, "_run_plasma_script", return_value=""):
+            self.assertTrue(check("ChatAI-Plasmoid"))
+        with patch.object(
+            install_backend,
+            "_run_plasma_script",
+            return_value="Error: absent at line 7",
+        ):
+            self.assertFalse(check("ChatAI-Plasmoid"))
+        # plasmashell not reachable: fall back to its config file
+        with (
+            patch.object(
+                install_backend, "_run_plasma_script", return_value="no owner"
+            ),
+            patch.object(install_backend, "_appletsrc_has_widget", return_value=True),
+        ):
+            self.assertTrue(check("ChatAI-Plasmoid"))
+
+    def plasma(self, lock_report):
+        """Fake plasmashell recording every script it receives."""
+        calls = []
+
+        def run(script):
+            calls.append(script)
+            return lock_report if "LOCKED=" in script else ""
+
+        return calls, patch.object(
+            install_backend, "_run_plasma_script", side_effect=run
+        )
+
+    def test_add_to_panel_unlocks_adds_and_relocks(self):
+        calls, fake = self.plasma("Error: Error: LOCKED=true at line 1")
+        with fake:
+            self.assertEqual(
+                install_backend.add_plasmoid_to_panel("ChatAI-Plasmoid"), ""
+            )
+        # Unlock in its own call, then add to every panel lacking it, then relock
+        self.assertEqual(calls[1], "lockCorona(false)")
+        self.assertIn("panelIds.forEach", calls[2])
+        self.assertIn("addWidget('ChatAI-Plasmoid')", calls[2])
+        self.assertIn("!present", calls[2])
+        self.assertNotIn("PLUGIN", calls[2])
+        self.assertEqual(calls[3], "lockCorona(true)")
+
+    def test_add_to_panel_keeps_unlocked_desktop_unlocked(self):
+        calls, fake = self.plasma("Error: Error: LOCKED=false at line 1")
+        with fake:
+            install_backend.add_plasmoid_to_panel("ChatAI-Plasmoid")
+        self.assertFalse(any("lockCorona" in c for c in calls))
+
+    def test_add_to_panel_without_plasma(self):
+        with patch.object(
+            install_backend, "_run_plasma_script", return_value="no owner"
+        ):
+            self.assertEqual(
+                install_backend.add_plasmoid_to_panel("ChatAI-Plasmoid"), "no owner"
+            )
+        self.assertEqual(
+            install_backend.add_plasmoid_to_panel("x'); evil('"), "invalid plugin id"
+        )
+
     def test_pinned_source_is_https_and_pinned_to_a_commit(self):
         source = install_backend.CHATAI_SOURCE
         self.assertTrue(
@@ -660,6 +738,8 @@ class TestPlasmoid(unittest.TestCase):
         )
         self.assertRegex(source.url, r"/[0-9a-f]{40}\.tar\.gz$")
         self.assertRegex(source.tree_sha256, r"^[0-9a-f]{64}$")
+        self.assertEqual(source.version, "1.0.1")
+        self.assertIn("metadata.json", source.files)
 
     def run_plasmoid_job(self, archive, digest):
         source = PlasmoidSource("ChatAI-Plasmoid", archive.as_uri(), digest)
@@ -671,12 +751,20 @@ class TestPlasmoid(unittest.TestCase):
         __import__("shutil").which("kpackagetool6"), "kpackagetool6 not installed"
     )
     def test_install_into_private_root(self):
-        archive, digest = make_plasmoid_archive(self.tmp)
-        job = self.run_plasmoid_job(archive, digest)
-        self.assertIs(job.state, JobState.SUCCEEDED, job.log_lines)
-        self.assertTrue(
-            (self.tmp / "root" / "ChatAI-Plasmoid" / "metadata.json").exists()
+        archive, digest = make_plasmoid_archive(
+            self.tmp, extra={"README.md": "docs", "ChatAI-Plasmoid.plasmoid": "zip"}
         )
+        with patch.object(install_backend, "add_plasmoid_to_panel") as add:
+            job = self.run_plasmoid_job(archive, digest)
+        self.assertIs(job.state, JobState.SUCCEEDED, job.log_lines)
+        installed = self.tmp / "root" / "ChatAI-Plasmoid"
+        self.assertTrue((installed / "metadata.json").exists())
+        self.assertTrue((installed / "contents" / "ui" / "main.qml").exists())
+        # Only the widget's own files are installed
+        self.assertFalse((installed / "README.md").exists())
+        self.assertFalse((installed / "ChatAI-Plasmoid.plasmoid").exists())
+        # A private root never touches the user's panels
+        add.assert_not_called()
 
     @unittest.skipUnless(
         __import__("shutil").which("kpackagetool6"), "kpackagetool6 not installed"

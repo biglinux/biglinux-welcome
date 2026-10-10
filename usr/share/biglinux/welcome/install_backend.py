@@ -58,7 +58,7 @@ PACMAN_LOCK = "/var/lib/pacman/db.lck"
 PACMAN_SYNC_DIR = "/var/lib/pacman/sync"
 
 # Packages the welcome app may install. The privileged helper keeps its own
-# copy of this list (tests/test_install_backend.py checks that both match).
+# copy of this list (tests/test_installer.py checks that both match).
 ALLOWED_PACKAGES = frozenset(
     {
         # Hardware and features
@@ -831,19 +831,27 @@ class PlasmoidSource:
     plugin_id: str
     url: str
     tree_sha256: str
+    # metadata.json "Version" of the pinned commit (an installed widget with
+    # another version is offered as an update)
+    version: str = ""
+    # What gets installed; the rest of the repository (README, CI, prebuilt
+    # .plasmoid archive) is verified but not copied to the user's system
+    files: tuple[str, ...] = ("metadata.json", "contents", "LICENSE")
     max_bytes: int = 20 * 1024 * 1024
 
 
-# biglinux/ChatAI-Plasmoid has no package in the configured repositories.
-# Bump the commit and hash together after reviewing upstream changes; the
-# hash covers every file path and content (see tree_sha256()).
+# biglinux/ChatAI-Plasmoid (synced with CommunityBigLinux/ChatAI-Plasmoid) has
+# no package in the configured repositories. Bump the commit, hash and version
+# together after reviewing upstream changes; the hash covers every file path
+# and content (see tree_sha256()).
 CHATAI_SOURCE = PlasmoidSource(
     plugin_id="ChatAI-Plasmoid",
     url=(
         "https://github.com/biglinux/ChatAI-Plasmoid/archive/"
-        "498426338a2d1f524027fdd604882545bf8edd58.tar.gz"
+        "86534daf0edb8660ae12bd16c032ce7df06658ac.tar.gz"
     ),
-    tree_sha256="3144c6a15a4b35344280aa0ef8b2c4e38c1f617f23fe693ae75f2afa3b448320",
+    tree_sha256="b7d57c1c7c39f0ddb9d73fb1396eb8d18f8e177186310ac827e79ddbbf10a06c",
+    version="1.0.1",
 )
 
 PLASMOID_SOURCES = {CHATAI_SOURCE.plugin_id: CHATAI_SOURCE}
@@ -865,13 +873,77 @@ def plasmoid_dirs() -> list[str]:
 
 
 def is_plasmoid_installed(plugin_id: str) -> bool:
-    return any(
-        os.path.isfile(os.path.join(d, plugin_id, "metadata.json"))
-        for d in plasmoid_dirs()
-    )
+    return installed_plasmoid_version(plugin_id) is not None
 
 
-def is_plasmoid_in_panel(plugin_id: str) -> bool:
+def installed_plasmoid_version(plugin_id: str) -> str | None:
+    """Version of the installed widget ("" if unknown), None if missing.
+
+    The user's copy (first in plasmoid_dirs) is the one Plasma loads."""
+    for directory in plasmoid_dirs():
+        path = os.path.join(directory, plugin_id, "metadata.json")
+        if not os.path.isfile(path):
+            continue
+        try:
+            with open(path, encoding="utf-8") as f:
+                return str(json.load(f).get("KPlugin", {}).get("Version", ""))
+        except (OSError, ValueError):
+            return ""
+    return None
+
+
+_PLUGIN_ID_RE = re.compile(r"^[A-Za-z0-9._-]+$")
+
+# Plasma scripting snippets (same API biglinux-settings uses). PLUGIN is
+# replaced by a validated plugin id.
+_SCRIPT_HAS_WIDGET = """
+var present = function (panel) {
+    return panel.widgetIds.some(function (id) {
+        return panel.widgetById(id).type === 'PLUGIN';
+    });
+};
+if (!panelIds.some(function (id) { return present(panelById(id)); })) {
+    throw new Error('absent');
+}
+"""
+
+# Add the widget to every panel that does not have it yet. Widgets must be
+# unlocked first, in a separate call (addWidget silently does nothing while
+# they are locked, and unlocking inside the same script is too late).
+_SCRIPT_ADD_WIDGET = """
+if (panelIds.length === 0) { throw new Error('no panel'); }
+panelIds.forEach(function (id) {
+    var panel = panelById(id);
+    var present = panel.widgetIds.some(function (w) {
+        return panel.widgetById(w).type === 'PLUGIN';
+    });
+    if (!present) { panel.addWidget('PLUGIN'); }
+});
+"""
+_SCRIPT_REPORT_LOCK = "throw new Error('LOCKED=' + locked);"
+
+
+def _run_plasma_script(script: str) -> str:
+    """Run a script in plasmashell. Returns "" or the error message."""
+    try:
+        bus = Gio.bus_get_sync(Gio.BusType.SESSION, None)
+        bus.call_sync(
+            "org.kde.plasmashell",
+            "/PlasmaShell",
+            "org.kde.PlasmaShell",
+            "evaluateScript",
+            GLib.Variant("(s)", (script,)),
+            None,
+            Gio.DBusCallFlags.NONE,
+            10000,
+            None,
+        )
+    except GLib.Error as e:
+        return e.message or "error"
+    return ""
+
+
+def _appletsrc_has_widget(plugin_id: str) -> bool:
     config_home = os.environ.get("XDG_CONFIG_HOME") or os.path.expanduser("~/.config")
     path = os.path.join(config_home, "plasma-org.kde.plasma.desktop-appletsrc")
     try:
@@ -879,6 +951,19 @@ def is_plasmoid_in_panel(plugin_id: str) -> bool:
             return any(line.strip() == f"plugin={plugin_id}" for line in f)
     except OSError:
         return False
+
+
+def is_plasmoid_in_panel(plugin_id: str) -> bool:
+    """Ask the running Plasma (its config file is written with a delay);
+    fall back to the config file when plasmashell is not reachable."""
+    if not _PLUGIN_ID_RE.match(plugin_id):
+        return False
+    error = _run_plasma_script(_SCRIPT_HAS_WIDGET.replace("PLUGIN", plugin_id))
+    if not error:
+        return True
+    if "absent" in error:
+        return False
+    return _appletsrc_has_widget(plugin_id)
 
 
 def tree_sha256(root: str) -> str:
@@ -929,10 +1014,13 @@ class PlasmoidInstallJob(InstallJob):
     # Overridable by tests
     package_root: str | None = None
     kpackagetool = "kpackagetool6"
+    add_to_panels = True
 
     def __init__(self, source: PlasmoidSource, label: str) -> None:
         super().__init__(label)
         self.source = source
+        # True once the widget is on the panels (set by _run)
+        self.in_panel = False
 
     def _run(self) -> tuple[JobState, Failure]:
         if not shutil.which(self.kpackagetool):
@@ -964,8 +1052,42 @@ class PlasmoidInstallJob(InstallJob):
                 self._log(f"error: {error}")
                 return JobState.FAILED, Failure.INTEGRITY
 
-            self._progress(0.85, _("Installing…"))
-            return self._install(package_dir)
+            self._progress(0.80, _("Installing…"))
+            result = self._install(self._stage(package_dir, os.path.join(tmp, "stage")))
+        # A private package root (tests) is not loaded by Plasma: never touch
+        # the user's panels for it
+        if (
+            result[0] is JobState.SUCCEEDED
+            and self.add_to_panels
+            and not self.package_root
+        ):
+            self._apply()
+        return result
+
+    def _stage(self, package_dir: str, stage: str) -> str:
+        """Copy only the widget's own files (see PlasmoidSource.files)."""
+        root = os.path.join(stage, self.source.plugin_id)
+        os.makedirs(root)
+        for name in self.source.files:
+            source = os.path.join(package_dir, name)
+            target = os.path.join(root, name)
+            if os.path.isdir(source):
+                shutil.copytree(source, target, symlinks=False)
+            elif os.path.isfile(source):
+                shutil.copy2(source, target)
+        return root
+
+    def _apply(self) -> None:
+        """Put the widget on the panels, as biglinux-settings does."""
+        self._progress(0.95, _("Adding to the panel…"))
+        error = add_plasmoid_to_panel(self.source.plugin_id)
+        if error:
+            self._log(f"warning: could not add the widget to the panel: {error}")
+            return
+        self.in_panel = is_plasmoid_in_panel(self.source.plugin_id)
+        self._log(
+            "Added to the panel" if self.in_panel else "warning: not on the panel"
+        )
 
     def _download(self, dest: str) -> tuple[JobState, Failure] | None:
         request = urllib.request.Request(
@@ -1056,37 +1178,30 @@ class PlasmoidInstallJob(InstallJob):
         )
         if not registered or not self._is_installed():
             return JobState.FAILED, Failure.VERIFICATION
-        self._progress(1.0, _("Installed"))
+        self._progress(0.9, _("Installed"))
         return JobState.SUCCEEDED, Failure.NONE
 
 
 def add_plasmoid_to_panel(plugin_id: str) -> str:
-    """Add a widget to the first Plasma panel. Returns an error or ""."""
-    if not re.match(r"^[A-Za-z0-9._-]+$", plugin_id):
+    """Add a widget to every Plasma panel that lacks it, like
+    biglinux-settings: unlock widgets, add, restore the lock state.
+
+    Returns an error message or ""."""
+    if not _PLUGIN_ID_RE.match(plugin_id):
         return "invalid plugin id"
-    script = (
-        "var p = panels();"
-        "if (p.length === 0) { throw new Error('no panel'); }"
-        "var wasLocked = locked; locked = false;"
-        f"p[0].addWidget('{plugin_id}');"
-        "locked = wasLocked;"
-    )
+    report = _run_plasma_script(_SCRIPT_REPORT_LOCK)
+    if "LOCKED=" not in report:
+        return report or "plasmashell did not answer"
+    was_locked = "LOCKED=true" in report
+    if was_locked:
+        error = _run_plasma_script("lockCorona(false)")
+        if error:
+            return error
     try:
-        bus = Gio.bus_get_sync(Gio.BusType.SESSION, None)
-        bus.call_sync(
-            "org.kde.plasmashell",
-            "/PlasmaShell",
-            "org.kde.PlasmaShell",
-            "evaluateScript",
-            GLib.Variant("(s)", (script,)),
-            None,
-            Gio.DBusCallFlags.NONE,
-            10000,
-            None,
-        )
-    except GLib.Error as e:
-        return e.message
-    return ""
+        return _run_plasma_script(_SCRIPT_ADD_WIDGET.replace("PLUGIN", plugin_id))
+    finally:
+        if was_locked:
+            _run_plasma_script("lockCorona(true)")
 
 
 # ---------------------------------------------------------------------------

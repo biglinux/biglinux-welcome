@@ -108,6 +108,11 @@ class TestAppCard(unittest.TestCase):
         self.assertEqual(self.button(self.plasmoid).get_label(), "Added to Panel")
         self.assertFalse(self.button(self.plasmoid).get_sensitive())
 
+    def test_update_offers_update_button(self):
+        self.plasmoid.apply_info(self.AppInfo(self.AppStatus.UPDATE, version="0.9"))
+        self.assertEqual(self.button(self.plasmoid).get_label(), "Update")
+        self.assertEqual(self.plasmoid._status_label.get_label(), "Update available")
+
     def test_unsupported_desktop(self):
         self.plasmoid.apply_info(self.AppInfo(self.AppStatus.UNSUPPORTED))
         self.assertEqual(self.plasmoid._status_label.get_label(), "Requires KDE Plasma")
@@ -129,23 +134,67 @@ class TestAppCard(unittest.TestCase):
         self.card.apply_info(self.AppInfo(self.AppStatus.NOT_INSTALLED))
         self.assertIs(self.card.status, self.AppStatus.INSTALLING)
 
+    def card_size(self, card):
+        width = card.measure(Gtk.Orientation.HORIZONTAL, -1)[1]
+        height = card.measure(Gtk.Orientation.VERTICAL, max(width, card.WIDTH))[1]
+        return width, height
+
+    def test_card_size_never_changes(self):
+        """Installing, progress, long errors: the card keeps its size."""
+        card = self.card
+        card.set_size_request(card.WIDTH, -1)
+        sizes = {}
+        for status in (
+            self.AppStatus.CHECKING,
+            self.AppStatus.NOT_INSTALLED,
+            self.AppStatus.UNAVAILABLE,
+            self.AppStatus.INSTALLED,
+        ):
+            card.apply_info(self.AppInfo(status, repository="biglinux-stable"))
+            sizes[status.value] = self.card_size(card)
+
+        job = FakeJob()
+        card.bind_job(job)
+        sizes["installing"] = self.card_size(card)
+        card._on_job_progress(
+            job, 0.4, "Downloading " + "biglinux-body-tracker-" * 6 + "…"
+        )
+        sizes["long phase"] = self.card_size(card)
+
+        longest = max(
+            (
+                install_backend.failure_message(f)
+                for f in install_backend.Failure
+                if f.value != "none"
+            ),
+            key=len,
+        )
+        for message in (longest, longest * 4):
+            card._last_failure = install_backend.Failure.UNKNOWN
+            card._error_label.set_label(message)
+            card.set_status(self.AppStatus.FAILED)
+            sizes[f"failed {len(message)}"] = self.card_size(card)
+
+        self.assertEqual(len(set(sizes.values())), 1, sizes)
+        self.assertEqual(sizes["checking"][0], card.WIDTH)
+
     def test_failed_job_shows_reason_and_retry(self):
         job = FakeJob(JobState.FAILED, Failure.NETWORK)
         self.card.bind_job(job)
         run_until_finished(job)
         self.assertIs(self.card.status, self.AppStatus.FAILED)
-        self.assertEqual(self.button(self.card).get_label(), "Try Again")
+        self.assertEqual(self.card._footer.get_visible_child_name(), "failed")
+        self.assertEqual(self.card._retry_btn.get_label(), "Try Again")
         self.assertEqual(
             self.card._error_label.get_label(),
             install_backend.failure_message(Failure.NETWORK),
         )
-        self.assertTrue(self.card._details_btn.get_visible())
 
     def test_outdated_database_offers_full_update(self):
         job = FakeJob(JobState.FAILED, Failure.OUTDATED_DATABASE)
         self.card.bind_job(job)
         run_until_finished(job)
-        self.assertEqual(self.button(self.card).get_label(), "Update and Install")
+        self.assertEqual(self.card._retry_btn.get_label(), "Update and Install")
 
     def test_auth_cancel_returns_to_not_installed(self):
         job = FakeJob(JobState.AUTH_CANCELLED)
@@ -218,7 +267,7 @@ class TestCheckApps(unittest.TestCase):
             patch("apps_page.installed_packages", return_value={"bigcam"}),
             patch("apps_page.repo_packages", return_value=repo),
             patch("apps_page.is_plasma_session", return_value=True),
-            patch("apps_page.is_plasmoid_installed", return_value=False),
+            patch("apps_page.installed_plasmoid_version", return_value=None),
         ):
             result = check_apps(entries)
         self.assertIs(result["A"].status, AppStatus.INSTALLED)
@@ -255,6 +304,33 @@ class TestCheckApps(unittest.TestCase):
         self.assertIs(result["T"].status, AppStatus.NOT_INSTALLED)
         self.assertEqual(result["T"].repository, "biglinux-stable")
         self.assertEqual(result["T"].version, "24.10")
+
+    def test_plasmoid_update_and_panel_states(self):
+        from apps_page import AppEntry, AppStatus, check_apps
+
+        entry = AppEntry("D", plasmoid="ChatAI-Plasmoid")
+        common = (
+            patch("apps_page.is_plasma_session", return_value=True),
+            patch("apps_page.installed_packages", return_value=set()),
+            patch("apps_page.repo_packages", return_value={}),
+        )
+        for installed, in_panel, expected in (
+            ("0.9", False, AppStatus.UPDATE),
+            ("1.0.1", True, AppStatus.INSTALLED),
+            ("1.0.1", False, AppStatus.INSTALLED),
+        ):
+            with (
+                common[0],
+                common[1],
+                common[2],
+                patch("apps_page.installed_plasmoid_version", return_value=installed),
+                patch("apps_page.is_plasmoid_in_panel", return_value=in_panel),
+            ):
+                info = check_apps([entry])["D"]
+            self.assertIs(info.status, expected, installed)
+            self.assertEqual(
+                info.in_panel, in_panel and expected is AppStatus.INSTALLED
+            )
 
     def test_plasmoid_unsupported_outside_plasma(self):
         from apps_page import AppEntry, AppStatus, check_apps

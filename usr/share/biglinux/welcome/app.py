@@ -79,10 +79,7 @@ class BigLinuxWelcomeApp(Adw.Application):
             website=APP_WEBSITE,
             issue_url=f"{APP_REPOSITORY}/issues",
             comments=_("Initial setup and feature introduction for BigLinux"),
-            license_type=Gtk.License.CUSTOM,
-            license=_(
-                "This program is free software distributed under the GNU General Public License."
-            ),
+            license_type=Gtk.License.GPL_3_0,
         )
         dialog.add_link(_("Source code"), APP_REPOSITORY)
         dialog.present(self.win)
