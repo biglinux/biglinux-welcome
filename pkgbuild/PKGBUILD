@@ -1,32 +1,55 @@
+# Maintainer: Rafael Ruscher
 # Maintainer: Bruno Goncalves <bigbruno@gmail.com>
+# Maintainer: Barnabé Di Kartola <barnabedikartola@gmail.com>
 
 pkgname=biglinux-welcome
-pkgver=$(date +%y.%m.%d)
-pkgrel=$(date +%H%M)
+pkgver=3.0.0
+pkgrel=1
+# Earlier releases used date-based versions (e.g. 26.10.10); the epoch makes
+# 1:3.0.0 newer than all of them, so existing installations upgrade.
+epoch=1
 arch=('any')
-license=('GPL')
-pkgdesc="Scripts and configuration files created in GTK4 that simplify switching BigLinux operation."
-depends=('gtk4' 'python' 'polkit' 'zenity' 'python-yaml')
+license=('GPL-1.0-or-later')
+pkgdesc="Guided setup and feature discovery for BigLinux"
+depends=('gtk4' 'libadwaita' 'python' 'python-gobject' 'python-cairo' 'python-yaml'
+         'polkit' 'pacman' 'xdg-utils' 'hicolor-icon-theme')
+optdepends=('kpackage: install the ChatAI widget for KDE Plasma (kpackagetool6)')
+makedepends=('git')
 url="https://github.com/biglinux/$pkgname"
 # conflicts=('')
-source=("git+${url}.git")
-md5sums=(SKIP)
+
+# Local build: package a working copy (including uncommitted changes)
+# instead of cloning the repository, e.g. from the pkgbuild/ folder:
+#   BIGLINUX_WELCOME_SRC="$(realpath ..)" makepkg -sif
+if [ -n "${BIGLINUX_WELCOME_SRC:-}" ]; then
+    source=()
+    sha256sums=()
+else
+    source=("git+${url}.git")
+    sha256sums=('SKIP')
+fi
+
 if [ -e "${pkgname}.install" ];then
     install=${pkgname}.install
 fi
 
 package() {
     # Verify default folder
-    if [ -d "${srcdir}/${pkgname}/${pkgname}" ]; then
+    if [ -n "${BIGLINUX_WELCOME_SRC:-}" ]; then
+        InternalDir="${BIGLINUX_WELCOME_SRC}"
+    elif [ -d "${srcdir}/${pkgname}/${pkgname}" ]; then
         InternalDir="${srcdir}/${pkgname}/${pkgname}"
     else
         InternalDir="${srcdir}/${pkgname}"
     fi
 
-    # Copy files
-    if [ -d "${InternalDir}/usr" ]; then
-        cp -r "${InternalDir}/usr" "${pkgdir}/"
+    if [ ! -d "${InternalDir}/usr" ]; then
+        echo "error: ${InternalDir}/usr not found" >&2
+        return 1
     fi
+
+    # Copy files
+    cp -r "${InternalDir}/usr" "${pkgdir}/"
 
     if [ -d "${InternalDir}/etc" ]; then
         cp -r "${InternalDir}/etc" "${pkgdir}/"
@@ -35,5 +58,11 @@ package() {
     if [ -d "${InternalDir}/opt" ]; then
         cp -r "${InternalDir}/opt" "${pkgdir}/"
     fi
-}
 
+    # Never ship development caches from a working copy
+    find "${pkgdir}" \( -name __pycache__ -o -name .ruff_cache -o -name .pytest_cache \) \
+        -prune -exec rm -rf {} +
+
+    # The privileged helper must stay executable
+    chmod 755 "${pkgdir}/usr/share/biglinux/welcome/scripts/package-install.sh"
+}

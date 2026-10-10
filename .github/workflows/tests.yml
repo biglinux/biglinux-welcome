@@ -1,0 +1,45 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install dependencies
+        run: |
+          pacman -Syu --noconfirm --needed git python python-gobject python-cairo \
+            python-yaml python-pytest gtk4 libadwaita gettext shellcheck \
+            desktop-file-utils
+          # Pinned, so new ruff releases cannot change the rule set unnoticed
+          python -m venv /opt/ruff && /opt/ruff/bin/pip install --quiet ruff==0.17.0
+
+      - uses: actions/checkout@v4
+
+      - name: Lint
+        run: |
+          /opt/ruff/bin/ruff check usr/share/biglinux/welcome tests generate_strings.py
+          /opt/ruff/bin/ruff format --check usr/share/biglinux/welcome tests generate_strings.py
+          shellcheck tests/run-headless.sh usr/share/biglinux/welcome/scripts/*.sh update-translations.sh \
+            pkgbuild/biglinux-welcome.install usr/bin/biglinux-welcome
+          desktop-file-validate usr/share/applications/org.biglinux.welcome.desktop
+
+      - name: Translations
+        run: for po in locale/*.po; do msgfmt --check -o /dev/null "$po"; done
+
+      # The privileged helper ignores its test mode when run as root, so the
+      # suite runs as an unprivileged user. GUI tests use GTK's headless
+      # Broadway backend (gtk4-broadwayd ships with gtk4).
+      - name: Test suite
+        run: |
+          useradd -m tester
+          chown -R tester: "$GITHUB_WORKSPACE"
+          runuser -u tester -- tests/run-headless.sh -v -rs

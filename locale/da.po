@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-03 09:00-0300\n"
+"POT-Creation-Date: 2026-10-10 04:46-0300\n"
 "PO-Revision-Date: 2026-10-03 09:00-0300\n"
 "Last-Translator: \n"
 "Language-Team: da\n"
@@ -14,552 +14,718 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: usr/share/biglinux/welcome/widgets.py:53
+msgid "OK"
+msgstr "OK"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
 # line: 248
-#: usr/share/biglinux/welcome/widgets.py:120
+#: usr/share/biglinux/welcome/widgets.py:230
 msgid "Kernel"
 msgstr "Kerne"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
 # line: 258
-#: usr/share/biglinux/welcome/widgets.py:121
+#: usr/share/biglinux/welcome/widgets.py:231
 msgid "Desktop"
 msgstr "Skrivebord"
 
+#: usr/share/biglinux/welcome/widgets.py:231
+#: usr/share/biglinux/welcome/widgets.py:232
+msgid "Unknown"
+msgstr "Ukendt"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-#: usr/share/biglinux/welcome/widgets.py:123
+#: usr/share/biglinux/welcome/widgets.py:232
 msgid "Display"
 msgstr "Skærm"
 
+#: usr/share/biglinux/welcome/widgets.py:313
+#, python-format
+msgid "QR code: %s"
+msgstr "QR-kode: %s"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+#: usr/share/biglinux/welcome/widgets.py:391
+#: usr/share/biglinux/welcome/apps_page.py:541
+msgid "Could not open application"
+msgstr "Kunne ikke åbne applikationen"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
-#: usr/share/biglinux/welcome/widgets.py:232
+#: usr/share/biglinux/welcome/widgets.py:392
+#: usr/share/biglinux/welcome/apps_page.py:542
 #, python-format
 msgid "Could not open %s. It may not be installed."
 msgstr "Kunne ikke åbne %s. Det er muligvis ikke installeret."
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
-#: usr/share/biglinux/welcome/widgets.py:241
-msgid "Could not open application"
-msgstr "Kunne ikke åbne applikationen"
-
-#: usr/share/biglinux/welcome/widgets.py:244
-msgid "OK"
-msgstr "OK"
-
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
-#: usr/share/biglinux/welcome/widgets.py:328
+#: usr/share/biglinux/welcome/widgets.py:482
 msgid "installed"
 msgstr "installeret"
 
+#: usr/share/biglinux/welcome/widgets.py:484
+msgid "unavailable"
+msgstr "ikke tilgængelig"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
-#: usr/share/biglinux/welcome/widgets.py:330
+#: usr/share/biglinux/welcome/widgets.py:486
 msgid "not installed"
 msgstr "ikke installeret"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
-#: usr/share/biglinux/welcome/widgets.py:332
+#: usr/share/biglinux/welcome/widgets.py:488
 msgid "default browser"
 msgstr "standardbrowser"
 
+#: usr/share/biglinux/welcome/widgets.py:511
+#, python-format
+msgid "%s is not available in the configured repositories"
+msgstr "%s er ikke tilgængelig i de konfigurerede pakkearkiver"
+
+#: usr/share/biglinux/welcome/widgets.py:514
+#: usr/share/biglinux/welcome/apps_page.py:379
+#, python-format
+msgid "Install %s"
+msgstr "Installer %s"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
-#: usr/share/biglinux/welcome/widgets.py:489
+#: usr/share/biglinux/welcome/widgets.py:643
 #, python-format
 msgid "Installing %s…"
 msgstr "Installerer %s…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
-#: usr/share/biglinux/welcome/widgets.py:495
+#: usr/share/biglinux/welcome/widgets.py:651
 msgid "Preparing download…"
 msgstr "Forbereder download…"
 
+#: usr/share/biglinux/welcome/widgets.py:671
+msgid "Installation progress"
+msgstr "Installationsforløb"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
-#: usr/share/biglinux/welcome/widgets.py:522
-#: usr/share/biglinux/welcome/widgets.py:789
+#: usr/share/biglinux/welcome/widgets.py:683
+#: usr/share/biglinux/welcome/widgets.py:958
 msgid "View details"
 msgstr "Se detaljer"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
-#: usr/share/biglinux/welcome/widgets.py:529
-#: usr/share/biglinux/welcome/widgets.py:795
+#: usr/share/biglinux/welcome/widgets.py:690
+#: usr/share/biglinux/welcome/widgets.py:964
 msgid "Show installation details"
 msgstr "Vis installationsdetaljer"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
-#: usr/share/biglinux/welcome/widgets.py:557
+#: usr/share/biglinux/welcome/widgets.py:718
 msgid "Installation log output"
 msgstr "Output fra installationsloggen"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
-#: usr/share/biglinux/welcome/widgets.py:576
+#: usr/share/biglinux/welcome/widgets.py:739
+#: usr/share/biglinux/welcome/apps_page.py:313
+#: usr/share/biglinux/welcome/install_flow.py:237
+#: usr/share/biglinux/welcome/install_flow.py:284
+#: usr/share/biglinux/welcome/install_flow.py:321
 msgid "Cancel"
 msgstr "Annuller"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
-#: usr/share/biglinux/welcome/widgets.py:580
+#: usr/share/biglinux/welcome/widgets.py:744
 msgid "Cancel installation"
 msgstr "Annuller installation"
 
-#: usr/share/biglinux/welcome/widgets.py:585
+#: usr/share/biglinux/welcome/widgets.py:749
+#: usr/share/biglinux/welcome/apps_page.py:395
+msgid "Open"
+msgstr "Åbn"
+
+#: usr/share/biglinux/welcome/widgets.py:753
+#: usr/share/biglinux/welcome/apps_page.py:397
+#, python-format
+msgid "Open %s"
+msgstr "Åbn %s"
+
+#: usr/share/biglinux/welcome/widgets.py:758
 msgid "Done"
 msgstr "Færdig"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
-#: usr/share/biglinux/welcome/widgets.py:590
+#: usr/share/biglinux/welcome/widgets.py:763
 msgid "Close installation panel"
 msgstr "Luk installationspanelet"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
-#: usr/share/biglinux/welcome/widgets.py:598
+#: usr/share/biglinux/welcome/widgets.py:771
+#: usr/share/biglinux/welcome/apps_page.py:298
 #, python-format
 msgid "Installing %s"
 msgstr "Installerer %s"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
-#: usr/share/biglinux/welcome/widgets.py:667
-msgid "It has been set as your default browser."
-msgstr "Det er blevet indstillet som din standardbrowser."
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+#: usr/share/biglinux/welcome/widgets.py:815
+#: usr/share/biglinux/welcome/apps_page.py:499
+msgid "Cannot cancel during installation"
+msgstr "Kan ikke annullere under installationen"
+
+#: usr/share/biglinux/welcome/widgets.py:889
+#: usr/share/biglinux/welcome/window.py:492
+msgid "The application is ready to use."
+msgstr "Applikationen er klar til brug."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
-#: usr/share/biglinux/welcome/widgets.py:668
+#: usr/share/biglinux/welcome/widgets.py:890
 #, python-format
 msgid "%s installed successfully!"
 msgstr "%s installeret med succes!"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
-#: usr/share/biglinux/welcome/widgets.py:676
+#: usr/share/biglinux/welcome/widgets.py:899
 #, python-format
 msgid "%s installed successfully"
 msgstr "%s installeret med succes"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
-#: usr/share/biglinux/welcome/widgets.py:684
+#: usr/share/biglinux/welcome/widgets.py:907
 #, python-format
 msgid "Failed to install %s"
 msgstr "Kunne ikke installere %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
-#: usr/share/biglinux/welcome/widgets.py:687
+#: usr/share/biglinux/welcome/widgets.py:911
 msgid "Check the details below for more information."
 msgstr "Tjek detaljerne nedenfor for mere information."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
-#: usr/share/biglinux/welcome/widgets.py:694
+#: usr/share/biglinux/welcome/widgets.py:919
 #, python-format
 msgid "Installation of %s failed"
 msgstr "Installation af %s mislykkedes"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
-#: usr/share/biglinux/welcome/widgets.py:756
-msgid "Cannot cancel during installation"
-msgstr "Kan ikke annullere under installationen"
+#: usr/share/biglinux/welcome/widgets.py:927
+#: usr/share/biglinux/welcome/widgets.py:937
+msgid "Installation cancelled"
+msgstr "Installationen blev annulleret"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
-#: usr/share/biglinux/welcome/widgets.py:767
-#, python-brace-format
-msgid "Downloading {name}…"
-msgstr "Downloader {name}…"
+#: usr/share/biglinux/welcome/widgets.py:929
+#: usr/share/biglinux/welcome/install_flow.py:150
+msgid "Authentication was cancelled. Nothing was installed."
+msgstr "Godkendelsen blev annulleret. Intet blev installeret."
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
-#: usr/share/biglinux/welcome/widgets.py:779
-#, python-brace-format
-msgid "Downloading… {pct}% ({speed})"
-msgstr "Downloader… {pct}% ({speed})"
+#: usr/share/biglinux/welcome/widgets.py:931
+msgid "Nothing was installed."
+msgstr "Intet blev installeret."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
-#: usr/share/biglinux/welcome/widgets.py:789
+#: usr/share/biglinux/welcome/widgets.py:958
 msgid "Hide details"
 msgstr "Skjul detaljer"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
-#: usr/share/biglinux/welcome/widgets.py:793
+#: usr/share/biglinux/welcome/widgets.py:962
 msgid "Hide installation details"
 msgstr "Skjul installationsdetaljer"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
-#: usr/share/biglinux/welcome/widgets.py:802
+#: usr/share/biglinux/welcome/widgets.py:971
 msgid "Cancelling…"
 msgstr "Annullerer…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
-#: usr/share/biglinux/welcome/widgets.py:803
+#: usr/share/biglinux/welcome/widgets.py:972
+#: usr/share/biglinux/welcome/apps_page.py:504
+#: usr/share/biglinux/welcome/install_backend.py:726
 msgid "Cancelling installation…"
 msgstr "Annullerer installation…"
 
+#: usr/share/biglinux/welcome/window.py:91
+msgid "About BigLinux Welcome"
+msgstr "Om BigLinux Welcome"
+
+#: usr/share/biglinux/welcome/window.py:93
+#: usr/share/biglinux/welcome/window.py:94
+msgid "Main Menu"
+msgstr "Hovedmenu"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
-#: usr/share/biglinux/welcome/window.py:160
+#: usr/share/biglinux/welcome/window.py:178
 msgid "In search of the perfect system!"
 msgstr "På jagt efter det perfekte system!"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-#: usr/share/biglinux/welcome/window.py:165
+#: usr/share/biglinux/welcome/window.py:182
 msgid "Welcome to your new system"
 msgstr "Velkommen til dit nye system"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
-#: usr/share/biglinux/welcome/window.py:321
+#: usr/share/biglinux/welcome/window.py:303
 msgid "Changing default browser"
 msgstr "Ændrer standardbrowser"
 
+#: usr/share/biglinux/welcome/window.py:391
+msgid "Close"
+msgstr "Luk"
+
+#: usr/share/biglinux/welcome/window.py:394
+msgid "Open Big Store"
+msgstr "Åbn Big Store"
+
+#: usr/share/biglinux/welcome/window.py:406
+#, python-format
+msgid "%s is not available"
+msgstr "%s er ikke tilgængelig"
+
+#: usr/share/biglinux/welcome/window.py:408
+#, python-format
+msgid ""
+"%s is not in the configured repositories, so it cannot be installed safely "
+"from here. You can look for it in Big Store, which shows where each package "
+"comes from."
+msgstr ""
+"%s findes ikke i de konfigurerede pakkearkiver og kan derfor ikke "
+"installeres sikkert herfra. Du kan søge efter den i Big Store, som viser, "
+"hvor hver pakke kommer fra."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
-#: usr/share/biglinux/welcome/window.py:404
+#: usr/share/biglinux/welcome/window.py:435
 #, python-format
 msgid "Setting %s as default…"
 msgstr "Indstiller %s som standard…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
-#: usr/share/biglinux/welcome/window.py:417
+#: usr/share/biglinux/welcome/window.py:448
 #, python-format
 msgid "%s set as default"
 msgstr "%s sat som standard"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
-#: usr/share/biglinux/welcome/window.py:527
-msgid "Still working…"
-msgstr "Arbejder stadig…"
+#: usr/share/biglinux/welcome/window.py:485
+msgid "Setting it as your default browser…"
+msgstr "Indstiller den som din standardbrowser…"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+#: usr/share/biglinux/welcome/window.py:490
+msgid "It has been set as your default browser."
+msgstr "Det er blevet indstillet som din standardbrowser."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 50
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-#: usr/share/biglinux/welcome/window.py:572
+#: usr/share/biglinux/welcome/window.py:530
 msgid "Show on startup"
 msgstr "Vis ved opstart"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
-#: usr/share/biglinux/welcome/window.py:579
+#: usr/share/biglinux/welcome/window.py:537
 msgid "Welcome"
 msgstr "Velkommen"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
-#: usr/share/biglinux/welcome/window.py:600
+#: usr/share/biglinux/welcome/window.py:551
+#: usr/share/biglinux/welcome/window.py:554
 msgid "Previous page"
 msgstr "Forrige side"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
-#: usr/share/biglinux/welcome/window.py:612
-#: usr/share/biglinux/welcome/window.py:638
+#: usr/share/biglinux/welcome/window.py:565
+#: usr/share/biglinux/welcome/window.py:567
+#: usr/share/biglinux/welcome/window.py:614
+#: usr/share/biglinux/welcome/window.py:616
 msgid "Next page"
 msgstr "Næste side"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
-#: usr/share/biglinux/welcome/window.py:626
-#: usr/share/biglinux/welcome/window.py:628
+#: usr/share/biglinux/welcome/window.py:602
+#: usr/share/biglinux/welcome/window.py:605
 msgid "Get Started"
 msgstr "Kom i gang"
 
+#: usr/share/biglinux/welcome/window.py:667
+msgid "An installation is in progress"
+msgstr "En installation er i gang"
+
+#: usr/share/biglinux/welcome/window.py:669
+msgid ""
+"If you close the window now, the installation will continue in the "
+"background, but you will not see its result."
+msgstr ""
+"Hvis du lukker vinduet nu, fortsætter installationen i baggrunden, men du "
+"vil ikke se resultatet."
+
+#: usr/share/biglinux/welcome/window.py:673
+msgid "Keep Open"
+msgstr "Hold åben"
+
+#: usr/share/biglinux/welcome/window.py:674
+msgid "Close Anyway"
+msgstr "Luk alligevel"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:13
+msgid ""
+"Access different artificial intelligence services directly from KDE Plasma."
+msgstr "Få adgang til forskellige AI-tjenester direkte fra KDE Plasma."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 13
-#: usr/share/biglinux/welcome/translatable_strings.py:13
+#: usr/share/biglinux/welcome/translatable_strings.py:14
 msgid "Accessibility"
 msgstr "Tilgængelighed"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 13
-#: usr/share/biglinux/welcome/translatable_strings.py:14
+#: usr/share/biglinux/welcome/translatable_strings.py:15
 msgid "AppStore"
 msgstr "App Store"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:16
+msgid "Applications to Install"
+msgstr "Applikationer til installation"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 15
-#: usr/share/biglinux/welcome/translatable_strings.py:15
+#: usr/share/biglinux/welcome/translatable_strings.py:17
 msgid "Ashy Terminal"
 msgstr "Ashy Terminal"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 14
-#: usr/share/biglinux/welcome/translatable_strings.py:16
+#: usr/share/biglinux/welcome/translatable_strings.py:18
 msgid "Audio Converter"
 msgstr "Lydkonverter"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:19
+msgid "Big Advogados"
+msgstr "Big Advogados"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:20
+msgid "Big Game Mode"
+msgstr "Big Game Mode"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:21
+msgid "Big Remote Play"
+msgstr "Big Remote Play"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 14
-#: usr/share/biglinux/welcome/translatable_strings.py:17
+#: usr/share/biglinux/welcome/translatable_strings.py:22
 msgid "Big Store"
 msgstr "Big Store"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:23
+msgid "BigCam"
+msgstr "BigCam"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:24
+msgid "BigLinux Body Tracker"
+msgstr "BigLinux Body Tracker"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 15
-#: usr/share/biglinux/welcome/translatable_strings.py:18
+#: usr/share/biglinux/welcome/translatable_strings.py:25
 msgid "BigLinux Info"
 msgstr "Oplysninger om BigLinux"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:19
+#: usr/share/biglinux/welcome/translatable_strings.py:26
 msgid "BigLinux Settings"
 msgstr "BigLinux-indstillinger"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:20
+#: usr/share/biglinux/welcome/translatable_strings.py:27
 msgid "Brave"
 msgstr "Brave"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:28
+msgid "ChatAI"
+msgstr "ChatAI"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:21
+#: usr/share/biglinux/welcome/translatable_strings.py:29
 msgid "Choose Your Avatar"
 msgstr "Vælg din avatar"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 17
-#: usr/share/biglinux/welcome/translatable_strings.py:22
+#: usr/share/biglinux/welcome/translatable_strings.py:30
 msgid "Choose your default browser"
 msgstr "Vælg din standardbrowser"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 19
-#: usr/share/biglinux/welcome/translatable_strings.py:23
+#: usr/share/biglinux/welcome/translatable_strings.py:31
 msgid "Chrome"
 msgstr "Chrome"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 20
-#: usr/share/biglinux/welcome/translatable_strings.py:24
+#: usr/share/biglinux/welcome/translatable_strings.py:32
 msgid "Chromium"
 msgstr "Chromium"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 18
-#: usr/share/biglinux/welcome/translatable_strings.py:25
-msgid "Configure voice"
-msgstr "Konfigurer stemme"
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 19
-#: usr/share/biglinux/welcome/translatable_strings.py:26
+#: usr/share/biglinux/welcome/translatable_strings.py:33
 msgid "Control Center"
 msgstr "Kontrolcenter"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:34
+msgid ""
+"Discover and install powerful applications created for BigLinux. Enhance "
+"gaming, remote access, multimedia, productivity, and accessibility with just "
+"one click."
+msgstr ""
+"Opdag og installer kraftfulde applikationer lavet til BigLinux. Forbedr "
+"spil, fjernadgang, multimedier, produktivitet og tilgængelighed med et "
+"enkelt klik."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 20
-#: usr/share/biglinux/welcome/translatable_strings.py:27
+#: usr/share/biglinux/welcome/translatable_strings.py:35
 msgid "Discover some features"
 msgstr "Opdag nogle funktioner"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 21
-#: usr/share/biglinux/welcome/translatable_strings.py:28
+#: usr/share/biglinux/welcome/translatable_strings.py:36
 msgid "Display Settings"
 msgstr "Skærmindstillinger"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 22
-#: usr/share/biglinux/welcome/translatable_strings.py:29
+#: usr/share/biglinux/welcome/translatable_strings.py:37
 msgid "Donate"
 msgstr "Donér"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 23
-#: usr/share/biglinux/welcome/translatable_strings.py:30
+#: usr/share/biglinux/welcome/translatable_strings.py:38
 msgid "Donation and Social Networks"
 msgstr "Donationer og sociale netværk"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 24
-#: usr/share/biglinux/welcome/translatable_strings.py:31
+#: usr/share/biglinux/welcome/translatable_strings.py:39
 msgid "Driver Installation and Hardware Information"
 msgstr "Driverinstallation og hardwareinformation"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 25
-#: usr/share/biglinux/welcome/translatable_strings.py:32
-msgid "Driver Manager"
-msgstr "Driveradministrator"
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:33
+#: usr/share/biglinux/welcome/translatable_strings.py:40
 msgid "Edge"
 msgstr "Edge"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 30
-#: usr/share/biglinux/welcome/translatable_strings.py:34
+#: usr/share/biglinux/welcome/translatable_strings.py:41
 msgid "Falkon"
 msgstr "Falkon"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 35
-#: usr/share/biglinux/welcome/translatable_strings.py:35
+#: usr/share/biglinux/welcome/translatable_strings.py:42
 msgid "Family Safety"
 msgstr "Familiesikkerhed"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 26
-#: usr/share/biglinux/welcome/translatable_strings.py:36
+#: usr/share/biglinux/welcome/translatable_strings.py:43
 msgid "Firefox"
 msgstr "Firefox"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 27
-#: usr/share/biglinux/welcome/translatable_strings.py:37
+#: usr/share/biglinux/welcome/translatable_strings.py:44
 msgid "Forum"
 msgstr "Forum"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:45
+msgid "Hardware Management"
+msgstr "Hardwarehåndtering"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:38
+#: usr/share/biglinux/welcome/translatable_strings.py:46
 msgid "Initial Settings"
 msgstr "Indledende indstillinger"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 30
-#: usr/share/biglinux/welcome/translatable_strings.py:39
-msgid "Install or Remove Drivers and Firmwares easily."
-msgstr "Installer eller fjern drivere og firmware nemt."
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 31
-#: usr/share/biglinux/welcome/translatable_strings.py:40
+#: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 32
-#: usr/share/biglinux/welcome/translatable_strings.py:41
+#: usr/share/biglinux/welcome/translatable_strings.py:48
 msgid ""
 "KDE Connect is an application that facilitates wireless communication and "
 "data transfer between devices on local networks. Available on the Google "
 "Play Store for Android and the Apple Store for iPhone."
 msgstr ""
 "KDE Connect er et program, der letter trådløs kommunikation og "
-"dataoverførsel mellem enheder på lokale netværk. Fås i Google Play Store til"
-" Android og App Store til iPhone."
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:42
-msgid "Kernel Manager"
-msgstr "Kerneadministration"
+"dataoverførsel mellem enheder på lokale netværk. Fås i Google Play Store til "
+"Android og App Store til iPhone."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 33
-#: usr/share/biglinux/welcome/translatable_strings.py:43
+#: usr/share/biglinux/welcome/translatable_strings.py:49
 msgid "Language Packs"
 msgstr "Sprogpakker"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:50
+msgid ""
+"Legal toolkit for Brazilian lawyers: digital certificates (A1/A3), PDF "
+"signing, WebSigner, and access to court systems."
+msgstr ""
+"Juridiske værktøjer til brasilianske advokater: digitale certifikater (A1/"
+"A3), PDF-signering, WebSigner og adgang til domstolenes systemer."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:44
+#: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "Librewolf"
 msgstr "Librewolf"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:52
+msgid ""
+"Manage drivers, firmware, and kernels, and check information about your "
+"hardware."
+msgstr ""
+"Håndter drivere, firmware og kerner, og se oplysninger om din hardware."
+
+#: usr/share/biglinux/welcome/translatable_strings.py:53
+msgid ""
+"Manage webcams, video sources, and multimedia features in one central "
+"interface."
+msgstr ""
+"Håndter webkameraer, videokilder og multimediefunktioner i én central "
+"brugerflade."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:45
+#: usr/share/biglinux/welcome/translatable_strings.py:54
 msgid "Network Info"
 msgstr "Netværksinfo"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 34
-#: usr/share/biglinux/welcome/translatable_strings.py:46
+#: usr/share/biglinux/welcome/translatable_strings.py:55
 msgid "Noise Reduction"
 msgstr "Støjreduktion"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 35
-#: usr/share/biglinux/welcome/translatable_strings.py:47
+#: usr/share/biglinux/welcome/translatable_strings.py:56
 msgid "OCR to PDF"
 msgstr "OCR til PDF"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 48
-#: usr/share/biglinux/welcome/translatable_strings.py:48
+#: usr/share/biglinux/welcome/translatable_strings.py:57
 msgid "Open Parental Controls"
 msgstr "Åbn forældrekontrol"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 41
-#: usr/share/biglinux/welcome/translatable_strings.py:49
+#: usr/share/biglinux/welcome/translatable_strings.py:58
 msgid "Opera"
 msgstr "Opera"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:59
+msgid ""
+"Optimize your games with performance profiles, graphics features, "
+"monitoring, and advanced settings."
+msgstr ""
+"Optimer dine spil med ydelsesprofiler, grafikfunktioner, overvågning og "
+"avancerede indstillinger."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 36
-#: usr/share/biglinux/welcome/translatable_strings.py:50
+#: usr/share/biglinux/welcome/translatable_strings.py:60
 msgid "Our platform is collaborative, join this evolution."
 msgstr "Vores platform bygger på samarbejde. Vær med til at udvikle den."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 37
-#: usr/share/biglinux/welcome/translatable_strings.py:51
+#: usr/share/biglinux/welcome/translatable_strings.py:61
 msgid "PlayStore"
 msgstr "Play Store"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:52
+#: usr/share/biglinux/welcome/translatable_strings.py:62
 msgid "Printers"
 msgstr "Printere"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 53
-#: usr/share/biglinux/welcome/translatable_strings.py:53
+#: usr/share/biglinux/welcome/translatable_strings.py:63
 msgid ""
 "Protect your children online. Set up supervised accounts, screen time, and "
 "content filters."
@@ -568,43 +734,55 @@ msgstr ""
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:54
+#: usr/share/biglinux/welcome/translatable_strings.py:64
 msgid "Session and Themes"
 msgstr "Session og temaer"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:55
+#: usr/share/biglinux/welcome/translatable_strings.py:65
 msgid "Set your default browser."
 msgstr "Indstil din standardbrowser."
 
+#: usr/share/biglinux/welcome/translatable_strings.py:66
+msgid "Share and play games remotely with other devices and friends."
+msgstr "Del og spil på afstand med andre enheder og venner."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:56
+#: usr/share/biglinux/welcome/translatable_strings.py:67
 msgid "Telegram"
 msgstr "Telegram"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:68
+msgid "Text Narrator"
+msgstr "Tekstoplæser"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 54
-#: usr/share/biglinux/welcome/translatable_strings.py:57
+#: usr/share/biglinux/welcome/translatable_strings.py:69
 msgid "Time Shift"
 msgstr "Timeshift"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:70
+msgid "Use movements captured by your webcam to control your computer."
+msgstr "Brug bevægelser optaget af dit webkamera til at styre din computer."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:58
+#: usr/share/biglinux/welcome/translatable_strings.py:71
 msgid "Video Converter"
 msgstr "Videokonverter"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 48
-#: usr/share/biglinux/welcome/translatable_strings.py:59
+#: usr/share/biglinux/welcome/translatable_strings.py:72
 msgid "Vivaldi"
 msgstr "Vivaldi"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 42
-#: usr/share/biglinux/welcome/translatable_strings.py:60
+#: usr/share/biglinux/welcome/translatable_strings.py:73
 msgid ""
 "We provide comprehensive settings for you to select in an extremely simple "
 "way."
@@ -612,19 +790,19 @@ msgstr "Vi tilbyder omfattende indstillinger, som du nemt kan vælge imellem."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:61
+#: usr/share/biglinux/welcome/translatable_strings.py:74
 msgid "WebApps"
 msgstr "Webapps"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 44
-#: usr/share/biglinux/welcome/translatable_strings.py:62
+#: usr/share/biglinux/welcome/translatable_strings.py:75
 msgid "YouTube"
 msgstr "YouTube"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 45
-#: usr/share/biglinux/welcome/translatable_strings.py:63
+#: usr/share/biglinux/welcome/translatable_strings.py:76
 msgid ""
 "Your donation is very important for the project and follow us on social "
 "media."
@@ -633,6 +811,450 @@ msgstr ""
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 59
-#: usr/share/biglinux/welcome/translatable_strings.py:64
+#: usr/share/biglinux/welcome/translatable_strings.py:77
 msgid "Zen Browser"
 msgstr "Zen Browser"
+
+#: usr/share/biglinux/welcome/app.py:81
+msgid "Initial setup and feature introduction for BigLinux"
+msgstr "Første opsætning og introduktion til funktionerne i BigLinux"
+
+#: usr/share/biglinux/welcome/app.py:84
+msgid ""
+"This program is free software distributed under the GNU General Public "
+"License."
+msgstr ""
+"Dette program er fri software, der distribueres under GNU General Public "
+"License."
+
+#: usr/share/biglinux/welcome/app.py:87
+msgid "Source code"
+msgstr "Kildekode"
+
+#: usr/share/biglinux/welcome/apps_page.py:154
+msgid "Checking…"
+msgstr "Tjekker…"
+
+#: usr/share/biglinux/welcome/apps_page.py:155
+msgid "Not installed"
+msgstr "Ikke installeret"
+
+#: usr/share/biglinux/welcome/apps_page.py:156
+msgid "Installing"
+msgstr "Installerer"
+
+#: usr/share/biglinux/welcome/apps_page.py:157
+#: usr/share/biglinux/welcome/install_backend.py:1059
+msgid "Installed"
+msgstr "Installeret"
+
+#: usr/share/biglinux/welcome/apps_page.py:158
+msgid "Installation failed"
+msgstr "Installation mislykkedes"
+
+#: usr/share/biglinux/welcome/apps_page.py:159
+msgid "Unavailable"
+msgstr "Ikke tilgængelig"
+
+#: usr/share/biglinux/welcome/apps_page.py:160
+msgid "Requires KDE Plasma"
+msgstr "Kræver KDE Plasma"
+
+#: usr/share/biglinux/welcome/apps_page.py:263
+#: usr/share/biglinux/welcome/apps_page.py:304
+msgid "Details"
+msgstr "Detaljer"
+
+#: usr/share/biglinux/welcome/apps_page.py:309
+#, python-format
+msgid "Show installation details for %s"
+msgstr "Vis installationsdetaljer for %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:318
+#, python-format
+msgid "Cancel installation of %s"
+msgstr "Annuller installationen af %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:377
+#: usr/share/biglinux/welcome/install_flow.py:238
+#: usr/share/biglinux/welcome/install_flow.py:322
+#: usr/share/biglinux/welcome/install_flow.py:407
+msgid "Install"
+msgstr "Installer"
+
+#: usr/share/biglinux/welcome/apps_page.py:382
+#: usr/share/biglinux/welcome/install_flow.py:285
+msgid "Update and Install"
+msgstr "Opdater og installer"
+
+#: usr/share/biglinux/welcome/apps_page.py:384
+msgid "Try Again"
+msgstr "Prøv igen"
+
+#: usr/share/biglinux/welcome/apps_page.py:386
+#, python-format
+msgid "Try again to install %s"
+msgstr "Prøv at installere %s igen"
+
+#: usr/share/biglinux/welcome/apps_page.py:389
+msgid "Added to Panel"
+msgstr "Føjet til panelet"
+
+#: usr/share/biglinux/welcome/apps_page.py:392
+msgid "Add to Panel"
+msgstr "Føj til panelet"
+
+#: usr/share/biglinux/welcome/apps_page.py:393
+#, python-format
+msgid "Add %s to the panel"
+msgstr "Føj %s til panelet"
+
+#: usr/share/biglinux/welcome/apps_page.py:408
+#: usr/share/biglinux/welcome/install_flow.py:82
+#: usr/share/biglinux/welcome/install_flow.py:134
+msgid "Another installation is in progress"
+msgstr "En anden installation er i gang"
+
+#: usr/share/biglinux/welcome/apps_page.py:420
+msgid "Not available in the configured repositories"
+msgstr "Ikke tilgængelig i de konfigurerede pakkearkiver"
+
+#: usr/share/biglinux/welcome/apps_page.py:422
+msgid "Plasma widget for KDE Plasma 6"
+msgstr "Plasma-widget til KDE Plasma 6"
+
+#: usr/share/biglinux/welcome/apps_page.py:424
+msgid "Plasma widget"
+msgstr "Plasma-widget"
+
+#: usr/share/biglinux/welcome/apps_page.py:475
+#: usr/share/biglinux/welcome/install_backend.py:740
+msgid "Waiting for authentication…"
+msgstr "Venter på godkendelse…"
+
+#: usr/share/biglinux/welcome/apps_page.py:547
+msgid "Opening…"
+msgstr "Åbner…"
+
+#: usr/share/biglinux/welcome/apps_page.py:560
+#, python-format
+msgid "Could not add %s to the panel"
+msgstr "Kunne ikke føje %s til panelet"
+
+#: usr/share/biglinux/welcome/apps_page.py:561
+#, python-format
+msgid "Right-click the panel, choose “Add Widgets…” and search for %s."
+msgstr "Højreklik på panelet, vælg »Tilføj widgets…«, og søg efter %s."
+
+#: usr/share/biglinux/welcome/apps_page.py:571
+#, python-format
+msgid "%s was added to the panel."
+msgstr "%s blev føjet til panelet."
+
+#: usr/share/biglinux/welcome/apps_page.py:584
+msgid "You are offline. Connect to the internet to install applications."
+msgstr ""
+"Du er offline. Opret forbindelse til internettet for at installere "
+"applikationer."
+
+#: usr/share/biglinux/welcome/install_backend.py:275
+#: usr/share/biglinux/welcome/install_backend.py:500
+msgid "This package is not allowed."
+msgstr "Denne pakke er ikke tilladt."
+
+#: usr/share/biglinux/welcome/install_backend.py:388
+msgid "Synchronizing databases…"
+msgstr "Synkroniserer databaser…"
+
+#: usr/share/biglinux/welcome/install_backend.py:389
+msgid "Resolving dependencies…"
+msgstr "Løser afhængigheder…"
+
+#: usr/share/biglinux/welcome/install_backend.py:390
+#: usr/share/biglinux/welcome/install_backend.py:395
+msgid "Checking for conflicts…"
+msgstr "Tjekker for konflikter…"
+
+#: usr/share/biglinux/welcome/install_backend.py:391
+#: usr/share/biglinux/welcome/install_backend.py:944
+#: usr/share/biglinux/welcome/install_backend.py:994
+msgid "Downloading packages…"
+msgstr "Henter pakker…"
+
+#: usr/share/biglinux/welcome/install_backend.py:392
+msgid "Verifying signatures…"
+msgstr "Verificerer signaturer…"
+
+#: usr/share/biglinux/welcome/install_backend.py:393
+#: usr/share/biglinux/welcome/install_backend.py:951
+msgid "Verifying integrity…"
+msgstr "Verificerer integritet…"
+
+#: usr/share/biglinux/welcome/install_backend.py:394
+msgid "Loading packages…"
+msgstr "Indlæser pakker…"
+
+#: usr/share/biglinux/welcome/install_backend.py:396
+msgid "Checking disk space…"
+msgstr "Tjekker diskplads…"
+
+#: usr/share/biglinux/welcome/install_backend.py:397
+msgid "Applying changes…"
+msgstr "Anvender ændringer…"
+
+#: usr/share/biglinux/welcome/install_backend.py:398
+#: usr/share/biglinux/welcome/install_backend.py:967
+msgid "Installing…"
+msgstr "Installerer…"
+
+#: usr/share/biglinux/welcome/install_backend.py:399
+msgid "Upgrading…"
+msgstr "Opgraderer…"
+
+#: usr/share/biglinux/welcome/install_backend.py:400
+msgid "Running post-install hooks…"
+msgstr "Kører efterinstallationshandlinger…"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#: usr/share/biglinux/welcome/install_backend.py:431
+#, python-brace-format
+msgid "Downloading {name}…"
+msgstr "Downloader {name}…"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#: usr/share/biglinux/welcome/install_backend.py:438
+#, python-brace-format
+msgid "Downloading… {pct}% ({speed})"
+msgstr "Downloader… {pct}% ({speed})"
+
+#: usr/share/biglinux/welcome/install_backend.py:471
+msgid ""
+"Authentication failed. Administrator permission is required to install "
+"applications."
+msgstr ""
+"Godkendelse mislykkedes. Der kræves administratortilladelse for at "
+"installere applikationer."
+
+#: usr/share/biglinux/welcome/install_backend.py:474
+msgid ""
+"Another program is using the package manager. Wait for it to finish and try "
+"again."
+msgstr ""
+"Et andet program bruger pakkehåndteringen. Vent, til det er færdigt, og prøv "
+"igen."
+
+#: usr/share/biglinux/welcome/install_backend.py:477
+msgid "No internet connection. Connect to the internet and try again."
+msgstr ""
+"Ingen internetforbindelse. Opret forbindelse til internettet, og prøv igen."
+
+#: usr/share/biglinux/welcome/install_backend.py:480
+msgid ""
+"Could not download the packages. Check your internet connection and try "
+"again."
+msgstr "Kunne ikke hente pakkerne. Tjek din internetforbindelse, og prøv igen."
+
+#: usr/share/biglinux/welcome/install_backend.py:483
+msgid ""
+"The package lists are out of date, so the mirrors no longer have the "
+"requested files. Update the system and try again."
+msgstr ""
+"Pakkelisterne er forældede, så spejlene har ikke længere de ønskede filer. "
+"Opdater systemet, og prøv igen."
+
+#: usr/share/biglinux/welcome/install_backend.py:486
+msgid "There is not enough free disk space to install this application."
+msgstr "Der er ikke nok ledig diskplads til at installere denne applikation."
+
+#: usr/share/biglinux/welcome/install_backend.py:488
+msgid "The package was not found in the configured repositories."
+msgstr "Pakken blev ikke fundet i de konfigurerede pakkearkiver."
+
+#: usr/share/biglinux/welcome/install_backend.py:489
+msgid "Some dependencies could not be resolved."
+msgstr "Nogle afhængigheder kunne ikke løses."
+
+#: usr/share/biglinux/welcome/install_backend.py:490
+msgid "The package conflicts with software already installed."
+msgstr "Pakken er i konflikt med allerede installeret software."
+
+#: usr/share/biglinux/welcome/install_backend.py:492
+msgid ""
+"A package signature could not be verified. The keyring may need to be "
+"updated."
+msgstr ""
+"En pakkesignatur kunne ikke verificeres. Nøgleringen skal muligvis opdateres."
+
+#: usr/share/biglinux/welcome/install_backend.py:495
+msgid ""
+"The downloaded files did not pass the integrity check. Nothing was installed."
+msgstr ""
+"De hentede filer bestod ikke integritetskontrollen. Intet blev installeret."
+
+#: usr/share/biglinux/welcome/install_backend.py:498
+msgid ""
+"The installation finished, but the application could not be found on the "
+"system."
+msgstr ""
+"Installationen blev fuldført, men applikationen blev ikke fundet på systemet."
+
+#: usr/share/biglinux/welcome/install_backend.py:502
+msgid "This application is not supported on the current desktop."
+msgstr "Denne applikation understøttes ikke i det aktuelle skrivebordsmiljø."
+
+#: usr/share/biglinux/welcome/install_backend.py:505
+msgid "The installation failed. See the details for more information."
+msgstr "Installationen mislykkedes. Se detaljerne for mere information."
+
+#: usr/share/biglinux/welcome/install_backend.py:758
+msgid "The installer did not finish in time."
+msgstr "Installationsprogrammet blev ikke færdigt i tide."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+#: usr/share/biglinux/welcome/install_backend.py:792
+msgid "Still working…"
+msgstr "Arbejder stadig…"
+
+#: usr/share/biglinux/welcome/install_backend.py:807
+msgid "Preparing installation…"
+msgstr "Forbereder installation…"
+
+#: usr/share/biglinux/welcome/install_backend.py:939
+msgid "kpackagetool6 was not found."
+msgstr "kpackagetool6 blev ikke fundet."
+
+#: usr/share/biglinux/welcome/install_backend.py:996
+#, python-brace-format
+msgid "Downloaded {size}"
+msgstr "Hentet {size}"
+
+#: usr/share/biglinux/welcome/install_flow.py:83
+#: usr/share/biglinux/welcome/install_flow.py:135
+msgid "Wait for the current installation to finish, then try again."
+msgstr "Vent, til den igangværende installation er færdig, og prøv så igen."
+
+#: usr/share/biglinux/welcome/install_flow.py:91
+#: usr/share/biglinux/welcome/install_flow.py:104
+#: usr/share/biglinux/welcome/install_flow.py:200
+#, python-format
+msgid "Could not install %s"
+msgstr "Kunne ikke installere %s"
+
+#: usr/share/biglinux/welcome/install_flow.py:147
+#, python-format
+msgid "%s was installed successfully."
+msgstr "%s blev installeret."
+
+#: usr/share/biglinux/welcome/install_flow.py:148
+#, python-format
+msgid "Installation of %s was cancelled."
+msgstr "Installationen af %s blev annulleret."
+
+#: usr/share/biglinux/welcome/install_flow.py:152
+#, python-format
+msgid "Could not install %s."
+msgstr "Kunne ikke installere %s."
+
+#: usr/share/biglinux/welcome/install_flow.py:207
+#, python-format
+msgid "%s is already installed."
+msgstr "%s er allerede installeret."
+
+#: usr/share/biglinux/welcome/install_flow.py:214
+#, python-format
+msgid ""
+"%(count)d package will be downloaded from the configured repositories "
+"(%(size)s)."
+msgid_plural ""
+"%(count)d packages will be downloaded from the configured repositories "
+"(%(size)s)."
+msgstr[0] ""
+"%(count)d pakke vil blive hentet fra de konfigurerede pakkearkiver "
+"(%(size)s)."
+msgstr[1] ""
+"%(count)d pakker vil blive hentet fra de konfigurerede pakkearkiver "
+"(%(size)s)."
+
+#: usr/share/biglinux/welcome/install_flow.py:219
+#: usr/share/biglinux/welcome/install_flow.py:282
+msgid "You will be asked for the administrator password."
+msgstr "Du vil blive bedt om administratoradgangskoden."
+
+#: usr/share/biglinux/welcome/install_flow.py:225
+#, python-format
+msgid ""
+"The package lists were last updated %d day ago. If the installation fails, "
+"update the system first."
+msgid_plural ""
+"The package lists were last updated %d days ago. If the installation fails, "
+"update the system first."
+msgstr[0] ""
+"Pakkelisterne blev sidst opdateret for %d dag siden. Hvis installationen "
+"mislykkes, så opdater systemet først."
+msgstr[1] ""
+"Pakkelisterne blev sidst opdateret for %d dage siden. Hvis installationen "
+"mislykkes, så opdater systemet først."
+
+#: usr/share/biglinux/welcome/install_flow.py:233
+#: usr/share/biglinux/welcome/install_flow.py:309
+#, python-format
+msgid "Install %s?"
+msgstr "Installer %s?"
+
+#: usr/share/biglinux/welcome/install_flow.py:274
+#, python-format
+msgid "Update the system and install %s?"
+msgstr "Opdater systemet og installer %s?"
+
+#: usr/share/biglinux/welcome/install_flow.py:276
+#, python-format
+msgid ""
+"All installed packages will be updated before %s is installed. Updating "
+"everything together avoids partial upgrades, but it may take a while and "
+"download a large amount of data."
+msgstr ""
+"Alle installerede pakker bliver opdateret, før %s installeres. Når alt "
+"opdateres samlet, undgås delvise opgraderinger, men det kan tage et stykke "
+"tid og kræve, at der hentes en stor mængde data."
+
+#: usr/share/biglinux/welcome/install_flow.py:311
+#, python-format
+msgid ""
+"%s is a Plasma widget and is not available as a package. It will be "
+"downloaded from the official BigLinux repository on GitHub, checked against "
+"a known checksum and installed for your user only."
+msgstr ""
+"%s er en Plasma-widget og findes ikke som pakke. Den hentes fra BigLinux' "
+"officielle arkiv på GitHub, kontrolleres mod en kendt kontrolsum og "
+"installeres kun for din bruger."
+
+#: usr/share/biglinux/welcome/install_flow.py:317
+msgid "No administrator password is required."
+msgstr "Der kræves ingen administratoradgangskode."
+
+#: usr/share/biglinux/welcome/install_flow.py:381
+#: usr/share/biglinux/welcome/install_flow.py:400
+#, python-format
+msgid "%s is not installed"
+msgstr "%s er ikke installeret"
+
+#: usr/share/biglinux/welcome/install_flow.py:383
+msgid ""
+"The application is not installed and is not available in the configured "
+"repositories."
+msgstr ""
+"Applikationen er ikke installeret og er ikke tilgængelig i de konfigurerede "
+"pakkearkiver."
+
+#: usr/share/biglinux/welcome/install_flow.py:402
+#, python-format
+msgid ""
+"It is available in the configured repositories (package %(package)s, from "
+"%(repo)s). Do you want to install it now?"
+msgstr ""
+"Den er tilgængelig i de konfigurerede pakkearkiver (pakken %(package)s fra "
+"%(repo)s). Vil du installere den nu?"
+
+#: usr/share/biglinux/welcome/install_flow.py:406
+msgid "Not Now"
+msgstr "Ikke nu"

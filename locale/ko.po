@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-03 09:00-0300\n"
+"POT-Creation-Date: 2026-10-10 04:46-0300\n"
 "PO-Revision-Date: 2026-10-03 09:00-0300\n"
 "Last-Translator: \n"
 "Language-Team: ko\n"
@@ -14,539 +14,712 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+#: usr/share/biglinux/welcome/widgets.py:53
+msgid "OK"
+msgstr "확인"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
 # line: 248
-#: usr/share/biglinux/welcome/widgets.py:120
+#: usr/share/biglinux/welcome/widgets.py:230
 msgid "Kernel"
 msgstr "커널"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/welcome_logo_page.py,
 # line: 258
-#: usr/share/biglinux/welcome/widgets.py:121
+#: usr/share/biglinux/welcome/widgets.py:231
 msgid "Desktop"
 msgstr "데스크톱"
 
+#: usr/share/biglinux/welcome/widgets.py:231
+#: usr/share/biglinux/welcome/widgets.py:232
+msgid "Unknown"
+msgstr "알 수 없음"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 439
-#: usr/share/biglinux/welcome/widgets.py:123
+#: usr/share/biglinux/welcome/widgets.py:232
 msgid "Display"
 msgstr "디스플레이"
 
+#: usr/share/biglinux/welcome/widgets.py:313
+#, python-format
+msgid "QR code: %s"
+msgstr "QR 코드: %s"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
+#: usr/share/biglinux/welcome/widgets.py:391
+#: usr/share/biglinux/welcome/apps_page.py:541
+msgid "Could not open application"
+msgstr "응용 프로그램을 열 수 없습니다."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 228
-#: usr/share/biglinux/welcome/widgets.py:232
+#: usr/share/biglinux/welcome/widgets.py:392
+#: usr/share/biglinux/welcome/apps_page.py:542
 #, python-format
 msgid "Could not open %s. It may not be installed."
 msgstr "%s를 열 수 없습니다. 설치되지 않았을 수 있습니다."
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 237
-#: usr/share/biglinux/welcome/widgets.py:241
-msgid "Could not open application"
-msgstr "응용 프로그램을 열 수 없습니다."
-
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-#: usr/share/biglinux/welcome/widgets.py:244
-msgid "OK"
-msgstr "확인"
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 240
-# 
+#
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 324
-#: usr/share/biglinux/welcome/widgets.py:328
+#: usr/share/biglinux/welcome/widgets.py:482
 msgid "installed"
 msgstr "설치됨"
 
+#: usr/share/biglinux/welcome/widgets.py:484
+msgid "unavailable"
+msgstr "사용할 수 없음"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 326
-#: usr/share/biglinux/welcome/widgets.py:330
+#: usr/share/biglinux/welcome/widgets.py:486
 msgid "not installed"
 msgstr "설치되지 않음"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
-#: usr/share/biglinux/welcome/widgets.py:332
+#: usr/share/biglinux/welcome/widgets.py:488
 msgid "default browser"
 msgstr "기본 브라우저"
 
+#: usr/share/biglinux/welcome/widgets.py:511
+#, python-format
+msgid "%s is not available in the configured repositories"
+msgstr "%s은(는) 구성된 저장소에서 사용할 수 없습니다"
+
+#: usr/share/biglinux/welcome/widgets.py:514
+#: usr/share/biglinux/welcome/apps_page.py:379
+#, python-format
+msgid "Install %s"
+msgstr "%s 설치"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 485
-#: usr/share/biglinux/welcome/widgets.py:489
+#: usr/share/biglinux/welcome/widgets.py:643
 #, python-format
 msgid "Installing %s…"
 msgstr "%s 설치 중…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 491
-#: usr/share/biglinux/welcome/widgets.py:495
+#: usr/share/biglinux/welcome/widgets.py:651
 msgid "Preparing download…"
 msgstr "다운로드 준비 중…"
 
+#: usr/share/biglinux/welcome/widgets.py:671
+msgid "Installation progress"
+msgstr "설치 진행률"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 518
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
-#: usr/share/biglinux/welcome/widgets.py:522
-#: usr/share/biglinux/welcome/widgets.py:789
+#: usr/share/biglinux/welcome/widgets.py:683
+#: usr/share/biglinux/welcome/widgets.py:958
 msgid "View details"
 msgstr "세부정보 보기"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 525
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 791
-#: usr/share/biglinux/welcome/widgets.py:529
-#: usr/share/biglinux/welcome/widgets.py:795
+#: usr/share/biglinux/welcome/widgets.py:690
+#: usr/share/biglinux/welcome/widgets.py:964
 msgid "Show installation details"
 msgstr "설치 세부정보 표시"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 553
-#: usr/share/biglinux/welcome/widgets.py:557
+#: usr/share/biglinux/welcome/widgets.py:718
 msgid "Installation log output"
 msgstr "설치 로그 출력"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 572
-#: usr/share/biglinux/welcome/widgets.py:576
+#: usr/share/biglinux/welcome/widgets.py:739
+#: usr/share/biglinux/welcome/apps_page.py:313
+#: usr/share/biglinux/welcome/install_flow.py:237
+#: usr/share/biglinux/welcome/install_flow.py:284
+#: usr/share/biglinux/welcome/install_flow.py:321
 msgid "Cancel"
 msgstr "취소"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
-#: usr/share/biglinux/welcome/widgets.py:580
+#: usr/share/biglinux/welcome/widgets.py:744
 msgid "Cancel installation"
 msgstr "설치 취소"
 
+#: usr/share/biglinux/welcome/widgets.py:749
+#: usr/share/biglinux/welcome/apps_page.py:395
+msgid "Open"
+msgstr "열기"
+
+#: usr/share/biglinux/welcome/widgets.py:753
+#: usr/share/biglinux/welcome/apps_page.py:397
+#, python-format
+msgid "Open %s"
+msgstr "%s 열기"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 581
-#: usr/share/biglinux/welcome/widgets.py:585
+#: usr/share/biglinux/welcome/widgets.py:758
 msgid "Done"
 msgstr "완료"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 586
-#: usr/share/biglinux/welcome/widgets.py:590
+#: usr/share/biglinux/welcome/widgets.py:763
 msgid "Close installation panel"
 msgstr "설치 패널 닫기"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 594
-#: usr/share/biglinux/welcome/widgets.py:598
+#: usr/share/biglinux/welcome/widgets.py:771
+#: usr/share/biglinux/welcome/apps_page.py:298
 #, python-format
 msgid "Installing %s"
 msgstr "%s 설치 중"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
-#: usr/share/biglinux/welcome/widgets.py:667
-msgid "It has been set as your default browser."
-msgstr "기본 브라우저로 설정되었습니다."
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
+#: usr/share/biglinux/welcome/widgets.py:815
+#: usr/share/biglinux/welcome/apps_page.py:499
+msgid "Cannot cancel during installation"
+msgstr "설치 중에는 취소할 수 없습니다."
+
+#: usr/share/biglinux/welcome/widgets.py:889
+#: usr/share/biglinux/welcome/window.py:492
+msgid "The application is ready to use."
+msgstr "앱을 사용할 준비가 되었습니다."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 664
-#: usr/share/biglinux/welcome/widgets.py:668
+#: usr/share/biglinux/welcome/widgets.py:890
 #, python-format
 msgid "%s installed successfully!"
 msgstr "%s가 성공적으로 설치되었습니다!"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 672
-#: usr/share/biglinux/welcome/widgets.py:676
+#: usr/share/biglinux/welcome/widgets.py:899
 #, python-format
 msgid "%s installed successfully"
 msgstr "%s가 성공적으로 설치되었습니다"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 680
-#: usr/share/biglinux/welcome/widgets.py:684
+#: usr/share/biglinux/welcome/widgets.py:907
 #, python-format
 msgid "Failed to install %s"
 msgstr "%s 설치에 실패했습니다."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 683
-#: usr/share/biglinux/welcome/widgets.py:687
+#: usr/share/biglinux/welcome/widgets.py:911
 msgid "Check the details below for more information."
 msgstr "자세한 내용은 아래 세부정보를 확인하세요."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 690
-#: usr/share/biglinux/welcome/widgets.py:694
+#: usr/share/biglinux/welcome/widgets.py:919
 #, python-format
 msgid "Installation of %s failed"
 msgstr "%s 설치에 실패했습니다."
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 752
-#: usr/share/biglinux/welcome/widgets.py:756
-msgid "Cannot cancel during installation"
-msgstr "설치 중에는 취소할 수 없습니다."
+#: usr/share/biglinux/welcome/widgets.py:927
+#: usr/share/biglinux/welcome/widgets.py:937
+msgid "Installation cancelled"
+msgstr "설치 취소됨"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
-#: usr/share/biglinux/welcome/widgets.py:767
-#, python-brace-format
-msgid "Downloading {name}…"
-msgstr "{name} 다운로드 중…"
+#: usr/share/biglinux/welcome/widgets.py:929
+#: usr/share/biglinux/welcome/install_flow.py:150
+msgid "Authentication was cancelled. Nothing was installed."
+msgstr "인증이 취소되었습니다. 아무것도 설치되지 않았습니다."
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
-#: usr/share/biglinux/welcome/widgets.py:779
-#, python-brace-format
-msgid "Downloading… {pct}% ({speed})"
-msgstr "다운로드 중… {pct}% ({speed})"
+#: usr/share/biglinux/welcome/widgets.py:931
+msgid "Nothing was installed."
+msgstr "아무것도 설치되지 않았습니다."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 785
-#: usr/share/biglinux/welcome/widgets.py:789
+#: usr/share/biglinux/welcome/widgets.py:958
 msgid "Hide details"
 msgstr "세부정보 숨기기"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
-#: usr/share/biglinux/welcome/widgets.py:793
+#: usr/share/biglinux/welcome/widgets.py:962
 msgid "Hide installation details"
 msgstr "설치 세부정보 숨기기"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 798
-#: usr/share/biglinux/welcome/widgets.py:802
+#: usr/share/biglinux/welcome/widgets.py:971
 msgid "Cancelling…"
 msgstr "취소 중…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 799
-#: usr/share/biglinux/welcome/widgets.py:803
+#: usr/share/biglinux/welcome/widgets.py:972
+#: usr/share/biglinux/welcome/apps_page.py:504
+#: usr/share/biglinux/welcome/install_backend.py:726
 msgid "Cancelling installation…"
 msgstr "설치 취소 중…"
 
+#: usr/share/biglinux/welcome/window.py:91
+msgid "About BigLinux Welcome"
+msgstr "BigLinux Welcome 정보"
+
+#: usr/share/biglinux/welcome/window.py:93
+#: usr/share/biglinux/welcome/window.py:94
+msgid "Main Menu"
+msgstr "주 메뉴"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 155
-#: usr/share/biglinux/welcome/window.py:160
+#: usr/share/biglinux/welcome/window.py:178
 msgid "In search of the perfect system!"
 msgstr "완벽한 시스템을 찾고 있습니다!"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 763
-#: usr/share/biglinux/welcome/window.py:165
+#: usr/share/biglinux/welcome/window.py:182
 msgid "Welcome to your new system"
 msgstr "새 시스템에 오신 것을 환영합니다."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 316
-#: usr/share/biglinux/welcome/window.py:321
+#: usr/share/biglinux/welcome/window.py:303
 msgid "Changing default browser"
 msgstr "기본 브라우저 변경"
 
+#: usr/share/biglinux/welcome/window.py:391
+msgid "Close"
+msgstr "닫기"
+
+#: usr/share/biglinux/welcome/window.py:394
+msgid "Open Big Store"
+msgstr "Big Store 열기"
+
+#: usr/share/biglinux/welcome/window.py:406
+#, python-format
+msgid "%s is not available"
+msgstr "%s을(를) 사용할 수 없습니다"
+
+#: usr/share/biglinux/welcome/window.py:408
+#, python-format
+msgid ""
+"%s is not in the configured repositories, so it cannot be installed safely "
+"from here. You can look for it in Big Store, which shows where each package "
+"comes from."
+msgstr ""
+"%s은(는) 구성된 저장소에 없으므로 여기에서 안전하게 설치할 수 없습니다. 각 패"
+"키지의 출처를 보여 주는 Big Store에서 찾아볼 수 있습니다."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 399
-#: usr/share/biglinux/welcome/window.py:404
+#: usr/share/biglinux/welcome/window.py:435
 #, python-format
 msgid "Setting %s as default…"
 msgstr "%s를 기본값으로 설정하는 중…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 412
-#: usr/share/biglinux/welcome/window.py:417
+#: usr/share/biglinux/welcome/window.py:448
 #, python-format
 msgid "%s set as default"
 msgstr "%s가 기본값으로 설정되었습니다"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
-#: usr/share/biglinux/welcome/window.py:527
-msgid "Still working…"
-msgstr "아직 작업 중입니다…"
+#: usr/share/biglinux/welcome/window.py:485
+msgid "Setting it as your default browser…"
+msgstr "기본 브라우저로 설정하는 중…"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 663
+#: usr/share/biglinux/welcome/window.py:490
+msgid "It has been set as your default browser."
+msgstr "기본 브라우저로 설정되었습니다."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main.py, line: 57
-#: usr/share/biglinux/welcome/window.py:572
+#: usr/share/biglinux/welcome/window.py:530
 msgid "Show on startup"
 msgstr "시작 시 표시"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 574
-#: usr/share/biglinux/welcome/window.py:579
+#: usr/share/biglinux/welcome/window.py:537
 msgid "Welcome"
 msgstr "환영합니다"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 595
-#: usr/share/biglinux/welcome/window.py:600
+#: usr/share/biglinux/welcome/window.py:551
+#: usr/share/biglinux/welcome/window.py:554
 msgid "Previous page"
 msgstr "이전 페이지"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 607
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 633
-#: usr/share/biglinux/welcome/window.py:612
-#: usr/share/biglinux/welcome/window.py:638
+#: usr/share/biglinux/welcome/window.py:565
+#: usr/share/biglinux/welcome/window.py:567
+#: usr/share/biglinux/welcome/window.py:614
+#: usr/share/biglinux/welcome/window.py:616
 msgid "Next page"
 msgstr "다음 페이지"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/main_testing.py, line: 951
-#: usr/share/biglinux/welcome/window.py:626
-#: usr/share/biglinux/welcome/window.py:628
+#: usr/share/biglinux/welcome/window.py:602
+#: usr/share/biglinux/welcome/window.py:605
 msgid "Get Started"
 msgstr "시작하기"
 
+#: usr/share/biglinux/welcome/window.py:667
+msgid "An installation is in progress"
+msgstr "설치가 진행 중입니다"
+
+#: usr/share/biglinux/welcome/window.py:669
+msgid ""
+"If you close the window now, the installation will continue in the "
+"background, but you will not see its result."
+msgstr ""
+"지금 창을 닫으면 설치는 백그라운드에서 계속되지만 결과를 확인할 수 없습니다."
+
+#: usr/share/biglinux/welcome/window.py:673
+msgid "Keep Open"
+msgstr "열어 두기"
+
+#: usr/share/biglinux/welcome/window.py:674
+msgid "Close Anyway"
+msgstr "그래도 닫기"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:13
+msgid ""
+"Access different artificial intelligence services directly from KDE Plasma."
+msgstr "KDE Plasma에서 다양한 인공지능 서비스에 바로 접근하세요."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 13
-#: usr/share/biglinux/welcome/translatable_strings.py:13
+#: usr/share/biglinux/welcome/translatable_strings.py:14
 msgid "Accessibility"
 msgstr "접근성"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 13
-#: usr/share/biglinux/welcome/translatable_strings.py:14
+#: usr/share/biglinux/welcome/translatable_strings.py:15
 msgid "AppStore"
 msgstr "App Store"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:16
+msgid "Applications to Install"
+msgstr "설치할 수 있는 앱"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 15
-#: usr/share/biglinux/welcome/translatable_strings.py:15
+#: usr/share/biglinux/welcome/translatable_strings.py:17
 msgid "Ashy Terminal"
 msgstr "Ashy Terminal"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 14
-#: usr/share/biglinux/welcome/translatable_strings.py:16
+#: usr/share/biglinux/welcome/translatable_strings.py:18
 msgid "Audio Converter"
 msgstr "오디오 변환기"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:19
+msgid "Big Advogados"
+msgstr "Big Advogados"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:20
+msgid "Big Game Mode"
+msgstr "Big Game Mode"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:21
+msgid "Big Remote Play"
+msgstr "Big Remote Play"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 14
-#: usr/share/biglinux/welcome/translatable_strings.py:17
+#: usr/share/biglinux/welcome/translatable_strings.py:22
 msgid "Big Store"
 msgstr "Big Store"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:23
+msgid "BigCam"
+msgstr "BigCam"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:24
+msgid "BigLinux Body Tracker"
+msgstr "BigLinux Body Tracker"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 15
-#: usr/share/biglinux/welcome/translatable_strings.py:18
+#: usr/share/biglinux/welcome/translatable_strings.py:25
 msgid "BigLinux Info"
 msgstr "빅리눅스 정보"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:19
+#: usr/share/biglinux/welcome/translatable_strings.py:26
 msgid "BigLinux Settings"
 msgstr "빅리눅스 설정"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:20
+#: usr/share/biglinux/welcome/translatable_strings.py:27
 msgid "Brave"
 msgstr "Brave"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:28
+msgid "ChatAI"
+msgstr "ChatAI"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:21
+#: usr/share/biglinux/welcome/translatable_strings.py:29
 msgid "Choose Your Avatar"
 msgstr "아바타 선택"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 17
-#: usr/share/biglinux/welcome/translatable_strings.py:22
+#: usr/share/biglinux/welcome/translatable_strings.py:30
 msgid "Choose your default browser"
 msgstr "기본 브라우저 선택"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 19
-#: usr/share/biglinux/welcome/translatable_strings.py:23
+#: usr/share/biglinux/welcome/translatable_strings.py:31
 msgid "Chrome"
 msgstr "Chrome"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 20
-#: usr/share/biglinux/welcome/translatable_strings.py:24
+#: usr/share/biglinux/welcome/translatable_strings.py:32
 msgid "Chromium"
 msgstr "Chromium"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 18
-#: usr/share/biglinux/welcome/translatable_strings.py:25
-msgid "Configure voice"
-msgstr "음성 설정"
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 19
-#: usr/share/biglinux/welcome/translatable_strings.py:26
+#: usr/share/biglinux/welcome/translatable_strings.py:33
 msgid "Control Center"
 msgstr "제어 센터"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:34
+msgid ""
+"Discover and install powerful applications created for BigLinux. Enhance "
+"gaming, remote access, multimedia, productivity, and accessibility with just "
+"one click."
+msgstr ""
+"BigLinux를 위해 만든 강력한 앱을 찾아 설치하세요. 클릭 한 번으로 게임, 원격 "
+"접속, 멀티미디어, 생산성, 접근성을 향상할 수 있습니다."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 20
-#: usr/share/biglinux/welcome/translatable_strings.py:27
+#: usr/share/biglinux/welcome/translatable_strings.py:35
 msgid "Discover some features"
 msgstr "주요 기능 살펴보기"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 21
-#: usr/share/biglinux/welcome/translatable_strings.py:28
+#: usr/share/biglinux/welcome/translatable_strings.py:36
 msgid "Display Settings"
 msgstr "디스플레이 설정"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 22
-#: usr/share/biglinux/welcome/translatable_strings.py:29
+#: usr/share/biglinux/welcome/translatable_strings.py:37
 msgid "Donate"
 msgstr "기부하기"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 23
-#: usr/share/biglinux/welcome/translatable_strings.py:30
+#: usr/share/biglinux/welcome/translatable_strings.py:38
 msgid "Donation and Social Networks"
 msgstr "기부 및 소셜 네트워크"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 24
-#: usr/share/biglinux/welcome/translatable_strings.py:31
+#: usr/share/biglinux/welcome/translatable_strings.py:39
 msgid "Driver Installation and Hardware Information"
 msgstr "드라이버 설치 및 하드웨어 정보"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 25
-#: usr/share/biglinux/welcome/translatable_strings.py:32
-msgid "Driver Manager"
-msgstr "드라이버 관리자"
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:33
+#: usr/share/biglinux/welcome/translatable_strings.py:40
 msgid "Edge"
 msgstr "Edge"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 30
-#: usr/share/biglinux/welcome/translatable_strings.py:34
+#: usr/share/biglinux/welcome/translatable_strings.py:41
 msgid "Falkon"
 msgstr "Falkon"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 35
-#: usr/share/biglinux/welcome/translatable_strings.py:35
+#: usr/share/biglinux/welcome/translatable_strings.py:42
 msgid "Family Safety"
 msgstr "가족 안전"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 26
-#: usr/share/biglinux/welcome/translatable_strings.py:36
+#: usr/share/biglinux/welcome/translatable_strings.py:43
 msgid "Firefox"
 msgstr "Firefox"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 27
-#: usr/share/biglinux/welcome/translatable_strings.py:37
+#: usr/share/biglinux/welcome/translatable_strings.py:44
 msgid "Forum"
 msgstr "포럼"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:45
+msgid "Hardware Management"
+msgstr "하드웨어 관리"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:38
+#: usr/share/biglinux/welcome/translatable_strings.py:46
 msgid "Initial Settings"
 msgstr "초기 설정"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 30
-#: usr/share/biglinux/welcome/translatable_strings.py:39
-msgid "Install or Remove Drivers and Firmwares easily."
-msgstr "드라이버 및 펌웨어를 쉽게 설치하거나 제거하세요."
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 31
-#: usr/share/biglinux/welcome/translatable_strings.py:40
+#: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 32
-#: usr/share/biglinux/welcome/translatable_strings.py:41
+#: usr/share/biglinux/welcome/translatable_strings.py:48
 msgid ""
 "KDE Connect is an application that facilitates wireless communication and "
 "data transfer between devices on local networks. Available on the Google "
 "Play Store for Android and the Apple Store for iPhone."
 msgstr ""
-"KDE Connect는 로컬 네트워크에서 장치 간의 무선 통신 및 데이터 전송을 용이하게 하는 애플리케이션입니다. Android용 "
-"Google Play 스토어와 iPhone용 Apple 스토어에서 사용할 수 있습니다."
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:42
-msgid "Kernel Manager"
-msgstr "커널 관리자"
+"KDE Connect는 로컬 네트워크에서 장치 간의 무선 통신 및 데이터 전송을 용이하"
+"게 하는 애플리케이션입니다. Android용 Google Play 스토어와 iPhone용 Apple 스"
+"토어에서 사용할 수 있습니다."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 33
-#: usr/share/biglinux/welcome/translatable_strings.py:43
+#: usr/share/biglinux/welcome/translatable_strings.py:49
 msgid "Language Packs"
 msgstr "언어 팩"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:50
+msgid ""
+"Legal toolkit for Brazilian lawyers: digital certificates (A1/A3), PDF "
+"signing, WebSigner, and access to court systems."
+msgstr ""
+"브라질 변호사를 위한 법률 도구: 디지털 인증서(A1/A3), PDF 서명, WebSigner, 법"
+"원 시스템 접속."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:44
+#: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "Librewolf"
 msgstr "Librewolf"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:52
+msgid ""
+"Manage drivers, firmware, and kernels, and check information about your "
+"hardware."
+msgstr "드라이버, 펌웨어, 커널을 관리하고 하드웨어 정보를 확인하세요."
+
+#: usr/share/biglinux/welcome/translatable_strings.py:53
+msgid ""
+"Manage webcams, video sources, and multimedia features in one central "
+"interface."
+msgstr "웹캠, 비디오 소스, 멀티미디어 기능을 하나의 인터페이스에서 관리하세요."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:45
+#: usr/share/biglinux/welcome/translatable_strings.py:54
 msgid "Network Info"
 msgstr "네트워크 정보"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 34
-#: usr/share/biglinux/welcome/translatable_strings.py:46
+#: usr/share/biglinux/welcome/translatable_strings.py:55
 msgid "Noise Reduction"
 msgstr "잡음 감소"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 35
-#: usr/share/biglinux/welcome/translatable_strings.py:47
+#: usr/share/biglinux/welcome/translatable_strings.py:56
 msgid "OCR to PDF"
 msgstr "OCR에서 PDF로"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 48
-#: usr/share/biglinux/welcome/translatable_strings.py:48
+#: usr/share/biglinux/welcome/translatable_strings.py:57
 msgid "Open Parental Controls"
 msgstr "자녀 보호 기능 열기"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 41
-#: usr/share/biglinux/welcome/translatable_strings.py:49
+#: usr/share/biglinux/welcome/translatable_strings.py:58
 msgid "Opera"
 msgstr "Opera"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:59
+msgid ""
+"Optimize your games with performance profiles, graphics features, "
+"monitoring, and advanced settings."
+msgstr "성능 프로필, 그래픽 기능, 모니터링, 고급 설정으로 게임을 최적화하세요."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 36
-#: usr/share/biglinux/welcome/translatable_strings.py:50
+#: usr/share/biglinux/welcome/translatable_strings.py:60
 msgid "Our platform is collaborative, join this evolution."
 msgstr "우리 플랫폼은 함께 만들어 갑니다. 발전에 동참해 주세요."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 37
-#: usr/share/biglinux/welcome/translatable_strings.py:51
+#: usr/share/biglinux/welcome/translatable_strings.py:61
 msgid "PlayStore"
 msgstr "Play Store"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:52
+#: usr/share/biglinux/welcome/translatable_strings.py:62
 msgid "Printers"
 msgstr "프린터"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 53
-#: usr/share/biglinux/welcome/translatable_strings.py:53
+#: usr/share/biglinux/welcome/translatable_strings.py:63
 msgid ""
 "Protect your children online. Set up supervised accounts, screen time, and "
 "content filters."
-msgstr "온라인에서 자녀를 보호하세요. 보호자가 관리하는 계정, 화면 사용 시간 및 콘텐츠 필터를 설정하세요."
+msgstr ""
+"온라인에서 자녀를 보호하세요. 보호자가 관리하는 계정, 화면 사용 시간 및 콘텐"
+"츠 필터를 설정하세요."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:54
+#: usr/share/biglinux/welcome/translatable_strings.py:64
 msgid "Session and Themes"
 msgstr "세션 및 테마"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:55
+#: usr/share/biglinux/welcome/translatable_strings.py:65
 msgid "Set your default browser."
 msgstr "기본 브라우저를 설정하세요."
 
+#: usr/share/biglinux/welcome/translatable_strings.py:66
+msgid "Share and play games remotely with other devices and friends."
+msgstr "다른 기기 및 친구들과 원격으로 게임을 공유하고 플레이하세요."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:56
+#: usr/share/biglinux/welcome/translatable_strings.py:67
 msgid "Telegram"
 msgstr "Telegram"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:68
+msgid "Text Narrator"
+msgstr "텍스트 읽어주기"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 54
-#: usr/share/biglinux/welcome/translatable_strings.py:57
+#: usr/share/biglinux/welcome/translatable_strings.py:69
 msgid "Time Shift"
 msgstr "Timeshift"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:70
+msgid "Use movements captured by your webcam to control your computer."
+msgstr "웹캠으로 인식한 동작을 사용해 컴퓨터를 제어하세요."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:58
+#: usr/share/biglinux/welcome/translatable_strings.py:71
 msgid "Video Converter"
 msgstr "비디오 변환기"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 48
-#: usr/share/biglinux/welcome/translatable_strings.py:59
+#: usr/share/biglinux/welcome/translatable_strings.py:72
 msgid "Vivaldi"
 msgstr "Vivaldi"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 42
-#: usr/share/biglinux/welcome/translatable_strings.py:60
+#: usr/share/biglinux/welcome/translatable_strings.py:73
 msgid ""
 "We provide comprehensive settings for you to select in an extremely simple "
 "way."
@@ -554,26 +727,458 @@ msgstr "다양한 설정을 간편하게 선택할 수 있습니다."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:61
+#: usr/share/biglinux/welcome/translatable_strings.py:74
 msgid "WebApps"
 msgstr "웹앱"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 44
-#: usr/share/biglinux/welcome/translatable_strings.py:62
+#: usr/share/biglinux/welcome/translatable_strings.py:75
 msgid "YouTube"
 msgstr "YouTube"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 45
-#: usr/share/biglinux/welcome/translatable_strings.py:63
+#: usr/share/biglinux/welcome/translatable_strings.py:76
 msgid ""
 "Your donation is very important for the project and follow us on social "
 "media."
-msgstr "여러분의 기부는 프로젝트에 큰 힘이 됩니다. 소셜 미디어에서도 팔로우해 주세요."
+msgstr ""
+"여러분의 기부는 프로젝트에 큰 힘이 됩니다. 소셜 미디어에서도 팔로우해 주세요."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 59
-#: usr/share/biglinux/welcome/translatable_strings.py:64
+#: usr/share/biglinux/welcome/translatable_strings.py:77
 msgid "Zen Browser"
 msgstr "Zen Browser"
+
+#: usr/share/biglinux/welcome/app.py:81
+msgid "Initial setup and feature introduction for BigLinux"
+msgstr "BigLinux 초기 설정 및 기능 소개"
+
+#: usr/share/biglinux/welcome/app.py:84
+msgid ""
+"This program is free software distributed under the GNU General Public "
+"License."
+msgstr ""
+"이 프로그램은 GNU General Public License에 따라 배포되는 자유 소프트웨어입니"
+"다."
+
+#: usr/share/biglinux/welcome/app.py:87
+msgid "Source code"
+msgstr "소스 코드"
+
+#: usr/share/biglinux/welcome/apps_page.py:154
+msgid "Checking…"
+msgstr "확인 중…"
+
+#: usr/share/biglinux/welcome/apps_page.py:155
+msgid "Not installed"
+msgstr "설치 안 됨"
+
+#: usr/share/biglinux/welcome/apps_page.py:156
+msgid "Installing"
+msgstr "설치 중"
+
+#: usr/share/biglinux/welcome/apps_page.py:157
+#: usr/share/biglinux/welcome/install_backend.py:1059
+msgid "Installed"
+msgstr "설치됨"
+
+#: usr/share/biglinux/welcome/apps_page.py:158
+msgid "Installation failed"
+msgstr "설치 실패"
+
+#: usr/share/biglinux/welcome/apps_page.py:159
+msgid "Unavailable"
+msgstr "사용할 수 없음"
+
+#: usr/share/biglinux/welcome/apps_page.py:160
+msgid "Requires KDE Plasma"
+msgstr "KDE Plasma 필요"
+
+#: usr/share/biglinux/welcome/apps_page.py:263
+#: usr/share/biglinux/welcome/apps_page.py:304
+msgid "Details"
+msgstr "세부정보"
+
+#: usr/share/biglinux/welcome/apps_page.py:309
+#, python-format
+msgid "Show installation details for %s"
+msgstr "%s 설치 세부정보 표시"
+
+#: usr/share/biglinux/welcome/apps_page.py:318
+#, python-format
+msgid "Cancel installation of %s"
+msgstr "%s 설치 취소"
+
+#: usr/share/biglinux/welcome/apps_page.py:377
+#: usr/share/biglinux/welcome/install_flow.py:238
+#: usr/share/biglinux/welcome/install_flow.py:322
+#: usr/share/biglinux/welcome/install_flow.py:407
+msgid "Install"
+msgstr "설치"
+
+#: usr/share/biglinux/welcome/apps_page.py:382
+#: usr/share/biglinux/welcome/install_flow.py:285
+msgid "Update and Install"
+msgstr "업데이트 후 설치"
+
+#: usr/share/biglinux/welcome/apps_page.py:384
+msgid "Try Again"
+msgstr "다시 시도"
+
+#: usr/share/biglinux/welcome/apps_page.py:386
+#, python-format
+msgid "Try again to install %s"
+msgstr "%s 설치 다시 시도"
+
+#: usr/share/biglinux/welcome/apps_page.py:389
+msgid "Added to Panel"
+msgstr "패널에 추가됨"
+
+#: usr/share/biglinux/welcome/apps_page.py:392
+msgid "Add to Panel"
+msgstr "패널에 추가"
+
+#: usr/share/biglinux/welcome/apps_page.py:393
+#, python-format
+msgid "Add %s to the panel"
+msgstr "%s을(를) 패널에 추가"
+
+#: usr/share/biglinux/welcome/apps_page.py:408
+#: usr/share/biglinux/welcome/install_flow.py:82
+#: usr/share/biglinux/welcome/install_flow.py:134
+msgid "Another installation is in progress"
+msgstr "다른 설치가 진행 중입니다"
+
+#: usr/share/biglinux/welcome/apps_page.py:420
+msgid "Not available in the configured repositories"
+msgstr "구성된 저장소에서 사용할 수 없음"
+
+#: usr/share/biglinux/welcome/apps_page.py:422
+msgid "Plasma widget for KDE Plasma 6"
+msgstr "KDE Plasma 6용 Plasma 위젯"
+
+#: usr/share/biglinux/welcome/apps_page.py:424
+msgid "Plasma widget"
+msgstr "Plasma 위젯"
+
+#: usr/share/biglinux/welcome/apps_page.py:475
+#: usr/share/biglinux/welcome/install_backend.py:740
+msgid "Waiting for authentication…"
+msgstr "인증 대기 중…"
+
+#: usr/share/biglinux/welcome/apps_page.py:547
+msgid "Opening…"
+msgstr "여는 중…"
+
+#: usr/share/biglinux/welcome/apps_page.py:560
+#, python-format
+msgid "Could not add %s to the panel"
+msgstr "%s을(를) 패널에 추가할 수 없습니다"
+
+#: usr/share/biglinux/welcome/apps_page.py:561
+#, python-format
+msgid "Right-click the panel, choose “Add Widgets…” and search for %s."
+msgstr ""
+"패널을 마우스 오른쪽 버튼으로 클릭하고 “위젯 추가…”를 선택한 다음 %s을(를) 검"
+"색하세요."
+
+#: usr/share/biglinux/welcome/apps_page.py:571
+#, python-format
+msgid "%s was added to the panel."
+msgstr "%s을(를) 패널에 추가했습니다."
+
+#: usr/share/biglinux/welcome/apps_page.py:584
+msgid "You are offline. Connect to the internet to install applications."
+msgstr "오프라인 상태입니다. 앱을 설치하려면 인터넷에 연결하세요."
+
+#: usr/share/biglinux/welcome/install_backend.py:275
+#: usr/share/biglinux/welcome/install_backend.py:500
+msgid "This package is not allowed."
+msgstr "이 패키지는 허용되지 않습니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:388
+msgid "Synchronizing databases…"
+msgstr "데이터베이스 동기화 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:389
+msgid "Resolving dependencies…"
+msgstr "의존성 해결 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:390
+#: usr/share/biglinux/welcome/install_backend.py:395
+msgid "Checking for conflicts…"
+msgstr "충돌 확인 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:391
+#: usr/share/biglinux/welcome/install_backend.py:944
+#: usr/share/biglinux/welcome/install_backend.py:994
+msgid "Downloading packages…"
+msgstr "패키지 다운로드 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:392
+msgid "Verifying signatures…"
+msgstr "서명 확인 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:393
+#: usr/share/biglinux/welcome/install_backend.py:951
+msgid "Verifying integrity…"
+msgstr "무결성 확인 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:394
+msgid "Loading packages…"
+msgstr "패키지 불러오는 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:396
+msgid "Checking disk space…"
+msgstr "디스크 공간 확인 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:397
+msgid "Applying changes…"
+msgstr "변경 사항 적용 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:398
+#: usr/share/biglinux/welcome/install_backend.py:967
+msgid "Installing…"
+msgstr "설치 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:399
+msgid "Upgrading…"
+msgstr "업그레이드 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:400
+msgid "Running post-install hooks…"
+msgstr "설치 후 작업 실행 중…"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 763
+#: usr/share/biglinux/welcome/install_backend.py:431
+#, python-brace-format
+msgid "Downloading {name}…"
+msgstr "{name} 다운로드 중…"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 775
+#: usr/share/biglinux/welcome/install_backend.py:438
+#, python-brace-format
+msgid "Downloading… {pct}% ({speed})"
+msgstr "다운로드 중… {pct}% ({speed})"
+
+#: usr/share/biglinux/welcome/install_backend.py:471
+msgid ""
+"Authentication failed. Administrator permission is required to install "
+"applications."
+msgstr "인증에 실패했습니다. 앱을 설치하려면 관리자 권한이 필요합니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:474
+msgid ""
+"Another program is using the package manager. Wait for it to finish and try "
+"again."
+msgstr ""
+"다른 프로그램이 패키지 관리자를 사용하고 있습니다. 작업이 끝날 때까지 기다린 "
+"후 다시 시도하세요."
+
+#: usr/share/biglinux/welcome/install_backend.py:477
+msgid "No internet connection. Connect to the internet and try again."
+msgstr "인터넷에 연결되어 있지 않습니다. 인터넷에 연결한 후 다시 시도하세요."
+
+#: usr/share/biglinux/welcome/install_backend.py:480
+msgid ""
+"Could not download the packages. Check your internet connection and try "
+"again."
+msgstr ""
+"패키지를 다운로드할 수 없습니다. 인터넷 연결을 확인한 후 다시 시도하세요."
+
+#: usr/share/biglinux/welcome/install_backend.py:483
+msgid ""
+"The package lists are out of date, so the mirrors no longer have the "
+"requested files. Update the system and try again."
+msgstr ""
+"패키지 목록이 오래되어 미러에 요청한 파일이 더 이상 없습니다. 시스템을 업데이"
+"트한 후 다시 시도하세요."
+
+#: usr/share/biglinux/welcome/install_backend.py:486
+msgid "There is not enough free disk space to install this application."
+msgstr "이 앱을 설치하는 데 필요한 디스크 여유 공간이 부족합니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:488
+msgid "The package was not found in the configured repositories."
+msgstr "구성된 저장소에서 패키지를 찾을 수 없습니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:489
+msgid "Some dependencies could not be resolved."
+msgstr "일부 의존성을 해결할 수 없습니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:490
+msgid "The package conflicts with software already installed."
+msgstr "이 패키지는 이미 설치된 소프트웨어와 충돌합니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:492
+msgid ""
+"A package signature could not be verified. The keyring may need to be "
+"updated."
+msgstr "패키지 서명을 확인할 수 없습니다. 키링을 업데이트해야 할 수 있습니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:495
+msgid ""
+"The downloaded files did not pass the integrity check. Nothing was installed."
+msgstr ""
+"다운로드한 파일이 무결성 검사를 통과하지 못했습니다. 아무것도 설치되지 않았습"
+"니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:498
+msgid ""
+"The installation finished, but the application could not be found on the "
+"system."
+msgstr "설치는 완료되었지만 시스템에서 앱을 찾을 수 없습니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:502
+msgid "This application is not supported on the current desktop."
+msgstr "이 앱은 현재 데스크톱 환경을 지원하지 않습니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:505
+msgid "The installation failed. See the details for more information."
+msgstr "설치에 실패했습니다. 자세한 내용은 세부정보를 확인하세요."
+
+#: usr/share/biglinux/welcome/install_backend.py:758
+msgid "The installer did not finish in time."
+msgstr "설치 프로그램이 제한 시간 내에 완료되지 않았습니다."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 522
+#: usr/share/biglinux/welcome/install_backend.py:792
+msgid "Still working…"
+msgstr "아직 작업 중입니다…"
+
+#: usr/share/biglinux/welcome/install_backend.py:807
+msgid "Preparing installation…"
+msgstr "설치 준비 중…"
+
+#: usr/share/biglinux/welcome/install_backend.py:939
+msgid "kpackagetool6 was not found."
+msgstr "kpackagetool6을 찾을 수 없습니다."
+
+#: usr/share/biglinux/welcome/install_backend.py:996
+#, python-brace-format
+msgid "Downloaded {size}"
+msgstr "다운로드됨: {size}"
+
+#: usr/share/biglinux/welcome/install_flow.py:83
+#: usr/share/biglinux/welcome/install_flow.py:135
+msgid "Wait for the current installation to finish, then try again."
+msgstr "현재 설치가 끝날 때까지 기다린 후 다시 시도하세요."
+
+#: usr/share/biglinux/welcome/install_flow.py:91
+#: usr/share/biglinux/welcome/install_flow.py:104
+#: usr/share/biglinux/welcome/install_flow.py:200
+#, python-format
+msgid "Could not install %s"
+msgstr "%s을(를) 설치할 수 없습니다"
+
+#: usr/share/biglinux/welcome/install_flow.py:147
+#, python-format
+msgid "%s was installed successfully."
+msgstr "%s을(를) 설치했습니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:148
+#, python-format
+msgid "Installation of %s was cancelled."
+msgstr "%s 설치가 취소되었습니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:152
+#, python-format
+msgid "Could not install %s."
+msgstr "%s을(를) 설치할 수 없습니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:207
+#, python-format
+msgid "%s is already installed."
+msgstr "%s은(는) 이미 설치되어 있습니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:214
+#, python-format
+msgid ""
+"%(count)d package will be downloaded from the configured repositories "
+"(%(size)s)."
+msgid_plural ""
+"%(count)d packages will be downloaded from the configured repositories "
+"(%(size)s)."
+msgstr[0] "구성된 저장소에서 패키지 %(count)d개(%(size)s)를 다운로드합니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:219
+#: usr/share/biglinux/welcome/install_flow.py:282
+msgid "You will be asked for the administrator password."
+msgstr "관리자 암호를 입력하라는 메시지가 표시됩니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:225
+#, python-format
+msgid ""
+"The package lists were last updated %d day ago. If the installation fails, "
+"update the system first."
+msgid_plural ""
+"The package lists were last updated %d days ago. If the installation fails, "
+"update the system first."
+msgstr[0] ""
+"패키지 목록이 %d일 전에 마지막으로 업데이트되었습니다. 설치에 실패하면 먼저 "
+"시스템을 업데이트하세요."
+
+#: usr/share/biglinux/welcome/install_flow.py:233
+#: usr/share/biglinux/welcome/install_flow.py:309
+#, python-format
+msgid "Install %s?"
+msgstr "%s을(를) 설치하시겠습니까?"
+
+#: usr/share/biglinux/welcome/install_flow.py:274
+#, python-format
+msgid "Update the system and install %s?"
+msgstr "시스템을 업데이트하고 %s을(를) 설치하시겠습니까?"
+
+#: usr/share/biglinux/welcome/install_flow.py:276
+#, python-format
+msgid ""
+"All installed packages will be updated before %s is installed. Updating "
+"everything together avoids partial upgrades, but it may take a while and "
+"download a large amount of data."
+msgstr ""
+"%s을(를) 설치하기 전에 설치된 모든 패키지를 업데이트합니다. 모든 패키지를 함"
+"께 업데이트하면 부분 업그레이드를 피할 수 있지만, 시간이 오래 걸리고 많은 데"
+"이터를 다운로드할 수 있습니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:311
+#, python-format
+msgid ""
+"%s is a Plasma widget and is not available as a package. It will be "
+"downloaded from the official BigLinux repository on GitHub, checked against "
+"a known checksum and installed for your user only."
+msgstr ""
+"%s은(는) Plasma 위젯이며 패키지로 제공되지 않습니다. GitHub에 있는 BigLinux "
+"공식 저장소에서 다운로드한 다음, 알려진 체크섬으로 검증하여 현재 사용자에게"
+"만 설치합니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:317
+msgid "No administrator password is required."
+msgstr "관리자 암호가 필요하지 않습니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:381
+#: usr/share/biglinux/welcome/install_flow.py:400
+#, python-format
+msgid "%s is not installed"
+msgstr "%s이(가) 설치되어 있지 않습니다"
+
+#: usr/share/biglinux/welcome/install_flow.py:383
+msgid ""
+"The application is not installed and is not available in the configured "
+"repositories."
+msgstr "앱이 설치되어 있지 않으며 구성된 저장소에서도 사용할 수 없습니다."
+
+#: usr/share/biglinux/welcome/install_flow.py:402
+#, python-format
+msgid ""
+"It is available in the configured repositories (package %(package)s, from "
+"%(repo)s). Do you want to install it now?"
+msgstr ""
+"구성된 저장소에서 사용할 수 있습니다(패키지 %(package)s, 출처 %(repo)s). 지"
+"금 설치하시겠습니까?"
+
+#: usr/share/biglinux/welcome/install_flow.py:406
+msgid "Not Now"
+msgstr "나중에"

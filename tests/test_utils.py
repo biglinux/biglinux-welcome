@@ -74,26 +74,75 @@ class TestExtractStrings(unittest.TestCase):
         self.assertEqual(result, {"Valid"})
 
 
+class TestLoadPages(unittest.TestCase):
+    """pages.yaml validation: malformed entries are skipped, not fatal."""
+
+    def load(self, text):
+        import tempfile
+
+        from utils import load_pages
+
+        with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as f:
+            f.write(text)
+        try:
+            return load_pages(f.name)
+        finally:
+            os.unlink(f.name)
+
+    def test_real_file_loads(self):
+        from utils import APP_PATH, load_pages
+
+        pages = load_pages(os.path.join(APP_PATH, "pages.yaml"))
+        self.assertGreaterEqual(len(pages), 8)
+        self.assertTrue(all(p["actions"] for p in pages))
+
+    def test_invalid_yaml_returns_empty(self):
+        self.assertEqual(self.load("- title: [unclosed"), [])
+
+    def test_missing_file_returns_empty(self):
+        from utils import load_pages
+
+        self.assertEqual(load_pages("/nonexistent/pages.yaml"), [])
+
+    def test_skips_malformed_pages_and_actions(self):
+        pages = self.load(
+            "- title: Good\n  actions:\n    - label: A\n    - 42\n    - {command: x}\n"
+            "- just a string\n"
+            "- subtitle: no title\n"
+            "- title: No actions\n"
+        )
+        self.assertEqual([p["title"] for p in pages], ["Good", "No actions"])
+        self.assertEqual(pages[0]["actions"], [{"label": "A"}])
+        self.assertEqual(pages[1]["actions"], [])
+
+    def test_top_level_must_be_a_list(self):
+        self.assertEqual(self.load("title: x"), [])
+
+
 class TestParseOsRelease(unittest.TestCase):
     """Tests for utils.parse_os_release."""
 
     def test_parses_standard_format(self):
         fake_content = 'NAME="BigLinux"\nVERSION="2024"\nPRETTY_NAME="BigLinux 2024"\n'
-        with patch("builtins.open", mock_open(read_data=fake_content)):
-            with patch("platform.freedesktop_os_release", side_effect=OSError):
-                from utils import parse_os_release
+        with (
+            patch("builtins.open", mock_open(read_data=fake_content)),
+            patch("platform.freedesktop_os_release", side_effect=OSError),
+        ):
+            from utils import parse_os_release
 
-                result = parse_os_release()
-                self.assertEqual(result["NAME"], "BigLinux")
-                self.assertEqual(result["VERSION"], "2024")
+            result = parse_os_release()
+            self.assertEqual(result["NAME"], "BigLinux")
+            self.assertEqual(result["VERSION"], "2024")
 
     def test_handles_missing_file(self):
-        with patch("platform.freedesktop_os_release", side_effect=OSError):
-            with patch("builtins.open", side_effect=OSError):
-                from utils import parse_os_release
+        with (
+            patch("platform.freedesktop_os_release", side_effect=OSError),
+            patch("builtins.open", side_effect=OSError),
+        ):
+            from utils import parse_os_release
 
-                result = parse_os_release()
-                self.assertEqual(result, {})
+            result = parse_os_release()
+            self.assertEqual(result, {})
 
 
 class TestGetDesktop(unittest.TestCase):
