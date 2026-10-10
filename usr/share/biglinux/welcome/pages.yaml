@@ -51,6 +51,7 @@
         - { check: "/usr/bin/chromium", desktop: "chromium.desktop" }
         - { check: "/var/lib/flatpak/app/org.chromium.Chromium", desktop: "org.chromium.Chromium.desktop" }
 
+    # Chrome, Opera and Edge are AUR-only: shown as unavailable
     - label: "Chrome"
       package: "google-chrome"
       variants:
@@ -88,13 +89,15 @@
         - { check: "/var/lib/flatpak/app/com.vivaldi.Vivaldi", desktop: "com.vivaldi.Vivaldi.desktop" }
 
     - label: "Edge"
-      package: "edge"
+      package: "microsoft-edge-stable-bin"
+      icon: "edge"
       variants:
         - { check: "/usr/bin/microsoft-edge-stable", desktop: "microsoft-edge.desktop" }
         - { check: "/var/lib/flatpak/app/com.microsoft.Edge", desktop: "com.microsoft.Edge.desktop" }
 
     - label: "Zen Browser"
-      package: "zen-browser"
+      package: "zen-browser-bin"
+      icon: "zen-browser"
       variants:
         - { check: "/usr/bin/zen-browser", desktop: "zen.desktop" }
         - { check: "/var/lib/flatpak/app/app.zen_browser.zen", desktop: "app.zen_browser.zen.desktop" }
@@ -119,13 +122,15 @@
       command: "https://apps.apple.com/br/app/kde-connect/id1580245991"
 
 - title: "Driver Installation and Hardware Information"
-  subtitle: "Install or Remove Drivers and Firmwares easily."
+  subtitle: "Manage drivers, firmware, and kernels, and check information about your hardware."
   icon: "cpu-symbolic"
   actions:
-    - label: "Driver Manager"
+    # Unified drivers + kernels manager (replaces Driver Manager and Kernel Manager)
+    - label: "Hardware Management"
       icon: "driverAndHardware/big-driver-manager.svg"
       type: "app"
       command: "big-driver-manager"
+      package: "biglinux-driver-manager"
 
     - label: "BigLinux Info"
       icon: "driverAndHardware/big-hardware-info.svg"
@@ -136,11 +141,6 @@
       icon: "driverAndHardware/big-network-info.svg"
       type: "app"
       command: "big-network-info"
-
-    - label: "Kernel Manager"
-      icon: "driverAndHardware/big-kernel-manager.svg"
-      type: "app"
-      command: "big-kernel-manager"
 
     - label: "Printers"
       icon: "driverAndHardware/printer.svg"
@@ -178,12 +178,14 @@
     - label: "Noise Reduction"
       icon: "discover/biglinux-noise-reduction-pipewire.svg"
       type: "app"
-      command: "big-microphone-noise-reduction"
+      command: "biglinux-microphone"
+      package: "biglinux-noise-reduction-pipewire"
 
-    - label: "Configure voice"
-      icon: "discover/tts-biglinux.svg"
+    - label: "Text Narrator"
+      icon: "discover/biglinux-tts.svg"
       type: "app"
-      command: "tts-config"
+      command: "biglinux-tts"
+      package: "tts-biglinux"
 
     - label: "OCR to PDF"
       icon: "discover/bigocrpdf.svg"
@@ -209,6 +211,52 @@
       icon: "discover/timeshift.svg"
       type: "app"
       command: "timeshift-launcher"
+
+# Installable applications: "package" must be in the allowlist of
+# install_backend.py and scripts/package-install.sh
+- title: "Applications to Install"
+  subtitle: "Discover and install powerful applications created for BigLinux. Enhance gaming, remote access, multimedia, productivity, and accessibility with just one click."
+  icon: "system-software-install-symbolic"
+  page_type: "apps"
+  actions:
+    - label: "Big Game Mode"
+      description: "Optimize your games with performance profiles, graphics features, monitoring, and advanced settings."
+      icon: "applications/bigame-mode.svg"
+      package: "bigame-mode"
+      command: "bigame-ui"
+
+    - label: "Big Remote Play"
+      description: "Share and play games remotely with other devices and friends."
+      icon: "applications/big-remote-play.svg"
+      package: "big-remote-play"
+      command: "big-remote-play"
+
+    - label: "BigCam"
+      description: "Manage webcams, video sources, and multimedia features in one central interface."
+      icon: "applications/bigcam.svg"
+      package: "bigcam"
+      command: "bigcam"
+
+    - label: "ChatAI"
+      description: "Access different artificial intelligence services directly from KDE Plasma."
+      icon: "applications/chatai.svg"
+      # Plasma widget, not a package (see install_backend.PLASMOID_SOURCES)
+      plasmoid: "ChatAI-Plasmoid"
+
+    - label: "BigLinux Body Tracker"
+      description: "Use movements captured by your webcam to control your computer."
+      icon: "applications/biglinux-body-tracker.svg"
+      package: "biglinux-body-tracker"
+      # Never from biglinux-testing, even when it is enabled first
+      repository: "biglinux-stable"
+      command: "big-head-tracker"
+
+    - label: "Big Advogados"
+      description: "Legal toolkit for Brazilian lawyers: digital certificates (A1/A3), PDF signing, WebSigner, and access to court systems."
+      icon: "applications/big-advogados.svg"
+      package: "big-advogados"
+      repository: "biglinux-stable"
+      command: "big-advogados"
 
 - title: "Donation and Social Networks"
   subtitle: "Your donation is very important for the project and follow us on social media."

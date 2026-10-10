@@ -1,8 +1,10 @@
 #!/bin/bash
 
+# Default browser helpers (run as the user).
+# Installation goes through scripts/package-install.sh (see install_backend.py).
+
 getDefaultBrowser() {
   xdg-settings get default-web-browser
-#   xdg-mime query default x-scheme-handler/http
 }
 
 setDefaultBrowser() {
@@ -11,23 +13,7 @@ setDefaultBrowser() {
   xdg-settings set default-web-browser "$1"
 }
 
-# change the state
-installBrowser() {
-  local script_dir
-  script_dir="$(dirname "$(readlink -f "$0")")"
-  pkexec "$script_dir/browserInstall.sh" "$1"
-  exitCode=$?
-  exit $exitCode
-}
-
-# Executes the function based on the parameter
 case "$1" in
-    # "check")
-    #     checkBrowserState "$2"
-    #     ;;
-    "install")
-        installBrowser "$2"
-        ;;
     "getBrowser")
         getDefaultBrowser
         ;;
@@ -35,9 +21,7 @@ case "$1" in
         setDefaultBrowser "$2"
         ;;
     *)
-        echo "Use: $0 {check|install} [true|false]"
-        echo "  check          - Check current status"
-        echo "  install        - install the specified browser"
+        echo "Use: $0 {getBrowser|setBrowser <file.desktop>}"
         exit 1
         ;;
 esac
