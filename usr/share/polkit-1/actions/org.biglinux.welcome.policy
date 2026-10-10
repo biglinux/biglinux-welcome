@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<!--
+  BigLinux Welcome: install allowlisted applications.
+  The helper only accepts the packages listed in it (see installer.py).
+  auth_admin_keep lets the user install several applications in a row
+  without typing the password each time (for this action only).
+-->
+<policyconfig>
+  <vendor>BigLinux</vendor>
+  <vendor_url>https://www.biglinux.com.br</vendor_url>
+  <icon_name>biglinux-welcome</icon_name>
+
+  <action id="org.biglinux.welcome.install-packages">
+    <description>Install applications offered by BigLinux Welcome</description>
+    <description xml:lang="be">Усталяванне праграм, прапанаваных BigLinux Welcome</description>
+    <description xml:lang="bg">Инсталиране на приложения, предлагани от BigLinux Welcome</description>
+    <description xml:lang="cs">Instalace aplikací nabízených v BigLinux Welcome</description>
+    <description xml:lang="da">Installer applikationer, der tilbydes af BigLinux Welcome</description>
+    <description xml:lang="de">Von BigLinux Welcome angebotene Anwendungen installieren</description>
+    <description xml:lang="el">Εγκατάσταση εφαρμογών που προσφέρονται από το BigLinux Welcome</description>
+    <description xml:lang="es">Instalar aplicaciones ofrecidas por BigLinux Welcome</description>
+    <description xml:lang="et">Paigalda rakendusi, mida pakub BigLinux Welcome</description>
+    <description xml:lang="fi">Asenna BigLinux Welcome -sovelluksen tarjoamia sovelluksia</description>
+    <description xml:lang="fr">Installer des applications proposées par BigLinux Welcome</description>
+    <description xml:lang="he">התקנת יישומים המוצעים על ידי BigLinux Welcome</description>
+    <description xml:lang="hr">Instaliraj aplikacije koje nudi BigLinux Welcome</description>
+    <description xml:lang="hu">A BigLinux Welcome által kínált alkalmazások telepítése</description>
+    <description xml:lang="is">Setja upp forrit sem BigLinux Welcome býður upp á</description>
+    <description xml:lang="it">Installa le applicazioni proposte da BigLinux Welcome</description>
+    <description xml:lang="ja">BigLinux Welcome が提供するアプリケーションをインストール</description>
+    <description xml:lang="ko">BigLinux Welcome에서 제공하는 앱 설치</description>
+    <description xml:lang="nl">Applicaties installeren die door BigLinux Welcome worden aangeboden</description>
+    <description xml:lang="no">Installer applikasjoner som tilbys av BigLinux Welcome</description>
+    <description xml:lang="pl">Instalowanie aplikacji oferowanych przez BigLinux Welcome</description>
+    <description xml:lang="pt">Instalar aplicações disponibilizadas pelo BigLinux Welcome</description>
+    <description xml:lang="pt_BR">Instalar aplicativos oferecidos pelo BigLinux Welcome</description>
+    <description xml:lang="ro">Instalează aplicațiile oferite de BigLinux Welcome</description>
+    <description xml:lang="ru">Установка приложений, предлагаемых BigLinux Welcome</description>
+    <description xml:lang="sk">Inštalovať aplikácie ponúkané aplikáciou BigLinux Welcome</description>
+    <description xml:lang="sv">Installera applikationer som erbjuds av BigLinux Welcome</description>
+    <description xml:lang="tr">BigLinux Welcome tarafından sunulan uygulamaları yükle</description>
+    <description xml:lang="uk">Встановлення застосунків, запропонованих BigLinux Welcome</description>
+    <description xml:lang="zh">安装 BigLinux Welcome 提供的应用程序</description>
+    <description xml:lang="zh_CN">安装 BigLinux Welcome 提供的应用程序</description>
+    <description xml:lang="zh_TW">安裝 BigLinux Welcome 提供的應用程式</description>
+    <message>Authentication is required to install applications</message>
+    <message xml:lang="be">Для ўсталявання праграм патрабуецца аўтэнтыфікацыя</message>
+    <message xml:lang="bg">За инсталиране на приложения е необходимо удостоверяване</message>
+    <message xml:lang="cs">K instalaci aplikací je vyžadováno ověření</message>
+    <message xml:lang="da">Der kræves godkendelse for at installere applikationer</message>
+    <message xml:lang="de">Zum Installieren von Anwendungen ist eine Authentifizierung erforderlich</message>
+    <message xml:lang="el">Απαιτείται έλεγχος ταυτότητας για την εγκατάσταση εφαρμογών</message>
+    <message xml:lang="es">Se necesita autenticación para instalar aplicaciones</message>
+    <message xml:lang="et">Rakenduste paigaldamiseks on vaja autentida</message>
+    <message xml:lang="fi">Sovellusten asentaminen vaatii tunnistautumisen</message>
+    <message xml:lang="fr">Une authentification est nécessaire pour installer des applications</message>
+    <message xml:lang="he">נדרש אימות כדי להתקין יישומים</message>
+    <message xml:lang="hr">Za instaliranje aplikacija potrebna je autentifikacija</message>
+    <message xml:lang="hu">Az alkalmazások telepítéséhez hitelesítés szükséges</message>
+    <message xml:lang="is">Auðkenningar er krafist til að setja upp forrit</message>
+    <message xml:lang="it">È richiesta l'autenticazione per installare le applicazioni</message>
+    <message xml:lang="ja">アプリケーションをインストールするには認証が必要です</message>
+    <message xml:lang="ko">앱을 설치하려면 인증이 필요합니다</message>
+    <message xml:lang="nl">Authenticatie is vereist om applicaties te installeren</message>
+    <message xml:lang="no">Autentisering kreves for å installere applikasjoner</message>
+    <message xml:lang="pl">Instalowanie aplikacji wymaga uwierzytelnienia</message>
+    <message xml:lang="pt">É necessária autenticação para instalar aplicações</message>
+    <message xml:lang="pt_BR">É necessária autenticação para instalar aplicativos</message>
+    <message xml:lang="ro">Este necesară autentificarea pentru a instala aplicații</message>
+    <message xml:lang="ru">Для установки приложений требуется аутентификация</message>
+    <message xml:lang="sk">Na inštaláciu aplikácií je potrebné overenie totožnosti</message>
+    <message xml:lang="sv">Autentisering krävs för att installera applikationer</message>
+    <message xml:lang="tr">Uygulama yüklemek için kimlik doğrulama gerekiyor</message>
+    <message xml:lang="uk">Для встановлення застосунків потрібна автентифікація</message>
+    <message xml:lang="zh">安装应用程序需要身份验证</message>
+    <message xml:lang="zh_CN">安装应用程序需要身份验证</message>
+    <message xml:lang="zh_TW">安裝應用程式需要身分驗證</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/biglinux/welcome/scripts/package-install.sh</annotate>
+  </action>
+</policyconfig>

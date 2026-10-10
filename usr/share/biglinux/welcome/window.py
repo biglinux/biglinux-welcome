@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import gettext
 import os
-import select
 import subprocess
 import threading
 
@@ -13,10 +12,18 @@ import gi
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 
-import yaml
-from gi.repository import Adw, GdkPixbuf, GLib, Gtk
-
-from utils import APP_PATH, get_logo_path, parse_os_release
+from apps_page import AppsPage
+from gi.repository import Adw, Gio, GLib, Gtk
+from install_backend import InstallJob, InstallManager, JobState, repo_packages
+from install_flow import InstallRequest, request_install
+from utils import (
+    APP_NAME,
+    APP_PATH,
+    get_logo_path,
+    load_icon,
+    load_pages,
+    parse_os_release,
+)
 from widgets import (
     ActionCard,
     AnimatedLogo,
@@ -24,32 +31,18 @@ from widgets import (
     InfoCard,
     InstallPanel,
     ProgressDots,
+    card_grid,
+    command_available,
+    launch_command,
+    make_heading,
+    show_alert,
 )
 
 _ = gettext.gettext
 
-
-def _flush_line_buffer(buf: bytes, panel: InstallPanel) -> bytes:
-    """Extract complete lines from buf, dispatch to panel, return remainder."""
-    while b"\n" in buf or b"\r" in buf:
-        idx_n = buf.find(b"\n")
-        idx_r = buf.find(b"\r")
-        is_newline = idx_n >= 0 and (idx_r < 0 or idx_n <= idx_r)
-        if is_newline:
-            line = buf[:idx_n].decode("utf-8", errors="replace")
-            buf = buf[idx_n + 1 :]
-        elif idx_r >= 0:
-            line = buf[:idx_r].decode("utf-8", errors="replace")
-            buf = buf[idx_r + 1 :]
-        else:
-            break
-        if not line or line.startswith("STATUS:"):
-            continue
-        if is_newline:
-            GLib.idle_add(panel.append_log, line)
-        else:
-            GLib.idle_add(panel.parse_progress, line)
-    return buf
+# Uniform launcher card width; grids wrap on narrow windows
+ACTION_CARD_WIDTH = 150
+CARD_SPACING = 14
 
 
 class WelcomeWindow(Adw.ApplicationWindow):
@@ -58,39 +51,48 @@ class WelcomeWindow(Adw.ApplicationWindow):
     def __init__(self, app: Adw.Application, start_page: int = 0) -> None:
         super().__init__(application=app)
         self.set_default_size(1000, 780)
-        self.set_title("BigLinux Welcome")
+        self.set_size_request(360, 480)
+        self.set_title(APP_NAME)
 
-        self.pages_data = self._load_pages()
-        
+        self.pages_data = load_pages(os.path.join(APP_PATH, "pages.yaml"))
+
         # Determine the actual starting page index to avoid out-of-bounds errors
-        total_pages = 1 + (len(self.pages_data) if self.pages_data else 0)
+        total_pages = 1 + len(self.pages_data)
         self.current_page = max(0, min(start_page, total_pages - 1))
-        
-        self.page_widgets: list[Gtk.Widget] = []
+
+        # Pages are built on first use (see _page); None = not built yet
+        self.page_widgets: list[Gtk.Widget | None] = [None] * total_pages
         self.browser_cards: list[BrowserCard] = []
+        self._install_panel: InstallPanel | None = None
+        self._close_confirmed = False
 
         self._build_ui()
+        self._setup_shortcuts()
+        self.connect("close-request", self._on_close_request)
         self._navigate()
-
-    def _load_pages(self) -> list | None:
-        try:
-            with open(os.path.join(APP_PATH, "pages.yaml"), encoding="utf-8") as f:
-                return yaml.safe_load(f)
-        except (FileNotFoundError, yaml.YAMLError):
-            return None
 
     # ------------------------------------------------------------------
     # UI Construction
     # ------------------------------------------------------------------
 
     def _build_ui(self) -> None:
+        self.toast_overlay = Adw.ToastOverlay()
+        self.set_content(self.toast_overlay)
+
         main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
-        self.set_content(main)
+        self.toast_overlay.set_child(main)
 
         header = Adw.HeaderBar()
         header.add_css_class("flat")
         header.set_show_title(False)
         main.append(header)
+
+        menu = Gio.Menu()
+        menu.append(_("About BigLinux Welcome"), "app.about")
+        menu_button = Gtk.MenuButton(icon_name="open-menu-symbolic", menu_model=menu)
+        menu_button.set_tooltip_text(_("Main Menu"))
+        menu_button.update_property([Gtk.AccessibleProperty.LABEL], [_("Main Menu")])
+        header.pack_end(menu_button)
 
         self.stack = Gtk.Stack()
         self.stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
@@ -98,22 +100,42 @@ class WelcomeWindow(Adw.ApplicationWindow):
         self.stack.set_vexpand(True)
         main.append(self.stack)
 
-        self._build_pages()
         self._build_nav(main)
 
-    def _build_pages(self) -> None:
-        welcome = self._build_welcome()
-        self.stack.add_named(welcome, "welcome")
-        self.page_widgets.append(welcome)
+    def add_toast(self, message: str) -> None:
+        """Show a short, non-blocking notification."""
+        toast = Adw.Toast(title=message)
+        toast.set_timeout(4)
+        self.toast_overlay.add_toast(toast)
 
-        if self.pages_data:
-            for i, data in enumerate(self.pages_data):
-                if data.get("page_type") == "browsers":
-                    page = self._build_browser_page(data)
-                else:
-                    page = self._build_action_page(data)
-                self.stack.add_named(page, f"page_{i}")
-                self.page_widgets.append(page)
+    def _page(self, index: int) -> Gtk.Widget:
+        """Return page index, building it on first use.
+
+        Only the visible page is built at startup; the next one is prepared
+        while idle, so the first frame appears sooner and pages the user
+        never opens cost nothing (no widgets, no package queries)."""
+        page = self.page_widgets[index]
+        if page is not None:
+            return page
+        if index == 0:
+            page = self._build_welcome()
+        else:
+            data = self.pages_data[index - 1]
+            page_type = data.get("page_type")
+            if page_type == "browsers":
+                page = self._build_browser_page(data)
+            elif page_type == "apps":
+                page = AppsPage(data)
+            else:
+                page = self._build_action_page(data)
+        self.stack.add_named(page, f"page_{index}")
+        self.page_widgets[index] = page
+        return page
+
+    def _prepare_next_page(self) -> bool:
+        if self.current_page + 1 < len(self.page_widgets):
+            self._page(self.current_page + 1)
+        return GLib.SOURCE_REMOVE
 
     def _build_welcome(self) -> Gtk.Widget:
         scroll = Gtk.ScrolledWindow()
@@ -131,11 +153,7 @@ class WelcomeWindow(Adw.ApplicationWindow):
         # Logo with animated glow
         logo_path = get_logo_path(os_info)
         if logo_path and os.path.exists(logo_path):
-            try:
-                pb = GdkPixbuf.Pixbuf.new_from_file_at_size(logo_path, 130, 130)
-                logo = Gtk.Image.new_from_pixbuf(pb)
-            except GLib.Error:
-                logo = Gtk.Image.new_from_icon_name("distributor-logo")
+            logo = load_icon(logo_path, 130)
         else:
             logo = Gtk.Image.new_from_icon_name("distributor-logo")
 
@@ -158,15 +176,16 @@ class WelcomeWindow(Adw.ApplicationWindow):
 
         if is_biglinux:
             subtitle_text = _("In search of the perfect system!")
+            logo.update_property([Gtk.AccessibleProperty.LABEL], [distro])
         else:
-            title = Gtk.Label(label=distro)
-            title.add_css_class("hero-title")
-            main.append(title)
+            main.append(make_heading(distro, "hero-title"))
             subtitle_text = _("Welcome to your new system")
 
         # Subtitle
         subtitle = Gtk.Label(label=subtitle_text)
         subtitle.add_css_class("hero-subtitle")
+        subtitle.set_wrap(True)
+        subtitle.set_justify(Gtk.Justification.CENTER)
         main.append(subtitle)
 
         # Version badge
@@ -174,6 +193,7 @@ class WelcomeWindow(Adw.ApplicationWindow):
         if version:
             badge = Gtk.Label(label=f"v{version}")
             badge.add_css_class("hero-version")
+            badge.set_halign(Gtk.Align.CENTER)
             main.append(badge)
 
         # Spacer
@@ -186,6 +206,22 @@ class WelcomeWindow(Adw.ApplicationWindow):
 
         return scroll
 
+    def _build_page_header(self, data: dict, max_chars: int = 60) -> Gtk.Box:
+        # The box fills; the labels center themselves (see make_heading)
+        header = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
+        header.append(make_heading(_(data.get("title", "")), "page-title"))
+
+        subtitle = data.get("subtitle", "")
+        if subtitle:
+            sub = Gtk.Label(label=_(subtitle))
+            sub.set_halign(Gtk.Align.CENTER)
+            sub.add_css_class("page-subtitle")
+            sub.set_wrap(True)
+            sub.set_max_width_chars(max_chars)
+            sub.set_justify(Gtk.Justification.CENTER)
+            header.append(sub)
+        return header
+
     def _build_action_page(self, data: dict) -> Gtk.Widget:
         scroll = Gtk.ScrolledWindow()
         scroll.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
@@ -193,46 +229,18 @@ class WelcomeWindow(Adw.ApplicationWindow):
         main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=26)
         main.set_margin_top(28)
         main.set_margin_bottom(32)
-        main.set_margin_start(40)
-        main.set_margin_end(40)
+        main.set_margin_start(24)
+        main.set_margin_end(24)
         scroll.set_child(main)
+        main.append(self._build_page_header(data))
 
-        header = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-        header.set_halign(Gtk.Align.CENTER)
-        main.append(header)
-
-        title = Gtk.Label(label=_(data.get("title", "")))
-        title.add_css_class("page-title")
-        # Accessibility: mark as heading
-        title.update_property(
-            [Gtk.AccessibleProperty.LABEL], [_(data.get("title", ""))]
-        )
-        header.append(title)
-
-        subtitle = data.get("subtitle", "")
-        if subtitle:
-            sub = Gtk.Label(label=_(subtitle))
-            sub.add_css_class("page-subtitle")
-            sub.set_wrap(True)
-            sub.set_max_width_chars(60)
-            sub.set_justify(Gtk.Justification.CENTER)
-            header.append(sub)
-
-        actions = data.get("actions", [])
-        items_per_row = 4
-        cards_container = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=14)
-        cards_container.set_halign(Gtk.Align.CENTER)
-        main.append(cards_container)
-
-        for i in range(0, len(actions), items_per_row):
-            row_actions = actions[i : i + items_per_row]
-            row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=14)
-            row.set_halign(Gtk.Align.CENTER)
-            cards_container.append(row)
-
-            for action in row_actions:
-                card = ActionCard(action)
-                row.append(card)
+        cards = []
+        for action in data.get("actions", []):
+            card = ActionCard(action)
+            if "qrcode-card" not in card.get_css_classes():
+                card.set_size_request(ACTION_CARD_WIDTH, -1)
+            cards.append(card)
+        main.append(card_grid(cards, 4, CARD_SPACING))
 
         return scroll
 
@@ -243,30 +251,12 @@ class WelcomeWindow(Adw.ApplicationWindow):
         main = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=26)
         main.set_margin_top(28)
         main.set_margin_bottom(32)
-        main.set_margin_start(40)
-        main.set_margin_end(40)
+        main.set_margin_start(24)
+        main.set_margin_end(24)
         scroll.set_child(main)
 
         # -- Header (always visible, even during install) --
-        header = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
-        header.set_halign(Gtk.Align.CENTER)
-        main.append(header)
-
-        title = Gtk.Label(label=_(data.get("title", "")))
-        title.add_css_class("page-title")
-        title.update_property(
-            [Gtk.AccessibleProperty.LABEL], [_(data.get("title", ""))]
-        )
-        header.append(title)
-
-        subtitle = data.get("subtitle", "")
-        if subtitle:
-            sub = Gtk.Label(label=_(subtitle))
-            sub.add_css_class("page-subtitle")
-            sub.set_wrap(True)
-            sub.set_max_width_chars(55)
-            sub.set_justify(Gtk.Justification.CENTER)
-            header.append(sub)
+        main.append(self._build_page_header(data, max_chars=55))
 
         # -- Inner stack: cards grid ↔ install panel --
         self.browser_stack = Gtk.Stack()
@@ -275,26 +265,14 @@ class WelcomeWindow(Adw.ApplicationWindow):
         self.browser_stack.set_vexpand(True)
         main.append(self.browser_stack)
 
-        # Cards grid
-        cards_container = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=16)
-        cards_container.set_halign(Gtk.Align.CENTER)
-        cards_container.set_valign(Gtk.Align.START)
+        self.browser_cards = [
+            BrowserCard(browser, self._on_browser_select)
+            for browser in data.get("actions", [])
+        ]
+        grid = card_grid(self.browser_cards, 5, 16)
+        grid.set_valign(Gtk.Align.START)
 
-        browsers = data.get("actions", [])
-        items_per_row = 5
-        self.browser_cards = []
-        for i in range(0, len(browsers), items_per_row):
-            row_browsers = browsers[i : i + items_per_row]
-            row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=16)
-            row.set_halign(Gtk.Align.CENTER)
-            cards_container.append(row)
-
-            for browser in row_browsers:
-                card = BrowserCard(browser, self._on_browser_select)
-                self.browser_cards.append(card)
-                row.append(card)
-
-        self.browser_stack.add_named(cards_container, "browsers")
+        self.browser_stack.add_named(grid, "browsers")
 
         # Install panel placeholder (replaced dynamically)
         placeholder = Gtk.Box()
@@ -304,17 +282,21 @@ class WelcomeWindow(Adw.ApplicationWindow):
         self._browser_loading_overlay = Gtk.Box(
             orientation=Gtk.Orientation.VERTICAL, spacing=12
         )
-        self._browser_loading_overlay.set_halign(Gtk.Align.CENTER)
-        self._browser_loading_overlay.set_valign(Gtk.Align.CENTER)
+        self._browser_loading_overlay.set_halign(Gtk.Align.FILL)
+        self._browser_loading_overlay.set_valign(Gtk.Align.FILL)
         self._browser_loading_overlay.set_visible(False)
         self._browser_loading_overlay.add_css_class("browser-loading-overlay")
 
-        self._browser_loading_spinner = Gtk.Spinner()
+        self._browser_loading_spinner = Adw.Spinner()
         self._browser_loading_spinner.set_size_request(48, 48)
+        self._browser_loading_spinner.set_vexpand(True)
+        self._browser_loading_spinner.set_valign(Gtk.Align.END)
         self._browser_loading_overlay.append(self._browser_loading_spinner)
 
         self._browser_loading_label = Gtk.Label(label="")
         self._browser_loading_label.add_css_class("page-subtitle")
+        self._browser_loading_label.set_vexpand(True)
+        self._browser_loading_label.set_valign(Gtk.Align.START)
         self._browser_loading_overlay.append(self._browser_loading_label)
         self._browser_loading_overlay.update_property(
             [Gtk.AccessibleProperty.LABEL],
@@ -325,7 +307,7 @@ class WelcomeWindow(Adw.ApplicationWindow):
         page_overlay.set_child(scroll)
         page_overlay.add_overlay(self._browser_loading_overlay)
 
-        GLib.idle_add(self.refresh_browser_states)
+        self.refresh_browser_states()
         return page_overlay
 
     # ------------------------------------------------------------------
@@ -335,9 +317,12 @@ class WelcomeWindow(Adw.ApplicationWindow):
     def _run_browser_script(self, args: list[str]) -> str:
         script_path = os.path.join(APP_PATH, "scripts", "browser.sh")
         try:
-            cmd = [script_path] + args
             result = subprocess.run(
-                cmd, capture_output=True, text=True, check=True, timeout=300
+                [script_path, *args],
+                capture_output=True,
+                text=True,
+                check=True,
+                timeout=30,
             )
             return result.stdout.strip()
         except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as e:
@@ -345,43 +330,89 @@ class WelcomeWindow(Adw.ApplicationWindow):
             return ""
 
     def refresh_browser_states(self) -> bool:
-        current_browser_default = self._run_browser_script(["getBrowser"])
+        """Re-check installed browsers, the default one and repository
+        availability, in the background."""
 
+        def worker() -> None:
+            default = self._run_browser_script(["getBrowser"])
+            packages = [c.browser.get("package", "") for c in self.browser_cards]
+            available = set(repo_packages([p for p in packages if p]))
+            GLib.idle_add(self._apply_browser_states, default, available)
+
+        threading.Thread(target=worker, daemon=True).start()
+        return GLib.SOURCE_REMOVE
+
+    def _apply_browser_states(self, default_browser: str, available: set[str]) -> bool:
         for card in self.browser_cards:
-            is_installed = False
             installed_desktop = None
-
             for variant in card.browser.get("variants", []):
                 check_path = variant.get("check", "")
                 if check_path and os.path.exists(check_path):
-                    is_installed = True
                     installed_desktop = variant.get("desktop", "")
                     break
 
+            is_installed = installed_desktop is not None
             card.set_installed(is_installed)
+            card.set_available(card.browser.get("package", "") in available)
             card.detected_desktop = installed_desktop
-            card.set_selected(
-                is_installed and installed_desktop == current_browser_default
-            )
-
+            card.set_selected(is_installed and installed_desktop == default_browser)
         return GLib.SOURCE_REMOVE
 
     def _on_browser_select(self, selected_card: BrowserCard) -> None:
         browser = selected_card.browser
+        label = browser.get("label", "")
 
         # If already installed, just set as default (no panel needed)
-        is_installed = any(
-            os.path.exists(v.get("check", "")) for v in browser.get("variants", [])
-        )
-        if is_installed:
+        if selected_card._check_installed():
             thread = threading.Thread(
                 target=self._set_default_browser, args=(selected_card,), daemon=True
             )
             thread.start()
             return
 
-        # Not installed → show integrated install panel
-        self._start_install(selected_card)
+        if selected_card.available is False:
+            self._explain_unavailable_browser(label)
+            return
+
+        request = InstallRequest(
+            label=label,
+            icon=f"browsers/{selected_card.icon_name}.svg",
+            package=browser.get("package", ""),
+        )
+        selected_card.set_loading(True)
+        request_install(
+            selected_card,
+            request,
+            lambda job: self._show_browser_install(selected_card, job),
+            lambda: selected_card.set_loading(False),
+        )
+
+    def _explain_unavailable_browser(self, label: str) -> None:
+        responses = [("close", _("Close"), Adw.ResponseAppearance.DEFAULT)]
+        if command_available("big-store"):
+            responses.append(
+                ("store", _("Open Big Store"), Adw.ResponseAppearance.SUGGESTED)
+            )
+
+        def on_response(response: str) -> None:
+            if response == "store":
+                try:
+                    launch_command("big-store", self)
+                except GLib.Error as e:
+                    print(f"Could not open Big Store: {e}")
+
+        show_alert(
+            self,
+            _("%s is not available") % label,
+            _(
+                "%s is not in the configured repositories, so it cannot be "
+                "installed safely from here. You can look for it in Big Store, "
+                "which shows where each package comes from."
+            )
+            % label,
+            responses,
+            on_response,
+        )
 
     def _set_default_browser(self, card: BrowserCard) -> None:
         """Set an already-installed browser as default (background thread)."""
@@ -404,12 +435,12 @@ class WelcomeWindow(Adw.ApplicationWindow):
             _("Setting %s as default…") % browser_label
         )
         self._browser_loading_overlay.set_visible(True)
-        self._browser_loading_spinner.start()
+        self._browser_loading_spinner.set_visible(True)
         for card in self.browser_cards:
             card.set_sensitive(False)
 
     def _hide_browser_loading(self, browser_label: str = "") -> None:
-        self._browser_loading_spinner.stop()
+        self._browser_loading_spinner.set_visible(False)
         for card in self.browser_cards:
             card.set_sensitive(True)
         if browser_label:
@@ -424,135 +455,62 @@ class WelcomeWindow(Adw.ApplicationWindow):
         self._browser_loading_overlay.set_visible(False)
         return GLib.SOURCE_REMOVE
 
-    def _start_install(self, card: BrowserCard) -> None:
-        """Show the install panel and start the install process."""
+    def _show_browser_install(self, card: BrowserCard, job: InstallJob) -> None:
+        """Replace the browser grid with the install panel for job."""
+        card.set_loading(False)
         browser = card.browser
         browser_label = browser.get("label", "")
-        package = browser.get("package", "")
-        icon_path = (
-            os.path.join(APP_PATH, "image", "browsers", f"{package}.svg")
-            if package
-            else None
-        )
 
-        # Create and attach the install panel
-        panel = InstallPanel(browser_label, icon_path)
-        panel.set_done_callback(lambda: self._finish_install(browser_label))
+        panel = InstallPanel(browser_label, f"browsers/{card.icon_name}.svg")
+        panel.set_done_callback(self._finish_install)
+        panel.bind_job(job)
+        job.connect("finished", self._on_browser_job_finished, browser, panel)
 
-        # Store proc reference for cancel support
-        self._install_proc: subprocess.Popen[bytes] | None = None
-        panel.set_cancel_callback(self._cancel_install)
-
-        # Replace the installing page in the stack
         old = self.browser_stack.get_child_by_name("installing")
         if old:
             self.browser_stack.remove(old)
         self.browser_stack.add_named(panel, "installing")
         self.browser_stack.set_visible_child_name("installing")
-
-        # Disable navigation during install
-        self._set_nav_sensitive(False)
-
-        # Start pulse animation and background install
-        panel.start_pulse()
         self._install_panel = panel
 
-        thread = threading.Thread(
-            target=self._perform_browser_install,
-            args=(card, panel),
-            daemon=True,
-        )
-        thread.start()
+        # Keep the user on this page until they acknowledge the result
+        self._set_nav_sensitive(False)
 
-    def _cancel_install(self) -> None:
-        """Kill the running installation subprocess."""
-        proc = getattr(self, "_install_proc", None)
-        if proc and proc.poll() is None:
-            proc.terminate()
-
-    def _perform_browser_install(self, card: BrowserCard, panel: InstallPanel) -> None:
-        """Run browser installation script, reading output in real time."""
-        browser = card.browser
-        browser_label = browser.get("label", "")
-        package = browser.get("package", "")
-        script_path = os.path.join(APP_PATH, "scripts", "browser.sh")
-
-        success = False
-        try:
-            proc = subprocess.Popen(
-                [script_path, "install", package],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                stdin=subprocess.DEVNULL,
-                bufsize=0,
-            )
-            self._install_proc = proc
-
-            if proc.stdout is None:
-                raise OSError("Failed to capture process output")
-
-            self._read_process_output(proc, panel)
-            proc.wait(timeout=600)
-            success = proc.returncode == 0 and not panel.cancelled
-
-        except (OSError, subprocess.TimeoutExpired) as e:
-            GLib.idle_add(panel.append_log, str(e))
-            success = False
-
-        if panel.cancelled:
-            GLib.idle_add(self._finish_install, browser_label)
-            return
-
-        if success:
-            self._post_install_set_default(browser)
-            GLib.idle_add(self._finish_install, browser_label)
-        else:
-            GLib.idle_add(panel.set_error, browser_label)
-
-    @staticmethod
-    def _read_process_output(
-        proc: subprocess.Popen[bytes], panel: InstallPanel
+    def _on_browser_job_finished(
+        self, job: InstallJob, browser: dict, panel: InstallPanel
     ) -> None:
-        """Read subprocess output byte-by-byte, dispatching lines to the panel."""
-        assert proc.stdout is not None
-        buf = b""
-        fd = proc.stdout.fileno()
-        stall_notified = False
+        if job.state is not JobState.SUCCEEDED:
+            return
+        label = browser.get("label", "")
+        panel.set_success(label, _("Setting it as your default browser…"))
 
-        while True:
-            ready, _w, _x = select.select([fd], [], [], 5.0)
-            if not ready:
-                if not stall_notified:
-                    stall_notified = True
-                    GLib.idle_add(panel.append_log, _("Still working…"))
-                continue
-            stall_notified = False
-            chunk = os.read(fd, 4096)
-            if not chunk:
-                if buf:
-                    line = buf.decode("utf-8", errors="replace")
-                    if not line.startswith("STATUS:"):
-                        GLib.idle_add(panel.append_log, line)
-                break
-            if panel.cancelled:
-                proc.terminate()
-                break
-            buf += chunk
-            buf = _flush_line_buffer(buf, panel)
+        def worker() -> None:
+            done = self._post_install_set_default(browser)
+            message = (
+                _("It has been set as your default browser.")
+                if done
+                else _("The application is ready to use.")
+            )
+            GLib.idle_add(panel.set_success, label, message)
 
-    def _post_install_set_default(self, browser: dict) -> None:
-        """Set the newly installed browser as default."""
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _post_install_set_default(self, browser: dict) -> bool:
+        """Set the newly installed browser as default (background thread)."""
         for variant in browser.get("variants", []):
             if os.path.exists(variant.get("check", "")):
                 desktop = variant.get("desktop", "")
                 if desktop:
                     self._run_browser_script(["setBrowser", desktop])
+                    return True
                 break
+        return False
 
-    def _finish_install(self, _browser_label: str) -> None:
+    def _finish_install(self) -> None:
         """Called when user clicks Done on the install panel."""
         self._set_nav_sensitive(True)
         self.browser_stack.set_visible_child_name("browsers")
+        self._install_panel = None
         self.refresh_browser_states()
 
     def _set_nav_sensitive(self, sensitive: bool) -> None:
@@ -576,13 +534,8 @@ class WelcomeWindow(Adw.ApplicationWindow):
         bar.set_start_widget(self.startup_check)
 
         # Collect page titles for progress dots
-        page_titles = [_("Welcome")]
-        if self.pages_data:
-            for p in self.pages_data:
-                page_titles.append(_(p.get("title", "")))
-
-        total = 1 + (len(self.pages_data) if self.pages_data else 0)
-        self.progress = ProgressDots(total, page_titles)
+        page_titles = [_("Welcome")] + [_(p["title"]) for p in self.pages_data]
+        self.progress = ProgressDots(len(page_titles), page_titles)
         bar.set_center_widget(self.progress)
 
         nav = Gtk.Box(spacing=10)
@@ -595,6 +548,7 @@ class WelcomeWindow(Adw.ApplicationWindow):
         self.back_btn.add_css_class("nav-button")
         self.back_btn.add_css_class("back")
         self.back_btn.set_visible(False)
+        self.back_btn.set_tooltip_text(_("Previous page"))
         # Accessibility
         self.back_btn.update_property(
             [Gtk.AccessibleProperty.LABEL], [_("Previous page")]
@@ -608,10 +562,32 @@ class WelcomeWindow(Adw.ApplicationWindow):
         self.next_btn.set_child(next_icon)
         self.next_btn.add_css_class("nav-button")
         self.next_btn.add_css_class("next")
+        self.next_btn.set_tooltip_text(_("Next page"))
         # Accessibility
         self.next_btn.update_property([Gtk.AccessibleProperty.LABEL], [_("Next page")])
         self.next_btn.connect("clicked", self._on_next)
         nav.append(self.next_btn)
+
+    def _setup_shortcuts(self) -> None:
+        """Alt+Left / Alt+Right move between pages."""
+        controller = Gtk.ShortcutController()
+        controller.set_scope(Gtk.ShortcutScope.GLOBAL)
+        for accel, callback in (
+            ("<Alt>Left", self._on_back),
+            ("<Alt>Right", self._on_next_shortcut),
+        ):
+            controller.add_shortcut(
+                Gtk.Shortcut.new(
+                    Gtk.ShortcutTrigger.parse_string(accel),
+                    Gtk.CallbackAction.new(lambda *_a, cb=callback: cb(None) or True),
+                )
+            )
+        self.add_controller(controller)
+
+    def _on_next_shortcut(self, _btn: Gtk.Button | None) -> None:
+        # Never close the window from the keyboard shortcut on the last page
+        if self.current_page < len(self.page_widgets) - 1:
+            self._on_next(None)
 
     def _update_nav(self) -> None:
         is_first = self.current_page == 0
@@ -624,6 +600,7 @@ class WelcomeWindow(Adw.ApplicationWindow):
             self.next_btn.remove_css_class("next")
             self.next_btn.add_css_class("finish-button")
             self.next_btn.set_child(Gtk.Label(label=_("Get Started")))
+            self.next_btn.set_tooltip_text(None)
             self.next_btn.update_property(
                 [Gtk.AccessibleProperty.LABEL], [_("Get Started")]
             )
@@ -634,17 +611,22 @@ class WelcomeWindow(Adw.ApplicationWindow):
             icon = Gtk.Image.new_from_icon_name("go-next-symbolic")
             icon.set_pixel_size(16)
             self.next_btn.set_child(icon)
+            self.next_btn.set_tooltip_text(_("Next page"))
             self.next_btn.update_property(
                 [Gtk.AccessibleProperty.LABEL], [_("Next page")]
             )
 
-    def _on_back(self, _btn: Gtk.Button) -> None:
+    def _on_back(self, _btn: Gtk.Button | None) -> None:
+        if not self.back_btn.get_sensitive():
+            return
         if self.current_page > 0:
             self.current_page -= 1
             self.stack.set_transition_type(Gtk.StackTransitionType.SLIDE_RIGHT)
             self._navigate()
 
-    def _on_next(self, _btn: Gtk.Button) -> None:
+    def _on_next(self, _btn: Gtk.Button | None) -> None:
+        if not self.next_btn.get_sensitive():
+            return
         if self.current_page < len(self.page_widgets) - 1:
             self.current_page += 1
             self.stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT)
@@ -653,13 +635,47 @@ class WelcomeWindow(Adw.ApplicationWindow):
             self.close()
 
     def _navigate(self) -> None:
-        if self.current_page == 0:
-            self.stack.set_visible_child_name("welcome")
-        else:
-            self.stack.set_visible_child_name(f"page_{self.current_page - 1}")
+        built = self.page_widgets[self.current_page] is not None
+        page = self._page(self.current_page)
+        self.stack.set_visible_child(page)
+        if built and isinstance(page, AppsPage):
+            # Apps may have been installed or removed elsewhere meanwhile
+            page.refresh()
+        # After the transition, so preparing it never delays the animation
+        GLib.timeout_add(
+            self.stack.get_transition_duration() + 100, self._prepare_next_page
+        )
 
         self.progress.set_page(self.current_page)
         self._update_nav()
+
+    # ------------------------------------------------------------------
+    # Closing
+    # ------------------------------------------------------------------
+
+    def _on_close_request(self, _window: Gtk.Window) -> bool:
+        if self._close_confirmed or not InstallManager.get_default().busy:
+            return False
+
+        def on_response(response: str) -> None:
+            if response == "close":
+                self._close_confirmed = True
+                self.close()
+
+        show_alert(
+            self,
+            _("An installation is in progress"),
+            _(
+                "If you close the window now, the installation will continue in "
+                "the background, but you will not see its result."
+            ),
+            [
+                ("keep", _("Keep Open"), Adw.ResponseAppearance.DEFAULT),
+                ("close", _("Close Anyway"), Adw.ResponseAppearance.DESTRUCTIVE),
+            ],
+            on_response,
+        )
+        return True
 
     # ------------------------------------------------------------------
     # Startup service
@@ -671,10 +687,12 @@ class WelcomeWindow(Adw.ApplicationWindow):
                 ["systemctl", "--user", "is-enabled", "biglinux-welcome.service"],
                 capture_output=True,
                 text=True,
+                timeout=5,
+                check=False,
             )
             # "masked" means user disabled it; "enabled" means active
             return result.stdout.strip() != "masked"
-        except OSError:
+        except (OSError, subprocess.TimeoutExpired):
             return False
 
     def _on_startup_toggled(self, btn: Gtk.CheckButton) -> None:
@@ -684,6 +702,8 @@ class WelcomeWindow(Adw.ApplicationWindow):
             subprocess.run(
                 ["systemctl", "--user", action, "biglinux-welcome.service"],
                 capture_output=True,
+                timeout=5,
+                check=False,
             )
-        except OSError as e:
+        except (OSError, subprocess.TimeoutExpired) as e:
             print(f"Error toggling autostart: {e}")

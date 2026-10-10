@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-welcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-03 09:00-0300\n"
+"POT-Creation-Date: 2026-10-10 05:22-0300\n"
 "PO-Revision-Date: 2026-10-03 09:00-0300\n"
 "Last-Translator: \n"
 "Language-Team: be\n"
@@ -12,415 +12,557 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
+#: usr/share/biglinux/welcome/widgets.py:53
+msgid "OK"
+msgstr "ОК"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 120
-#: usr/share/biglinux/welcome/widgets.py:120
+#: usr/share/biglinux/welcome/widgets.py:230
 msgid "Kernel"
 msgstr "Ядро"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 121
-#: usr/share/biglinux/welcome/widgets.py:121
+#: usr/share/biglinux/welcome/widgets.py:231
 msgid "Desktop"
 msgstr "Працоўнае асяроддзе"
 
+#: usr/share/biglinux/welcome/widgets.py:231
+#: usr/share/biglinux/welcome/widgets.py:232
+msgid "Unknown"
+msgstr "Невядома"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 123
-#: usr/share/biglinux/welcome/widgets.py:123
+#: usr/share/biglinux/welcome/widgets.py:232
 msgid "Display"
 msgstr "Дысплэй"
 
+#: usr/share/biglinux/welcome/widgets.py:313
+#, python-format
+msgid "QR code: %s"
+msgstr "QR-код: %s"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 241
+#: usr/share/biglinux/welcome/widgets.py:391
+#: usr/share/biglinux/welcome/apps_page.py:601
+msgid "Could not open application"
+msgstr "Не ўдалося адкрыць праграму"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 232
-#: usr/share/biglinux/welcome/widgets.py:232
+#: usr/share/biglinux/welcome/widgets.py:392
+#: usr/share/biglinux/welcome/apps_page.py:602
 #, python-format
 msgid "Could not open %s. It may not be installed."
 msgstr "Не ўдалося адкрыць %s. Магчыма, праграма не ўсталявана."
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 241
-#: usr/share/biglinux/welcome/widgets.py:241
-msgid "Could not open application"
-msgstr "Не ўдалося адкрыць праграму"
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 244
-#: usr/share/biglinux/welcome/widgets.py:244
-msgid "OK"
-msgstr "ОК"
-
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 328
-#: usr/share/biglinux/welcome/widgets.py:328
+#: usr/share/biglinux/welcome/widgets.py:482
 msgid "installed"
 msgstr "усталявана"
 
+#: usr/share/biglinux/welcome/widgets.py:484
+msgid "unavailable"
+msgstr "недаступна"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 330
-#: usr/share/biglinux/welcome/widgets.py:330
+#: usr/share/biglinux/welcome/widgets.py:486
 msgid "not installed"
 msgstr "не ўсталявана"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 332
-#: usr/share/biglinux/welcome/widgets.py:332
+#: usr/share/biglinux/welcome/widgets.py:488
 msgid "default browser"
 msgstr "прадвызначаны браўзер"
 
+#: usr/share/biglinux/welcome/widgets.py:511
+#, python-format
+msgid "%s is not available in the configured repositories"
+msgstr "%s няма ў наладжаных рэпазіторыях"
+
+#: usr/share/biglinux/welcome/widgets.py:514
+#: usr/share/biglinux/welcome/apps_page.py:440
+#, python-format
+msgid "Install %s"
+msgstr "Усталяваць %s"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 489
-#: usr/share/biglinux/welcome/widgets.py:489
+#: usr/share/biglinux/welcome/widgets.py:643
 #, python-format
 msgid "Installing %s…"
 msgstr "Усталяванне %s…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 495
-#: usr/share/biglinux/welcome/widgets.py:495
+#: usr/share/biglinux/welcome/widgets.py:651
 msgid "Preparing download…"
 msgstr "Падрыхтоўка спампоўвання…"
 
+#: usr/share/biglinux/welcome/widgets.py:671
+msgid "Installation progress"
+msgstr "Ход усталявання"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 522
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
-#: usr/share/biglinux/welcome/widgets.py:522
-#: usr/share/biglinux/welcome/widgets.py:789
+#: usr/share/biglinux/welcome/widgets.py:683
+#: usr/share/biglinux/welcome/widgets.py:958
 msgid "View details"
 msgstr "Прагляд падрабязнасцей"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 529
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 795
-#: usr/share/biglinux/welcome/widgets.py:529
-#: usr/share/biglinux/welcome/widgets.py:795
+#: usr/share/biglinux/welcome/widgets.py:690
+#: usr/share/biglinux/welcome/widgets.py:964
 msgid "Show installation details"
 msgstr "Паказаць падрабязнасці ўсталявання"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 557
-#: usr/share/biglinux/welcome/widgets.py:557
+#: usr/share/biglinux/welcome/widgets.py:718
 msgid "Installation log output"
 msgstr "Вывад журнала ўсталявання"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 576
-#: usr/share/biglinux/welcome/widgets.py:576
+#: usr/share/biglinux/welcome/widgets.py:739
+#: usr/share/biglinux/welcome/apps_page.py:312
+#: usr/share/biglinux/welcome/install_flow.py:237
+#: usr/share/biglinux/welcome/install_flow.py:284
+#: usr/share/biglinux/welcome/install_flow.py:321
 msgid "Cancel"
 msgstr "Скасаваць"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 580
-#: usr/share/biglinux/welcome/widgets.py:580
+#: usr/share/biglinux/welcome/widgets.py:744
 msgid "Cancel installation"
 msgstr "Скасаваць усталяванне"
 
+#: usr/share/biglinux/welcome/widgets.py:749
+#: usr/share/biglinux/welcome/apps_page.py:453
+msgid "Open"
+msgstr "Адкрыць"
+
+#: usr/share/biglinux/welcome/widgets.py:753
+#: usr/share/biglinux/welcome/apps_page.py:455
+#, python-format
+msgid "Open %s"
+msgstr "Адкрыць %s"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 585
-#: usr/share/biglinux/welcome/widgets.py:585
+#: usr/share/biglinux/welcome/widgets.py:758
 msgid "Done"
 msgstr "Гатова"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 590
-#: usr/share/biglinux/welcome/widgets.py:590
+#: usr/share/biglinux/welcome/widgets.py:763
 msgid "Close installation panel"
 msgstr "Закрыць панэль усталявання"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 598
-#: usr/share/biglinux/welcome/widgets.py:598
+#: usr/share/biglinux/welcome/widgets.py:771
+#: usr/share/biglinux/welcome/apps_page.py:302
 #, python-format
 msgid "Installing %s"
 msgstr "Усталяванне %s"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 667
-#: usr/share/biglinux/welcome/widgets.py:667
-msgid "It has been set as your default browser."
-msgstr "Ён прызначаны прадвызначаным браўзерам."
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 756
+#: usr/share/biglinux/welcome/widgets.py:815
+#: usr/share/biglinux/welcome/apps_page.py:556
+msgid "Cannot cancel during installation"
+msgstr "Немагчыма скасаваць падчас усталявання"
+
+#: usr/share/biglinux/welcome/widgets.py:889
+#: usr/share/biglinux/welcome/window.py:492
+msgid "The application is ready to use."
+msgstr "Праграма гатовая да выкарыстання."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 668
-#: usr/share/biglinux/welcome/widgets.py:668
+#: usr/share/biglinux/welcome/widgets.py:890
 #, python-format
 msgid "%s installed successfully!"
 msgstr "%s паспяхова ўсталяваны!"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 676
-#: usr/share/biglinux/welcome/widgets.py:676
+#: usr/share/biglinux/welcome/widgets.py:899
 #, python-format
 msgid "%s installed successfully"
 msgstr "%s паспяхова ўсталяваны"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 684
-#: usr/share/biglinux/welcome/widgets.py:684
+#: usr/share/biglinux/welcome/widgets.py:907
 #, python-format
 msgid "Failed to install %s"
 msgstr "Не ўдалося ўсталяваць %s"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 687
-#: usr/share/biglinux/welcome/widgets.py:687
+#: usr/share/biglinux/welcome/widgets.py:911
 msgid "Check the details below for more information."
 msgstr "Дадатковыя звесткі глядзіце ў падрабязнасцях ніжэй."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 694
-#: usr/share/biglinux/welcome/widgets.py:694
+#: usr/share/biglinux/welcome/widgets.py:919
 #, python-format
 msgid "Installation of %s failed"
 msgstr "Не ўдалося ўсталяваць %s"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 756
-#: usr/share/biglinux/welcome/widgets.py:756
-msgid "Cannot cancel during installation"
-msgstr "Немагчыма скасаваць падчас усталявання"
+#: usr/share/biglinux/welcome/widgets.py:927
+#: usr/share/biglinux/welcome/widgets.py:937
+msgid "Installation cancelled"
+msgstr "Усталяванне скасавана"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 767
-#: usr/share/biglinux/welcome/widgets.py:767
-#, python-brace-format
-msgid "Downloading {name}…"
-msgstr "Спампоўванне {name}…"
+#: usr/share/biglinux/welcome/widgets.py:929
+#: usr/share/biglinux/welcome/install_flow.py:150
+msgid "Authentication was cancelled. Nothing was installed."
+msgstr "Аўтэнтыфікацыя скасавана. Нічога не ўсталявана."
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 779
-#: usr/share/biglinux/welcome/widgets.py:779
-#, python-brace-format
-msgid "Downloading… {pct}% ({speed})"
-msgstr "Спампоўванне… {pct}% ({speed})"
+#: usr/share/biglinux/welcome/widgets.py:931
+msgid "Nothing was installed."
+msgstr "Нічога не ўсталявана."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 789
-#: usr/share/biglinux/welcome/widgets.py:789
+#: usr/share/biglinux/welcome/widgets.py:958
 msgid "Hide details"
 msgstr "Схаваць падрабязнасці"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 793
-#: usr/share/biglinux/welcome/widgets.py:793
+#: usr/share/biglinux/welcome/widgets.py:962
 msgid "Hide installation details"
 msgstr "Схаваць падрабязнасці ўсталявання"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 802
-#: usr/share/biglinux/welcome/widgets.py:802
+#: usr/share/biglinux/welcome/widgets.py:971
 msgid "Cancelling…"
 msgstr "Скасаванне…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 803
-#: usr/share/biglinux/welcome/widgets.py:803
+#: usr/share/biglinux/welcome/widgets.py:972
+#: usr/share/biglinux/welcome/apps_page.py:561
+#: usr/share/biglinux/welcome/install_backend.py:726
 msgid "Cancelling installation…"
 msgstr "Скасаванне ўсталявання…"
 
+#: usr/share/biglinux/welcome/window.py:91
+msgid "About BigLinux Welcome"
+msgstr "Пра BigLinux Welcome"
+
+#: usr/share/biglinux/welcome/window.py:93
+#: usr/share/biglinux/welcome/window.py:94
+msgid "Main Menu"
+msgstr "Галоўнае меню"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 160
-#: usr/share/biglinux/welcome/window.py:160
+#: usr/share/biglinux/welcome/window.py:178
 msgid "In search of the perfect system!"
 msgstr "У пошуках ідэальнай сістэмы!"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 165
-#: usr/share/biglinux/welcome/window.py:165
+#: usr/share/biglinux/welcome/window.py:182
 msgid "Welcome to your new system"
 msgstr "Вітаем у вашай новай сістэме"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 321
-#: usr/share/biglinux/welcome/window.py:321
+#: usr/share/biglinux/welcome/window.py:303
 msgid "Changing default browser"
 msgstr "Змена прадвызначанага браўзера"
 
+#: usr/share/biglinux/welcome/window.py:391
+msgid "Close"
+msgstr "Закрыць"
+
+#: usr/share/biglinux/welcome/window.py:394
+msgid "Open Big Store"
+msgstr "Адкрыць Big Store"
+
+#: usr/share/biglinux/welcome/window.py:406
+#, python-format
+msgid "%s is not available"
+msgstr "Праграма %s недаступная"
+
+#: usr/share/biglinux/welcome/window.py:408
+#, python-format
+msgid ""
+"%s is not in the configured repositories, so it cannot be installed safely "
+"from here. You can look for it in Big Store, which shows where each package "
+"comes from."
+msgstr ""
+"Праграмы %s няма ў наладжаных рэпазіторыях, таму яе нельга бяспечна "
+"ўсталяваць адсюль. Вы можаце пашукаць яе ў Big Store, дзе паказана крыніца "
+"кожнага пакета."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 404
-#: usr/share/biglinux/welcome/window.py:404
+#: usr/share/biglinux/welcome/window.py:435
 #, python-format
 msgid "Setting %s as default…"
 msgstr "Прызначэнне %s прадвызначаным браўзерам…"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 417
-#: usr/share/biglinux/welcome/window.py:417
+#: usr/share/biglinux/welcome/window.py:448
 #, python-format
 msgid "%s set as default"
 msgstr "%s прызначаны прадвызначаным браўзерам"
 
-# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 527
-#: usr/share/biglinux/welcome/window.py:527
-msgid "Still working…"
-msgstr "Аперацыя яшчэ выконваецца…"
+#: usr/share/biglinux/welcome/window.py:485
+msgid "Setting it as your default browser…"
+msgstr "Прызначэнне прадвызначаным браўзерам…"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 667
+#: usr/share/biglinux/welcome/window.py:490
+msgid "It has been set as your default browser."
+msgstr "Ён прызначаны прадвызначаным браўзерам."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 572
-#: usr/share/biglinux/welcome/window.py:572
+#: usr/share/biglinux/welcome/window.py:530
 msgid "Show on startup"
 msgstr "Паказваць пры запуску"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 579
-#: usr/share/biglinux/welcome/window.py:579
+#: usr/share/biglinux/welcome/window.py:537
 msgid "Welcome"
 msgstr "Вітаем"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 600
-#: usr/share/biglinux/welcome/window.py:600
+#: usr/share/biglinux/welcome/window.py:551
+#: usr/share/biglinux/welcome/window.py:554
 msgid "Previous page"
 msgstr "Папярэдняя старонка"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 612
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 638
-#: usr/share/biglinux/welcome/window.py:612
-#: usr/share/biglinux/welcome/window.py:638
+#: usr/share/biglinux/welcome/window.py:565
+#: usr/share/biglinux/welcome/window.py:567
+#: usr/share/biglinux/welcome/window.py:614
+#: usr/share/biglinux/welcome/window.py:616
 msgid "Next page"
 msgstr "Наступная старонка"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 626
 # File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 628
-#: usr/share/biglinux/welcome/window.py:626
-#: usr/share/biglinux/welcome/window.py:628
+#: usr/share/biglinux/welcome/window.py:602
+#: usr/share/biglinux/welcome/window.py:605
 msgid "Get Started"
 msgstr "Пачаць"
 
+#: usr/share/biglinux/welcome/window.py:667
+msgid "An installation is in progress"
+msgstr "Ідзе ўсталяванне"
+
+#: usr/share/biglinux/welcome/window.py:669
+msgid ""
+"If you close the window now, the installation will continue in the "
+"background, but you will not see its result."
+msgstr ""
+"Калі закрыць акно зараз, усталяванне працягнецца ў фонавым рэжыме, але вы не "
+"ўбачыце яго вынік."
+
+#: usr/share/biglinux/welcome/window.py:673
+msgid "Keep Open"
+msgstr "Не закрываць"
+
+#: usr/share/biglinux/welcome/window.py:674
+msgid "Close Anyway"
+msgstr "Усё роўна закрыць"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:13
+msgid ""
+"Access different artificial intelligence services directly from KDE Plasma."
+msgstr ""
+"Атрымлівайце доступ да розных сэрвісаў штучнага інтэлекту непасрэдна з KDE "
+"Plasma."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 13
-#: usr/share/biglinux/welcome/translatable_strings.py:13
+#: usr/share/biglinux/welcome/translatable_strings.py:14
 msgid "Accessibility"
 msgstr "Спецыяльныя магчымасці"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 14
-#: usr/share/biglinux/welcome/translatable_strings.py:14
+#: usr/share/biglinux/welcome/translatable_strings.py:15
 msgid "AppStore"
 msgstr "App Store"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:16
+msgid "Applications to Install"
+msgstr "Праграмы для ўсталявання"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 15
-#: usr/share/biglinux/welcome/translatable_strings.py:15
+#: usr/share/biglinux/welcome/translatable_strings.py:17
 msgid "Ashy Terminal"
 msgstr "Ashy Terminal"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 16
-#: usr/share/biglinux/welcome/translatable_strings.py:16
+#: usr/share/biglinux/welcome/translatable_strings.py:18
 msgid "Audio Converter"
 msgstr "Аўдыяканвертар"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:19
+msgid "Big Advogados"
+msgstr "Big Advogados"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:20
+msgid "Big Game Mode"
+msgstr "Big Game Mode"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:21
+msgid "Big Remote Play"
+msgstr "Big Remote Play"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 17
-#: usr/share/biglinux/welcome/translatable_strings.py:17
+#: usr/share/biglinux/welcome/translatable_strings.py:22
 msgid "Big Store"
 msgstr "Big Store"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:23
+msgid "BigCam"
+msgstr "BigCam"
+
+#: usr/share/biglinux/welcome/translatable_strings.py:24
+msgid "BigLinux Body Tracker"
+msgstr "BigLinux Body Tracker"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 18
-#: usr/share/biglinux/welcome/translatable_strings.py:18
+#: usr/share/biglinux/welcome/translatable_strings.py:25
 msgid "BigLinux Info"
 msgstr "Звесткі пра BigLinux"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 19
-#: usr/share/biglinux/welcome/translatable_strings.py:19
+#: usr/share/biglinux/welcome/translatable_strings.py:26
 msgid "BigLinux Settings"
 msgstr "Налады BigLinux"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 20
-#: usr/share/biglinux/welcome/translatable_strings.py:20
+#: usr/share/biglinux/welcome/translatable_strings.py:27
 msgid "Brave"
 msgstr "Brave"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:28
+msgid "ChatAI"
+msgstr "ChatAI"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 21
-#: usr/share/biglinux/welcome/translatable_strings.py:21
+#: usr/share/biglinux/welcome/translatable_strings.py:29
 msgid "Choose Your Avatar"
 msgstr "Выберыце свой аватар"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 22
-#: usr/share/biglinux/welcome/translatable_strings.py:22
+#: usr/share/biglinux/welcome/translatable_strings.py:30
 msgid "Choose your default browser"
 msgstr "Выберыце прадвызначаны браўзер"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 23
-#: usr/share/biglinux/welcome/translatable_strings.py:23
+#: usr/share/biglinux/welcome/translatable_strings.py:31
 msgid "Chrome"
 msgstr "Chrome"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 24
-#: usr/share/biglinux/welcome/translatable_strings.py:24
+#: usr/share/biglinux/welcome/translatable_strings.py:32
 msgid "Chromium"
 msgstr "Chromium"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 25
-#: usr/share/biglinux/welcome/translatable_strings.py:25
-msgid "Configure voice"
-msgstr "Наладзіць голас"
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 26
-#: usr/share/biglinux/welcome/translatable_strings.py:26
+#: usr/share/biglinux/welcome/translatable_strings.py:33
 msgid "Control Center"
 msgstr "Цэнтр кіравання"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:34
+msgid ""
+"Discover and install powerful applications created for BigLinux. Enhance "
+"gaming, remote access, multimedia, productivity, and accessibility with just "
+"one click."
+msgstr ""
+"Адкрыйце для сябе і ўсталюйце магутныя праграмы, створаныя для BigLinux. "
+"Пашырайце магчымасці для гульняў, аддаленага доступу, мультымедыя, "
+"прадукцыйнай працы і даступнасці адным націскам."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 27
-#: usr/share/biglinux/welcome/translatable_strings.py:27
+#: usr/share/biglinux/welcome/translatable_strings.py:35
 msgid "Discover some features"
 msgstr "Пазнаёмцеся з некаторымі магчымасцямі"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 28
-#: usr/share/biglinux/welcome/translatable_strings.py:28
+#: usr/share/biglinux/welcome/translatable_strings.py:36
 msgid "Display Settings"
 msgstr "Налады дысплэя"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 29
-#: usr/share/biglinux/welcome/translatable_strings.py:29
+#: usr/share/biglinux/welcome/translatable_strings.py:37
 msgid "Donate"
 msgstr "Ахвяраваць"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 30
-#: usr/share/biglinux/welcome/translatable_strings.py:30
+#: usr/share/biglinux/welcome/translatable_strings.py:38
 msgid "Donation and Social Networks"
 msgstr "Ахвяраванні і сацыяльныя сеткі"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 31
-#: usr/share/biglinux/welcome/translatable_strings.py:31
+#: usr/share/biglinux/welcome/translatable_strings.py:39
 msgid "Driver Installation and Hardware Information"
 msgstr "Усталяванне драйвераў і звесткі пра абсталяванне"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 32
-#: usr/share/biglinux/welcome/translatable_strings.py:32
-msgid "Driver Manager"
-msgstr "Кіраванне драйверамі"
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 33
-#: usr/share/biglinux/welcome/translatable_strings.py:33
+#: usr/share/biglinux/welcome/translatable_strings.py:40
 msgid "Edge"
 msgstr "Edge"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 34
-#: usr/share/biglinux/welcome/translatable_strings.py:34
+#: usr/share/biglinux/welcome/translatable_strings.py:41
 msgid "Falkon"
 msgstr "Falkon"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 35
-#: usr/share/biglinux/welcome/translatable_strings.py:35
+#: usr/share/biglinux/welcome/translatable_strings.py:42
 msgid "Family Safety"
 msgstr "Бяспека сям’і"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 36
-#: usr/share/biglinux/welcome/translatable_strings.py:36
+#: usr/share/biglinux/welcome/translatable_strings.py:43
 msgid "Firefox"
 msgstr "Firefox"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 37
-#: usr/share/biglinux/welcome/translatable_strings.py:37
+#: usr/share/biglinux/welcome/translatable_strings.py:44
 msgid "Forum"
 msgstr "Форум"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:45
+msgid "Hardware Management"
+msgstr "Кіраванне абсталяваннем"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 38
-#: usr/share/biglinux/welcome/translatable_strings.py:38
+#: usr/share/biglinux/welcome/translatable_strings.py:46
 msgid "Initial Settings"
 msgstr "Пачатковыя налады"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 39
-#: usr/share/biglinux/welcome/translatable_strings.py:39
-msgid "Install or Remove Drivers and Firmwares easily."
-msgstr ""
-"Лёгка ўсталёўвайце або выдаляйце драйверы і ўбудаванае праграмнае "
-"забеспячэнне."
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 40
-#: usr/share/biglinux/welcome/translatable_strings.py:40
+#: usr/share/biglinux/welcome/translatable_strings.py:47
 msgid "KDE Connect"
 msgstr "KDE Connect"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 41
-#: usr/share/biglinux/welcome/translatable_strings.py:41
+#: usr/share/biglinux/welcome/translatable_strings.py:48
 msgid ""
 "KDE Connect is an application that facilitates wireless communication and "
 "data transfer between devices on local networks. Available on the Google "
@@ -431,56 +573,82 @@ msgstr ""
 "для Android і ў App Store для iPhone."
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
-# line: 42
-#: usr/share/biglinux/welcome/translatable_strings.py:42
-msgid "Kernel Manager"
-msgstr "Кіраванне ядрамі"
-
-# File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 43
-#: usr/share/biglinux/welcome/translatable_strings.py:43
+#: usr/share/biglinux/welcome/translatable_strings.py:49
 msgid "Language Packs"
 msgstr "Моўныя пакеты"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:50
+msgid ""
+"Legal toolkit for Brazilian lawyers: digital certificates (A1/A3), PDF "
+"signing, WebSigner, and access to court systems."
+msgstr ""
+"Юрыдычныя інструменты для бразільскіх адвакатаў: лічбавыя сертыфікаты (A1/"
+"A3), подпіс PDF, WebSigner і доступ да судовых сістэм."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 44
-#: usr/share/biglinux/welcome/translatable_strings.py:44
+#: usr/share/biglinux/welcome/translatable_strings.py:51
 msgid "Librewolf"
 msgstr "Librewolf"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:52
+msgid ""
+"Manage drivers, firmware, and kernels, and check information about your "
+"hardware."
+msgstr ""
+"Кіруйце драйверамі, мікрапраграмамі і ядрамі, а таксама праглядайце звесткі "
+"пра абсталяванне."
+
+#: usr/share/biglinux/welcome/translatable_strings.py:53
+msgid ""
+"Manage webcams, video sources, and multimedia features in one central "
+"interface."
+msgstr ""
+"Кіруйце вэб-камерамі, крыніцамі відэа і мультымедыйнымі функцыямі ў адзіным "
+"інтэрфейсе."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 45
-#: usr/share/biglinux/welcome/translatable_strings.py:45
+#: usr/share/biglinux/welcome/translatable_strings.py:54
 msgid "Network Info"
 msgstr "Звесткі пра сетку"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 46
-#: usr/share/biglinux/welcome/translatable_strings.py:46
+#: usr/share/biglinux/welcome/translatable_strings.py:55
 msgid "Noise Reduction"
 msgstr "Падаўленне шуму"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 47
-#: usr/share/biglinux/welcome/translatable_strings.py:47
+#: usr/share/biglinux/welcome/translatable_strings.py:56
 msgid "OCR to PDF"
 msgstr "OCR у PDF"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 48
-#: usr/share/biglinux/welcome/translatable_strings.py:48
+#: usr/share/biglinux/welcome/translatable_strings.py:57
 msgid "Open Parental Controls"
 msgstr "Адкрыць бацькоўскі кантроль"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 49
-#: usr/share/biglinux/welcome/translatable_strings.py:49
+#: usr/share/biglinux/welcome/translatable_strings.py:58
 msgid "Opera"
 msgstr "Opera"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:59
+msgid ""
+"Optimize your games with performance profiles, graphics features, "
+"monitoring, and advanced settings."
+msgstr ""
+"Аптымізуйце гульні з дапамогай профіляў прадукцыйнасці, графічных функцый, "
+"маніторынгу і пашыраных налад."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 50
-#: usr/share/biglinux/welcome/translatable_strings.py:50
+#: usr/share/biglinux/welcome/translatable_strings.py:60
 msgid "Our platform is collaborative, join this evolution."
 msgstr ""
 "Наша платформа развіваецца дзякуючы сумеснай працы. Далучайцеся да яе "
@@ -488,19 +656,19 @@ msgstr ""
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 51
-#: usr/share/biglinux/welcome/translatable_strings.py:51
+#: usr/share/biglinux/welcome/translatable_strings.py:61
 msgid "PlayStore"
 msgstr "Play Store"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 52
-#: usr/share/biglinux/welcome/translatable_strings.py:52
+#: usr/share/biglinux/welcome/translatable_strings.py:62
 msgid "Printers"
 msgstr "Прынтары"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 53
-#: usr/share/biglinux/welcome/translatable_strings.py:53
+#: usr/share/biglinux/welcome/translatable_strings.py:63
 msgid ""
 "Protect your children online. Set up supervised accounts, screen time, and "
 "content filters."
@@ -510,43 +678,55 @@ msgstr ""
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 54
-#: usr/share/biglinux/welcome/translatable_strings.py:54
+#: usr/share/biglinux/welcome/translatable_strings.py:64
 msgid "Session and Themes"
 msgstr "Сеанс і тэмы"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 55
-#: usr/share/biglinux/welcome/translatable_strings.py:55
+#: usr/share/biglinux/welcome/translatable_strings.py:65
 msgid "Set your default browser."
 msgstr "Прызначце прадвызначаны браўзер."
 
+#: usr/share/biglinux/welcome/translatable_strings.py:66
+msgid "Share and play games remotely with other devices and friends."
+msgstr "Дзяліцеся гульнямі і гуляйце аддалена з сябрамі і на іншых прыладах."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 56
-#: usr/share/biglinux/welcome/translatable_strings.py:56
+#: usr/share/biglinux/welcome/translatable_strings.py:67
 msgid "Telegram"
 msgstr "Telegram"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:68
+msgid "Text Narrator"
+msgstr "Дыктар тэксту"
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 57
-#: usr/share/biglinux/welcome/translatable_strings.py:57
+#: usr/share/biglinux/welcome/translatable_strings.py:69
 msgid "Time Shift"
 msgstr "Timeshift"
 
+#: usr/share/biglinux/welcome/translatable_strings.py:70
+msgid "Use movements captured by your webcam to control your computer."
+msgstr "Кіруйце камп'ютарам з дапамогай рухаў, якія адсочвае вэб-камера."
+
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 58
-#: usr/share/biglinux/welcome/translatable_strings.py:58
+#: usr/share/biglinux/welcome/translatable_strings.py:71
 msgid "Video Converter"
 msgstr "Відэаканвертар"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 59
-#: usr/share/biglinux/welcome/translatable_strings.py:59
+#: usr/share/biglinux/welcome/translatable_strings.py:72
 msgid "Vivaldi"
 msgstr "Vivaldi"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 60
-#: usr/share/biglinux/welcome/translatable_strings.py:60
+#: usr/share/biglinux/welcome/translatable_strings.py:73
 msgid ""
 "We provide comprehensive settings for you to select in an extremely simple "
 "way."
@@ -554,19 +734,19 @@ msgstr "Мы прапануем шырокі выбар налад, якія л�
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 61
-#: usr/share/biglinux/welcome/translatable_strings.py:61
+#: usr/share/biglinux/welcome/translatable_strings.py:74
 msgid "WebApps"
 msgstr "Вэб-праграмы"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 62
-#: usr/share/biglinux/welcome/translatable_strings.py:62
+#: usr/share/biglinux/welcome/translatable_strings.py:75
 msgid "YouTube"
 msgstr "YouTube"
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 63
-#: usr/share/biglinux/welcome/translatable_strings.py:63
+#: usr/share/biglinux/welcome/translatable_strings.py:76
 msgid ""
 "Your donation is very important for the project and follow us on social "
 "media."
@@ -576,6 +756,464 @@ msgstr ""
 
 # File: biglinux-welcome/usr/share/biglinux/welcome/translatable_strings.py,
 # line: 64
-#: usr/share/biglinux/welcome/translatable_strings.py:64
+#: usr/share/biglinux/welcome/translatable_strings.py:77
 msgid "Zen Browser"
 msgstr "Zen Browser"
+
+#: usr/share/biglinux/welcome/app.py:81
+msgid "Initial setup and feature introduction for BigLinux"
+msgstr "Пачатковая наладка і знаёмства з магчымасцямі BigLinux"
+
+#: usr/share/biglinux/welcome/app.py:84
+msgid "Source code"
+msgstr "Зыходны код"
+
+#: usr/share/biglinux/welcome/apps_page.py:160
+msgid "Checking…"
+msgstr "Праверка…"
+
+#: usr/share/biglinux/welcome/apps_page.py:161
+msgid "Not installed"
+msgstr "Не ўсталявана"
+
+#: usr/share/biglinux/welcome/apps_page.py:162
+msgid "Installing"
+msgstr "Усталяванне"
+
+#: usr/share/biglinux/welcome/apps_page.py:163
+#: usr/share/biglinux/welcome/install_backend.py:1181
+msgid "Installed"
+msgstr "Усталявана"
+
+#: usr/share/biglinux/welcome/apps_page.py:164
+msgid "Installation failed"
+msgstr "Памылка ўсталявання"
+
+#: usr/share/biglinux/welcome/apps_page.py:165
+msgid "Update available"
+msgstr "Даступна абнаўленне"
+
+#: usr/share/biglinux/welcome/apps_page.py:166
+msgid "Unavailable"
+msgstr "Недаступна"
+
+#: usr/share/biglinux/welcome/apps_page.py:167
+msgid "Requires KDE Plasma"
+msgstr "Патрабуецца KDE Plasma"
+
+#: usr/share/biglinux/welcome/apps_page.py:317
+#, python-format
+msgid "Cancel installation of %s"
+msgstr "Скасаваць усталяванне %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:369
+msgid "Details"
+msgstr "Падрабязнасці"
+
+#: usr/share/biglinux/welcome/apps_page.py:374
+#, python-format
+msgid "Show installation details for %s"
+msgstr "Паказаць падрабязнасці ўсталявання %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:425
+#: usr/share/biglinux/welcome/install_flow.py:285
+msgid "Update and Install"
+msgstr "Абнавіць і ўсталяваць"
+
+#: usr/share/biglinux/welcome/apps_page.py:427
+msgid "Try Again"
+msgstr "Паўтарыць"
+
+#: usr/share/biglinux/welcome/apps_page.py:429
+#, python-format
+msgid "Try again to install %s"
+msgstr "Паўтарыць усталяванне %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:434
+#: usr/share/biglinux/welcome/apps_page.py:466
+#: usr/share/biglinux/welcome/install_flow.py:82
+#: usr/share/biglinux/welcome/install_flow.py:134
+msgid "Another installation is in progress"
+msgstr "Ідзе іншае ўсталяванне"
+
+#: usr/share/biglinux/welcome/apps_page.py:438
+#: usr/share/biglinux/welcome/install_flow.py:238
+#: usr/share/biglinux/welcome/install_flow.py:322
+#: usr/share/biglinux/welcome/install_flow.py:407
+msgid "Install"
+msgstr "Усталяваць"
+
+#: usr/share/biglinux/welcome/apps_page.py:442
+msgid "Update"
+msgstr "Абнавіць"
+
+#: usr/share/biglinux/welcome/apps_page.py:444
+#, python-format
+msgid "Update %s"
+msgstr "Абнавіць %s"
+
+#: usr/share/biglinux/welcome/apps_page.py:447
+msgid "Added to Panel"
+msgstr "Дададзена на панэль"
+
+#: usr/share/biglinux/welcome/apps_page.py:450
+msgid "Add to Panel"
+msgstr "Дадаць на панэль"
+
+#: usr/share/biglinux/welcome/apps_page.py:451
+#, python-format
+msgid "Add %s to the panel"
+msgstr "Дадаць %s на панэль"
+
+#: usr/share/biglinux/welcome/apps_page.py:478
+msgid "Not available in the configured repositories"
+msgstr "Няма ў наладжаных рэпазіторыях"
+
+#: usr/share/biglinux/welcome/apps_page.py:480
+msgid "Plasma widget for KDE Plasma 6"
+msgstr "Віджэт для KDE Plasma 6"
+
+#: usr/share/biglinux/welcome/apps_page.py:482
+msgid "Plasma widget"
+msgstr "Віджэт Plasma"
+
+#: usr/share/biglinux/welcome/apps_page.py:532
+#: usr/share/biglinux/welcome/install_backend.py:740
+msgid "Waiting for authentication…"
+msgstr "Чаканне аўтэнтыфікацыі…"
+
+#: usr/share/biglinux/welcome/apps_page.py:607
+msgid "Opening…"
+msgstr "Адкрыццё…"
+
+#: usr/share/biglinux/welcome/apps_page.py:620
+#, python-format
+msgid "Could not add %s to the panel"
+msgstr "Не ўдалося дадаць %s на панэль"
+
+#: usr/share/biglinux/welcome/apps_page.py:621
+#, python-format
+msgid "Right-click the panel, choose “Add Widgets…” and search for %s."
+msgstr ""
+"Націсніце правай кнопкай мышы на панэлі, выберыце «Дадаць віджэты…» і "
+"знайдзіце %s."
+
+#: usr/share/biglinux/welcome/apps_page.py:631
+#, python-format
+msgid "%s was added to the panel."
+msgstr "Віджэт %s дададзены на панэль."
+
+#: usr/share/biglinux/welcome/apps_page.py:644
+msgid "You are offline. Connect to the internet to install applications."
+msgstr ""
+"Няма злучэння з сеткай. Падключыцеся да інтэрнэту, каб усталёўваць праграмы."
+
+#: usr/share/biglinux/welcome/install_backend.py:275
+#: usr/share/biglinux/welcome/install_backend.py:500
+msgid "This package is not allowed."
+msgstr "Гэты пакет не дазволены."
+
+#: usr/share/biglinux/welcome/install_backend.py:388
+msgid "Synchronizing databases…"
+msgstr "Сінхранізацыя баз даных…"
+
+#: usr/share/biglinux/welcome/install_backend.py:389
+msgid "Resolving dependencies…"
+msgstr "Вызначэнне залежнасцей…"
+
+#: usr/share/biglinux/welcome/install_backend.py:390
+#: usr/share/biglinux/welcome/install_backend.py:395
+msgid "Checking for conflicts…"
+msgstr "Праверка канфліктаў…"
+
+#: usr/share/biglinux/welcome/install_backend.py:391
+#: usr/share/biglinux/welcome/install_backend.py:1032
+#: usr/share/biglinux/welcome/install_backend.py:1116
+msgid "Downloading packages…"
+msgstr "Спампоўванне пакетаў…"
+
+#: usr/share/biglinux/welcome/install_backend.py:392
+msgid "Verifying signatures…"
+msgstr "Праверка подпісаў…"
+
+#: usr/share/biglinux/welcome/install_backend.py:393
+#: usr/share/biglinux/welcome/install_backend.py:1039
+msgid "Verifying integrity…"
+msgstr "Праверка цэласнасці…"
+
+#: usr/share/biglinux/welcome/install_backend.py:394
+msgid "Loading packages…"
+msgstr "Чытанне пакетаў…"
+
+#: usr/share/biglinux/welcome/install_backend.py:396
+msgid "Checking disk space…"
+msgstr "Праверка месца на дыску…"
+
+#: usr/share/biglinux/welcome/install_backend.py:397
+msgid "Applying changes…"
+msgstr "Ужыванне змен…"
+
+#: usr/share/biglinux/welcome/install_backend.py:398
+#: usr/share/biglinux/welcome/install_backend.py:1055
+msgid "Installing…"
+msgstr "Усталяванне…"
+
+#: usr/share/biglinux/welcome/install_backend.py:399
+msgid "Upgrading…"
+msgstr "Абнаўленне…"
+
+#: usr/share/biglinux/welcome/install_backend.py:400
+msgid "Running post-install hooks…"
+msgstr "Выкананне задач пасля ўсталявання…"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 767
+#: usr/share/biglinux/welcome/install_backend.py:431
+#, python-brace-format
+msgid "Downloading {name}…"
+msgstr "Спампоўванне {name}…"
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/widgets.py, line: 779
+#: usr/share/biglinux/welcome/install_backend.py:438
+#, python-brace-format
+msgid "Downloading… {pct}% ({speed})"
+msgstr "Спампоўванне… {pct}% ({speed})"
+
+#: usr/share/biglinux/welcome/install_backend.py:471
+msgid ""
+"Authentication failed. Administrator permission is required to install "
+"applications."
+msgstr ""
+"Памылка аўтэнтыфікацыі. Для ўсталявання праграм патрэбныя правы "
+"адміністратара."
+
+#: usr/share/biglinux/welcome/install_backend.py:474
+msgid ""
+"Another program is using the package manager. Wait for it to finish and try "
+"again."
+msgstr ""
+"Кіраўнік пакетаў выкарыстоўваецца іншай праграмай. Дачакайцеся яе завяршэння "
+"і паўтарыце спробу."
+
+#: usr/share/biglinux/welcome/install_backend.py:477
+msgid "No internet connection. Connect to the internet and try again."
+msgstr ""
+"Няма злучэння з інтэрнэтам. Падключыцеся да інтэрнэту і паўтарыце спробу."
+
+#: usr/share/biglinux/welcome/install_backend.py:480
+msgid ""
+"Could not download the packages. Check your internet connection and try "
+"again."
+msgstr ""
+"Не ўдалося спампаваць пакеты. Праверце злучэнне з інтэрнэтам і паўтарыце "
+"спробу."
+
+#: usr/share/biglinux/welcome/install_backend.py:483
+msgid ""
+"The package lists are out of date, so the mirrors no longer have the "
+"requested files. Update the system and try again."
+msgstr ""
+"Спісы пакетаў састарэлі, і на люстэрках ужо няма запытаных файлаў. Абнавіце "
+"сістэму і паўтарыце спробу."
+
+#: usr/share/biglinux/welcome/install_backend.py:486
+msgid "There is not enough free disk space to install this application."
+msgstr "Недастаткова вольнага месца на дыску для ўсталявання гэтай праграмы."
+
+#: usr/share/biglinux/welcome/install_backend.py:488
+msgid "The package was not found in the configured repositories."
+msgstr "Пакет не знойдзены ў наладжаных рэпазіторыях."
+
+#: usr/share/biglinux/welcome/install_backend.py:489
+msgid "Some dependencies could not be resolved."
+msgstr "Не ўдалося вызначыць некаторыя залежнасці."
+
+#: usr/share/biglinux/welcome/install_backend.py:490
+msgid "The package conflicts with software already installed."
+msgstr "Пакет канфліктуе з ужо ўсталяванымі праграмамі."
+
+#: usr/share/biglinux/welcome/install_backend.py:492
+msgid ""
+"A package signature could not be verified. The keyring may need to be "
+"updated."
+msgstr ""
+"Не ўдалося праверыць подпіс пакета. Магчыма, трэба абнавіць вязку ключоў."
+
+#: usr/share/biglinux/welcome/install_backend.py:495
+msgid ""
+"The downloaded files did not pass the integrity check. Nothing was installed."
+msgstr ""
+"Спампаваныя файлы не прайшлі праверку цэласнасці. Нічога не ўсталявана."
+
+#: usr/share/biglinux/welcome/install_backend.py:498
+msgid ""
+"The installation finished, but the application could not be found on the "
+"system."
+msgstr "Усталяванне завершана, але праграму не знойдзена ў сістэме."
+
+#: usr/share/biglinux/welcome/install_backend.py:502
+msgid "This application is not supported on the current desktop."
+msgstr "Гэта праграма не падтрымліваецца ў бягучым асяроддзі працоўнага стала."
+
+#: usr/share/biglinux/welcome/install_backend.py:505
+msgid "The installation failed. See the details for more information."
+msgstr ""
+"Не ўдалося выканаць усталяванне. Дадатковыя звесткі глядзіце ў "
+"падрабязнасцях."
+
+#: usr/share/biglinux/welcome/install_backend.py:758
+msgid "The installer did not finish in time."
+msgstr "Праграма ўсталявання не завяршыла працу своечасова."
+
+# File: biglinux-welcome/usr/share/biglinux/welcome/window.py, line: 527
+#: usr/share/biglinux/welcome/install_backend.py:792
+msgid "Still working…"
+msgstr "Аперацыя яшчэ выконваецца…"
+
+#: usr/share/biglinux/welcome/install_backend.py:807
+msgid "Preparing installation…"
+msgstr "Падрыхтоўка да ўсталявання…"
+
+#: usr/share/biglinux/welcome/install_backend.py:1027
+msgid "kpackagetool6 was not found."
+msgstr "Праграма kpackagetool6 не знойдзена."
+
+#: usr/share/biglinux/welcome/install_backend.py:1082
+msgid "Adding to the panel…"
+msgstr "Даданне на панэль…"
+
+#: usr/share/biglinux/welcome/install_backend.py:1118
+#, python-brace-format
+msgid "Downloaded {size}"
+msgstr "Спампавана: {size}"
+
+#: usr/share/biglinux/welcome/install_flow.py:83
+#: usr/share/biglinux/welcome/install_flow.py:135
+msgid "Wait for the current installation to finish, then try again."
+msgstr "Дачакайцеся завяршэння бягучага ўсталявання і паўтарыце спробу."
+
+#: usr/share/biglinux/welcome/install_flow.py:91
+#: usr/share/biglinux/welcome/install_flow.py:104
+#: usr/share/biglinux/welcome/install_flow.py:200
+#, python-format
+msgid "Could not install %s"
+msgstr "Не ўдалося ўсталяваць %s"
+
+#: usr/share/biglinux/welcome/install_flow.py:147
+#, python-format
+msgid "%s was installed successfully."
+msgstr "Праграма %s паспяхова ўсталявана."
+
+#: usr/share/biglinux/welcome/install_flow.py:148
+#, python-format
+msgid "Installation of %s was cancelled."
+msgstr "Усталяванне %s скасавана."
+
+#: usr/share/biglinux/welcome/install_flow.py:152
+#, python-format
+msgid "Could not install %s."
+msgstr "Не ўдалося ўсталяваць %s."
+
+#: usr/share/biglinux/welcome/install_flow.py:207
+#, python-format
+msgid "%s is already installed."
+msgstr "Праграма %s ужо ўсталявана."
+
+#: usr/share/biglinux/welcome/install_flow.py:214
+#, python-format
+msgid ""
+"%(count)d package will be downloaded from the configured repositories "
+"(%(size)s)."
+msgid_plural ""
+"%(count)d packages will be downloaded from the configured repositories "
+"(%(size)s)."
+msgstr[0] ""
+"З наладжаных рэпазіторыяў будзе спампаваны %(count)d пакет (%(size)s)."
+msgstr[1] ""
+"З наладжаных рэпазіторыяў будуць спампаваны %(count)d пакеты (%(size)s)."
+msgstr[2] ""
+"З наладжаных рэпазіторыяў будзе спампавана %(count)d пакетаў (%(size)s)."
+
+#: usr/share/biglinux/welcome/install_flow.py:219
+#: usr/share/biglinux/welcome/install_flow.py:282
+msgid "You will be asked for the administrator password."
+msgstr "Спатрэбіцца ўвесці пароль адміністратара."
+
+#: usr/share/biglinux/welcome/install_flow.py:225
+#, python-format
+msgid ""
+"The package lists were last updated %d day ago. If the installation fails, "
+"update the system first."
+msgid_plural ""
+"The package lists were last updated %d days ago. If the installation fails, "
+"update the system first."
+msgstr[0] ""
+"Спісы пакетаў апошні раз абнаўляліся %d дзень таму. Калі ўсталяванне не "
+"атрымаецца, спачатку абнавіце сістэму."
+msgstr[1] ""
+"Спісы пакетаў апошні раз абнаўляліся %d дні таму. Калі ўсталяванне не "
+"атрымаецца, спачатку абнавіце сістэму."
+msgstr[2] ""
+"Спісы пакетаў апошні раз абнаўляліся %d дзён таму. Калі ўсталяванне не "
+"атрымаецца, спачатку абнавіце сістэму."
+
+#: usr/share/biglinux/welcome/install_flow.py:233
+#: usr/share/biglinux/welcome/install_flow.py:309
+#, python-format
+msgid "Install %s?"
+msgstr "Усталяваць %s?"
+
+#: usr/share/biglinux/welcome/install_flow.py:274
+#, python-format
+msgid "Update the system and install %s?"
+msgstr "Абнавіць сістэму і ўсталяваць %s?"
+
+#: usr/share/biglinux/welcome/install_flow.py:276
+#, python-format
+msgid ""
+"All installed packages will be updated before %s is installed. Updating "
+"everything together avoids partial upgrades, but it may take a while and "
+"download a large amount of data."
+msgstr ""
+"Перад усталяваннем %s будуць абноўлены ўсе ўсталяваныя пакеты. Сумеснае "
+"абнаўленне дазваляе пазбегнуць частковых абнаўленняў, але можа заняць пэўны "
+"час і запатрабаваць спампоўвання вялікага аб'ёму даных."
+
+#: usr/share/biglinux/welcome/install_flow.py:311
+#, python-format
+msgid ""
+"%s is a Plasma widget and is not available as a package. It will be "
+"downloaded from the official BigLinux repository on GitHub, checked against "
+"a known checksum and installed for your user only."
+msgstr ""
+"%s — гэта віджэт Plasma, і ён недаступны ў выглядзе пакета. Ён будзе "
+"спампаваны з афіцыйнага рэпазіторыя BigLinux на GitHub, правераны па вядомай "
+"кантрольнай суме і ўсталяваны толькі для вашага ўліковага запісу."
+
+#: usr/share/biglinux/welcome/install_flow.py:317
+msgid "No administrator password is required."
+msgstr "Пароль адміністратара не патрэбны."
+
+#: usr/share/biglinux/welcome/install_flow.py:381
+#: usr/share/biglinux/welcome/install_flow.py:400
+#, python-format
+msgid "%s is not installed"
+msgstr "Праграма %s не ўсталявана"
+
+#: usr/share/biglinux/welcome/install_flow.py:383
+msgid ""
+"The application is not installed and is not available in the configured "
+"repositories."
+msgstr "Праграма не ўсталявана, і яе няма ў наладжаных рэпазіторыях."
+
+#: usr/share/biglinux/welcome/install_flow.py:402
+#, python-format
+msgid ""
+"It is available in the configured repositories (package %(package)s, from "
+"%(repo)s). Do you want to install it now?"
+msgstr ""
+"Яна даступная ў наладжаных рэпазіторыях (пакет %(package)s з %(repo)s). "
+"Усталяваць яе зараз?"
+
+#: usr/share/biglinux/welcome/install_flow.py:406
+msgid "Not Now"
+msgstr "Не зараз"

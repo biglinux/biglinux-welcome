@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
-import sys
-import yaml
 import argparse
+import sys
 from pathlib import Path
 
+import yaml
+
 # The keys in the YAML file whose string values should be translated.
-TRANSLATABLE_KEYS = {"title", "subtitle", "label"}
+TRANSLATABLE_KEYS = {"title", "subtitle", "label", "description"}
 
 HEADER = """# -*- coding: utf-8 -*-
 #
@@ -76,14 +76,12 @@ def main():
         return
 
     # Sort for deterministic output, which is good for version control
-    sorted_strings = sorted(list(translatable_strings))
+    sorted_strings = sorted(translatable_strings)
 
     print(f"Writing {len(sorted_strings)} strings to: {output_file}")
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(HEADER)
-        for s in sorted_strings:
-            # Use repr() to correctly handle quotes and special characters
-            f.write(f"_({repr(s)})\n")
+        f.writelines(f"_({s!r})\n" for s in sorted_strings)
 
     print("Done.")
 
