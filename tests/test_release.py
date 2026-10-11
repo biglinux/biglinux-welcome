@@ -4,6 +4,7 @@ import gettext
 import re
 import subprocess
 import sys
+import time
 import unittest
 from pathlib import Path
 from typing import ClassVar
@@ -26,14 +27,16 @@ class TestVersion(unittest.TestCase):
     def test_version_is_3_0_1(self):
         self.assertEqual(APP_VERSION, "3.0.1")
 
-    def test_pkgbuild_matches_app(self):
-        self.assertEqual(pkgbuild_var("pkgver"), APP_VERSION)
-        self.assertEqual(pkgbuild_var("pkgrel"), "1")
+    def test_package_version_is_the_build_date(self):
+        # The repository server ignores epochs when it compares a testing
+        # package with the stable one, so the version must grow by itself
+        self.assertEqual(pkgbuild_var("pkgver"), "$(date +%y.%m.%d)")
+        self.assertEqual(pkgbuild_var("pkgrel"), "$(date +%H%M)")
+        self.assertNotRegex(PKGBUILD, re.compile(r"^\s*epoch=", re.MULTILINE))
 
-    def test_epoch_upgrades_date_based_versions(self):
-        epoch = pkgbuild_var("epoch")
-        new = f"{epoch}:{APP_VERSION}-1"
-        old = "26.10.10-0348"  # last date-based build
+    def test_date_version_upgrades_stable(self):
+        new = time.strftime("%y.%m.%d-%H%M")
+        old = "26.06.18-0104"  # in stable when 1:3.0.1-1 was dropped from testing
         try:
             result = subprocess.run(
                 ["vercmp", new, old], capture_output=True, text=True, check=False

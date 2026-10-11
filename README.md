@@ -134,7 +134,7 @@ BIGLINUX_WELCOME_SRC="$(realpath ..)" makepkg -sif
 
 Run `makepkg` as a normal user, never as root. Only `usr/` is packaged; development caches are removed and `docs/` and `tests/` are not installed.
 
-The package version is `1:3.0.1-1`. The epoch makes it newer than the earlier date-based builds (for example `26.10.10-0348`), so existing installations upgrade normally.
+The package version is the build date (for example `26.10.11-1327`), as in the other BigLinux packages; the application version (3.0.1) is shown in About and by `--version`. Do not add an `epoch`: the BigLinux repository server drops testing packages whose version only wins because of it ([details](docs/ci-packaging.md#why-1301-1-never-reached-testing)).
 
 ### Running
 
@@ -263,7 +263,7 @@ The suite checks the page configuration, translations, version consistency and t
 |---|---|---|
 | Tests | pull requests, manual | tests, lint, translations, package build/install/remove |
 | Build Package | pushes to `main`, `testing-*`, `stable-*`, manual | the tests above, then the `build` job |
-| GitLab Status | after Build Package (biglinux only), manual | follows the builder job and fails if it fails |
+| GitLab Status | after Build Package (biglinux only), manual | follows the builder job; fails if it fails or if testing/stable never publish the file |
 
 The BigLinux builder ([packagebuilder](https://gitlab.bigib.org/builder/packagebuilder)) starts by itself when a **Build Package** run in `biglinux/biglinux-welcome` succeeds; no secret is needed. `main` is built for the unstable repository, a `testing-*` branch for testing and a `stable-*` branch for stable. Failed tests mean no build. Details, evidence and the release checklist: [docs/ci-packaging.md](docs/ci-packaging.md).
 
