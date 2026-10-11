@@ -1,10 +1,11 @@
 name: Tests
 
+# Pushes to main run these jobs through build-package.yml, which only asks
+# for a package build after they pass.
 on:
-  push:
-    branches: [main]
   pull_request:
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: read
@@ -22,13 +23,15 @@ jobs:
           # Pinned, so new ruff releases cannot change the rule set unnoticed
           python -m venv /opt/ruff && /opt/ruff/bin/pip install --quiet ruff==0.17.0
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Lint
         run: |
           /opt/ruff/bin/ruff check usr/share/biglinux/welcome tests generate_strings.py
           /opt/ruff/bin/ruff format --check usr/share/biglinux/welcome tests generate_strings.py
-          shellcheck tests/run-headless.sh usr/share/biglinux/welcome/scripts/*.sh update-translations.sh \
+          shellcheck tests/run-headless.sh tests/check-pkgbuild.sh usr/share/biglinux/welcome/scripts/*.sh update-translations.sh \
             pkgbuild/biglinux-welcome.install usr/bin/biglinux-welcome
           desktop-file-validate usr/share/applications/org.biglinux.welcome.desktop
 
@@ -43,3 +46,25 @@ jobs:
           useradd -m tester
           chown -R tester: "$GITHUB_WORKSPACE"
           runuser -u tester -- tests/run-headless.sh -v -rs
+
+  package:
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install dependencies
+        run: pacman -Syu --noconfirm --needed base-devel git namcap
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Build the package
+        run: |
+          useradd -m builder
+          chown -R builder: "$GITHUB_WORKSPACE"
+          runuser -u builder -- tests/check-pkgbuild.sh build /tmp/pkg
+
+      # Installs the dependencies from the Arch repositories, runs the
+      # .install scriptlets and checks every installed file
+      - name: Install, verify and remove
+        run: tests/check-pkgbuild.sh install /tmp/pkg
