@@ -109,6 +109,10 @@ None is needed for builds. Recommended, by a `biglinux` admin:
 
 1. Bump `pkgver` (reset `pkgrel=1`) in `pkgbuild/PKGBUILD` and `APP_VERSION`;
    `tests/test_release.py` checks they match. Never lower `epoch`.
+   Every successful run rebuilds the branch, also for CI- or docs-only
+   commits. Unlike the old date-based versions, the version does not change
+   by itself, so that rebuild replaces the file already uploaded with the same
+   version. Bump `pkgrel` when a packaging-only change must reach users.
 2. Open a pull request; **Tests** must pass (`tests` and `package`).
 3. Merge into `main` in `biglinux/biglinux-welcome` → unstable. Check that
    **GitLab Status** is green; its summary links the job and the file uploaded.
