@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-3.0.1-blue" alt="Version 3.0.1">
-  <a href="https://github.com/ruscher/biglinux-welcome/actions/workflows/tests.yml"><img src="https://github.com/ruscher/biglinux-welcome/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+  <a href="https://github.com/biglinux/biglinux-welcome/actions/workflows/build-package.yml"><img src="https://github.com/biglinux/biglinux-welcome/actions/workflows/build-package.yml/badge.svg" alt="Build Package"></a>
   <img src="https://img.shields.io/badge/GTK-4-4a86cf?logo=gnome&logoColor=white" alt="GTK 4">
   <img src="https://img.shields.io/badge/libadwaita-1.7%2B-7b42bc" alt="libadwaita 1.7+">
   <img src="https://img.shields.io/badge/Python-3.12%2B-f7c600?logo=python&logoColor=black" alt="Python 3.12+">
@@ -249,10 +249,23 @@ RUN_NETWORK_TESTS=1 python -m pytest tests/test_installer.py -k chatai   # pinne
 
 ruff check usr/share/biglinux/welcome tests generate_strings.py
 ruff format --check usr/share/biglinux/welcome tests generate_strings.py
-shellcheck usr/share/biglinux/welcome/scripts/*.sh update-translations.sh tests/run-headless.sh
+shellcheck usr/share/biglinux/welcome/scripts/*.sh update-translations.sh tests/*.sh
+
+tests/check-pkgbuild.sh build /tmp/pkg     # build this tree as the BigLinux builder would, then namcap
+sudo tests/check-pkgbuild.sh install /tmp/pkg   # install, verify, remove: disposable container only
 ```
 
-The suite checks the page configuration, translations, version consistency and the installer: it runs the **real privileged helper**, unprivileged, against a fake `pacman` and `pkexec` (success, network failure, locked database, cancellation reaching pacman, Polkit dismissed/denied, verification, pinned repositories), installs ChatAI into a private package root (including tampered and path-traversal archives) and drives the real widgets. GitHub Actions (`.github/workflows/tests.yml`) runs all of this in an `archlinux` container with ruff 0.17.0.
+The suite checks the page configuration, translations, version consistency and the installer: it runs the **real privileged helper**, unprivileged, against a fake `pacman` and `pkexec` (success, network failure, locked database, cancellation reaching pacman, Polkit dismissed/denied, verification, pinned repositories), installs ChatAI into a private package root (including tampered and path-traversal archives) and drives the real widgets. GitHub Actions (`.github/workflows/tests.yml`) runs all of this in an `archlinux` container with ruff 0.17.0, and also builds, installs and removes the package there.
+
+### Continuous integration and packages
+
+| Workflow | Runs on | Does |
+|---|---|---|
+| Tests | pull requests, manual | tests, lint, translations, package build/install/remove |
+| Build Package | pushes to `main`, `testing-*`, `stable-*`, manual | the tests above, then the `build` job |
+| GitLab Status | after Build Package (biglinux only), manual | follows the builder job and fails if it fails |
+
+The BigLinux builder ([packagebuilder](https://gitlab.bigib.org/builder/packagebuilder)) starts by itself when a **Build Package** run in `biglinux/biglinux-welcome` succeeds; no secret is needed. `main` is built for the unstable repository, a `testing-*` branch for testing and a `stable-*` branch for stable. Failed tests mean no build. Details, evidence and the release checklist: [docs/ci-packaging.md](docs/ci-packaging.md).
 
 ## Troubleshooting
 

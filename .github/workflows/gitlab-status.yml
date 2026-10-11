@@ -1,0 +1,44 @@
+name: GitLab Status
+
+# Follows the job the BigLinux builder starts after a successful
+# "Build Package" run, and fails when it does not start or does not succeed.
+# Read only: it uses the public GitLab API and no secret. The name avoids the
+# words "Build" and "Package", so this run never requests a build itself.
+
+on:
+  workflow_run:
+    workflows: [Build Package]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Branch the build was requested for
+        default: main
+      since:
+        description: Time of the request (ISO 8601, e.g. 2026-10-10T08:36:18Z)
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  track:
+    # Only the biglinux organization requests builds
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.repository_owner == 'biglinux' && github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+
+      - name: Follow the builder job
+        env:
+          PACKAGE: ${{ github.event.repository.name }}
+          ORG: biglinux
+          BRANCH: ${{ github.event.workflow_run.head_branch || inputs.branch }}
+          SINCE: ${{ github.event.workflow_run.updated_at || inputs.since }}
+        run: .github/scripts/track-build.sh
