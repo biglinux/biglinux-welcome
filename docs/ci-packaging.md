@@ -17,7 +17,9 @@ push to main / testing-* / stable-*          (biglinux/biglinux-welcome)
        └─ job "biglinux-welcome": clone url, checkout git_branch, rewrite PKGBUILD,
           chrootbuild (Manjaro stable, x86_64), sign, rsync to the repository server
   └─ GitLab Status workflow (workflow_run) follows that job through the public
-     GitLab API and fails if it does not start within 10 min or does not succeed
+     GitLab API and fails if it does not start within 10 min or does not succeed;
+     for testing/stable it then waits up to 1 h for
+     repo.biglinux.com.br/<repo>/x86_64/<file> and fails if it never appears
 ```
 
 Destination repository, decided by the builder from `git_branch`
@@ -90,9 +92,49 @@ becomes `('x86_64' 'aarch64')` and `git` is added to `makedepends`.
 - The builder builds the head of the branch when the job starts, not
   necessarily the commit of the run. The `concurrency` group cancels older
   runs on the same branch, so the last successful run is for the head.
-- `epoch=1` is required (earlier versions were dates like `26.10.03-0942`).
-  The builder renames `1:3.0.1` to `1-3.0.1` in the file name only.
+- The package version is the build date (`pkgver=$(date +%y.%m.%d)`,
+  `pkgrel=$(date +%H%M)`), like biglinux-settings. Never add an `epoch`:
+  see below.
 - `BIGLINUX_WELCOME_SRC` is unset on the builder, so it uses the git source.
+
+## Why 1:3.0.1-1 never reached testing
+
+Job [62182](https://gitlab.bigib.org/builder/packagebuilder/-/jobs/62182)
+(branch `testing-2026-10-10-2`) built `1:3.0.1-1` and uploaded it for testing
+without errors, but `repo.biglinux.com.br/testing/x86_64` never listed it,
+although its database was updated later (04:14 UTC, adding chatai-plasmoid,
+uploaded at 04:11 by the same user and the same builder steps).
+
+The server-side step that turns testing uploads into the repository is not
+public. What the repositories show (2026-10-11):
+
+- every package in both testing and stable has a date version, and the
+  testing one is newer;
+- packages with an epoch are accepted in stable (`biglinux-driver-manager
+  1:26.10.02-2252`, `tts-biglinux 1:4.1.0-3`) and in testing when stable has
+  no version (`portainer-bin 1:2.18.3-1`);
+- no package with an epoch is in testing while stable has an older version.
+  `biglinux-welcome 1:3.0.1-1` (stable: `26.06.18-0104`) was dropped;
+  `tts-biglinux 1:4.1.0-2`, after the same change from dates, went straight
+  to stable.
+- the same file name uploaded twice is not the cause: chatai-plasmoid
+  `1.0.1-1` was built from main twice before its testing build, and that
+  testing build was accepted.
+
+The directory page `https://repo.biglinux.com.br/testing/x86_64/` is not a
+reliable check: the CDN serves it from cache for days (on 2026-10-11 it showed
+the 2026-10-09 state, without chatai-plasmoid). Request the file itself, or
+run `pacman -Syl biglinux-testing`; GitLab Status requests the file.
+
+So the testing step drops a package that does not look newer than stable and
+reads `1:3.0.1-1` without its epoch (`3.0.1-1` < `26.06.18-0104`). Date
+versions, as biglinux-settings and the earlier biglinux-welcome use, are
+always newer. Confirming this needs access to the repository server.
+
+`1:3.0.1-1` is still in the unstable repository. A date version is lower than
+it for pacman, so unstable needs it removed (`repo-remove`) by whoever runs
+that server, and machines that installed it must run
+`sudo pacman -S biglinux-welcome` once.
 
 ## External configuration
 
@@ -107,12 +149,9 @@ None is needed for builds. Recommended, by a `biglinux` admin:
 
 ## Release checklist
 
-1. Bump `pkgver` (reset `pkgrel=1`) in `pkgbuild/PKGBUILD` and `APP_VERSION`;
-   `tests/test_release.py` checks they match. Never lower `epoch`.
-   Every successful run rebuilds the branch, also for CI- or docs-only
-   commits. Unlike the old date-based versions, the version does not change
-   by itself, so that rebuild replaces the file already uploaded with the same
-   version. Bump `pkgrel` when a packaging-only change must reach users.
+1. For a new application version, bump `APP_VERSION` in `utils.py` (shown in
+   About and `--version`). The package version is the build date and needs
+   no change; every build gets a new one.
 2. Open a pull request; **Tests** must pass (`tests` and `package`).
 3. Merge into `main` in `biglinux/biglinux-welcome` → unstable. Check that
    **GitLab Status** is green; its summary links the job and the file uploaded.
