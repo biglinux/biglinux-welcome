@@ -7,14 +7,18 @@
 #   ORG       GitHub organization the builder clones from, e.g. biglinux
 #   BRANCH    branch the build was requested for, e.g. main
 #   SINCE     ISO 8601 time the request was made (the "Build Package" run end)
-#   START_TIMEOUT, BUILD_TIMEOUT   seconds to wait for the job to appear / end
+#   START_TIMEOUT, BUILD_TIMEOUT, PUBLISH_TIMEOUT   seconds to wait for the
+#             job to appear / to end / for the package to be published
 #
-# Exits non-zero when no matching job starts, or when it does not succeed.
+# Exits non-zero when no matching job starts, when it does not succeed, or when
+# a testing/stable package does not reach https://repo.biglinux.com.br: the
+# server drops some uploads without any error in the job.
 set -euo pipefail
 
 : "${PACKAGE:?}" "${ORG:?}" "${BRANCH:?}" "${SINCE:?}"
 START_TIMEOUT=${START_TIMEOUT:-600}
 BUILD_TIMEOUT=${BUILD_TIMEOUT:-3600}
+PUBLISH_TIMEOUT=${PUBLISH_TIMEOUT:-3600}
 api=https://gitlab.bigib.org/api/v4/projects/builder%2Fpackagebuilder
 web=https://gitlab.bigib.org/builder/packagebuilder
 url="https://github.com/$ORG/$PACKAGE"
@@ -112,3 +116,23 @@ if [ "$status" != success ] || [ -z "$built" ] || [ -z "$uploaded" ]; then
     echo "::error::Builder job $web/-/jobs/$job ended '$status'"
     exit 1
 fi
+
+# 4. Wait for the repository to publish it. Only testing and stable are public.
+case "$repo" in
+testing | stable) ;;
+*) exit 0 ;;
+esac
+# Ask for the file itself: the directory page is cached by the CDN for days.
+published="https://repo.biglinux.com.br/$repo/x86_64/$(head -n1 <<<"$uploaded")"
+echo "Waiting for $published"
+deadline=$((SECONDS + PUBLISH_TIMEOUT))
+until curl -fsI --max-time 30 -o /dev/null "$published"; do
+    if [ "$SECONDS" -ge "$deadline" ]; then
+        echo "::error::Uploaded, but $published is still missing after ${PUBLISH_TIMEOUT}s: the repository server dropped it. See docs/ci-packaging.md."
+        printf '| Published in %s | **no**, dropped by the repository server |\n' "$repo" >>"$summary"
+        exit 1
+    fi
+    sleep 120
+done
+echo "Published: $published"
+printf '| Published in %s | [yes](%s) |\n' "$repo" "$published" >>"$summary"
