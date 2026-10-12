@@ -12,7 +12,9 @@
 #
 # Exits non-zero when no matching job starts, when it does not succeed, or when
 # a testing/stable package does not reach https://repo.biglinux.com.br: the
-# server drops some uploads without any error in the job.
+# server drops some uploads without any error in the job. Exit status 3 means
+# the builder's own infrastructure failed (GitLab runner), so nothing was built
+# and requesting the build again is safe.
 set -euo pipefail
 
 : "${PACKAGE:?}" "${ORG:?}" "${BRANCH:?}" "${SINCE:?}"
@@ -28,6 +30,15 @@ trap 'echo "::error::Request to the BigLinux builder failed (line $LINENO); is g
 
 get() {
     curl -fsS --retry 3 --retry-delay 5 --retry-all-errors --max-time 30 "$@"
+}
+
+# GitLab failure reasons that come from the runners, not from the package
+infra_failure='^(runner_system_failure|scheduler_failure|api_failure|data_integrity_failure)$'
+
+infra_error() {
+    echo "::error::The BigLinux builder's infrastructure failed ($1): $2. Nothing was built; request the build again."
+    printf '### %s: builder infrastructure failure\n%s: [%s](%s)\n' "$PACKAGE" "$1" "$2" "$2" >>"$summary"
+    exit 3
 }
 
 # One of the header lines the build job prints ("org: biglinux", ...)
@@ -53,10 +64,25 @@ echo "Looking for the $PACKAGE build of $url (branch $BRANCH) requested at $SINC
 #    has one job named after the package.
 job='' child='' rejected=" " deadline=$((SECONDS + START_TIMEOUT))
 while [ -z "$job" ]; do
-    while read -r pid created; do
-        [ "$(date -u -d "$created" +%s)" -ge $((since - 30)) ] || continue
+    while read -r pid created status; do
+        t=$(date -u -d "$created" +%s)
+        [ "$t" -ge $((since - 30)) ] || continue
         child=$(get "$api/pipelines/$pid/bridges" | jq -r '.[0].downstream_pipeline.id // empty')
-        [ -n "$child" ] || continue
+        if [ -z "$child" ]; then
+            # The request failed before the build job existed. Only the
+            # generating job's log names the package, so also require the
+            # pipeline to start right after the request (the builder needs 1-3 s).
+            if [[ "$status" =~ ^(failed|canceled)$ ]] && [ "$t" -le $((since + 15)) ]; then
+                read -r gid reason < <(get "$api/pipelines/$pid/jobs" |
+                    jq -r '.[] | select(.name == "generate-PackageBuild") | "\(.id) \(.failure_reason // "none")"')
+                if [ -n "${gid:-}" ] && get "$web/-/jobs/$gid/raw" | grep -qE "[0-9]+[OE]\+? ?package_name=$PACKAGE$"; then
+                    [[ "$reason" =~ $infra_failure ]] && infra_error "$reason" "$web/-/jobs/$gid"
+                    echo "::error::The builder pipeline $web/-/pipelines/$pid failed before building ($reason)"
+                    exit 1
+                fi
+            fi
+            continue
+        fi
         id=$(get "$api/pipelines/$child/jobs" | jq -r --arg n "$PACKAGE" '.[] | select(.name == $n) | .id')
         if [ -z "$id" ] || [[ "$rejected" == *" $id "* ]]; then continue; fi
         log=$(get "$web/-/jobs/$id/raw" || true)
@@ -69,7 +95,7 @@ while [ -z "$job" ]; do
         fi
         rejected+="$id "
     done < <(get "$api/pipelines?source=trigger&updated_after=$after&order_by=id&sort=asc&per_page=100" |
-        jq -r '.[] | "\(.id) \(.created_at)"')
+        jq -r '.[] | "\(.id) \(.created_at) \(.status)"')
 
     if [ -z "$job" ]; then
         if [ "$SECONDS" -ge "$deadline" ]; then
@@ -85,11 +111,16 @@ done
 # 2. Wait for it to finish
 deadline=$((SECONDS + BUILD_TIMEOUT)) last=
 while :; do
-    status=$(get "$api/pipelines/$child/jobs" | jq -r --argjson id "$job" '.[] | select(.id == $id) | .status')
+    read -r status reason < <(get "$api/pipelines/$child/jobs" |
+        jq -r --argjson id "$job" '.[] | select(.id == $id) | "\(.status) \(.failure_reason // "none")"')
     [ "$status" = "$last" ] || echo "Job status: $status"
     last=$status
     case "$status" in
-    success | failed | canceled | skipped) break ;;
+    failed)
+        if [[ "$reason" =~ $infra_failure ]]; then infra_error "$reason" "$web/-/jobs/$job"; fi
+        break
+        ;;
+    success | canceled | skipped) break ;;
     esac
     if [ "$SECONDS" -ge "$deadline" ]; then
         echo "::error::Builder job $web/-/jobs/$job still '$status' after ${BUILD_TIMEOUT}s"

@@ -263,7 +263,7 @@ The suite checks the page configuration, translations, version consistency and t
 |---|---|---|
 | Tests | pull requests, manual | tests, lint, translations, package build/install/remove |
 | Build Package | pushes to `main`, `testing-*`, `stable-*`, manual | the tests above, then the `build` job |
-| GitLab Status | after Build Package (biglinux only), manual | follows the builder job; fails if it fails or if testing/stable never publish the file |
+| GitLab Status | after Build Package (biglinux only), manual | follows the builder job, retries runner failures; fails if the build fails or if testing/stable never publish the file |
 
 The BigLinux builder ([packagebuilder](https://gitlab.bigib.org/builder/packagebuilder)) starts by itself when a **Build Package** run in `biglinux/biglinux-welcome` succeeds; no secret is needed. `main` is built for the unstable repository, a `testing-*` branch for testing and a `stable-*` branch for stable. Failed tests mean no build. Details, evidence and the release checklist: [docs/ci-packaging.md](docs/ci-packaging.md).
 
