@@ -2,7 +2,9 @@ name: GitLab Status
 
 # Follows the job the BigLinux builder starts after a successful
 # "Build Package" run, and fails when it does not start or does not succeed.
-# Read only: it uses the public GitLab API and no secret. The name avoids the
+# It uses the public GitLab API and no secret. When the builder's own runners
+# fail before building, it re-runs the "build" job of that run (at most twice),
+# which makes the organization request the build again. The name avoids the
 # words "Build" and "Package", so this run never requests a build itself.
 
 on:
@@ -20,6 +22,7 @@ on:
 
 permissions:
   contents: read
+  actions: write # re-run the build job after a builder infrastructure failure
 
 jobs:
   track:
@@ -41,4 +44,27 @@ jobs:
           ORG: biglinux
           BRANCH: ${{ github.event.workflow_run.head_branch || inputs.branch }}
           SINCE: ${{ github.event.workflow_run.updated_at || inputs.since }}
-        run: .github/scripts/track-build.sh
+          # Only the tracker of a run's first attempt re-runs it
+          RUN_ID: ${{ github.event.workflow_run.run_attempt == 1 && github.event.workflow_run.id || '' }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for retry in 0 1 2; do
+            status=0
+            .github/scripts/track-build.sh || status=$?
+            if [ "$status" -ne 3 ] || [ -z "$RUN_ID" ] || [ "$retry" -eq 2 ]; then
+              exit "$status"
+            fi
+            build=$(gh run view "$RUN_ID" -R "$GITHUB_REPOSITORY" --json jobs               --jq '.jobs[] | select(.name == "build") | .databaseId')
+            echo "::warning::Builder infrastructure failure; re-running the build job of run $RUN_ID"
+            attempt=$(gh run view "$RUN_ID" -R "$GITHUB_REPOSITORY" --json attempt --jq .attempt)
+            gh run rerun "$RUN_ID" -R "$GITHUB_REPOSITORY" --job "$build"
+            # Wait for the new attempt to finish
+            until gh run view "$RUN_ID" -R "$GITHUB_REPOSITORY" --json attempt,status \
+              --jq ".attempt > $attempt and .status == \"completed\"" | grep -qx true; do
+              sleep 15
+            done
+            read -r conclusion SINCE < <(gh run view "$RUN_ID" -R "$GITHUB_REPOSITORY" \
+              --json conclusion,updatedAt --jq '"\(.conclusion) \(.updatedAt)"')
+            [ "$conclusion" = success ] || { echo "::error::The re-run ended '$conclusion'"; exit 1; }
+            export SINCE
+          done

@@ -19,8 +19,17 @@ push to main / testing-* / stable-*          (biglinux/biglinux-welcome)
   └─ GitLab Status workflow (workflow_run) follows that job through the public
      GitLab API and fails if it does not start within 10 min or does not succeed;
      for testing/stable it then waits up to 1 h for
-     repo.biglinux.com.br/<repo>/x86_64/<file> and fails if it never appears
+     repo.biglinux.com.br/<repo>/x86_64/<file> and fails if it never appears.
+     If the builder's runners fail (GitLab failure reason runner_system_failure,
+     scheduler_failure, api_failure, data_integrity_failure), nothing was
+     built: it re-runs the "build" job of that run, at most twice, and follows
+     the new request
 ```
+
+Runner failures are not rare. On 2026-10-11 the request for
+`testing-2026-10-11` reached the builder 1 s after the run (pipeline 37669),
+but its first job died with `runner_system_failure` (Kubernetes
+`502 Bad Gateway`), as did two other pipelines that day.
 
 Destination repository, decided by the builder from `git_branch`
 (`package-build` in packagebuilder):
@@ -158,8 +167,9 @@ None is needed for builds. Recommended, by a `biglinux` admin:
 4. To publish to testing: create branch `testing-YYYY-MM-DD` from `main`
    (`git push origin main:refs/heads/testing-$(date +%F)`). Same for stable
    with `stable-YYYY-MM-DD_HH-MM`. Check **GitLab Status** again.
-5. If the builder job failed, open the job link, fix, and rerun
-   **Build Package** on that branch (Actions → Run workflow).
+5. If the builder job failed, open the job link. Runner failures are retried
+   automatically; for anything else, fix it and re-run the `build` job of the
+   **Build Package** run for that branch (or Actions → Run workflow).
 
 Each branch gets one build per successful run; rerunning the workflow
 requests another build of the same branch.
